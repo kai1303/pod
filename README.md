@@ -61,6 +61,8 @@ The document **borrows** the input bytes: keep them alive and unchanged until `d
 
 `zig build test` covers syntax boundaries, document errors, round trips, text/graphics state, advance preservation and unsafe edit rejection. `python3 tools/validate.py --help` describes independent fixture and macOS PDFKit interoperability checks, including visual artifacts. The external reader is a test tool, not an engine dependency. Broader fuzzing and document-corpus work remain necessary before accepting arbitrary user PDFs.
 
+CodeGraph is initialized locally. The installed indexer currently discovers the Python/Swift validation tools but no Zig symbols; core work therefore uses direct source inspection and compiler checks.
+
 Zig 0.17.1 optimization modes are `debug`, `safe`, `fast` and `small`. Debug and safe retain compiler runtime safety checks; fast and small disable them. Explicit input validation remains in all modes. Release executables are stripped. The provisional macOS arm64 CLI target is less than 1 MiB; measure the executable rather than assuming a build mode meets it. See `tools/benchmark.py` and `tools/bench.zig` for process and in-process measurements.
 
 Use `safe` as the starting release configuration: it meets the initial size budget while keeping compiler runtime checks. The [initial benchmark report](docs/benchmarks/initial.md) records all three release modes, timings, memory and reproduction commands.

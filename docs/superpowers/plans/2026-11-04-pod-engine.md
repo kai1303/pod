@@ -55,4 +55,4 @@ assert malformed_input_exit_code != 0
 - [x] Independent code-quality review of parser arithmetic, lifetimes, traversal bounds, stream rewriting, font handling and output-file semantics.
 - [x] Fix material findings and run focused regressions plus the full suite after changes.
 - [x] Update the README with supported/unsupported behavior, build commands and validation evidence.
-- [ ] Integrate the completed branch into the user workspace without changing the retained research artifacts. Keep the local compiler and downloaded artifacts ignored.
+- [x] Integrate the completed branch into the user workspace without changing the retained research artifacts. Keep the local compiler and downloaded artifacts ignored.
