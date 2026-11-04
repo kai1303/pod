@@ -4,6 +4,7 @@
 .zig-cache/
 zig-out/
 test-out/
+__pycache__/
 research/apryse/artifacts/
 research/apryse/recovered-ui/
 research/apryse/evidence/*.bundle.json
