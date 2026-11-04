@@ -1,0 +1,9 @@
+.codegraph/
+.tools/
+.worktrees/
+.zig-cache/
+zig-out/
+test-out/
+research/apryse/artifacts/
+research/apryse/recovered-ui/
+research/apryse/evidence/*.bundle.json
