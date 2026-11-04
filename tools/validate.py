@@ -64,6 +64,11 @@ def validate(binary, out, pdfkit=None, mutations=128):
     after = next(r for r in changed if r["text"] == "World")
     assert abs(after["x"] - world["x"]) < 1e-6 and abs(after["y"] - world["y"]) < 1e-6, after
     assert b"Hello" not in edited.read_bytes(), "Original operand must actually be replaced"
+    deleted = out / "deleted.pdf"
+    run(binary, "replace", source, deleted, 1, hello["id"], "")
+    deleted_runs = inspect(binary, deleted)["pages"][0]["runs"]
+    assert all(r["text"] != "Hello" for r in deleted_runs)
+    assert abs(next(r for r in deleted_runs if r["text"] == "World")["x"] - world["x"]) < 1e-6
     escaped = out / "escaped.pdf"
     run(binary, "replace", source, escaped, 1, hello["id"], "(\\)")
     assert any(r["text"] == "(\\)" for r in inspect(binary, escaped)["pages"][0]["runs"])
@@ -78,6 +83,10 @@ def validate(binary, out, pdfkit=None, mutations=128):
         assert abs(transformed_runs[1][coordinate] - transformed_after[1][coordinate]) < 1e-5
     run(binary, "replace", source, out / "overflow.pdf", 1, hello["id"], "Too long to fit", success=False)
     assert not (out / "overflow.pdf").exists()
+    for page, run_id in [(0, 0), (2, 0), (1, 999)]:
+        target = out / f"invalid-selection-{page}-{run_id}.pdf"
+        run(binary, "replace", source, target, page, run_id, "Hi", success=False)
+        assert not target.exists()
     run(binary, "replace", source, source, 1, hello["id"], "Hi", success=False)
     protected = out / "protected.pdf"
     protected.write_bytes(b"do not overwrite")
