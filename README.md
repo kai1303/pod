@@ -8,7 +8,7 @@ Zig **0.17.1** is required. The local pinned compiler is at `.tools/zig-aarch64-
 
 ```sh
 zig build test
-zig build -Doptimize=small
+zig build -Doptimize=safe
 ./zig-out/bin/pod create original.pdf 'Hello world'
 ./zig-out/bin/pod inspect original.pdf
 ./zig-out/bin/pod replace original.pdf edited.pdf 1 0 'Hi'
@@ -38,7 +38,7 @@ Output paths must not exist, including the input path or aliases to an existing 
 
 Encrypted documents, incremental revisions, xref streams and filtered page-content streams have explicit unsupported errors. Unsupported data is not silently skipped. Content-array state can continue between streams, but a single operand/operator expression must be contained within one stream. The engine does not render, shape text, decompress streams, load arbitrary fonts, reconstruct paragraphs or reflow text.
 
-Limits include 256 MiB input files, one million object slots, 100,000 pages, 64 nested syntax/page/reference/graphics levels, one million syntax nodes per parser, 1 MiB string/name tokens, 128 operands per operation, and finite numeric content operands bounded to magnitude 10¹². These are guardrails, not a claim that hostile PDFs have been exhaustively fuzzed or that peak memory is capped at input size.
+Limits include 256 MiB input files, one million object slots, 100,000 pages, 64 nested syntax/page/reference/graphics levels, one million syntax nodes per parser, 1 MiB string/name tokens, 128 operands per operation, and finite numeric content operands bounded to magnitude 10¹². Page-tree nodes may be visited only once, rejecting both cycles and repeated sibling references. These are guardrails, not a claim that hostile PDFs have been exhaustively fuzzed or that peak memory is capped at input size.
 
 ## Library ownership
 
@@ -62,5 +62,7 @@ The document **borrows** the input bytes: keep them alive and unchanged until `d
 `zig build test` covers syntax boundaries, document errors, round trips, text/graphics state, advance preservation and unsafe edit rejection. `python3 tools/validate.py --help` describes independent fixture and macOS PDFKit interoperability checks, including visual artifacts. The external reader is a test tool, not an engine dependency. Broader fuzzing and document-corpus work remain necessary before accepting arbitrary user PDFs.
 
 Zig 0.17.1 optimization modes are `debug`, `safe`, `fast` and `small`. Debug and safe retain compiler runtime safety checks; fast and small disable them. Explicit input validation remains in all modes. Release executables are stripped. The provisional macOS arm64 CLI target is less than 1 MiB; measure the executable rather than assuming a build mode meets it. See `tools/benchmark.py` and `tools/bench.zig` for process and in-process measurements.
+
+Use `safe` as the starting release configuration: it meets the initial size budget while keeping compiler runtime checks. The [initial benchmark report](docs/benchmarks/initial.md) records all three release modes, timings, memory and reproduction commands.
 
 The approved design and later rendering/font milestones are in [the engine design](docs/superpowers/specs/2026-11-04-pod-engine-design.md).

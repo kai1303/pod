@@ -1,0 +1,208 @@
+{
+  "compiler": "0.17.1",
+  "revision": "0ba033bdc0a343f0c84b3eae28b6c9e16206d0b4",
+  "hardware": "Apple M1 Pro, 32 GiB RAM",
+  "modes": {
+    "safe": {
+      "cli": {
+        "binary": "/Users/kai/works/side-project/pod/.worktrees/pdf-engine/test-out/safe/bin/pod",
+        "binary_bytes": 306080,
+        "system": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+        "machine": "arm64",
+        "iterations": 30,
+        "fixture_bytes": 20656,
+        "fixture_sha256": "8c19b8910c088f3353ba90e2c8ae6851daab7a56ebd57b471c7d7667cb54cfe1",
+        "runs": 1000,
+        "usage_startup": {
+          "first_invocation_ms": 5.856792,
+          "median_ms": 4.0552085,
+          "p95_ms": 4.868833,
+          "min_ms": 3.423,
+          "peak_rss_bytes": 1720320
+        },
+        "inspect": {
+          "first_invocation_ms": 5.588375,
+          "median_ms": 4.6863125,
+          "p95_ms": 5.234542,
+          "min_ms": 4.273417,
+          "peak_rss_bytes": 2375680
+        },
+        "replace_save": {
+          "first_invocation_ms": 6.02775,
+          "median_ms": 4.484896,
+          "p95_ms": 5.019542,
+          "min_ms": 4.104584,
+          "peak_rss_bytes": 2359296
+        }
+      },
+      "in_process": [
+        {
+          "operation": "open",
+          "batches": 30,
+          "operations_per_batch": 50,
+          "median_ms": 0.001946,
+          "p95_ms": 0.002067,
+          "checksum": 0
+        },
+        {
+          "operation": "inspect",
+          "batches": 30,
+          "operations_per_batch": 50,
+          "median_ms": 0.287929,
+          "p95_ms": 0.314934,
+          "checksum": 1550
+        },
+        {
+          "operation": "replace",
+          "batches": 30,
+          "operations_per_batch": 50,
+          "median_ms": 0.002891,
+          "p95_ms": 0.003312,
+          "checksum": 0
+        },
+        {
+          "operation": "save",
+          "batches": 30,
+          "operations_per_batch": 50,
+          "median_ms": 0.010971,
+          "p95_ms": 0.015214,
+          "checksum": 32038500
+        }
+      ]
+    },
+    "fast": {
+      "cli": {
+        "binary": "/Users/kai/works/side-project/pod/.worktrees/pdf-engine/test-out/fast/bin/pod",
+        "binary_bytes": 165904,
+        "system": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+        "machine": "arm64",
+        "iterations": 30,
+        "fixture_bytes": 20656,
+        "fixture_sha256": "8c19b8910c088f3353ba90e2c8ae6851daab7a56ebd57b471c7d7667cb54cfe1",
+        "runs": 1000,
+        "usage_startup": {
+          "first_invocation_ms": 5.424125,
+          "median_ms": 3.8210414999999998,
+          "p95_ms": 4.740375,
+          "min_ms": 3.327875,
+          "peak_rss_bytes": 1703936
+        },
+        "inspect": {
+          "first_invocation_ms": 6.136166,
+          "median_ms": 4.258437499999999,
+          "p95_ms": 5.621208,
+          "min_ms": 3.88375,
+          "peak_rss_bytes": 2310144
+        },
+        "replace_save": {
+          "first_invocation_ms": 4.377875,
+          "median_ms": 4.3225625,
+          "p95_ms": 4.73175,
+          "min_ms": 3.653625,
+          "peak_rss_bytes": 2260992
+        }
+      },
+      "in_process": [
+        {
+          "operation": "open",
+          "batches": 30,
+          "operations_per_batch": 50,
+          "median_ms": 0.001905,
+          "p95_ms": 0.003811,
+          "checksum": 0
+        },
+        {
+          "operation": "inspect",
+          "batches": 30,
+          "operations_per_batch": 50,
+          "median_ms": 0.219741,
+          "p95_ms": 1.516855,
+          "checksum": 1550
+        },
+        {
+          "operation": "replace",
+          "batches": 30,
+          "operations_per_batch": 50,
+          "median_ms": 0.002782,
+          "p95_ms": 0.004596,
+          "checksum": 0
+        },
+        {
+          "operation": "save",
+          "batches": 30,
+          "operations_per_batch": 50,
+          "median_ms": 0.020308,
+          "p95_ms": 0.050411,
+          "checksum": 32038500
+        }
+      ]
+    },
+    "small": {
+      "cli": {
+        "binary": "/Users/kai/works/side-project/pod/.worktrees/pdf-engine/test-out/small/bin/pod",
+        "binary_bytes": 121200,
+        "system": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+        "machine": "arm64",
+        "iterations": 30,
+        "fixture_bytes": 20656,
+        "fixture_sha256": "8c19b8910c088f3353ba90e2c8ae6851daab7a56ebd57b471c7d7667cb54cfe1",
+        "runs": 1000,
+        "usage_startup": {
+          "first_invocation_ms": 4.760959,
+          "median_ms": 5.131978999999999,
+          "p95_ms": 27.832917,
+          "min_ms": 3.73175,
+          "peak_rss_bytes": 1671168
+        },
+        "inspect": {
+          "first_invocation_ms": 7.547667,
+          "median_ms": 9.56475,
+          "p95_ms": 28.115167,
+          "min_ms": 5.938084,
+          "peak_rss_bytes": 2277376
+        },
+        "replace_save": {
+          "first_invocation_ms": 18.844416,
+          "median_ms": 12.933021,
+          "p95_ms": 32.22525,
+          "min_ms": 8.135792,
+          "peak_rss_bytes": 2228224
+        }
+      },
+      "in_process": [
+        {
+          "operation": "open",
+          "batches": 30,
+          "operations_per_batch": 50,
+          "median_ms": 0.003307,
+          "p95_ms": 0.004138,
+          "checksum": 0
+        },
+        {
+          "operation": "inspect",
+          "batches": 30,
+          "operations_per_batch": 50,
+          "median_ms": 0.389785,
+          "p95_ms": 0.444982,
+          "checksum": 1550
+        },
+        {
+          "operation": "replace",
+          "batches": 30,
+          "operations_per_batch": 50,
+          "median_ms": 0.002777,
+          "p95_ms": 0.003536,
+          "checksum": 0
+        },
+        {
+          "operation": "save",
+          "batches": 30,
+          "operations_per_batch": 50,
+          "median_ms": 0.010926,
+          "p95_ms": 0.014142,
+          "checksum": 32038500
+        }
+      ]
+    }
+  }
+}
