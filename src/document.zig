@@ -127,10 +127,13 @@ pub const Document = struct {
         }
         return v;
     }
-    fn walk(self: *Document, value: s.Value, resources: ?s.Value, box: ?s.Value, path: *std.ArrayList(u32), result: *std.ArrayList(Page)) anyerror!void {
+    fn walk(self: *Document, value: s.Value, resources: ?s.Value, box: ?s.Value, path: *std.ArrayList(u32), visited: []bool, result: *std.ArrayList(Page)) anyerror!void {
         if (path.items.len >= 64 or result.items.len >= 100000) return error.PageLimit;
         if (value != .ref) return error.InvalidPageTree;
         if (std.mem.indexOfScalar(u32, path.items, value.ref.id) != null) return error.PageTreeCycle;
+        if (value.ref.id >= visited.len) return error.MissingReference;
+        if (visited[value.ref.id]) return error.InvalidPageTree;
+        visited[value.ref.id] = true;
         try path.append(self.allocator(), value.ref.id);
         defer _ = path.pop();
         const v = try self.resolve(value);
@@ -142,7 +145,7 @@ pub const Document = struct {
         if (std.mem.eql(u8, kind.name, "Pages")) {
             const kids = try self.resolve(s.get(v, "Kids") orelse return error.InvalidPageTree);
             if (kids != .array) return error.InvalidPageTree;
-            for (kids.array) |k| try self.walk(k, res, media, path, result);
+            for (kids.array) |k| try self.walk(k, res, media, path, visited, result);
         } else if (std.mem.eql(u8, kind.name, "Page")) {
             const mb = try self.resolve(media orelse return error.MissingMediaBox);
             if (mb != .array or mb.array.len != 4) return error.InvalidMediaBox;
@@ -168,7 +171,9 @@ pub const Document = struct {
         const root = try self.resolve(s.get(self.trailer, "Root").?);
         var path: std.ArrayList(u32) = .empty;
         var pages: std.ArrayList(Page) = .empty;
-        try self.walk(s.get(root, "Pages") orelse return error.InvalidCatalog, null, null, &path, &pages);
+        const visited = try self.allocator().alloc(bool, self.entries.len);
+        @memset(visited, false);
+        try self.walk(s.get(root, "Pages") orelse return error.InvalidCatalog, null, null, &path, visited, &pages);
         for (pages.items) |*page| {
             self.context.page = page.number;
             page.runs = try @import("content.zig").inspect(self, page);

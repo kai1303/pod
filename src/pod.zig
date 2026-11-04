@@ -208,3 +208,26 @@ test "writer links free xref slots" {
     try std.testing.expect(std.mem.indexOf(u8, saved, "xref\n0 8\n0000000006 65535 f") != null);
     try std.testing.expect(std.mem.indexOf(u8, saved, "0000000007 00000 f \n0000000000 00000 f") != null);
 }
+test "page-tree nodes cannot be revisited through sibling references" {
+    const a = std.testing.allocator;
+    var bytes: std.ArrayList(u8) = .empty;
+    defer bytes.deinit(a);
+    try bytes.appendSlice(a, "%PDF-1.7\n");
+    const bodies = [_][]const u8{
+        "<< /Type /Catalog /Pages 2 0 R >>",
+        "<< /Type /Pages /Kids [3 0 R 3 0 R] /Count 0 >>",
+        "<< /Type /Pages /Kids [] /Count 0 >>",
+    };
+    var offsets: [4]usize = @splat(0);
+    for (bodies, 1..) |body, i| {
+        offsets[i] = bytes.items.len;
+        try bytes.print(a, "{d} 0 obj\n{s}\nendobj\n", .{ i, body });
+    }
+    const xref = bytes.items.len;
+    try bytes.appendSlice(a, "xref\n0 4\n0000000000 65535 f \n");
+    for (offsets[1..]) |offset| try bytes.print(a, "{d:0>10} 00000 n \n", .{offset});
+    try bytes.print(a, "trailer\n<< /Size 4 /Root 1 0 R >>\nstartxref\n{d}\n%%EOF\n", .{xref});
+    var doc = try Document.open(a, bytes.items);
+    defer doc.deinit();
+    try std.testing.expectError(error.InvalidPageTree, doc.inspect());
+}
