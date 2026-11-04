@@ -1,6 +1,24 @@
 # Pod
 
-A native PDF engine written from scratch in Zig, with speed, executable size and explicit memory ownership as design constraints. The first milestone provides a headless library and CLI for a small, testable PDF editing subset. It has no PDF library dependencies and does not contain a renderer.
+A native PDF engine written from scratch in Zig, with speed, executable size and explicit memory ownership as design constraints. It includes a native macOS editor, an own CPU renderer, a library and a CLI for the supported PDF subset. It has no PDF library dependencies.
+
+## Native macOS app
+
+On Apple Silicon with macOS 14 or later, Xcode command-line tools and the pinned Zig compiler:
+
+```sh
+./script/build_and_run.sh             # build and open dist/Pod.app
+./script/build_and_run.sh --build     # build only
+./script/test_macos.sh                # engine, C/Swift bridge and independent reader checks
+```
+
+The Codex Run action uses the same launch script. A two-page sample is included. Open a supported PDF, select text to replace it, or use the Mark up toolbar. Save a Copy writes a new file; the input is preserved. Quit an existing Pod instance after saving before launching the updated build.
+
+The Lumin-inspired markup palettes were reconstructed from live DOM/CSS observations, using native AppKit controls. Eighteen annotation variants are implemented: rectangle, ellipse, line, arrow, polyline, polygon, cloud, star, cross, tick, text highlight, freehand highlight, underline, squiggly underline, strikeout, ink, free text and comment. They are stored as PDF annotations with appearance streams, and survive save/reopen in other readers. Select annotations to move, resize, change styles or delete; Eraser removes annotations. Undo/redo restores document snapshots. Click successive points for polyline/polygon, then Return or double-click to finish; Escape cancels. Text markup selects whole supported text runs.
+
+Zig parses, edits, rasterizes and writes the PDF, including its own TrueType outline decoder. AppKit provides the desktop UI; CoreGraphics displays our RGBA bitmap. **PDFKit is used only by independent test tools and is not linked into or bundled with the application.** The renderer reads the installed Courier New font as a substitute without bundling it. Fonts, image/scanned PDFs, forms, signing and measurements beyond the subset below are not implemented yet. This preview cannot open arbitrary production PDFs.
+
+The verified local arm64 build has a 528,592-byte executable (516.2 KiB) and occupies about 532 KiB on disk as an app bundle. This excludes macOS system frameworks and is not a memory-use measurement. The app is locally ad-hoc signed, not notarized. See the [native acceptance report](docs/benchmarks/macos-markup.md), [native design](docs/superpowers/specs/2026-11-04-macos-app-design.md) and [observed Lumin markup rules](docs/superpowers/specs/2026-11-04-markup-design.md).
 
 ## Build and use
 
@@ -36,7 +54,7 @@ Output paths must not exist, including the input path or aliases to an existing 
 - `BT ET Tf Tm Td TD T* Tc Tw Tz TL Ts Tr Tj TJ q Q cm`. Rendering modes 0–3 are recognized; text clipping modes are rejected. Font size and horizontal scaling must be positive.
 - Basic path construction, painting, line-width and device-color operators are preserved. Operators that require additional interpretation, including XObjects, external graphics state, clipping, marked content and inline images, return `UnsupportedOperator`.
 
-Encrypted documents, incremental revisions, xref streams and filtered page-content streams have explicit unsupported errors. Unsupported data is not silently skipped. Content-array state can continue between streams, but a single operand/operator expression must be contained within one stream. The engine does not render, shape text, decompress streams, load arbitrary fonts, reconstruct paragraphs or reflow text.
+Encrypted documents, incremental revisions, xref streams and filtered page-content streams have explicit unsupported errors. Unsupported data is not silently skipped. Content-array state can continue between streams, but a single operand/operator expression must be contained within one stream. The renderer supports basic paths and standard Courier text using unhinted outlines, plus annotations created by Pod. It does not shape complex text, decompress streams, load arbitrary PDF fonts, reconstruct paragraphs or reflow text. Unsupported foreign annotation appearances return an error.
 
 Limits include 256 MiB input files, one million object slots, 100,000 pages, 64 nested syntax/page/reference/graphics levels, one million syntax nodes per parser, 1 MiB string/name tokens, 128 operands per operation, and finite numeric content operands bounded to magnitude 10¹². Page-tree nodes may be visited only once, rejecting both cycles and repeated sibling references. These are guardrails, not a claim that hostile PDFs have been exhaustively fuzzed or that peak memory is capped at input size.
 
@@ -55,7 +73,7 @@ const saved = try document.save(allocator);
 defer allocator.free(saved);
 ```
 
-The document **borrows** the input bytes: keep them alive and unchanged until `deinit`. Parsed objects, decoded strings, inspected pages/runs and edited content belong to its arena. Do not free them individually. After an edit, call `inspect` again for a current view; previously returned views are stale. `create` and `save` return slices owned by their supplied allocator. `save` fully rewrites live objects and the xref/trailer; it is proportional to the whole output and can fail on malformed unused objects discovered during saving.
+The document **borrows** the input bytes: keep them alive and unchanged until `deinit`. Parsed objects, decoded strings, inspected pages/runs and edited content belong to its arena. Do not free them individually. After an edit, call `inspect` again for a current view; previously returned views are stale. `create` and `save` return slices owned by their supplied allocator. `save` rewrites objects reachable from the trailer and the xref/trailer; deleted annotation dictionaries and their unreferenced appearance streams are omitted. Saving is proportional to reachable objects and output size, and can fail on malformed reachable data.
 
 ## Validation and performance
 

@@ -1,6 +1,10 @@
+pub const annotations = @import("annotations.zig");
 pub const syntax = @import("syntax.zig");
 pub const Document = @import("document.zig").Document;
 test {
+    _ = annotations;
+    _ = @import("render.zig");
+    _ = @import("font.zig");
     _ = syntax;
     _ = @import("document.zig");
 }

@@ -1,15 +1,17 @@
 const std = @import("std");
 const s = @import("syntax.zig");
 const A = std.mem.Allocator;
-pub const Object = struct { value: s.Value, body: []const u8, stream: ?[]const u8 = null, changed: ?[]const u8 = null };
+pub const Object = struct { value: s.Value, body: []const u8, stream: ?[]const u8 = null, changed: ?[]const u8 = null, dirty: bool = false };
 const Xref = struct { offset: usize = 0, generation: u16 = 0, live: bool = false, seen: bool = false, busy: bool = false, object: ?*Object = null };
-pub const Page = struct { number: usize, resources: s.Value, media_box: s.Value, contents: []u32, runs: []@import("content.zig").Run = &.{} };
+pub const Page = struct { object_id: u32 = 0, number: usize, resources: s.Value, media_box: s.Value, contents: []u32, runs: []@import("content.zig").Run = &.{}, annotation_refs: std.ArrayList(s.Value) = .empty };
 pub const Document = struct {
     arena: std.heap.ArenaAllocator,
     bytes: []const u8,
     entries: []Xref = &.{},
+    entries_storage: []Xref = &.{},
     trailer: s.Value = .null,
     pages: ?[]Page = null,
+    unsupported_appearance: bool = false,
     resolving_depth: usize = 0,
     context: struct { object_id: u32 = 0, page: usize = 0, operator: []const u8 = "" } = .{},
     pub fn allocator(self: *Document) A {
@@ -119,6 +121,38 @@ pub const Document = struct {
         x.object = o;
         return o;
     }
+    pub fn addObject(self: *Document, value: s.Value, stream: ?[]const u8) !u32 {
+        if (self.entries.len >= 1000000) return error.ObjectLimit;
+        if (self.entries_storage.len <= self.entries.len or self.entries_storage.ptr != self.entries.ptr) {
+            const capacity = @min(1000000, @max(self.entries.len + 1, self.entries.len * 2));
+            const storage = try self.allocator().alloc(Xref, capacity);
+            @memcpy(storage[0..self.entries.len], self.entries);
+            self.entries_storage = storage;
+        }
+        const entries = self.entries_storage[0 .. self.entries.len + 1];
+        const obj = try self.allocator().create(Object);
+        obj.* = .{ .value = value, .body = "", .stream = stream, .changed = stream, .dirty = true };
+        const id: u32 = @intCast(self.entries.len);
+        entries[id] = .{ .live = true, .seen = true, .object = obj };
+        self.entries = entries;
+        for (self.trailer.dict) |*entry| if (std.mem.eql(u8, entry.key, "Size")) {
+            entry.value = .{ .integer = @intCast(entries.len) };
+        };
+        return id;
+    }
+    pub fn set(self: *Document, obj: *Object, key: []const u8, value: s.Value) !void {
+        if (obj.value != .dict) return error.ExpectedDictionary;
+        for (obj.value.dict) |*entry| if (std.mem.eql(u8, entry.key, key)) {
+            entry.value = value;
+            obj.dirty = true;
+            return;
+        };
+        const entries = try self.allocator().alloc(s.Entry, obj.value.dict.len + 1);
+        @memcpy(entries[0..obj.value.dict.len], obj.value.dict);
+        entries[obj.value.dict.len] = .{ .key = key, .value = value };
+        obj.value = .{ .dict = entries };
+        obj.dirty = true;
+    }
     pub fn resolve(self: *Document, value: s.Value) anyerror!s.Value {
         var v = value;
         var depth: usize = 0;
@@ -139,11 +173,15 @@ pub const Document = struct {
         defer _ = path.pop();
         const v = try self.resolve(value);
         if (v != .dict) return error.InvalidPageTree;
+        for ([_][]const u8{ "Rotate", "CropBox", "UserUnit", "Group" }) |key| {
+            if (s.get(v, key) != null) self.unsupported_appearance = true;
+        }
         const res = s.get(v, "Resources") orelse resources;
         const media = s.get(v, "MediaBox") orelse box;
         const kind = s.get(v, "Type") orelse return error.InvalidPageTree;
         if (kind != .name) return error.InvalidPageTree;
         if (std.mem.eql(u8, kind.name, "Pages")) {
+            if (s.get(v, "Annots") != null) self.unsupported_appearance = true;
             const kids = try self.resolve(s.get(v, "Kids") orelse return error.InvalidPageTree);
             if (kids != .array) return error.InvalidPageTree;
             for (kids.array) |k| try self.walk(k, res, media, path, visited, result);
@@ -164,12 +202,15 @@ pub const Document = struct {
                     }
                 }
             }
-            try result.append(self.allocator(), .{ .number = result.items.len + 1, .resources = try self.resolve(res orelse return error.MissingResources), .media_box = mb, .contents = try ids.toOwnedSlice(self.allocator()) });
+            try result.append(self.allocator(), .{ .object_id = value.ref.id, .number = result.items.len + 1, .resources = try self.resolve(res orelse return error.MissingResources), .media_box = mb, .contents = try ids.toOwnedSlice(self.allocator()) });
         } else return error.InvalidPageTree;
     }
     pub fn inspect(self: *Document) anyerror![]Page {
         if (self.pages) |pages| return pages;
         const root = try self.resolve(s.get(self.trailer, "Root").?);
+        for ([_][]const u8{ "AcroForm", "OCProperties", "OutputIntents" }) |key| {
+            if (s.get(root, key) != null) self.unsupported_appearance = true;
+        }
         var path: std.ArrayList(u32) = .empty;
         var pages: std.ArrayList(Page) = .empty;
         const visited = try self.allocator().alloc(bool, self.entries.len);
@@ -185,7 +226,33 @@ pub const Document = struct {
     pub fn replace(self: *Document, page: usize, run: usize, text: []const u8) !void {
         try @import("content.zig").replace(self, page, run, text);
     }
+    fn reachableObjects(self: *Document, a: A) ![]bool {
+        const reachable = try a.alloc(bool, self.entries.len);
+        errdefer a.free(reachable);
+        @memset(reachable, false);
+        var pending: std.ArrayList(s.Value) = .empty;
+        defer pending.deinit(a);
+        try pending.append(a, self.trailer);
+        while (pending.pop()) |value| switch (value) {
+            .ref => |ref| {
+                if (ref.id == 0 or ref.id >= self.entries.len) return error.MissingReference;
+                const entry = self.entries[ref.id];
+                if (!entry.live or entry.generation != ref.generation) return error.MissingReference;
+                if (reachable[ref.id]) continue;
+                reachable[ref.id] = true;
+                try pending.append(a, (try self.object(ref)).value);
+            },
+            .array => |values| try pending.appendSlice(a, values),
+            .dict => |entries| for (entries) |entry| {
+                try pending.append(a, entry.value);
+            },
+            else => {},
+        };
+        return reachable;
+    }
     pub fn save(self: *Document, a: A) ![]u8 {
+        const reachable = try self.reachableObjects(a);
+        defer a.free(reachable);
         var out: std.ArrayList(u8) = .empty;
         errdefer out.deinit(a);
         try out.appendSlice(a, "%PDF-1.7\n%\xe2\xe3\xcf\xd3\n");
@@ -193,7 +260,7 @@ pub const Document = struct {
         defer a.free(offsets);
         @memset(offsets, 0);
         for (self.entries, 0..) |x, i| {
-            if (!x.live) continue;
+            if (!x.live or !reachable[i]) continue;
             const o = try self.object(.{ .id = @intCast(i), .generation = x.generation });
             offsets[i] = out.items.len;
             try out.print(a, "{d} {d} obj\n", .{ i, x.generation });
@@ -207,7 +274,7 @@ pub const Document = struct {
                 try out.print(a, " /Length {d} >>\nstream\n", .{data.len});
                 try out.appendSlice(a, data);
                 try out.appendSlice(a, "\nendstream\n");
-            } else try out.appendSlice(a, o.body);
+            } else if (o.dirty) try serialize(a, &out, o.value) else try out.appendSlice(a, o.body);
             try out.appendSlice(a, "\nendobj\n");
         }
         const xref = out.items.len;
@@ -215,14 +282,14 @@ pub const Document = struct {
         var free_index = self.entries.len;
         while (free_index > 1) {
             free_index -= 1;
-            if (!self.entries[free_index].live) {
+            if (!self.entries[free_index].live or !reachable[free_index]) {
                 offsets[free_index] = next_free;
                 next_free = free_index;
             }
         }
         try out.print(a, "xref\n0 {d}\n{d:0>10} 65535 f \n", .{ self.entries.len, next_free });
         for (self.entries[1..], 1..) |x, i| {
-            if (x.live) try out.print(a, "{d:0>10} {d:0>5} n \n", .{ offsets[i], x.generation }) else try out.print(a, "{d:0>10} {d:0>5} f \n", .{ offsets[i], x.generation });
+            if (x.live and reachable[i]) try out.print(a, "{d:0>10} {d:0>5} n \n", .{ offsets[i], x.generation }) else try out.print(a, "{d:0>10} {d:0>5} f \n", .{ offsets[i], if (x.live) x.generation +| 1 else x.generation });
         }
         try out.appendSlice(a, "trailer\n");
         try serialize(a, &out, self.trailer);

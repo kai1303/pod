@@ -1,16 +1,16 @@
 const std = @import("std");
 const d = @import("document.zig");
 const s = @import("syntax.zig");
-const Matrix = [6]f64;
+pub const Matrix = [6]f64;
 const identity: Matrix = .{ 1, 0, 0, 1, 0, 0 };
-fn multiply(a: Matrix, b: Matrix) Matrix {
+pub fn multiply(a: Matrix, b: Matrix) Matrix {
     return .{ a[0] * b[0] + a[1] * b[2], a[0] * b[1] + a[1] * b[3], a[2] * b[0] + a[3] * b[2], a[2] * b[1] + a[3] * b[3], a[4] * b[0] + a[5] * b[2] + b[4], a[4] * b[1] + a[5] * b[3] + b[5] };
 }
 fn move(m: *Matrix, x: f64, y: f64) void {
     m.* = multiply(.{ 1, 0, 0, 1, x, y }, m.*);
 }
-const State = struct { ctm: Matrix = identity, size: f64 = 0, char: f64 = 0, word: f64 = 0, scale: f64 = 1, leading: f64 = 0, rise: f64 = 0, mode: i64 = 0, font: bool = false };
-pub const Run = struct { id: usize, text: []const u8, x: f64, y: f64, font_size: f64, advance: f64, object_id: u32, start: usize, end: usize, char_space: f64, word_space: f64, scale: f64 };
+pub const State = struct { ctm: Matrix = identity, size: f64 = 0, char: f64 = 0, word: f64 = 0, scale: f64 = 1, leading: f64 = 0, rise: f64 = 0, mode: i64 = 0, font: bool = false, standard_encoding: bool = true };
+pub const Run = struct { bounds: [4]f64 = .{ 0, 0, 0, 0 }, id: usize, text: []const u8, x: f64, y: f64, font_size: f64, advance: f64, object_id: u32, start: usize, end: usize, char_space: f64, word_space: f64, scale: f64 };
 fn same(a: []const u8, b: []const u8) bool {
     return std.mem.eql(u8, a, b);
 }
@@ -22,17 +22,20 @@ fn num(v: s.Value) !f64 {
     if (!std.math.isFinite(n) or @abs(n) > 1e12) return error.InvalidNumber;
     return n;
 }
-fn checkFont(doc: *d.Document, resources: s.Value, name: []const u8) !void {
+fn checkFont(doc: *d.Document, resources: s.Value, name: []const u8) !bool {
     const fonts = try doc.resolve(s.get(resources, "Font") orelse return error.MissingFont);
     const font = try doc.resolve(s.get(fonts, name) orelse return error.MissingFont);
     const base = s.get(font, "BaseFont") orelse return error.UnsupportedFont;
     const sub = s.get(font, "Subtype") orelse return error.UnsupportedFont;
     if (base != .name or !same(base.name, "Courier") or sub != .name or !same(sub.name, "Type1")) return error.UnsupportedFont;
+    var standard = true;
     if (s.get(font, "Encoding")) |enc| {
         const e = try doc.resolve(enc);
         if (e != .name or (!same(e.name, "WinAnsiEncoding") and !same(e.name, "StandardEncoding"))) return error.UnsupportedEncoding;
+        standard = same(e.name, "StandardEncoding");
     }
     if (s.get(font, "Widths") != null or s.get(font, "FontDescriptor") != null or s.get(font, "ToUnicode") != null) return error.UnsupportedFont;
+    return standard;
 }
 fn advance(text: []const u8, state: State) !f64 {
     var width: f64 = 0;
@@ -43,8 +46,18 @@ fn advance(text: []const u8, state: State) !f64 {
     if (!std.math.isFinite(width) or @abs(width) > 1e12) return error.InvalidTextAdvance;
     return width;
 }
+pub const Sink = struct {
+    context: *anyopaque,
+    operator: *const fn (*anyopaque, []const u8, []s.Value, State) anyerror!void,
+    glyph: *const fn (*anyopaque, u8, Matrix, State) anyerror!void,
+};
 pub fn inspect(doc: *d.Document, page: *d.Page) anyerror![]Run {
-    const a = doc.allocator();
+    return interpret(doc, page, null);
+}
+pub fn interpret(doc: *d.Document, page: *d.Page, sink: ?Sink) anyerror![]Run {
+    return interpretAllocated(doc, page, sink, doc.allocator());
+}
+pub fn interpretAllocated(doc: *d.Document, page: *d.Page, sink: ?Sink, a: std.mem.Allocator) anyerror![]Run {
     var runs: std.ArrayList(Run) = .empty;
     var stack: std.ArrayList(State) = .empty;
     var state: State = .{};
@@ -71,6 +84,7 @@ pub fn inspect(doc: *d.Document, page: *d.Page) anyerror![]Run {
             const v = values.items;
             doc.context.object_id = id;
             doc.context.operator = op;
+            if (sink) |target| try target.operator(target.context, op, v, state);
             if (same(op, "BT")) {
                 try arity(v, 0);
                 if (in_text) return error.InvalidTextObject;
@@ -96,7 +110,7 @@ pub fn inspect(doc: *d.Document, page: *d.Page) anyerror![]Run {
             } else if (same(op, "Tf")) {
                 try arity(v, 2);
                 if (v[0] != .name) return error.InvalidOperands;
-                try checkFont(doc, page.resources, v[0].name);
+                state.standard_encoding = try checkFont(doc, page.resources, v[0].name);
                 state.size = try num(v[1]);
                 if (state.size <= 0) return error.UnsupportedTextState;
                 state.font = true;
@@ -133,15 +147,18 @@ pub fn inspect(doc: *d.Document, page: *d.Page) anyerror![]Run {
                 if (!in_text or !state.font) return error.InvalidTextObject;
                 var text: std.ArrayList(u8) = .empty;
                 var width: f64 = 0;
+                var bounds: [4]f64 = .{ std.math.inf(f64), std.math.inf(f64), -std.math.inf(f64), -std.math.inf(f64) };
                 if (same(op, "Tj")) {
                     if (v[0] != .string) return error.InvalidOperands;
                     try text.appendSlice(a, v[0].string);
                     width = try advance(v[0].string, state);
+                    try emitText(v[0].string, 0, tm, state, sink, &bounds);
                 } else {
                     if (v[0] != .array) return error.InvalidOperands;
                     for (v[0].array) |item| {
                         if (item == .string) {
                             try text.appendSlice(a, item.string);
+                            try emitText(item.string, width, tm, state, sink, &bounds);
                             width += try advance(item.string, state);
                         } else if (item == .integer or item == .real) width -= (try num(item)) * state.size * state.scale / 1000 else return error.InvalidOperands;
                     }
@@ -151,7 +168,8 @@ pub fn inspect(doc: *d.Document, page: *d.Page) anyerror![]Run {
                 const x = transform[4] + state.rise * transform[2];
                 const y = transform[5] + state.rise * transform[3];
                 if (!std.math.isFinite(x) or !std.math.isFinite(y)) return error.InvalidTransform;
-                try runs.append(a, .{ .id = runs.items.len, .text = try text.toOwnedSlice(a), .x = x, .y = y, .font_size = state.size, .advance = width, .object_id = id, .start = start, .end = p.pos, .char_space = state.char, .word_space = state.word, .scale = state.scale });
+                if (!std.math.isFinite(bounds[0])) bounds = .{ x, y, x, y };
+                try runs.append(a, .{ .bounds = bounds, .id = runs.items.len, .text = try text.toOwnedSlice(a), .x = x, .y = y, .font_size = state.size, .advance = width, .object_id = id, .start = start, .end = p.pos, .char_space = state.char, .word_space = state.word, .scale = state.scale });
                 move(&tm, width, 0);
             } else {
                 // These graphics operators cannot change text positioning or font selection.
@@ -170,6 +188,25 @@ pub fn inspect(doc: *d.Document, page: *d.Page) anyerror![]Run {
     if (in_text) return error.UnclosedTextObject;
     if (stack.items.len != 0) return error.UnclosedGraphicsState;
     return runs.toOwnedSlice(a);
+}
+fn emitText(text: []const u8, initial: f64, tm: Matrix, state: State, sink: ?Sink, bounds: *[4]f64) !void {
+    var offset = initial;
+    for (text) |c| {
+        if (c < 32 or c > 126) return error.UnsupportedEncoding;
+        const transform = multiply(multiply(.{ state.size * state.scale, 0, 0, state.size, offset, state.rise }, tm), state.ctm);
+        for (transform) |n| if (!std.math.isFinite(n) or @abs(n) > 1e12) return error.InvalidTransform;
+        // Conservative Courier cell bounds, including ascenders and descenders.
+        for ([_][2]f64{ .{ -0.1, -0.3 }, .{ 0.7, -0.3 }, .{ -0.1, 1.0 }, .{ 0.7, 1.0 } }) |p| {
+            const x = p[0] * transform[0] + p[1] * transform[2] + transform[4];
+            const y = p[0] * transform[1] + p[1] * transform[3] + transform[5];
+            bounds[0] = @min(bounds[0], x);
+            bounds[1] = @min(bounds[1], y);
+            bounds[2] = @max(bounds[2], x);
+            bounds[3] = @max(bounds[3], y);
+        }
+        if (sink) |target| try target.glyph(target.context, c, transform, state);
+        offset += (state.size * 0.6 + state.char + (if (c == 32) state.word else @as(f64, 0))) * state.scale;
+    }
 }
 pub fn replace(doc: *d.Document, page_number: usize, run_id: usize, text: []const u8) !void {
     const pages = try doc.inspect();

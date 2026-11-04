@@ -8,3 +8,5 @@ __pycache__/
 research/apryse/artifacts/
 research/apryse/recovered-ui/
 research/apryse/evidence/*.bundle.json
+dist/
+.build/
