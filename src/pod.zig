@@ -231,3 +231,22 @@ test "page-tree nodes cannot be revisited through sibling references" {
     defer doc.deinit();
     try std.testing.expectError(error.InvalidPageTree, doc.inspect());
 }
+test "xref table requires the mandatory free object zero" {
+    const a = std.testing.allocator;
+    const empty = "%PDF-1.7\nxref\ntrailer\n<< /Size 0 /Root 1 0 R >>\nstartxref\n9\n%%EOF\n";
+    try std.testing.expectError(error.InvalidXref, Document.open(a, empty));
+    const bytes = try create(a, "hi");
+    defer a.free(bytes);
+    const zero = std.mem.indexOf(u8, bytes, "0000000000 65535 f").?;
+    bytes[zero + 11] = '0';
+    try std.testing.expectError(error.InvalidXref, Document.open(a, bytes));
+    const xref = std.mem.indexOf(u8, bytes, "xref\n0 6\n").?;
+    bytes[xref + 5] = '1';
+    bytes[xref + 7] = '5';
+    const zero_end = std.mem.indexOfScalarPos(u8, bytes, zero, '\n').? + 1;
+    var missing: std.ArrayList(u8) = .empty;
+    defer missing.deinit(a);
+    try missing.appendSlice(a, bytes[0..zero]);
+    try missing.appendSlice(a, bytes[zero_end..]);
+    try std.testing.expectError(error.InvalidXref, Document.open(a, missing.items));
+}

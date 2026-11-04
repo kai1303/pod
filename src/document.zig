@@ -66,7 +66,8 @@ pub const Document = struct {
         if (s.get(self.trailer, "XRefStm") != null) return error.UnsupportedXrefStream;
         if (s.get(self.trailer, "Encrypt") != null) return error.UnsupportedEncryption;
         const size = try s.uint(s.get(self.trailer, "Size") orelse return error.InvalidTrailer);
-        if (size != self.entries.len) return error.InvalidXref;
+        if (size == 0 or size != self.entries.len) return error.InvalidXref;
+        if (!self.entries[0].seen or self.entries[0].live or self.entries[0].generation != 65535) return error.InvalidXref;
         p.skip();
         if (p.pos != start) return error.InvalidTrailer;
         if (s.get(self.trailer, "Root") == null) return error.InvalidTrailer;
