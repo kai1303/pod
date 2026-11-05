@@ -1,0 +1,1009 @@
+{
+  "scope": "Static shipped HTML/CSS/JS evidence for default collapsed mode rail and viewer canvas. Live runtime/geometry belongs to parent capture. No screenshots or account/document content.",
+  "artifacts": [
+    {
+      "name": "navigation-button.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/2orfcd3fei0sw.css",
+      "artifactSHA256": "2313fbf5d17525aaae3b495479084ee7763579147c22cf864eddf42cbb1d8769",
+      "charStart": 603,
+      "charEndExclusive": 3921,
+      "utf8Start": 603,
+      "utf8EndExclusive": 3921,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/navigation-button.css",
+      "excerptSHA256": "265a6eec46e2dfc37b6ae11c4ef379b16d3028934774a6a3a95dc0e499c86a1b"
+    },
+    {
+      "name": "navigation-button.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/0qwcgrq08z83b.js",
+      "artifactSHA256": "964f5557e4d435d204299da641cde06e2e48f6da8cac12195e66ac09fa76251b",
+      "charStart": 70812,
+      "charEndExclusive": 72193,
+      "utf8Start": 84303,
+      "utf8EndExclusive": 85684,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/navigation-button.source.js",
+      "excerptSHA256": "28e1b6d2c517cf9ca24d932dd8cf8b706483c4b808419f360dbf8c816791d62a"
+    },
+    {
+      "name": "collapsed-expanded-navigation.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/0qwcgrq08z83b.js",
+      "artifactSHA256": "964f5557e4d435d204299da641cde06e2e48f6da8cac12195e66ac09fa76251b",
+      "charStart": 133272,
+      "charEndExclusive": 136999,
+      "utf8Start": 146763,
+      "utf8EndExclusive": 150490,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/collapsed-expanded-navigation.source.js",
+      "excerptSHA256": "a9751c8c66e989572d9996c9a8015dfa141a8849fb32e0656be7cdfe7627058c"
+    },
+    {
+      "name": "rail-focus-action.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/0qwcgrq08z83b.js",
+      "artifactSHA256": "964f5557e4d435d204299da641cde06e2e48f6da8cac12195e66ac09fa76251b",
+      "charStart": 137020,
+      "charEndExclusive": 141865,
+      "utf8Start": 150511,
+      "utf8EndExclusive": 155356,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/rail-focus-action.source.js",
+      "excerptSHA256": "80ac3342e62a0682ba6bbf73424dc3dd0cda4bc518727fbf435aadf9394259e0"
+    },
+    {
+      "name": "focus-rail-restore.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 423748,
+      "charEndExclusive": 426939,
+      "utf8Start": 423922,
+      "utf8EndExclusive": 427113,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/focus-rail-restore.source.js",
+      "excerptSHA256": "725661968eb76d1849d9bb726192a1e1c47e9137d363c14bb8eed50e0266a7e8"
+    },
+    {
+      "name": "viewer-shell.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 426939,
+      "charEndExclusive": 430833,
+      "utf8Start": 427113,
+      "utf8EndExclusive": 431007,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/viewer-shell.source.js",
+      "excerptSHA256": "33777fd35b8b95baaec5eee9246937c38f4c4ed5ca2c37c3d95153f0fb1de43d"
+    },
+    {
+      "name": "left-mode-rail.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 535309,
+      "charEndExclusive": 537545,
+      "utf8Start": 535487,
+      "utf8EndExclusive": 537723,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/left-mode-rail.source.js",
+      "excerptSHA256": "c05997be80aab6174f6e6cf049fe3e42a1a6426d3e2d4aeb5d82689ce7b77b0c"
+    },
+    {
+      "name": "navigation-icon-registry.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/2wlhxxp1u3z2q.js",
+      "artifactSHA256": "9524d773cfee5b5d5e8ff236caaa716c8b0b9b25a51d689805fcf692222c0139",
+      "charStart": 1899347,
+      "charEndExclusive": 1901632,
+      "utf8Start": 1901700,
+      "utf8EndExclusive": 1903985,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/navigation-icon-registry.source.js",
+      "excerptSHA256": "d4d3ab1cf63ee7d6c73001045da1bae7ad0ef2591a528f639854103bb70d5f40"
+    },
+    {
+      "name": "legacy-spacing.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/2wlhxxp1u3z2q.js",
+      "artifactSHA256": "9524d773cfee5b5d5e8ff236caaa716c8b0b9b25a51d689805fcf692222c0139",
+      "charStart": 1237017,
+      "charEndExclusive": 1237551,
+      "utf8Start": 1239334,
+      "utf8EndExclusive": 1239868,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/legacy-spacing.source.js",
+      "excerptSHA256": "47544c794bafe025b14814169a91f28f8eab77ddb60b78b3328cc2d8c5eb5c70"
+    },
+    {
+      "name": "page-border-light.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/2wlhxxp1u3z2q.js",
+      "artifactSHA256": "9524d773cfee5b5d5e8ff236caaa716c8b0b9b25a51d689805fcf692222c0139",
+      "charStart": 1216220,
+      "charEndExclusive": 1216253,
+      "utf8Start": 1218537,
+      "utf8EndExclusive": 1218570,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/page-border-light.source.js",
+      "excerptSHA256": "62d120d11d67c708c4af3a8ed4ed52e71f0b4af5f669cc9e5bc06efd0dbc0ffb"
+    },
+    {
+      "name": "page-border-dark.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/2wlhxxp1u3z2q.js",
+      "artifactSHA256": "9524d773cfee5b5d5e8ff236caaa716c8b0b9b25a51d689805fcf692222c0139",
+      "charStart": 1234950,
+      "charEndExclusive": 1234983,
+      "utf8Start": 1237267,
+      "utf8EndExclusive": 1237300,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/page-border-dark.source.js",
+      "excerptSHA256": "839b9c8bc8bee3521b95649c7550ae0f34d3ef91b609bb462da7357ee93d68fd"
+    },
+    {
+      "name": "document-canvas.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/3kktv-litzpgh.js",
+      "artifactSHA256": "5a65add7f0fde77c2077ff902fd61fc73e922d01ea7031ee74a68ef3d04f9eac",
+      "charStart": 122612,
+      "charEndExclusive": 128577,
+      "utf8Start": 122618,
+      "utf8EndExclusive": 128585,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/document-canvas.source.js",
+      "excerptSHA256": "984a931d493e577bb14f438c3c58fb97b57bd6fcc46bfd14b7377d695a2539e3"
+    },
+    {
+      "name": "document-scrollbar.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/24v2-cy106wrz.css",
+      "artifactSHA256": "90e917462a717120e6f5f373ac2d27528f9f976ad08be59402ee81cead726843",
+      "charStart": 468,
+      "charEndExclusive": 948,
+      "utf8Start": 468,
+      "utf8EndExclusive": 948,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/document-scrollbar.css",
+      "excerptSHA256": "faf1385cb49efa0cb087d9eea75d8d4735ae4482c7f597249bb46644532c9aea"
+    },
+    {
+      "name": "document-page.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/24v2-cy106wrz.css",
+      "artifactSHA256": "90e917462a717120e6f5f373ac2d27528f9f976ad08be59402ee81cead726843",
+      "charStart": 3039,
+      "charEndExclusive": 3279,
+      "utf8Start": 3039,
+      "utf8EndExclusive": 3279,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/document-page.css",
+      "excerptSHA256": "5a51a0c710cf469581d7995bf5cd82c3e6ec8cd57e101fbb0d009b6bbb1c68d5"
+    },
+    {
+      "name": "premium-asset.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/16ymg1nau8f0s.js",
+      "artifactSHA256": "10721961a8ee5f96717460345837c6cc1e274ec098621828d637221d4c22fec1",
+      "charStart": 2754,
+      "charEndExclusive": 2841,
+      "utf8Start": 2754,
+      "utf8EndExclusive": 2841,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/premium-asset.source.js",
+      "excerptSHA256": "257131479edd452b0854d7b5691b2d0b15d0b71540e1e8676010918c31852df1"
+    },
+    {
+      "name": "focus-shortcut.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/3zmc88ww60v7f.js",
+      "artifactSHA256": "2b8f45312d75b13a8ce211d47a88531a7f4471e01b6c42221ab7cb2cdca88de1",
+      "charStart": 25915,
+      "charEndExclusive": 25948,
+      "utf8Start": 25931,
+      "utf8EndExclusive": 25966,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/focus-shortcut.source.js",
+      "excerptSHA256": "ff6519937effce7c91dbc0d475af443bd6825c91c796c289f4de16c3414673f9"
+    },
+    {
+      "name": "token-lumin-left-side-bar-width-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 448069,
+      "charEndExclusive": 448101,
+      "utf8Start": 449691,
+      "utf8EndExclusive": 449723,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-lumin-left-side-bar-width-1.css",
+      "excerptSHA256": "ff71b24c9474ab97863c41ec8b368a8d3128967b3935575062b5dd070878ffff"
+    },
+    {
+      "name": "token-lumin-left-side-bar-width-expanded-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 448102,
+      "charEndExclusive": 448144,
+      "utf8Start": 449724,
+      "utf8EndExclusive": 449766,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-lumin-left-side-bar-width-expanded-1.css",
+      "excerptSHA256": "43863bf0ae36296ecde1431a65731664adfb7d4d9c0dd57bf006ca826b959237"
+    },
+    {
+      "name": "token-focus-mode-side-bar-hovering-width-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 449206,
+      "charEndExclusive": 449246,
+      "utf8Start": 450828,
+      "utf8EndExclusive": 450868,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-focus-mode-side-bar-hovering-width-1.css",
+      "excerptSHA256": "26f88f3b4093965d0996602a6c86a690d47751b891dad509c6a2ccb298fdfc75"
+    },
+    {
+      "name": "token-lumin-right-side-bar-width-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 448145,
+      "charEndExclusive": 448194,
+      "utf8Start": 449767,
+      "utf8EndExclusive": 449816,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-lumin-right-side-bar-width-1.css",
+      "excerptSHA256": "f106d4533d74f5a7dd54c150c5f0ceda37639766adbea3364ebdbfcb310e3699"
+    },
+    {
+      "name": "token-kiwi-spacing-6-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 323060,
+      "charEndExclusive": 323081,
+      "utf8Start": 323060,
+      "utf8EndExclusive": 323081,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-spacing-6-1.css",
+      "excerptSHA256": "e4d19dc18fa475b47ac218a04e3160c6466b8963f0d4f9d2cb00e3b2cd803dc7"
+    },
+    {
+      "name": "token-kiwi-spacing-0-25-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 323242,
+      "charEndExclusive": 323265,
+      "utf8Start": 323242,
+      "utf8EndExclusive": 323265,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-spacing-0-25-1.css",
+      "excerptSHA256": "0de8edbf83545a4b1d7d4da5d29f67cbe882bf8ec737b13e38ea51e049917d68"
+    },
+    {
+      "name": "token-kiwi-colors-surface-surface-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 325489,
+      "charEndExclusive": 325526,
+      "utf8Start": 325489,
+      "utf8EndExclusive": 325526,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-surface-1.css",
+      "excerptSHA256": "896116d642029430f1f3e221d460278839bebd62e1408779d88a4fa4d8ae67eb"
+    },
+    {
+      "name": "token-kiwi-colors-surface-surface-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 342804,
+      "charEndExclusive": 342841,
+      "utf8Start": 342804,
+      "utf8EndExclusive": 342841,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-surface-2.css",
+      "excerptSHA256": "bb17f792bd3c67574ab33a112ac6ef7e9949c117ad45de03c81de314656fbf3d"
+    },
+    {
+      "name": "token-kiwi-colors-surface-surface-container-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 325913,
+      "charEndExclusive": 325960,
+      "utf8Start": 325913,
+      "utf8EndExclusive": 325960,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-surface-container-1.css",
+      "excerptSHA256": "9d1c182a6d7526096db376fd3e36297b0bb64ca613199d5e322bbcbe4ce72db8"
+    },
+    {
+      "name": "token-kiwi-colors-surface-surface-container-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 343225,
+      "charEndExclusive": 343272,
+      "utf8Start": 343225,
+      "utf8EndExclusive": 343272,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-surface-container-2.css",
+      "excerptSHA256": "e2e3833dd2a1c24e42b348c5b5a7b394adbb6712a20a0b839121003ad91051ff"
+    },
+    {
+      "name": "token-kiwi-colors-surface-surface-container-low-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 325961,
+      "charEndExclusive": 326012,
+      "utf8Start": 325961,
+      "utf8EndExclusive": 326012,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-surface-container-low-1.css",
+      "excerptSHA256": "ec02e16c3d8438ddf0e7fa2b4b3c0de7c179e4a9623759ea137ef9d9f68600b9"
+    },
+    {
+      "name": "token-kiwi-colors-surface-surface-container-low-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 343273,
+      "charEndExclusive": 343324,
+      "utf8Start": 343273,
+      "utf8EndExclusive": 343324,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-surface-container-low-2.css",
+      "excerptSHA256": "800196f7ba59f9fc64873e545d864d8b378bc861dffdffcb8b6f975eb2d9eb92"
+    },
+    {
+      "name": "token-kiwi-colors-surface-surface-container-lowest-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 326013,
+      "charEndExclusive": 326067,
+      "utf8Start": 326013,
+      "utf8EndExclusive": 326067,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-surface-container-lowest-1.css",
+      "excerptSHA256": "c4f8ca7d3dc2e1a8ae13dda92d14569bddc38eb79bd4e4fadd7ebfd9415495e8"
+    },
+    {
+      "name": "token-kiwi-colors-surface-surface-container-lowest-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 343325,
+      "charEndExclusive": 343376,
+      "utf8Start": 343325,
+      "utf8EndExclusive": 343376,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-surface-container-lowest-2.css",
+      "excerptSHA256": "74dae557ec8b66b14a6364e0d72d7e394c534f659bd1177b2f189ea2b3409c03"
+    },
+    {
+      "name": "token-kiwi-colors-surface-surface-container-high-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 325860,
+      "charEndExclusive": 325912,
+      "utf8Start": 325860,
+      "utf8EndExclusive": 325912,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-surface-container-high-1.css",
+      "excerptSHA256": "7da3b5967e6ec1aa76e9837688466febb2a7bd1530acb47181f97055b5185e29"
+    },
+    {
+      "name": "token-kiwi-colors-surface-surface-container-high-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 343172,
+      "charEndExclusive": 343224,
+      "utf8Start": 343172,
+      "utf8EndExclusive": 343224,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-surface-container-high-2.css",
+      "excerptSHA256": "f225a4500cd99461507d07e1fdbdbfce052d8c20b6db942b60c4997185502c2f"
+    },
+    {
+      "name": "token-kiwi-colors-surface-on-surface-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 325527,
+      "charEndExclusive": 325567,
+      "utf8Start": 325527,
+      "utf8EndExclusive": 325567,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-on-surface-1.css",
+      "excerptSHA256": "67dfbb733e43c2b466fd8dfdf45b7c6275f62040f42096ea866396ef7243e28b"
+    },
+    {
+      "name": "token-kiwi-colors-surface-on-surface-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 342842,
+      "charEndExclusive": 342882,
+      "utf8Start": 342842,
+      "utf8EndExclusive": 342882,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-on-surface-2.css",
+      "excerptSHA256": "ba8ef534f2f5761e626fc2630af8033f038bde1419dc15965add62cd1770e383"
+    },
+    {
+      "name": "token-kiwi-colors-surface-on-surface-variant-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 325614,
+      "charEndExclusive": 325662,
+      "utf8Start": 325614,
+      "utf8EndExclusive": 325662,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-on-surface-variant-1.css",
+      "excerptSHA256": "98e7abf49431a90574f2bf72ff0464efdd75a6edf6aab708f9e705616fe2c4c6"
+    },
+    {
+      "name": "token-kiwi-colors-surface-on-surface-variant-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 342929,
+      "charEndExclusive": 342977,
+      "utf8Start": 342929,
+      "utf8EndExclusive": 342977,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-surface-on-surface-variant-2.css",
+      "excerptSHA256": "0dac81f233905429c398c6dd4d86315cfa04304af34584b72bd796b792a47486"
+    },
+    {
+      "name": "token-kiwi-colors-core-primary-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 323952,
+      "charEndExclusive": 323986,
+      "utf8Start": 323952,
+      "utf8EndExclusive": 323986,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-core-primary-1.css",
+      "excerptSHA256": "95989b88f9dca62abb158637c63fefb42ce531fb0bb959e99ed6d6fd399ffb9a"
+    },
+    {
+      "name": "token-kiwi-colors-core-primary-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 341276,
+      "charEndExclusive": 341310,
+      "utf8Start": 341276,
+      "utf8EndExclusive": 341310,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-core-primary-2.css",
+      "excerptSHA256": "30772efc996ad38bd8f1a140d023beff3d6f279a66cf7fcb6723da2a9dfbcc72"
+    },
+    {
+      "name": "token-kiwi-colors-core-primary-container-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 323515,
+      "charEndExclusive": 323559,
+      "utf8Start": 323515,
+      "utf8EndExclusive": 323559,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-core-primary-container-1.css",
+      "excerptSHA256": "b2e2c3043683b6626d056c3d36a5255946a7f1328556785320a82ee347176eae"
+    },
+    {
+      "name": "token-kiwi-colors-core-primary-container-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 340845,
+      "charEndExclusive": 340889,
+      "utf8Start": 340845,
+      "utf8EndExclusive": 340889,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-core-primary-container-2.css",
+      "excerptSHA256": "0c194a79fffce4f4ad47df8503f88088dff05eb451377b119fff5d6f58abcde4"
+    },
+    {
+      "name": "token-kiwi-colors-core-on-primary-container-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 323560,
+      "charEndExclusive": 323607,
+      "utf8Start": 323560,
+      "utf8EndExclusive": 323607,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-core-on-primary-container-1.css",
+      "excerptSHA256": "3ecb0702d740f0e91b6437bd0ef13c57db082deb4b850545537bd12222dbdfa8"
+    },
+    {
+      "name": "token-kiwi-colors-core-on-primary-container-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 340890,
+      "charEndExclusive": 340937,
+      "utf8Start": 340890,
+      "utf8EndExclusive": 340937,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-kiwi-colors-core-on-primary-container-2.css",
+      "excerptSHA256": "ee1cc1f8e6f98cf3225b319699e9a83937823a2a83ac8c405617a043ac8569cc"
+    },
+    {
+      "name": "token-editor-transition-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 449024,
+      "charEndExclusive": 449078,
+      "utf8Start": 450646,
+      "utf8EndExclusive": 450700,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-editor-transition-1.css",
+      "excerptSHA256": "0664841c8e44073fd9a53a7c9068bad394217d96a78464bdb425687bd96920fa"
+    },
+    {
+      "name": "token-focus-mode-transition-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 449247,
+      "charEndExclusive": 449295,
+      "utf8Start": 450869,
+      "utf8EndExclusive": 450917,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/token-focus-mode-transition-1.css",
+      "excerptSHA256": "5f2923fb3a7b52cc945d2b37fbf72b1d9993958bc301dc1890699b46bf754556"
+    },
+    {
+      "name": "engine-default-margin.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/webviewer-core.min.js",
+      "artifactSHA256": "6c06e417b22bc341b2fc6ffa97ff4adcdf0926aec3d20f6de234ad6078c611b0",
+      "charStart": 190333,
+      "charEndExclusive": 190347,
+      "utf8Start": 190333,
+      "utf8EndExclusive": 190347,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/engine-default-margin.source.js",
+      "excerptSHA256": "6b35307ac77de3f237e07fa873fc8ccf3a065bbf6e5e7e7a4c60e0bc340e40f9"
+    },
+    {
+      "name": "engine-effective-margin.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/webviewer-core.min.js",
+      "artifactSHA256": "6c06e417b22bc341b2fc6ffa97ff4adcdf0926aec3d20f6de234ad6078c611b0",
+      "charStart": 211756,
+      "charEndExclusive": 211985,
+      "utf8Start": 211756,
+      "utf8EndExclusive": 211985,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/engine-effective-margin.source.js",
+      "excerptSHA256": "a78a5d4703af1473e996284ab6b02fb6058a7434b7471e48a047d288d1d867ed"
+    },
+    {
+      "name": "engine-layout-margin.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/webviewer-core.min.js",
+      "artifactSHA256": "6c06e417b22bc341b2fc6ffa97ff4adcdf0926aec3d20f6de234ad6078c611b0",
+      "charStart": 675164,
+      "charEndExclusive": 675357,
+      "utf8Start": 675164,
+      "utf8EndExclusive": 675357,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/engine-layout-margin.source.js",
+      "excerptSHA256": "c990957250ac2de7ce4eb470a503a8472ab0c7c2a716e85b4da263b8d16fd7f9"
+    },
+    {
+      "name": "engine-page-section-margin.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/webviewer-core.min.js",
+      "artifactSHA256": "6c06e417b22bc341b2fc6ffa97ff4adcdf0926aec3d20f6de234ad6078c611b0",
+      "charStart": 1226432,
+      "charEndExclusive": 1226970,
+      "utf8Start": 1226432,
+      "utf8EndExclusive": 1226970,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/engine-page-section-margin.source.js",
+      "excerptSHA256": "e45b7c791db39e5ab3540a9d91974309418636a48d20d1f41927a2236eef24dc"
+    },
+    {
+      "name": "engine-zoom-layout-refresh.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/webviewer-core.min.js",
+      "artifactSHA256": "6c06e417b22bc341b2fc6ffa97ff4adcdf0926aec3d20f6de234ad6078c611b0",
+      "charStart": 1674585,
+      "charEndExclusive": 1675270,
+      "utf8Start": 1674585,
+      "utf8EndExclusive": 1675270,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/engine-zoom-layout-refresh.source.js",
+      "excerptSHA256": "41622ba8e47359d67b8d667fbaa2f4cbb4079ab11e942e13c83479e2c3f74176"
+    },
+    {
+      "name": "engine-get-zoom-alias.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/webviewer-core.min.js",
+      "artifactSHA256": "6c06e417b22bc341b2fc6ffa97ff4adcdf0926aec3d20f6de234ad6078c611b0",
+      "charStart": 2492746,
+      "charEndExclusive": 2492810,
+      "utf8Start": 2492746,
+      "utf8EndExclusive": 2492810,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/engine-get-zoom-alias.source.js",
+      "excerptSHA256": "1f484e1539caa959d3ed700bfe28345c63f4d4b67eb379e382d4db052573b5ca"
+    },
+    {
+      "name": "engine-set-margin-alias.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/webviewer-core.min.js",
+      "artifactSHA256": "6c06e417b22bc341b2fc6ffa97ff4adcdf0926aec3d20f6de234ad6078c611b0",
+      "charStart": 2500051,
+      "charEndExclusive": 2500113,
+      "utf8Start": 2500051,
+      "utf8EndExclusive": 2500113,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/engine-set-margin-alias.source.js",
+      "excerptSHA256": "7e8aee82ddc7d6a95ddfa0909b70645721fb100b342d3b7a2fc8d35d808c9124"
+    },
+    {
+      "name": "engine-page-scaling.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/webviewer-core.min.js",
+      "artifactSHA256": "6c06e417b22bc341b2fc6ffa97ff4adcdf0926aec3d20f6de234ad6078c611b0",
+      "charStart": 1904673,
+      "charEndExclusive": 1904885,
+      "utf8Start": 1904673,
+      "utf8EndExclusive": 1904885,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/engine-page-scaling.source.js",
+      "excerptSHA256": "f773720f0b8e20f924981bd4d6262bdaf41a7e5237c896eeecb3d2c6e362a2b4"
+    },
+    {
+      "name": "engine-column-width.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/webviewer-core.min.js",
+      "artifactSHA256": "6c06e417b22bc341b2fc6ffa97ff4adcdf0926aec3d20f6de234ad6078c611b0",
+      "charStart": 2253270,
+      "charEndExclusive": 2253659,
+      "utf8Start": 2253270,
+      "utf8EndExclusive": 2253659,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/engine-column-width.source.js",
+      "excerptSHA256": "cb65dd12fd1c93987c9e52b54c877ae2f75d22aeb67d31def756e1016db52dae"
+    },
+    {
+      "name": "engine-flow-width.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/webviewer-core.min.js",
+      "artifactSHA256": "6c06e417b22bc341b2fc6ffa97ff4adcdf0926aec3d20f6de234ad6078c611b0",
+      "charStart": 2252173,
+      "charEndExclusive": 2252564,
+      "utf8Start": 2252173,
+      "utf8EndExclusive": 2252564,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/engine-flow-width.source.js",
+      "excerptSHA256": "a2ea4afaea804219c319903db730040f43e52b50869daeb97540f4e9c3bc0bb0"
+    },
+    {
+      "name": "engine-document-width.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/webviewer-core.min.js",
+      "artifactSHA256": "6c06e417b22bc341b2fc6ffa97ff4adcdf0926aec3d20f6de234ad6078c611b0",
+      "charStart": 1657423,
+      "charEndExclusive": 1657548,
+      "utf8Start": 1657423,
+      "utf8EndExclusive": 1657548,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/engine-document-width.source.js",
+      "excerptSHA256": "127f526f79c9247f28b20eddba195707af814d41f4fdfd535efc803661760f67"
+    },
+    {
+      "name": "engine-container-rounding.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/webviewer-core.min.js",
+      "artifactSHA256": "6c06e417b22bc341b2fc6ffa97ff4adcdf0926aec3d20f6de234ad6078c611b0",
+      "charStart": 1655767,
+      "charEndExclusive": 1656603,
+      "utf8Start": 1655767,
+      "utf8EndExclusive": 1656603,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-rail/engine-container-rounding.source.js",
+      "excerptSHA256": "8084d3afcef7db51d4e05980be799f63f820c581df7981ddb08d798b0d386625"
+    }
+  ],
+  "tokenDeclarations": {
+    "--lumin-left-side-bar-width": [
+      {
+        "value": "80px",
+        "charStart": 448069,
+        "charEndExclusive": 448101
+      }
+    ],
+    "--lumin-left-side-bar-width-expanded": [
+      {
+        "value": "276px",
+        "charStart": 448102,
+        "charEndExclusive": 448144
+      }
+    ],
+    "--focus-mode-side-bar-hovering-width": [
+      {
+        "value": "8px",
+        "charStart": 449206,
+        "charEndExclusive": 449246
+      }
+    ],
+    "--lumin-right-side-bar-width": [
+      {
+        "value": "calc(40px + 8px * 2)",
+        "charStart": 448145,
+        "charEndExclusive": 448194
+      }
+    ],
+    "--kiwi-spacing-6": [
+      {
+        "value": "48px",
+        "charStart": 323060,
+        "charEndExclusive": 323081
+      }
+    ],
+    "--kiwi-spacing-0-25": [
+      {
+        "value": "2px",
+        "charStart": 323242,
+        "charEndExclusive": 323265
+      }
+    ],
+    "--kiwi-colors-surface-surface": [
+      {
+        "value": "#111415",
+        "charStart": 325489,
+        "charEndExclusive": 325526
+      },
+      {
+        "value": "#f8f9fb",
+        "charStart": 342804,
+        "charEndExclusive": 342841
+      }
+    ],
+    "--kiwi-colors-surface-surface-container": [
+      {
+        "value": "#1d2021",
+        "charStart": 325913,
+        "charEndExclusive": 325960
+      },
+      {
+        "value": "#edeef0",
+        "charStart": 343225,
+        "charEndExclusive": 343272
+      }
+    ],
+    "--kiwi-colors-surface-surface-container-low": [
+      {
+        "value": "#191c1d",
+        "charStart": 325961,
+        "charEndExclusive": 326012
+      },
+      {
+        "value": "#f3f4f6",
+        "charStart": 343273,
+        "charEndExclusive": 343324
+      }
+    ],
+    "--kiwi-colors-surface-surface-container-lowest": [
+      {
+        "value": "#111415",
+        "charStart": 326013,
+        "charEndExclusive": 326067
+      },
+      {
+        "value": "#fff",
+        "charStart": 343325,
+        "charEndExclusive": 343376
+      }
+    ],
+    "--kiwi-colors-surface-surface-container-high": [
+      {
+        "value": "#282b2c",
+        "charStart": 325860,
+        "charEndExclusive": 325912
+      },
+      {
+        "value": "#e7e8ea",
+        "charStart": 343172,
+        "charEndExclusive": 343224
+      }
+    ],
+    "--kiwi-colors-surface-on-surface": [
+      {
+        "value": "#e1e2e4",
+        "charStart": 325527,
+        "charEndExclusive": 325567
+      },
+      {
+        "value": "#191c1d",
+        "charStart": 342842,
+        "charEndExclusive": 342882
+      }
+    ],
+    "--kiwi-colors-surface-on-surface-variant": [
+      {
+        "value": "#c2c7ca",
+        "charStart": 325614,
+        "charEndExclusive": 325662
+      },
+      {
+        "value": "#42474a",
+        "charStart": 342929,
+        "charEndExclusive": 342977
+      }
+    ],
+    "--kiwi-colors-core-primary": [
+      {
+        "value": "#8edef4",
+        "charStart": 323952,
+        "charEndExclusive": 323986
+      },
+      {
+        "value": "#035970",
+        "charStart": 341276,
+        "charEndExclusive": 341310
+      }
+    ],
+    "--kiwi-colors-core-primary-container": [
+      {
+        "value": "#087191",
+        "charStart": 323515,
+        "charEndExclusive": 323559
+      },
+      {
+        "value": "#c4f0fd",
+        "charStart": 340845,
+        "charEndExclusive": 340889
+      }
+    ],
+    "--kiwi-colors-core-on-primary-container": [
+      {
+        "value": "#c4f0fd",
+        "charStart": 323560,
+        "charEndExclusive": 323607
+      },
+      {
+        "value": "#012832",
+        "charStart": 340890,
+        "charEndExclusive": 340937
+      }
+    ],
+    "--editor-transition": [
+      {
+        "value": ".25s cubic-bezier(.4, 0, .2, 1) 0s",
+        "charStart": 449024,
+        "charEndExclusive": 449078
+      }
+    ],
+    "--focus-mode-transition": [
+      {
+        "value": "var(--editor-transition)",
+        "charStart": 449247,
+        "charEndExclusive": 449295
+      }
+    ]
+  },
+  "rail": {
+    "id": "leftSideBar",
+    "width": 80,
+    "expandedNavigationWidth": 276,
+    "baseBackground": "transparent; editor-page low surface underneath",
+    "outerHeight": "viewport minus 56px title bar and optional warning",
+    "content": {
+      "padding": 4,
+      "rowGap": 16,
+      "width": 80,
+      "display": "flex-column",
+      "expandedPadding": [
+        4,
+        16
+      ]
+    },
+    "order": [
+      "Popular",
+      "Fill & Sign",
+      "Mark up",
+      "Edit text",
+      "Security",
+      "Organize",
+      "Explore"
+    ],
+    "button": {
+      "width": "100% (72px with collapsed padding)",
+      "layout": "column, centered, 2px gap",
+      "heightFromContents": 58,
+      "iconWrapper": [
+        40,
+        40
+      ],
+      "iconPadding": 8,
+      "iconRadius": 8,
+      "svgHeight": 24,
+      "svgWidth": "24 or 25 by original variant",
+      "font": {
+        "family": "Inter",
+        "size": 12,
+        "weight": 500,
+        "lineHeight": 16
+      },
+      "disabledOpacity": 0.5,
+      "premium": {
+        "asset": "/pdf-assets/lumin-svgs/badge_premium.svg",
+        "width": 16,
+        "position": {
+          "left": 12,
+          "top": 0
+        }
+      }
+    },
+    "roles": {
+      "activeLabel": "core-primary",
+      "activeIcon": "core-on-primary-container",
+      "activeIconBackground": "core-primary-container",
+      "inactiveLabelAndIcon": "surface-on-surface-variant",
+      "inactiveHoverIconBackground": "surface-surface-container-high",
+      "activeHoverIconBackground": "core-primary-container"
+    },
+    "iconVariants": "mode-rail-icon-sources.json; distinct active geometry for six tabs; light/dark geometry differs for five normal icons and Mark up active",
+    "hoverMenu": {
+      "openDelayMs": 400,
+      "closeDeferredClearMs": 200,
+      "width": 280,
+      "position": "left-start",
+      "mainAxisOffset": 5,
+      "crossAxisOffset": -24,
+      "transition": "fade-right 200ms",
+      "editText": "hover menu disabled"
+    },
+    "explore": {
+      "width": 336,
+      "position": "left",
+      "offset": 5,
+      "transition": "fade-right 200ms",
+      "hoverOpenDelayMs": 400
+    }
+  },
+  "focusMode": {
+    "bottomControl": {
+      "icon": "pdf-icon-lg_collapse_right_panel",
+      "iconSize": 24,
+      "buttonSize": 40,
+      "bottomContainerPadding": 16,
+      "action": "toggle isInFocusMode, not navigation expansion",
+      "shortcutMac": "Command+backslash",
+      "shortcutOther": "Ctrl+backslash",
+      "disabledWhen": "document loading"
+    },
+    "hiddenRail": {
+      "width": 0,
+      "opacity": 0,
+      "visibility": "hidden"
+    },
+    "restoreIndicator": {
+      "selector": ".sc-e8665097-1[data-is-focus-mode=true] button",
+      "left": 0,
+      "bottom": 12,
+      "wrapperPadding": 4,
+      "wrapperRadius": [
+        0,
+        8,
+        8,
+        0
+      ],
+      "buttonWidth": 28,
+      "buttonHeight": 40,
+      "icon": "pdf-icon-lg_expand_right_panel",
+      "directOnClick": false,
+      "behavior": "Hover reveals the control. Actual restore handler is inside the focus hover rail."
+    },
+    "hoverRail": {
+      "selector": ".sc-e8665097-0",
+      "width": "80px hovered; hover-strip token otherwise",
+      "leftPadding": [
+        20,
+        16,
+        16
+      ],
+      "background": "surface-surface-container-lowest",
+      "shadow": "kiwi-shadow-2",
+      "topRightRadius": 16,
+      "actualRestoreIcon": "pdf-icon-lg_expand_right_panel",
+      "actualRestoreAction": "onExpand from the same focus toggle"
+    }
+  },
+  "canvas": {
+    "outerContainer": {
+      "padding": [
+        0,
+        2
+      ],
+      "v2Padding": [
+        0,
+        4
+      ],
+      "boxSizing": "border-box",
+      "height": "100%"
+    },
+    "wrapper": {
+      "background": "surface-surface-container",
+      "flexGrow": 1,
+      "width": "100%",
+      "height": "100%"
+    },
+    "documentContainer": {
+      "background": "surface-surface",
+      "dotColor": "surface-on-surface at 16% opacity",
+      "dotRadius": 1,
+      "tile": [
+        26,
+        26
+      ],
+      "backgroundPosition": "not declared; CSS default 0% 0%",
+      "backgroundAttachment": "not declared; CSS default scroll",
+      "borderRadius": {
+        "legacyNoBanner": [
+          "top-left8",
+          "top-right8"
+        ],
+        "luminEngineNoBanner": 8,
+        "bannerOrPhone": 0
+      },
+      "display": "flex-column",
+      "overflow": "auto",
+      "userSelect": "none",
+      "legacyPadding": [
+        48,
+        0
+      ],
+      "luminEnginePadding": 0,
+      "luminEngineTextLayerUserSelect": "text"
+    },
+    "page": {
+      "documentMargin": "0 auto",
+      "pageSectionBoxShadow": "none",
+      "pageContainerBackground": "legacy kiwi_colors_surface_surface",
+      "pageAfterBorder": "1px solid le_main_outline_variant",
+      "pageBorderLight": "#BCCFDC",
+      "pageBorderDark": "#325167",
+      "pageAfterZIndex": 31
+    },
+    "scrollbar": {
+      "cssScrollbarWidth": "thin",
+      "cssScrollbarColor": "var(--scrollbar-thumb-color) transparent",
+      "webkitWidth": 10,
+      "track": "transparent",
+      "thumbRadius": 16,
+      "thumbBorder": "2px solid transparent",
+      "thumbBackgroundClip": "padding-box",
+      "note": "Modern CSS scrollbar-width may take precedence; live width required"
+    },
+    "legacyEnginePageLayout": {
+      "defaultMargin": 4,
+      "effectiveMargin": "round(max(1,4*zoom))",
+      "flowWidth": "ceil(maxScaledColumnWidth + 2*effectiveMargin)",
+      "pageContainerWidth": "floor(pageWidth*zoom)",
+      "pageContainerHeight": "floor(pageHeight*zoom)",
+      "paddingTopBottom": 48,
+      "proof": "settledPage in mode-rail-canvas-layout-fixture.json; default504\u00d7661 page at267% gives margin11, flow1368, border1345\u00d71764 at canvas-relative13/59"
+    }
+  },
+  "unknowns": [
+    "Actual active renderer branch, page gaps, page pixel sizes, scroll origins and computed scrollbar width require live DOM. Static legacy 48px padding does not establish the active runtime branch.",
+    "Expanded 276px navigation renders an upload area and dynamic document-history component. That branch is not fully reconstructed in this static pass.",
+    "Focus-mode header/right controls behavior and responsive variants require current live comparison.",
+    "Exact PUA glyph rendering, SVG paint/baselines, clipping and CSS gradient sampling are not proved by static metadata."
+  ]
+}

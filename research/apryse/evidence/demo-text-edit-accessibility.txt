@@ -1,0 +1,102 @@
+- document:
+  - button "Cookie Preferences":
+    - img "Cookie Preferences"
+  - link:
+    - /url: /
+    - img
+  - button "Choose File"
+  - textbox "Search Capabilities"
+  - paragraph: PDF Text Editing
+  - button "Close demo details"
+  - tablist:
+    - tab "Demo" [selected]:
+      - heading "Demo" [level=1]
+    - tab "Documentation":
+      - heading "Documentation" [level=1]
+  - tabpanel "Demo":
+    - paragraph: "This demo is using:"
+    - paragraph: Web SDK
+    - 'link "Package: PDF Editing"':
+      - /url: https://apryse.com/capabilities#PDFEditing
+    - paragraph: JS PDF Text Editing Demo
+    - paragraph: WebViewer allows editing underlying PDF text and images. Simply select the paragraph text you wish to edit, resize, or move anywhere on the page.
+    - button "Choose File"
+    - heading "To edit the PDF text, either:" [level=2]
+    - list:
+      - listitem: Double click on the outlined element, OR
+      - listitem: After selecting an element, click the Edit icon in the menu
+    - button "Reset Walkthrough"
+    - button "Download as PDF"
+    - text: Documentation
+    - img
+  - link "Contact Sales":
+    - /url: https://apryse.com/form/contact-sales/
+    - button "Contact Sales"
+  - link "Free Trial":
+    - /url: https://dev.apryse.com
+    - button "Free Trial"
+  - navigation "Top Header":
+    - toolbar "default-top-header":
+      - button "Menu"
+      - button "Left Panel"
+      - button "View Controls"
+      - textbox "Set zoom": "65"
+      - text: "%"
+      - button "Zoom Options"
+      - button "Zoom out"
+      - button "Zoom in"
+      - button "Pan"
+      - button "Select"
+      - button "View"
+      - button "Annotate"
+      - button "Shapes"
+      - button "Insert"
+      - button "Measure"
+      - button "More"
+      - button "Search"
+      - button "Comments"
+    - toolbar "tools-header":
+      - button "Add Paragraph" [pressed]
+      - button "New Image"
+      - button "Edit Content" [pressed]
+  - heading "Text Styles" [level=2]
+  - combobox "Font Family" [disabled]: Font
+  - combobox "Font Size" [disabled]: "12"
+  - button "Bold" [disabled]
+  - button "Italic" [disabled]
+  - button "Underline" [disabled]
+  - button "Strikeout" [disabled]
+  - button "Text align left" [disabled]
+  - button "Text align center" [disabled]
+  - button "Text align right" [disabled]
+  - button "URL link" [disabled]
+  - heading "Current Color" [level=2]
+  - 'button "Color #000000"'
+  - button "Add to custom colors"
+  - heading "Custom Colors" [level=2]
+  - group:
+    - button "Add new color"
+  - heading "Order" [level=2]
+  - button "Send to back"
+  - button "Send backward"
+  - button "Bring forward"
+  - button "Bring to front"
+  - button "Undo" [disabled]
+  - button "Redo" [disabled]
+  - navigation "Bottom Header":
+    - button "Previous page" [disabled]
+    - textbox "Page number input": "1"
+    - text: "2"
+    - button "Next page"
+    - status: Current page is 1
+  - tabpanel:
+    - main "Document Content":
+      - region "Page 1":
+        - img
+      - region "Page 2"
+  - list
+  - list
+  - list
+  - list
+  - list
+  - list

@@ -1,0 +1,382 @@
+{
+  "source_url": "https://www.luminpdf.com/app/pdf/viewer/building-event-driven-microservices-636b09b620c811cc94d171a5",
+  "observed_at": "2026-11-04",
+  "appearance": "dark",
+  "method": "Live DOM, native browser Save Page As, downloaded CSS/JS lexical extraction",
+  "shared": {
+    "viewer": [
+      "Thumbnails + dropdown",
+      "Zoom",
+      "View controls",
+      "Rotate view",
+      "Select",
+      "Pan"
+    ],
+    "editing_only": [
+      "Read aloud",
+      "Undo",
+      "Redo"
+    ],
+    "footer": [
+      "Zoom out",
+      "Zoom percentage",
+      "Zoom in",
+      "First page",
+      "Previous page",
+      "Page number / total",
+      "Next page",
+      "Last page"
+    ],
+    "utility_rail": [
+      "Search",
+      "Comments",
+      "Download",
+      "Print",
+      "Copy link"
+    ]
+  },
+  "modes": [
+    {
+      "name": "Popular",
+      "status": "observed",
+      "tools": [
+        "Eraser",
+        "Shape",
+        "Highlight",
+        "Draw",
+        "Type",
+        "Signature",
+        "Add comment",
+        "Sign securely"
+      ]
+    },
+    {
+      "name": "Fill & Sign",
+      "status": "observed",
+      "tools": [
+        "Prepare form",
+        "Cross",
+        "Tick",
+        "Dot",
+        "Stamp",
+        "Date",
+        "Type",
+        "Signature",
+        "Sign securely"
+      ]
+    },
+    {
+      "name": "Mark up",
+      "status": "observed",
+      "tools": [
+        "Perform OCR",
+        "Image",
+        "Eraser",
+        "Shape",
+        "Text tools",
+        "Highlight",
+        "Draw",
+        "Type",
+        "Measure",
+        "Add comment"
+      ]
+    },
+    {
+      "name": "Edit text",
+      "status": "upgrade-gated",
+      "tools": [
+        "Edit content"
+      ],
+      "note": "Sidebar opens upgrade modal. Edit content is listed in Explore; editing controls behind the gate were not observed."
+    },
+    {
+      "name": "Security",
+      "status": "observed",
+      "tools": [
+        "Redaction",
+        "Password protection"
+      ]
+    },
+    {
+      "name": "Organize",
+      "status": "observed",
+      "tools": [
+        "Select all / page range",
+        "Smaller thumbnails",
+        "Thumbnail size",
+        "Larger thumbnails",
+        "Bates numbering",
+        "Crop",
+        "Insert",
+        "Split & Extract",
+        "Merge"
+      ],
+      "page_actions": [
+        "Rotate left",
+        "Rotate right",
+        "Delete",
+        "More actions"
+      ]
+    },
+    {
+      "name": "Explore",
+      "status": "observed",
+      "kind": "searchable command menu",
+      "groups": {
+        "Convert to editable blocks": [
+          "AgreementGen"
+        ],
+        "Lumin AI": [
+          "Summarize document",
+          "Ask about document",
+          "Redact sensitive information"
+        ],
+        "Lumin mini-app": [
+          "Invoice extraction",
+          "Translate PDF",
+          "Resume checker"
+        ],
+        "Mark up": [
+          "Add comment",
+          "Measure",
+          "Type",
+          "Freehand highlight",
+          "Highlight",
+          "Text tools",
+          "Shape",
+          "Eraser",
+          "Image",
+          "Draw",
+          "Perform OCR"
+        ],
+        "Security": [
+          "Redaction",
+          "Set password",
+          "Remove password"
+        ],
+        "Fill & Sign": [
+          "Signature",
+          "Date",
+          "Stamp",
+          "Dot",
+          "Tick",
+          "Cross",
+          "Prepare form",
+          "AI auto-detect"
+        ],
+        "Edit text": [
+          "Edit content"
+        ],
+        "Organize": [
+          "Merge documents",
+          "Split & Extract",
+          "Rotate pages",
+          "Delete pages",
+          "Move pages",
+          "Insert blank pages",
+          "Crop pages",
+          "Bates numbering"
+        ],
+        "Other": [
+          "Add to starred",
+          "Make a copy",
+          "Move document",
+          "Download",
+          "Light Mode",
+          "Full screen",
+          "Dark page",
+          "Presenter mode",
+          "File information",
+          "Version history"
+        ],
+        "Compress & Convert": [
+          "Compress",
+          "Convert to Word (.docx)",
+          "Convert to Excel (.xlsx)",
+          "Convert to PowerPoint (.pptx)",
+          "Convert to JPG",
+          "Convert to PNG",
+          "Flatten PDF",
+          "Convert to ..."
+        ]
+      }
+    }
+  ],
+  "panels": {
+    "Eraser": {
+      "controls": [
+        "Size slider"
+      ],
+      "observed_value": 20
+    },
+    "Shape": {
+      "variants": [
+        "Rectangle",
+        "Ellipse",
+        "Line",
+        "Arrow",
+        "Polyline",
+        "Polygon",
+        "Cloud",
+        "Star",
+        "Cross",
+        "Tick"
+      ],
+      "controls": [
+        "Fill / Border line tabs",
+        "Color",
+        "Opacity",
+        "Border thickness"
+      ]
+    },
+    "Text tools": {
+      "variants": [
+        "Underline",
+        "Strikethrough",
+        "Squiggly"
+      ],
+      "controls": [
+        "Color",
+        "Opacity"
+      ]
+    },
+    "Highlight": {
+      "variants": [
+        "Text highlight",
+        "Freehand highlight"
+      ],
+      "controls": [
+        "Per-variant options button"
+      ],
+      "note": "Freehand highlight described as suitable for scanned PDFs."
+    },
+    "Draw": {
+      "controls": [
+        "Stroke width slider and pt input",
+        "Color",
+        "Opacity slider and percentage input"
+      ]
+    },
+    "Type": {
+      "controls": [
+        "Font family",
+        "Font size",
+        "Formatting buttons",
+        "Color",
+        "Opacity",
+        "Close"
+      ],
+      "observed_defaults": {
+        "font": "Inter",
+        "size": "12pt"
+      }
+    },
+    "Measure": {
+      "variants": [
+        "Distance",
+        "Angle",
+        "Perimeter",
+        "Polygon area",
+        "Rectangle area",
+        "Circle area"
+      ],
+      "controls": [
+        "Snapping",
+        "Scale",
+        "Add new scale",
+        "Measure tool properties",
+        "Border color",
+        "Border width",
+        "Opacity"
+      ],
+      "note": "Variant names cross-referenced with rendered icon classes and downloaded tool identifiers; no measurements placed."
+    },
+    "Add comment": {
+      "controls": [
+        "Color swatches",
+        "Opacity input"
+      ]
+    },
+    "Prepare form": {
+      "menu": [
+        "Prepare form",
+        "AI auto-detect"
+      ],
+      "fields": [
+        "Text",
+        "Checkbox",
+        "Radio",
+        "Signature"
+      ],
+      "controls": [
+        "Properties",
+        "Cancel",
+        "Apply"
+      ],
+      "note": "Entered builder then cancelled without adding fields."
+    },
+    "Signature": {
+      "controls": [
+        "Sign securely",
+        "Create a certified version",
+        "Add Signature",
+        "Saved signatures",
+        "Place signature multiple times"
+      ],
+      "note": "No signature image or content exported."
+    },
+    "Password protection": {
+      "menu": [
+        "Set password (premium)",
+        "Remove password (disabled)"
+      ]
+    },
+    "Bates numbering": {
+      "menu": [
+        "Add page numbers",
+        "Remove page numbers (disabled)"
+      ]
+    },
+    "Page more actions": {
+      "menu": [
+        "Insert blank page after",
+        "Duplicate page",
+        "Crop...",
+        "Extract...",
+        "Split here"
+      ]
+    },
+    "View controls": {
+      "sections": [
+        "Page transition",
+        "Layout"
+      ],
+      "counts": [
+        2,
+        3
+      ]
+    }
+  },
+  "shortcuts_observed": {
+    "Add comment": "N",
+    "Type": "T",
+    "Highlight": "H",
+    "Text tools": "U",
+    "Shape": "R",
+    "Eraser": "E",
+    "Image": "I",
+    "Draw": "F",
+    "Signature": "S",
+    "Select": "Escape",
+    "Presenter mode": "Command+Enter",
+    "Quick Search": "Option+/"
+  },
+  "limitations": [
+    "Premium Edit Text toolbar inaccessible on this account.",
+    "Menu inventory is not end-to-end verification of document transformations, cloud workflows, or every nested dialog.",
+    "Original rendered HTML capture covers Mark up; other modes were inspected live and recorded here.",
+    "Fonts were referenced in CSS, but direct downloads returned HTTP 403 and the browser asset inventory exposed no font files.",
+    "Downloaded source definitions may include features hidden by account, feature flags or document state.",
+    "No document content changed. Viewer restored to Mark up / Select / page 3 / 149%."
+  ]
+}

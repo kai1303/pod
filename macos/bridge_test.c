@@ -37,6 +37,16 @@ int main(int argc,char **argv) {
     assert(pod_annotation_count(reloaded,0,&count) && count==18);
     assert(pod_annotation_remove(reloaded,0,id)); assert(pod_annotation_count(reloaded,0,&count) && count==17);
     assert(!pod_annotation(reloaded,0,100,&mark));
+    size_t order[]={1,0}; PodBuffer selected={0};
+    assert(pod_select_pages(doc,order,2,&selected));
+    PodDocument *sorted=pod_open(selected.data,selected.length); assert(sorted);
+    assert(pod_page_count(doc)==2 && pod_page_count(sorted)==2);
+    assert(pod_run(sorted,0,0,&run) && run.length==18 && memcmp(run.text,"Notes for tomorrow",18)==0);
+    pod_close(sorted); pod_buffer_free(selected.data,selected.length);
+    assert(!pod_select_pages(doc,NULL,0,&selected) && selected.data==NULL && selected.length==0);
+    assert(!pod_crop_page(doc,0,-1,0,200,200,&selected) && selected.data==NULL);
+    assert(!pod_rotate_page(doc,0,45,&selected) && selected.data==NULL);
+    assert(pod_page(doc,0,&page) && page.rotation==0 && page.width==612);
     pod_close(reloaded); pod_buffer_free(annotated.data,annotated.length);
     pod_close(again); pod_buffer_free(out.data,out.length); pod_close(doc); free(bytes); free(font);
     puts("C bridge: open, render, bounds, rejection, replace, save/reopen, all18 annotation kinds, update/delete and cache invalidation passed");

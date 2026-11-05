@@ -1,0 +1,26 @@
+[
+  {
+    "name": "template",
+    "source": "original inline SVG in header file-menu live DOM",
+    "svgSHA256": "8a926087ff9dd4c6ab68d9a3deea7d0ad4e81a09ed4f1665e1cd46cf37031782",
+    "pngSHA256": "eb950c624b5be1cab2835b22e225bab6cefb23bf3a4a45d06befa7a730dbbc66",
+    "cssSize": 24,
+    "rasterScale": 4
+  },
+  {
+    "name": "dark-page",
+    "source": "original inline SVG in header file-menu live DOM",
+    "svgSHA256": "41ddfee1a259ead9d014ef1e2a154aaf7833a8436a1807f24186e0081e89f9a5",
+    "pngSHA256": "282f939bbdf47296407d2d488efdc14be1e184d3069dae8b496cf74184a017d0",
+    "cssSize": 24,
+    "rasterScale": 4
+  },
+  {
+    "name": "desktop",
+    "source": "original inline SVG in header file-menu live DOM",
+    "svgSHA256": "8d5c1ae84c6ad50f216266ff3da9e1106d50f69a1685ef781100a7bf60faac42",
+    "pngSHA256": "5ad59d60a536fdd811cb4090a599900ecebb5018f11742fdd5017cebb4f7c9fc",
+    "cssSize": 24,
+    "rasterScale": 4
+  }
+]

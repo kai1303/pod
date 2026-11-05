@@ -1,0 +1,585 @@
+{
+  "schema": "lumin-form-builder-source-rules-v1",
+  "scope": "Static UI reconstruction evidence only; no browser/native execution, autodetect, consent, field creation or PDF/network mutation",
+  "manifest": "toolbar-source/extracted/form-builder/manifest.json",
+  "runtime_status": "Parent captured current266×80 menu and360×730 empty legacy manualpanel, then Cancelled withoutApply/fieldcreation and restoredSelect. NoAutoDetectinvoked. Otherbranchesremainstatic-only.",
+  "modules": {
+    "toolbar_container": 2624315,
+    "manual_menu_row": 9501222,
+    "field_constants": 594494,
+    "panel": 9555049,
+    "quota": 635040,
+    "availability": 4244323,
+    "page_precondition": 6614587,
+    "detect_modals": 6716892,
+    "detect_process": 8437105,
+    "new_flow": 4397111,
+    "shell": 9219392
+  },
+  "branch_selectors": {
+    "engine": "FormBuilderToolContainer returns null without engine capability formBuilder",
+    "new_request_signature_flow": "FORM_BUILDER_REQUEST_SIGNATURES flag pdf-form-builder-send-to-sign AND !isElectron AND !isPWA",
+    "shell": "useEditorShellVariant()==v2 separately controls modern form panel wrapper",
+    "ffd_enabled": "!!currentUser in this build; no featureflag check in useEnabledFormFieldDetection",
+    "normal_legacy_toolbar": "if newFlow false and loggedin && !systemDocument && !offline→two-row menu; else direct simple premium form button (unless renderAsMenuItem)",
+    "new_flow_toolbar": "newFlow true→directOpen=true when no specificTool and !renderAsMenuItem; bypassPaywall=true",
+    "warning": "Do not mix shellv2, newFlow and FFD predicates; branch presence is not current runtime evidence."
+  },
+  "toolbar": {
+    "label": "Prepare form",
+    "translation_key": "annotation.formBuilder",
+    "glyph": "md_fillable_form",
+    "glyph_px": 24,
+    "data_element": "formBuilderButton",
+    "disabled": "offline",
+    "show_arrow": "normal menu true when toolbarvariant!=v2; newFlowdirectOpen omitsarrow",
+    "active": "menuopen or FORM_BUILD active in fallback directbutton"
+  },
+  "menu": {
+    "normal_min_width_px": 266,
+    "padding_px": 8,
+    "dense_rows": "MenuItemSize.dense; shared32px minimum/4x8padding/radius4",
+    "close_on_item_click": false,
+    "close_on_click_outside": "state m initiallytrue, setfalse during premium child then restored cleanup",
+    "rows": [
+      {
+        "id": "customize",
+        "actual_label": "Prepare form",
+        "key": "viewer.formFieldDetection.toolMenu.customizeFields",
+        "glyph": "pencil-lg",
+        "glyph_px": 24,
+        "trailing_asset": "/pdf-assets/lumin-svgs/badge_premium.svg when shouldShowPremiumIcon",
+        "disabled": "syncing OR offline",
+        "tooltip": "Please wait for document edit/sync translation when syncing",
+        "premium": "Alternate unavailablebranch usesFORM_BUILDER Businessgate; currentparentobservedmanualavailable/noBadge and opensactualpanel.",
+        "close_menu_flag": "!shouldShowPremiumIcon &&isToolAvailable"
+      },
+      {
+        "id": "auto-detect",
+        "actual_label": "AI auto-detect",
+        "key": "viewer.formFieldDetection.toolMenu.aiAutoDetect",
+        "glyph": "sparkles-lg",
+        "glyph_px": 24,
+        "visible": "FFD enabled AND !system AND !offline",
+        "disabled": "!currentUser OR quotaExceeded OR syncing",
+        "loading": "hook currently returns isLoadingFFDUsagefalse; skeletonbranch retained but not active fromthishook",
+        "quota_tooltip": "You have reached your quota limit. Your limit will reset at {{resetTime}}",
+        "premium": "Separate FORM_FIELD_DETECTION availability modal; not same Business gate event as manual",
+        "click": "close menu then ifvalid document process detection immediately, otherwise precondition modal"
+      }
+    ],
+    "overflow_legacy": {
+      "section": "Prepare form/formbuilder group",
+      "divider": "absolute fullwidth at top,wrappermarginTop8",
+      "title": "Text title/sm +fontweightbold,padding12px8px8px",
+      "rows": "same manual/auto detect; sourcehostcontrols gatepresentation"
+    },
+    "overflow_v2": "Separator my4 +px8 section label14medium +20px modernrowicons",
+    "click_routing": "Stop readaloud; onChangeNavigationTab callback; tool-switch checks; manualpremium sets outside-closefalse and toggles gate without opening fields; allowed manual closes dropdown/overflow and requestsEditpermission before toggleFormBuildTool",
+    "evidence": [
+      "toolbar-menu-constants",
+      "customize-row-gate",
+      "autodetect-row",
+      "menu-click-routing",
+      "toolbar-menu-render",
+      "menu-css"
+    ]
+  },
+  "legacy_manual_panel": {
+    "predicate": "newRequestSignatureFlow=false; independent of shellprofile",
+    "header": {
+      "title": "Form builder",
+      "type": "Inter variable14/500/20",
+      "background": "Kiwi surface-surface",
+      "border_bottom": "1px Kiwi outline-variant",
+      "padding": "4px4px4px16px",
+      "min_height_px": 40,
+      "position": "sticky top0,zindex1",
+      "close": "IconButton x-sm/md",
+      "observed_height_px": 41
+    },
+    "content_root": {
+      "padding_top_px": 12,
+      "height": "calc(100% -52px)",
+      "width": "Inherited hostpanel; no fixed width resolved in thissubtask"
+    },
+    "insert_section": {
+      "height_px": 76,
+      "padding_horizontal_px": 16,
+      "layout": "flexcolumn gap8",
+      "title": "Insert fields",
+      "title_type": "legacy title-medium16/520/150%",
+      "title_color": "legacy on-surface-variant",
+      "tab_track": "1px legacyoutline-variant,radius99999",
+      "tabs": "shared primary Tabs.List grow,nowrap; each Tab minwidth0/padding-inline12; originalglyph24",
+      "tab_items": [
+        {
+          "id": "TextFormField",
+          "label": "Text field",
+          "tooltip": "Add text field",
+          "glyph": "md_text_box",
+          "tool": "TEXT_FIELD"
+        },
+        {
+          "id": "CheckBoxFormField",
+          "label": "Checkbox",
+          "tooltip": "Add checkbox",
+          "glyph": "md_checkbox",
+          "tool": "CHECK_BOX"
+        },
+        {
+          "id": "RadioButtonFormField",
+          "label": "Radio button",
+          "tooltip": "Add radio button",
+          "glyph": "md_radio_box",
+          "tool": "RADIO"
+        },
+        {
+          "id": "SignatureFormField",
+          "label": "Signature field",
+          "tooltip": "Add signature field",
+          "glyph": "md_signature",
+          "tool": "SIGNATURE_FIELD"
+        }
+      ],
+      "tab_height_live_px": 40
+    },
+    "properties_scroll": {
+      "height": "calc(100% -76px -58px)",
+      "overflow": "auto via shared BaseScrollContainer",
+      "inner_padding_px": 8,
+      "inner_gap_px": 8,
+      "properties_wrapper_padding": "4px8px",
+      "title": "Properties",
+      "title_type": "legacy title-medium16/520/24",
+      "title_color": "legacy on-surface-variant",
+      "no_selection_copy": "No field is selected. Select a field to edit its properties",
+      "no_selection_type": "legacy body-small12/420/18",
+      "no_selection_color": "legacy on-surface-variant",
+      "initial": "tabValue empty,fieldName/value empty,dimension0/0,readOnly/multiline/isValidfalse; selection can override fromcurrentdocument",
+      "selected": "type22glyph/label;conditional Text/Checkbox/Radio/Signature propertycontrols andApplydescription; not part ofinitialempty surface"
+    },
+    "footer": {
+      "height_px": 58,
+      "padding": "2px16px0",
+      "gap_px": 16,
+      "buttons": [
+        {
+          "label": "Cancel",
+          "variant": "outlined",
+          "size": "lg",
+          "basis": "50%"
+        },
+        {
+          "label": "Apply",
+          "variant": "filled",
+          "size": "lg",
+          "basis": "50%",
+          "disabled": "!isValid; initiallytrue"
+        }
+      ],
+      "actions": "Cancel source resetsform then toggles builder;Apply appliesactualfields. Local UI reconstruction must not wirePDF mutationsyet."
+    },
+    "evidence": [
+      "legacy-panel-layout",
+      "legacy-field-tabs",
+      "legacy-panel-empty",
+      "legacy-panel-state",
+      "legacy-panel-final-render",
+      "field-constant-tabs",
+      "panel-header-routing",
+      "panel-header-css"
+    ],
+    "tab_selection_before_canvas": {
+      "scope": "Initiallyempty/noexistingselectedfield; staticcalltrace,notruntimeannotationmutationtest",
+      "callback": "rU finds FORM_BUILD_TABS.toolName then invokes onTabsValueChange({id,toolName}); r4 callback S(id),viewer.setToolMode(toolName),resetAnnotation()",
+      "reset_annotation": "103056 hook resetAnnotation only React setSelectedAnnotation(null)",
+      "properties": "rQ requires tabValue&&formFieldAnnotation for typedlabel; rJ returns no fieldcontrols whenformFieldAnnotationnull. Therefore selectedcreationtabstillshowsno-field-selected hint,not templateproperties.",
+      "apply": "InitialisValidfalse remainsfalse; tabcallbackdoesnotsetvalid. Withpreviouslyselected/modifiedfieldsotherstatecanpersist—separatescenario.",
+      "repeat_click": "allowTabDeactivationnotenabled,soactiveTabremainsselected; callbackcanresetselectedannotationagain",
+      "keyboard": "Horizontal/wrap/activateTabWithKeyboardtrue fromsharedTabs defaults; no directfieldcreationinUIhandler",
+      "engine_boundary": "Viewerfacadedelegatesengine.setToolMode. LegacyadapterdocViewer.setToolMode(getTool(name)); Luminformadapterselectsdescriptormode. Noadd/create/modifyfieldAPIinthesetracedcallbacks. Annotationselected/ADDcallbacksareseparate.",
+      "native_ui_first": "Safetomodelselectedtab/creationtoollocally; donotwirePDFcreationbeforefunctionalityphase.",
+      "evidence": [
+        "legacy-field-tabs",
+        "legacy-panel-empty",
+        "legacy-panel-final-render",
+        "tab-selection-annotation-hook",
+        "tab-selection-legacy-engine",
+        "tab-selection-lumin-form-engine",
+        "tab-selection-viewer-facade",
+        "tab-selection-tabs-primitive",
+        "tab-selection-tabs-wrapper"
+      ]
+    }
+  },
+  "new_flow_manual_panel": {
+    "predicate": "newRequestSignatureFlow=true",
+    "persistence": "Source autosaves; noApply/Cancelfooter",
+    "shell_v2_wrapper": {
+      "title": "Prepare form",
+      "titlebar_height_px": 44,
+      "titlebar_padding": "6px8px",
+      "title_type": "14pxmedium foreground",
+      "separator": true,
+      "root": "flex h-full/min-h0/w-full column bg-card",
+      "body": "minh0 flex1 overflow-yauto padding16"
+    },
+    "legacy_shell_wrapper": "Uses sharedstickyheader Prepareform withoutclose +legacyflexscroll; inner12top/16horizontal/16bottom padding",
+    "initial_sections": [
+      "Signer roles title/description",
+      "Auto-assign withAI ifAIprepareavailable",
+      "Manage roles",
+      "Properties +No field selected message"
+    ],
+    "roles_title": "Signer roles",
+    "role_buttons": "outline fullwidth,gap4,20pxoriginalicons",
+    "auto_assign": "AI featurequota/precondition applies; do notinvoke",
+    "empty_properties": {
+      "title": "Properties",
+      "type": "16/500/24",
+      "color": "Kiwi on-surface-variant",
+      "description": "No field is selected. Select a field to edit its properties",
+      "description_type": "12/420/16"
+    },
+    "top_toolbar_initial": {
+      "controls": [
+        "Select",
+        "Pan",
+        "4 fieldtypes",
+        "Undo/Redo",
+        "Auto-detect fields",
+        "Preview toggle",
+        "Send for signature",
+        "Exit form builder"
+      ],
+      "fieldglyphs": "original LmSquareDashedText/LmCheckbox/LmCircleRadio/LmSign24; other typecontrols conditional",
+      "preview_switch_px": [
+        36,
+        20
+      ],
+      "send_disabled": "no requestSignatures capability unlesssystem OR nofields OR zeroassignedroles andzero unassignedfields",
+      "exit_icon_px": 20,
+      "compact_threshold_px": 1180
+    },
+    "evidence": [
+      "new-flow-title-body",
+      "new-flow-signer-role-ui",
+      "new-flow-empty-properties",
+      "new-flow-panel-final-render",
+      "new-flow-toolbar-default"
+    ]
+  },
+  "autodetect_precondition": {
+    "valid": "loggedin && !offline && !system && totalPages<=40",
+    "page_limit": 40,
+    "modal": {
+      "title": "Our form field detection feature is in Beta",
+      "body": "Currently, this feature supports documents up to 40 pages. For optimal results, we encourage you to use documents in English.",
+      "wrapper": "openViewerModal size large with preconditionModalPaper width Kiwi dialogs-sm480 override",
+      "title_type": "PPAgrandir20/500/28",
+      "body_type": "Intervariable14/420/20,on-surface-variant",
+      "body_margin": "16px0 24px",
+      "button": "Got it,text/lg",
+      "footer": "flex end center gap16",
+      "final_height": "Requires liveDOM; avoid assuminghostlargesizewidth640whenCSSoverrides480"
+    },
+    "evidence": [
+      "detect-page-limit",
+      "detect-valid-size",
+      "detect-errors-precondition",
+      "detect-modal-presentation",
+      "detect-css",
+      "autodetect-copy"
+    ]
+  },
+  "autodetect_process_boundary": {
+    "important": "Valid AIauto-detect beginsupload/detection/PDFannotationmutation immediately; do notuseasread-onlyUIcheck. No process invoked bysubtask.",
+    "stages": "Loading modal totalsteps2,currentStep0 then1;48circular small/fancyloading/downloadvariant;step1notcancelable",
+    "consent": "Currenthook marks metadata.formFieldDetectionConsentGrantedtrue directly then starts;declaredshowConsentModal notcalled in boundeddownloadedtree",
+    "backend": "Batchpages15,uploadoriginalPDF,awaitsocketpredictions,applyactualfields andenterbuilder. Not implemented/reproducedbythissourceinventory.",
+    "evidence": [
+      "detect-process-boundary",
+      "detect-modal-presentation"
+    ]
+  },
+  "consent_dormant_ui": {
+    "status": "Declaredrenderer/helper; boundedliteralcallersearchfinds showConsentModal onlydefinitions in2duplicatechunks. Currentprocesshookdoesnotcallit; indirect/dynamiccallersnotruledout.",
+    "title": "Form field detection",
+    "width_wrapper": "openViewerModal large,notfullgeometryresolved",
+    "title_type": "PPAgrandir20/500/28",
+    "text_type": "Intervariable14/420/20",
+    "content_margin": "24px0",
+    "note_container": "padding16,margin16px0,radius8,bgKiwisurface-container-low",
+    "checkboxes": [
+      "Terms andconditions required",
+      "Documenttraining optional"
+    ],
+    "both_initially": false,
+    "primary": "Agree filled/lg,disabledunlessrequiredtermschecked",
+    "cancel": "Cancel outlined/lg",
+    "footer_gap_px": 16,
+    "links": [
+      "Privacy policy",
+      "Terms of use"
+    ],
+    "evidence": [
+      "detect-consent-ui",
+      "detect-modal-presentation",
+      "detect-css",
+      "autodetect-copy"
+    ]
+  },
+  "autodetect_result_and_error": {
+    "guide": {
+      "title": "Apply form fields",
+      "copy": [
+        "Select specific fields you want to modify or delete.",
+        "Clicking 'Apply' will apply all available fields."
+      ],
+      "padding_px": 8,
+      "margin_px": 8,
+      "radius_px": 8,
+      "background_role": "Kiwi semantic-information-container",
+      "text_role": "Kiwi semantic-on-information-container",
+      "title_type": "Inter14/500/20",
+      "list_type": "Inter12/420/16",
+      "close": "md_close24,marginTop−4",
+      "visible": "applyingFFD &&localguidevisibledefaulttrue"
+    },
+    "unprocessable": {
+      "title": "We couldn’t auto-detect form fields",
+      "copy": "Sorry we encountered an issue. This might be due to the content of your document. Don’t worry, you can still manually add fields.",
+      "width_px": 480,
+      "padding_px": 24,
+      "buttons": [
+        "Send feedback text/lg",
+        "Insert fields tonal/lg"
+      ],
+      "runtime": "Notinduced"
+    },
+    "evidence": [
+      "detect-errors-precondition",
+      "detect-css",
+      "new-flow-empty-properties"
+    ]
+  },
+  "new_flow_onboarding": {
+    "predicate": "newFlow &&currentUserready &&GrowthBookready &&!hasSeenRequestSignaturesOnboarding &&onboardingStepnull;effectdoesnotrequirecurrentlyinFormBuildMode",
+    "welcome": {
+      "width_px": 840,
+      "height_px": 520,
+      "max_width": "calc(100vw -2rem)",
+      "padding_px": 0,
+      "gap_px": 0,
+      "overflow": "clip",
+      "two_columns": "50/50",
+      "left_padding": "48px36px",
+      "badge": "New,violet100/800 or darkviolet950/300,marginBottom16",
+      "title": "Send for signatures, all in one place",
+      "subtitle": "We’ve rebuilt the signing flow. Add fields, assign signers, and send without leaving the editor.",
+      "title_type": "20/600/28",
+      "body_type": "14/400/20 muted",
+      "benefits": [
+        {
+          "title": "Let Lumin AI do the setup.",
+          "description": "Detect fields and assign signers in one click."
+        },
+        {
+          "title": "Saves automatically.",
+          "description": "No Apply or Cancel. Changes save as you work."
+        },
+        {
+          "title": "Send in fewer steps.",
+          "description": "Send straight to your signers from Lumin PDF."
+        }
+      ],
+      "benefit_icons": "original inlineSVG20,currentColor +violet accents",
+      "button": "Get started,large,wfit",
+      "right_image": "themeoriginal welcome-intro/lightordark,objectcover,w1/2stretch",
+      "right_target_px": [
+        420,
+        520
+      ],
+      "asset_intrinsic_px": [
+        1680,
+        2080
+      ]
+    },
+    "dismiss": "marksseen andadvancecoachmark1ifAIavailable elsecoachmark2;sourceusermetadatawrite notperformed",
+    "coachmarks": [
+      "Start with Lumin AI",
+      "Send when you’re ready"
+    ],
+    "paywall": {
+      "width_px": 400,
+      "padding_px": 16,
+      "gap_px": 8,
+      "close_icon": false,
+      "escape_and_outside": "preventDefault",
+      "asset": "/pdf-assets/lumin-svgs/paywall-internal-illustration.svg,111×100",
+      "buttons": "Cancel/Upgrade orRequestupgrade dependingseatstatus",
+      "runtime": "static-only"
+    },
+    "evidence": [
+      "new-flow-welcome-assets",
+      "new-flow-welcome-render",
+      "new-flow-welcome-trigger",
+      "new-flow-paywall-render",
+      "field-help-copy"
+    ]
+  },
+  "assets": "form-builder-asset-manifest.json",
+  "live_unknowns": [
+    "licensedmanualpanelruntimepaintandfocus",
+    "autodetectmodalsfullgeometry/focus",
+    "theme/motion/ripple/keyboardcompleteparity",
+    "Actualpseudo-elementglyphpaintunverified; measuredi57.5×24boxequalsTab81.5minus24horizontalpadding andisnotproofglyphadvanceorencodingissue"
+  ],
+  "exclusions": [
+    "No appsourceedited",
+    "No browser/nativeUIinteracted",
+    "No password/accountpayloads",
+    "No sourceautoDetect/consent/upload/field/PDFmutation",
+    "No screenshotsorimagechecks"
+  ],
+  "observed_current_branch": {
+    "menu_fixture": "toolbar-source/form-builder-menu-live.json",
+    "panel_fixture": "toolbar-source/form-builder-panel-empty-live.json",
+    "clean_fixture": "form-builder-layout-fixture.json",
+    "new_request_signature_flow": false,
+    "manual_available": true,
+    "both_rows_enabled": true,
+    "premium_badges": false,
+    "menu_rect": [
+      266,
+      80
+    ],
+    "rows": [
+      [
+        8,
+        8,
+        250,
+        32
+      ],
+      [
+        8,
+        40,
+        250,
+        32
+      ]
+    ],
+    "labels": [
+      [
+        48,
+        14,
+        202,
+        20
+      ],
+      [
+        48,
+        46,
+        202,
+        20
+      ]
+    ],
+    "panel_rect": [
+      360,
+      730
+    ],
+    "panel_screen_rect": [
+      1094,
+      104,
+      360,
+      730
+    ],
+    "header": [
+      0,
+      0,
+      360,
+      41
+    ],
+    "close": [
+      324,
+      4,
+      32,
+      32
+    ],
+    "insert_title": [
+      16,
+      53,
+      328,
+      24
+    ],
+    "tab_track": [
+      16,
+      85,
+      328,
+      42
+    ],
+    "tab_buttons": [
+      [
+        17,
+        86,
+        81.5,
+        40
+      ],
+      [
+        98.5,
+        86,
+        81.5,
+        40
+      ],
+      [
+        180,
+        86,
+        81.5,
+        40
+      ],
+      [
+        261.5,
+        86,
+        81.5,
+        40
+      ]
+    ],
+    "tab_selected": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "properties_title": [
+      16,
+      141,
+      328,
+      24
+    ],
+    "empty_copy": [
+      16,
+      173,
+      328,
+      18
+    ],
+    "footer_wrapper": [
+      0,
+      661,
+      360,
+      58
+    ],
+    "cancel": [
+      16,
+      663,
+      156,
+      40
+    ],
+    "apply": [
+      188,
+      663,
+      156,
+      40
+    ],
+    "apply_disabled": true,
+    "restoration": "ParentCancel→Popular/Select;sourceworktabclosed"
+  }
+}

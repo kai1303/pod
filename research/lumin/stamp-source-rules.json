@@ -1,0 +1,671 @@
+{
+  "schema": "lumin-stamp-source-rules-v1",
+  "evidence_kind": "static shipped JavaScript/CSS + public asset bytes; live DOM resolution owned by parent task",
+  "packet": "toolbar-source/extracted/stamp/manifest.json",
+  "modules": {
+    "dropdown": {
+      "id": 3341097,
+      "artifact": "1tssr0c234xk-.js",
+      "duplicate": "2hgjb8uahj05d.js"
+    },
+    "creation": {
+      "id": 4329155,
+      "artifact": "1fki9ucjmcf4z.js"
+    },
+    "constants": {
+      "id": 3653117,
+      "artifact": "2wlhxxp1u3z2q.js"
+    },
+    "shared_modal": {
+      "id": 307143,
+      "artifact": "1znov93jywcdc.js"
+    }
+  },
+  "profile": {
+    "selector": "useIsRubberStampV2: useEditorShellVariant()==v2",
+    "legacy": "styled-components + Kiwi controls",
+    "v2": "Radix/shadcn classes",
+    "warning": "Do not infer current profile from presence of both branches; confirm source live DOM.",
+    "observed_current_source": "Parent live check: Stamp is premium-gated; legacy panel/creator remain static-only alternate-branch evidence. Do not claim them live verified or bypass the gate."
+  },
+  "toolbar_host": {
+    "max_width_px": 360,
+    "content_class": "rubber-stamp-popper-scroll",
+    "glyph": "md_stamp",
+    "icon_px": 24,
+    "evidence": [
+      "toolbar-host"
+    ]
+  },
+  "legacy_dropdown": {
+    "root": {
+      "width": "100%",
+      "padding_px": 16,
+      "component_id": "sc-16a1c1dc-0"
+    },
+    "tabs": {
+      "labels": [
+        "Standard",
+        "Custom"
+      ],
+      "values": [
+        1,
+        2
+      ],
+      "initial": 1,
+      "component": "Tabs/TabsList/Tab shared controls",
+      "resolved_height": "Requires shared source/live DOM"
+    },
+    "order": [
+      "Tabs",
+      "active tab content",
+      "Place stamp multiple times checkbox"
+    ],
+    "repeat": {
+      "label": "Place stamp multiple times",
+      "initial": "Redux preference, not imposed by component",
+      "change": "toggle and event tracking",
+      "component": "6155913 FormControlLabel +651006 Checkbox; same as Signature",
+      "disabled_on_empty_custom": false
+    },
+    "standard": {
+      "scroll_max_height_px": 300,
+      "scroll_margin": "8px -16px 0",
+      "scroll_width": "calc(100% +32px)",
+      "grid_columns": 2,
+      "grid_gap_px": 8,
+      "grid_padding_horizontal_px": 16,
+      "card_height_px": 64,
+      "card_height_derivation": "2*le_gap_1_5(12)+STANDARD_STAMP_HEIGHT_DEFAULT(40)",
+      "card_radius": "var(--border-radius-primary)",
+      "card_background_role": "le_signature_signature_container",
+      "card_image_max_width_px": 84,
+      "card_image_max_height_px": 40,
+      "loading_min_height_px": 200,
+      "drag": "card background transparent; item placeholder; disables repeat placement",
+      "stamps": [
+        {
+          "name": "Sign Here",
+          "src": "sign-here",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/sign-here.png"
+        },
+        {
+          "name": "Inital Here",
+          "src": "initial-here",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/initial-here.png"
+        },
+        {
+          "name": "Paid",
+          "src": "paid",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/paid.png"
+        },
+        {
+          "name": "Copy",
+          "src": "copy",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/copy.png"
+        },
+        {
+          "name": "Big Doc Energy",
+          "src": "big-doc-energy",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/big-doc-energy.png"
+        },
+        {
+          "name": "Star",
+          "src": "star",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/star.png"
+        },
+        {
+          "name": "Cancel",
+          "src": "cancel",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/cancel.png"
+        },
+        {
+          "name": "Check",
+          "src": "check",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/check.png"
+        },
+        {
+          "name": "Witness",
+          "src": "witness",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/witness.png"
+        },
+        {
+          "name": "Approved",
+          "src": "approved",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/approved.png"
+        },
+        {
+          "name": "As Is",
+          "src": "as-is",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/as-is.png"
+        },
+        {
+          "name": "Completed",
+          "src": "completed",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/completed.png"
+        },
+        {
+          "name": "Departmental",
+          "src": "departmental",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/departmental.png"
+        },
+        {
+          "name": "Experimental",
+          "src": "experimental",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/experimental.png"
+        },
+        {
+          "name": "Final",
+          "src": "final",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/final.png"
+        },
+        {
+          "name": "For Public Release",
+          "src": "for-public-release",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/for-public-release.png"
+        },
+        {
+          "name": "Not For Public Release",
+          "src": "not-for-public-release",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/not-for-public-release.png"
+        },
+        {
+          "name": "Preliminary Results",
+          "src": "preliminary-results",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/preliminary-results.png"
+        },
+        {
+          "name": "Top Secret",
+          "src": "top-secret",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/top-secret.png"
+        },
+        {
+          "name": "Sold",
+          "src": "sold",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/sold.png"
+        },
+        {
+          "name": "Void",
+          "src": "void",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/void.png"
+        },
+        {
+          "name": "Not Approved",
+          "src": "not-approved",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/not-approved.png"
+        },
+        {
+          "name": "Confidential",
+          "src": "confidential",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/confidential.png"
+        },
+        {
+          "name": "Draft",
+          "src": "draft",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/draft.png"
+        },
+        {
+          "name": "Expired",
+          "src": "expired",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/expired.png"
+        },
+        {
+          "name": "For Comment",
+          "src": "for-comment",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/for-comment.png"
+        },
+        {
+          "name": "Information Only",
+          "src": "information-only",
+          "relative_url": "/pdf-assets/images/default-rubber-stamps/information-only.png"
+        }
+      ]
+    },
+    "custom": {
+      "list_margin": "8px -16px 0",
+      "list_width": "calc(100% +32px)",
+      "scroll_height_px": 272,
+      "scroll_width": "100%",
+      "scroll_radius": "var(--kiwi-border-radius-md)",
+      "scroll_overflow_y": "auto",
+      "loading_min_height_px": 200,
+      "empty": {
+        "layout": "column center",
+        "gap_px": 16,
+        "padding": "16px 0 24px",
+        "type": "le_body_medium14/420/150%",
+        "color_role": "le_main_on_surface",
+        "asset": "/pdf-assets/lumin-svgs/rubber-stamp.svg",
+        "asset_wrapper_px": [
+          80,
+          65
+        ],
+        "copy": "You haven’t created any stamps yet",
+        "create_button": {
+          "label": "Create new stamp",
+          "variant": "tonal",
+          "glyph": "plus-md",
+          "glyph_px": 16,
+          "size": "default Kiwi size; resolve live"
+        }
+      },
+      "nonempty_create_button": {
+        "label": "Create new stamp",
+        "glyph": "plus-md16",
+        "variant": "outlined",
+        "full_width": true,
+        "height_px": 48,
+        "margin": "0 16px 8px",
+        "width": "calc(100% -32px)",
+        "padding": "8px 0",
+        "border_style": "dashed",
+        "font": "Inter variable16/500/24px"
+      },
+      "item": {
+        "background_role": "le_signature_signature_container",
+        "padding": "12px 24px",
+        "margin_horizontal_px": 16,
+        "radius": "var(--border-radius-primary)",
+        "image_height_px": 48,
+        "remove": "top/right8px; small icon button cancel12",
+        "gap_between_items_px": 8,
+        "disabled_opacity": 0.6,
+        "dragging": "transparent background; hide remove button"
+      },
+      "quota": {
+        "maximum": 100,
+        "reached": "You have reached the current limit of {{count}} stamps.",
+        "create_disabled_when": "total>=100",
+        "error_font": "Inter variable12/420/16px",
+        "error_padding_horizontal_px": 16,
+        "error_margin_bottom_px": 8
+      }
+    },
+    "evidence": [
+      "legacy-tabs-and-repeat",
+      "standard-grid-styles",
+      "standard-grid-render",
+      "custom-empty-list",
+      "custom-list-host",
+      "custom-list-css",
+      "custom-item-styles"
+    ]
+  },
+  "legacy_creation": {
+    "modal": {
+      "size": "medium/default",
+      "width_px": 480,
+      "max_width_px": 480,
+      "padding_px": 24,
+      "paper_rounding": "large",
+      "elevation": 0,
+      "close_icon": true,
+      "shared_title": null,
+      "shared_primary_secondary_text": null,
+      "shared_header": "Empty relative header with showCloseIcon;12px margin-bottom",
+      "close_wrapper_offset": {
+        "right_px": -9,
+        "top_px": -4
+      },
+      "close_control_px": 32,
+      "close_glyph": "md_close24",
+      "content": "shared body-md/normal line-height flex column gap16 wrapping custom div; height requires DOM",
+      "evidence": [
+        "legacy-modal-size",
+        "legacy-modal-close-content",
+        "dialog-width-tokens"
+      ]
+    },
+    "title": {
+      "template": "Add Stamp ({{total}}/100)",
+      "tag": "h2",
+      "type": "le_title_medium16/520/150%",
+      "color_role": "le_main_on_surface",
+      "margin_bottom_px": 16
+    },
+    "defaults": {
+      "title": "Sample Text",
+      "date_format": "MMMM DD, YYYY",
+      "time_format": null,
+      "author": "currentUser.name or Guest",
+      "font": "Helvetica",
+      "bold": true,
+      "italic": false,
+      "underline": false,
+      "strikeout": false,
+      "text_color": "#FFFFFF",
+      "background_color": "#629769",
+      "show_author": false
+    },
+    "order": [
+      "title",
+      "Preview with calendar/clock menus",
+      "Content input/error",
+      "Text style font+bold/italic/underline/strikeout/text color",
+      "Background color palette",
+      "empty div",
+      "Show your name toggle/input",
+      "Place stamp multiple times",
+      "Cancel/Create footer"
+    ],
+    "preview": {
+      "background_role": "le_main_surface_container_lowest",
+      "border": "1px le_main_outline_variant",
+      "radius": "var(--border-radius-primary)",
+      "overflow": "hidden",
+      "margin_bottom_px": 16,
+      "header": {
+        "background_role": "le_main_surface_container_low",
+        "layout": "flex space-between center",
+        "padding": "2px 8px",
+        "label": "Preview",
+        "type": "le_title_small14/520/170%"
+      },
+      "body": {
+        "padding": "12px 0",
+        "layout": "flex center"
+      },
+      "canvas_options_px": [
+        164,
+        56
+      ],
+      "raster_warning": "drawCustomStamp owned by source PDF engine; do not infer pixel-exact raster from layout only"
+    },
+    "content": {
+      "label": "Content",
+      "label_type": "le_title_small14/520/170%",
+      "label_margin_bottom_px": 4,
+      "input_size": "md",
+      "margin_bottom_px": 16,
+      "validation": "JavaScript title.trim().length: <=0 empty error; >254 limit error; controls Create disabled",
+      "errors": [
+        "Stamp text cannot be empty",
+        "Stamp text must have no more than 254 characters"
+      ],
+      "validation_count_units": "UTF16 after ECMAScript trim"
+    },
+    "text_style": {
+      "label": "Text style",
+      "label_type": "le_title_small14/520/170%",
+      "label_margin_bottom_px": 4,
+      "margin_bottom_px": 16,
+      "row_gap_px": 8,
+      "font_select_width_px": 160,
+      "font_select_popper_zindex": 1500,
+      "font_options": [
+        "Helvetica",
+        "Times New Roman",
+        "Roboto",
+        "Aladin",
+        "Allura",
+        "Cookie",
+        "Courgette",
+        "DancingScript",
+        "GillSans",
+        "Italianno",
+        "Lora",
+        "Merriweather"
+      ],
+      "style_glyphs": [
+        "md_bold",
+        "md_italic",
+        "md_underline",
+        "md_strike_though"
+      ],
+      "style_glyph_px": 24,
+      "style_buttons_gap_px": 8,
+      "separator_px": [
+        1,
+        16
+      ],
+      "separator_role": "le_main_outline_variant",
+      "text_color_dot_px": 24,
+      "text_color_dot_border": "1px le_main_outline",
+      "text_color_menu": {
+        "placement": "bottom-end",
+        "disable_portal": true,
+        "palette_padding_px": 8,
+        "color_map": "RUBBER_STAMP.TEXT / rubberStampText"
+      }
+    },
+    "background_color": {
+      "label": "Background color",
+      "label_type": "le_title_small14/520/170%",
+      "label_margin_bottom_px": 4,
+      "palette_margin_bottom_px": 16,
+      "color_map": "RUBBER_STAMP.BG / rubberStampBg"
+    },
+    "author": {
+      "label": "Show your name",
+      "label_type": "le_title_small14/520/170%",
+      "section_margin_bottom_px": 4,
+      "margin_bottom_px": 12,
+      "toggle": "Switch",
+      "input": "TextInput size md, autocomplete off",
+      "input_disabled_when": "!showAuthor"
+    },
+    "date_formats": [
+      null,
+      "DD/M/YYYY",
+      "YYYY/M/DD",
+      "DD MMM YYYY",
+      "MMMM DD, YYYY",
+      "MMM DD YYYY"
+    ],
+    "time_formats": [
+      null,
+      "H:mm:ss",
+      "h:mm:ss A"
+    ],
+    "date_time_menu": {
+      "icons": [
+        "calendar",
+        "clock"
+      ],
+      "buttons_gap_px": 8,
+      "placement": "right-start",
+      "rows": "None for null, otherwise current date/time formatted with source dayjs",
+      "active": "exact format equality; class active",
+      "select": "update value then close"
+    },
+    "repeat": "6155913 FormControlLabel +651006 Checkbox shared with dropdown; same Redux value",
+    "footer": {
+      "margin_top_px": 16,
+      "layout": "flex end",
+      "gap_px": 16,
+      "buttons": [
+        "Cancel",
+        "Create"
+      ],
+      "size": "lg",
+      "variants": [
+        "outlined",
+        "filled"
+      ]
+    },
+    "close": "Close modal; reset all form values to defaults/current user; restore default Select tool. Repeat value not reset.",
+    "create": "Source saves user annotation then prepares PDF stamp preview and closes. Local UI implementation must defer external persistence and PDF placement per user.",
+    "evidence": [
+      "creation-font-date-options",
+      "creation-author-background",
+      "creation-text-style",
+      "creation-content-validation",
+      "creation-date-time-select",
+      "creation-preview-style-render",
+      "creation-defaults-state",
+      "creation-close-reset-save",
+      "creation-legacy-render"
+    ]
+  },
+  "v2": {
+    "dropdown": "Tabs root gap8 padding10;Standard/Custom; standard max336 body and2column64px cards; image max120×32; custom header and Add Stamp dashed button;repeat padded10 disabled empty custom",
+    "dialog": "sm:max-w-[400px],shadcn DialogHeader/Footer; no legacy close/header spacing; fields gap16; previews104px height; date/time menus200/160px; icons14px; do not mix with legacy480px modal",
+    "evidence": [
+      "v2-standard-and-footer",
+      "creation-v2-dialog"
+    ]
+  },
+  "limits": {
+    "live_needed": [
+      "active branch",
+      "final dropdown width/height/tab geometry",
+      "computed standard card/image rectangles",
+      "empty-custom content and button rectangles",
+      "modal final height/close/header/content/preview/field/footer rectangles",
+      "nested font/date/time/color menu geometry and focus",
+      "original font resources for each Stamp font",
+      "theme resolved colors/state paint"
+    ],
+    "not_captured": [
+      "personal custom stamp payloads",
+      "account author names",
+      "canvas pixels",
+      "source Create/upload/delete/reorder actions"
+    ]
+  },
+  "premium_gate": {
+    "observed_by_parent": {
+      "title": "Upgrade to access",
+      "message": "Level up your work by unlocking this feature",
+      "cta": "Upgrade now",
+      "limitation": "Current source Stamp menu/creator inaccessible; captured gate only"
+    },
+    "availability": {
+      "module": "6719595/AvailabilityToolCheckProvider and default HOC",
+      "source": "12f_9niz_vx64.js",
+      "validation": "7168852→5261040/getToolChecker→validateFeature; isToolAvailable when no title/message; premium badge when title==upgradeToAccess",
+      "Stamp": "Toolbar onClick isToolAvailable ? show actual Stamp popper : toggleCheckPopper; does not render inaccessible menu"
+    },
+    "presentation": {
+      "normal": "Popover placement bottom; adjusts right-start for quick search/navigation and left-start for toolbar overflow",
+      "modal": "ToolbarItemContext useModal or explicit useModal: shared307143 modal containing renderContentOnly gate",
+      "default_source_offset_px": 0,
+      "fade_ms": 300,
+      "nonmodal_inner": {
+        "padding_px": 16,
+        "width": "var(--sizing-dialogs-xs)",
+        "max_width": "var(--sizing-dialogs-xs)",
+        "resolved_width_px": 304
+      },
+      "container": "flex column align-items center",
+      "icon": {
+        "src": "/pdf-assets/lumin-svgs/icon-three-stars.svg",
+        "padding_px": 8,
+        "max_height_px": 80
+      },
+      "title": {
+        "type": "le_title_medium16/520/150%",
+        "align": "center",
+        "margin_top_px": 16,
+        "color_role": "le_main_on_surface"
+      },
+      "body": {
+        "type": "le_body_medium14/420/150%",
+        "align": "center",
+        "margin_top_px": 4,
+        "color_role": "le_main_on_surface"
+      },
+      "single_cta": {
+        "margin_top_px": 16,
+        "width": "100%",
+        "variant": "filled",
+        "size": "md",
+        "wrap_text": true
+      },
+      "multiple_cta": {
+        "grid_columns": 2,
+        "gap_px": 16,
+        "margin_top_px": 16,
+        "left": "secondary outlined/md",
+        "right": "primary filled/md"
+      },
+      "modal_variant": "largeTitle uses kiwi headline-lg, margin-top0",
+      "offset_resolution": "Gate7048309 appends offset modifier after shared popper default8. Two object spreads apply in order; final enabled=isOpenQuickSearch wins, disables offset outside quick-search. Quick-search enables[0,16].",
+      "quick_search_offset_px": 16
+    },
+    "branches": {
+      "default_stamp_plan": "ORG_PRO (default tool branch of getToolChecker model)",
+      "trial": "free-trial message and two CTAs or feature-flag single CTA; RubberStamp can override title/message to outcome-specific stamp wording",
+      "no_trial": "levelUpToUnlock; shared/guest or old-plan branch Upgrade now; other branch Go Plan/Pro",
+      "other": "seat gate can override entire title/body/CTA; permission/sign-in/unsupported-file/member variants use different content"
+    },
+    "actions": "Source navigates to checkout or requests access per metadata. Local UI-first clone should not perform checkout/network mutations.",
+    "evidence": [
+      "toolbar-host",
+      "gate-availability-provider",
+      "gate-validation-hook",
+      "gate-content-model",
+      "gate-content-style-render",
+      "gate-popover-render",
+      "gate-trial-copy-overrides",
+      "gate-popover-primitives",
+      "gate-english-copy",
+      "gate-paper-wrapper",
+      "gate-xs-width-css",
+      "gate-filled-system-css",
+      "gate-core-dark-colors",
+      "gate-core-light-colors",
+      "gate-bright-dark-color",
+      "gate-bright-light-color",
+      "gate-title-light-color",
+      "gate-title-dark-color"
+    ],
+    "roles": {
+      "paper": {
+        "variable": "--kiwi-colors-surface-surface-bright",
+        "light": "#FFFFFF",
+        "dark": "#282B2C"
+      },
+      "title_body": {
+        "legacy_role": "le_main_on_surface",
+        "light": "#161C21",
+        "dark": "#E3E5E8"
+      },
+      "cta_background": {
+        "variable": "--kiwi-colors-core-secondary",
+        "light": "#1C333D",
+        "dark": "#B2CAD6"
+      },
+      "cta_text": {
+        "variable": "--kiwi-colors-core-on-secondary",
+        "light": "#FFFFFF",
+        "dark": "#1C333D"
+      },
+      "warning": "Gate Paper/CTA use Kiwi color system; title/body use legacy roles. Do not substitute legacy main surface for Paper."
+    },
+    "live_fixture": {
+      "path": "toolbar-source/stamp-gate-live.json",
+      "owner": "parent",
+      "scope": "Observed accessible premium gate; no inaccessible Stamp panel or personal payloads",
+      "outer_px": [
+        304,
+        230
+      ],
+      "paper_radius_px": 16,
+      "icon_padded_frame": [
+        120,
+        16,
+        64,
+        64
+      ],
+      "title_frame": [
+        82.078125,
+        96,
+        139.8359375,
+        24
+      ],
+      "body_frame": [
+        16,
+        124,
+        272,
+        42
+      ],
+      "cta_frame": [
+        16,
+        182,
+        272,
+        32
+      ]
+    }
+  }
+}

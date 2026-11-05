@@ -1,0 +1,698 @@
+{
+  "elements": [
+    {
+      "cls": "sc-4a6be7b6-0 sc-4a6be7b6-1 sc-6ae5ac19-0 lgsCiK gfsYdj kxaMNk",
+      "glyph": null,
+      "rect": [
+        0,
+        0,
+        1512,
+        56
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgb(25, 28, 29)",
+        "border": "0px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(225, 226, 228)",
+        "display": "flex",
+        "fontFamily": "Inter, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "56px",
+        "lineHeight": "24.8px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "4px 8px",
+        "width": "1512px"
+      },
+      "tag": "DIV"
+    },
+    {
+      "cls": "sc-a4be4f89-9 kRRAtr",
+      "glyph": null,
+      "rect": [
+        8,
+        4,
+        748,
+        48
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(225, 226, 228)",
+        "display": "flex",
+        "fontFamily": "Inter, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "4px",
+        "height": "48px",
+        "lineHeight": "24.8px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "0px",
+        "width": "748px"
+      },
+      "tag": "DIV"
+    },
+    {
+      "cls": "mantine-focus-auto mantine-active Button_button__pks2047 Button_button_variant_text__pks204e Button_button_size_lg__pks204a Button_button_colorType_system__pks204h Button_button_compound_10__pks204y IconButton__6knegw0 IconButton_icon_size_lg__6knegw3 m_77c9d27d mantine-Button-root m_87cf2631 mantine-UnstyledButton-root",
+      "glyph": null,
+      "rect": [
+        20,
+        8,
+        40,
+        40
+      ],
+      "role": "open_viewer_navigation",
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(178, 202, 214)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(178, 202, 214)",
+        "display": "flex",
+        "fontFamily": "Inter, arial, sans-serif, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "gap": "normal",
+        "height": "40px",
+        "lineHeight": "24px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "8px",
+        "width": "40px"
+      },
+      "tag": "BUTTON"
+    },
+    {
+      "cls": "kiwi-icon-hamburger-md Icomoon_icon__1piihjp0",
+      "glyph": "\"\"",
+      "rect": [
+        28,
+        16,
+        24,
+        24
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(178, 202, 214)",
+        "display": "block",
+        "fontFamily": "kiwi-icomoon",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "24px",
+        "lineHeight": "24px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "0px",
+        "width": "24px"
+      },
+      "tag": "I"
+    },
+    {
+      "cls": "sc-a4be4f89-5 buWQYP",
+      "glyph": null,
+      "rect": [
+        76,
+        12,
+        263,
+        32
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "1px solid rgba(0, 0, 0, 0)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(225, 226, 228)",
+        "display": "flex",
+        "fontFamily": "Inter, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "32px",
+        "lineHeight": "24.8px",
+        "maxWidth": "none",
+        "minWidth": "40px",
+        "padding": "0px",
+        "width": "263px"
+      },
+      "tag": "DIV"
+    },
+    {
+      "cls": "sc-a4be4f89-6 hoYIOC",
+      "glyph": null,
+      "rect": [
+        77,
+        12,
+        261,
+        32
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(225, 226, 228)",
+        "display": "flex",
+        "fontFamily": "Inter, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "32px",
+        "lineHeight": "24.8px",
+        "maxWidth": "none",
+        "minWidth": "40px",
+        "padding": "0px",
+        "width": "261px"
+      },
+      "tag": "DIV"
+    },
+    {
+      "cls": "",
+      "glyph": null,
+      "rect": [
+        77,
+        12,
+        261,
+        32
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "1px solid rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(227, 229, 232)",
+        "display": "block",
+        "fontFamily": "Inter, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "520",
+        "gap": "normal",
+        "height": "30px",
+        "lineHeight": "23.8px",
+        "maxWidth": "100%",
+        "minWidth": "40px",
+        "padding": "0px 8px",
+        "width": "243px"
+      },
+      "tag": "INPUT"
+    },
+    {
+      "cls": "FileStatus-module-scss-module__0CCvGq__fileStatus",
+      "glyph": null,
+      "rect": [
+        343,
+        16,
+        104.8359375,
+        24
+      ],
+      "role": "file_status",
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(194, 199, 202)",
+        "display": "flex",
+        "fontFamily": "Inter, arial, sans-serif, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "gap": "4px",
+        "height": "24px",
+        "lineHeight": "16px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "4px",
+        "width": "104.836px"
+      },
+      "tag": "DIV"
+    },
+    {
+      "cls": "pdf-icon pdf-icon-sm_time pdf-icon__16",
+      "glyph": "\"\"",
+      "rect": [
+        347,
+        20,
+        16,
+        16
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(194, 199, 202)",
+        "display": "block",
+        "fontFamily": "pdf-icomoon",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "16px",
+        "lineHeight": "16px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "0px",
+        "width": "16px"
+      },
+      "tag": "I"
+    },
+    {
+      "cls": "FileStatus-module-scss-module__0CCvGq__restoreOriginalLink",
+      "glyph": null,
+      "rect": [
+        367,
+        20,
+        76.8359375,
+        16
+      ],
+      "role": "view_original_version",
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(194, 199, 202)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(194, 199, 202)",
+        "display": "block",
+        "fontFamily": "Inter, arial, sans-serif, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "gap": "normal",
+        "height": "16px",
+        "lineHeight": "16px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "0px",
+        "width": "76.8359px"
+      },
+      "tag": "BUTTON"
+    },
+    {
+      "cls": "sc-7f86f949-7 ksecsW",
+      "glyph": null,
+      "rect": [
+        1165.734375,
+        4,
+        338.265625,
+        48
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(225, 226, 228)",
+        "display": "flex",
+        "fontFamily": "Inter, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "12px",
+        "height": "48px",
+        "lineHeight": "24.8px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "0px",
+        "width": "338.266px"
+      },
+      "tag": "DIV"
+    },
+    {
+      "cls": "MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary sc-77bdab6e-0 boqsyr !text-[var(--kiwi-colors-surface-on-surface)] [&.Mui-disabled]:!text-[var(--kiwi-colors-surface-on-surface-disabled)] bg-[var(--kiwi-colors-surface-surface-container)] hover:!bg-[color-mix(in_srgb,var(--kiwi-colors-surface-on-surface)_8%,var(--kiwi-colors-surface-surface-container))] css-idih2h",
+      "glyph": null,
+      "rect": [
+        1177.734375,
+        12,
+        32,
+        32
+      ],
+      "role": "file-menu",
+      "styles": {
+        "backgroundColor": "rgb(29, 32, 33)",
+        "border": "0px none rgb(225, 226, 228)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(225, 226, 228)",
+        "display": "flex",
+        "fontFamily": "Inter, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "32px",
+        "lineHeight": "24.8px",
+        "maxWidth": "none",
+        "minWidth": "32px",
+        "padding": "4px",
+        "width": "32px"
+      },
+      "tag": "BUTTON"
+    },
+    {
+      "cls": "pdf-icon pdf-icon-md_more_horizontal_menu pdf-icon__20",
+      "glyph": "\"\"",
+      "rect": [
+        1183.734375,
+        18,
+        20,
+        20
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(225, 226, 228)",
+        "display": "block",
+        "fontFamily": "pdf-icomoon",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "20px",
+        "lineHeight": "20px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "0px",
+        "width": "20px"
+      },
+      "tag": "I"
+    },
+    {
+      "cls": "mantine-focus-auto mantine-active Button_button__pks2047 Button_button_variant_tonal__pks204g Button_button_size_lg__pks204a Button_button_colorType_system__pks204h Button_button_compound_20__pks20418 share ShareButton-module-scss-module__bJdWWG__buttonShare m_77c9d27d mantine-Button-root m_87cf2631 mantine-UnstyledButton-root",
+      "glyph": null,
+      "rect": [
+        1221.734375,
+        8,
+        108.265625,
+        40
+      ],
+      "role": "Share",
+      "styles": {
+        "backgroundColor": "rgb(8, 113, 145)",
+        "border": "0px none rgb(205, 230, 242)",
+        "borderRadius": "8px 0px 0px 8px",
+        "boxShadow": "none",
+        "color": "rgb(205, 230, 242)",
+        "display": "flex",
+        "fontFamily": "Inter, arial, sans-serif, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "gap": "normal",
+        "height": "40px",
+        "lineHeight": "24px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "8px 16px",
+        "width": "108.266px"
+      },
+      "tag": "BUTTON"
+    },
+    {
+      "cls": "pdf-icon pdf-icon-md_not_shared pdf-icon__24",
+      "glyph": "\"\"",
+      "rect": [
+        1237.734375,
+        16,
+        24,
+        24
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(205, 230, 242)",
+        "display": "block",
+        "fontFamily": "pdf-icomoon",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "24px",
+        "lineHeight": "24px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "0px",
+        "width": "24px"
+      },
+      "tag": "I"
+    },
+    {
+      "cls": "mantine-focus-auto mantine-active Button_button__pks2047 Button_button_variant_tonal__pks204g Button_button_size_lg__pks204a Button_button_colorType_system__pks204h Button_button_compound_20__pks20418 IconButton__6knegw0 IconButton_icon_size_lg__6knegw3 dropdown ShareButton-module-scss-module__bJdWWG__dropdown m_77c9d27d mantine-Button-root m_87cf2631 mantine-UnstyledButton-root",
+      "glyph": null,
+      "rect": [
+        1331,
+        8,
+        40,
+        40
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgb(8, 113, 145)",
+        "border": "0px none rgb(205, 230, 242)",
+        "borderRadius": "0px 8px 8px 0px",
+        "boxShadow": "none",
+        "color": "rgb(205, 230, 242)",
+        "display": "flex",
+        "fontFamily": "Inter, arial, sans-serif, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "gap": "normal",
+        "height": "40px",
+        "lineHeight": "24px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "8px",
+        "width": "40px"
+      },
+      "tag": "BUTTON"
+    },
+    {
+      "cls": "pdf-icon pdf-icon-md_arrow_down pdf-icon__24",
+      "glyph": "\"\"",
+      "rect": [
+        1339,
+        16,
+        24,
+        24
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(205, 230, 242)",
+        "display": "block",
+        "fontFamily": "pdf-icomoon",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "24px",
+        "lineHeight": "24px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "0px",
+        "width": "24px"
+      },
+      "tag": "I"
+    },
+    {
+      "cls": "sc-7f86f949-3 hKAzSz",
+      "glyph": null,
+      "rect": [
+        1383,
+        12,
+        73,
+        32
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(225, 226, 228)",
+        "display": "flex",
+        "fontFamily": "Inter, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "2px",
+        "height": "32px",
+        "lineHeight": "24.8px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "0px",
+        "width": "73px"
+      },
+      "tag": "DIV"
+    },
+    {
+      "cls": "MuiDivider-root jss36 jss153 MuiDivider-fullWidth MuiDivider-vertical sc-7f86f949-9 clRETq css-w6wt69",
+      "glyph": null,
+      "rect": [
+        1383,
+        20,
+        1,
+        16
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgb(50, 81, 103)",
+        "border": "",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(225, 226, 228)",
+        "display": "block",
+        "fontFamily": "Inter, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "16px",
+        "lineHeight": "24.8px",
+        "maxWidth": "none",
+        "minWidth": "1px",
+        "padding": "0px",
+        "width": "1px"
+      },
+      "tag": "HR"
+    },
+    {
+      "cls": "MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary sc-77bdab6e-0 boqsyr !text-[var(--kiwi-colors-surface-on-surface)] [&.Mui-disabled]:!text-[var(--kiwi-colors-surface-on-surface-disabled)] css-idih2h",
+      "glyph": null,
+      "rect": [
+        1390,
+        12,
+        32,
+        32
+      ],
+      "role": "help_center_button",
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(225, 226, 228)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(225, 226, 228)",
+        "display": "flex",
+        "fontFamily": "Inter, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "32px",
+        "lineHeight": "24.8px",
+        "maxWidth": "none",
+        "minWidth": "32px",
+        "padding": "4px",
+        "width": "32px"
+      },
+      "tag": "BUTTON"
+    },
+    {
+      "cls": "pdf-icon pdf-icon-md_status_question pdf-icon__20",
+      "glyph": "\"\"",
+      "rect": [
+        1396,
+        18,
+        20,
+        20
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(225, 226, 228)",
+        "display": "block",
+        "fontFamily": "pdf-icomoon",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "20px",
+        "lineHeight": "20px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "0px",
+        "width": "20px"
+      },
+      "tag": "I"
+    },
+    {
+      "cls": "MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary sc-77bdab6e-0 boqsyr !text-[var(--kiwi-colors-surface-on-surface)] [&.Mui-disabled]:!text-[var(--kiwi-colors-surface-on-surface-disabled)] css-idih2h",
+      "glyph": null,
+      "rect": [
+        1424,
+        12,
+        32,
+        32
+      ],
+      "role": "notification_button",
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(225, 226, 228)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(225, 226, 228)",
+        "display": "inline-flex",
+        "fontFamily": "Inter, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "32px",
+        "lineHeight": "24.8px",
+        "maxWidth": "none",
+        "minWidth": "32px",
+        "padding": "4px",
+        "width": "32px"
+      },
+      "tag": "BUTTON"
+    },
+    {
+      "cls": "pdf-icon pdf-icon-viewer-notification pdf-icon__20",
+      "glyph": "\"\"",
+      "rect": [
+        1430,
+        18,
+        20,
+        20
+      ],
+      "role": null,
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(225, 226, 228)",
+        "display": "block",
+        "fontFamily": "pdf-icomoon",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "height": "20px",
+        "lineHeight": "20px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "padding": "0px",
+        "width": "20px"
+      },
+      "tag": "I"
+    }
+  ],
+  "viewport": [
+    1512,
+    778
+  ]
+}

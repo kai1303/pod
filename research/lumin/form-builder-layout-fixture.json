@@ -1,0 +1,661 @@
+{
+  "schema": "lumin-form-builder-layout-v1",
+  "scope": "Parent observed current legacy menu/empty panel; noPDFoperations orimagechecking",
+  "sources": [
+    {
+      "kind": "parent-live-DOM-computed-CSS",
+      "artifact": "research/lumin/toolbar-source/form-builder-menu-live.json",
+      "artifact_sha256": "bd64d0a8552a05ec3791de9b6fb250e0e3b147991f320ed205ae33dd02f84b07",
+      "rect": [
+        575.2421875,
+        104,
+        266,
+        80
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "tag": "DIV",
+          "class": "Menu_dropdown__7vufmr0 m_38a85659 mantine-Menu-dropdown Menu_dropdown__7vufmr0 m_dc9b7c9f",
+          "rect": [
+            0,
+            0,
+            266,
+            80
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": null,
+          "style": {
+            "backgroundColor": "rgb(40, 43, 44)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24.8px",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          }
+        },
+        {
+          "index": 3,
+          "tag": "BUTTON",
+          "class": "mantine-focus-auto MenuItemBase_root__uz3idn1 MenuItemBase_root_itemSize_dense__uz3idn2 MenuItemBase_root__uz3idn1 m_99ac2aa1 mantine-Menu-item m_87cf2631 mantine-UnstyledButton-root",
+          "rect": [
+            8,
+            8,
+            250,
+            32
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": null,
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "paddingBottom": "4px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "4px"
+          }
+        },
+        {
+          "index": 7,
+          "tag": "DIV",
+          "class": "FormBuilderTool-module-scss-module__43sSUa__menuItemContainer",
+          "rect": [
+            48,
+            14,
+            202,
+            20
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": "Prepare form",
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        },
+        {
+          "index": 8,
+          "tag": "BUTTON",
+          "class": "mantine-focus-auto MenuItemBase_root__uz3idn1 MenuItemBase_root_itemSize_dense__uz3idn2 MenuItemBase_root__uz3idn1 m_99ac2aa1 mantine-Menu-item m_87cf2631 mantine-UnstyledButton-root",
+          "rect": [
+            8,
+            40,
+            250,
+            32
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": null,
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "paddingBottom": "4px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "4px"
+          }
+        },
+        {
+          "index": 12,
+          "tag": "DIV",
+          "class": "FormBuilderTool-module-scss-module__43sSUa__menuItemContainer",
+          "rect": [
+            48,
+            46,
+            202,
+            20
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": "AI auto-detect",
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "parent-live-DOM-computed-CSS",
+      "artifact": "research/lumin/toolbar-source/form-builder-panel-empty-live.json",
+      "artifact_sha256": "860afc9a23d9a0eb453efe52c21d3237943302457ec01d16fabe3956a5f3ffea",
+      "rect": [
+        1094,
+        104,
+        360,
+        730
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "tag": "DIV",
+          "class": "sc-4a6be7b6-7 sc-daaded65-0 kyVJkR gdepDp",
+          "rect": [
+            0,
+            0,
+            360,
+            730
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": null,
+          "style": {
+            "backgroundColor": "rgb(17, 20, 21)",
+            "borderRadius": "8px",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24.8px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        },
+        {
+          "index": 1,
+          "tag": "DIV",
+          "class": "PanelHeader-module-scss-module__-k1NTa__wrapper",
+          "rect": [
+            0,
+            0,
+            360,
+            41
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": null,
+          "style": {
+            "backgroundColor": "rgb(17, 20, 21)",
+            "borderRadius": "0px",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24.8px",
+            "paddingBottom": "4px",
+            "paddingLeft": "16px",
+            "paddingRight": "4px",
+            "paddingTop": "4px"
+          }
+        },
+        {
+          "index": 2,
+          "tag": "SPAN",
+          "class": "PanelHeader-module-scss-module__-k1NTa__title",
+          "rect": [
+            16,
+            10,
+            83.953125,
+            20
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": "Form builder",
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        },
+        {
+          "index": 4,
+          "tag": "BUTTON",
+          "class": "mantine-focus-auto mantine-active Button_button__pks2047 Button_button_variant_text__pks204e Button_button_size_md__pks2049 Button_button_colorType_system__pks204h Button_button_compound_10__pks204y IconButton__6knegw0 IconButton_icon_size_md__6knegw2 m_77c9d27d mantine-Button-root m_87cf2631 mantine-UnstyledButton-root",
+          "rect": [
+            324,
+            4,
+            32,
+            32
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": null,
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "borderTopColor": "rgb(178, 202, 214)",
+            "borderTopWidth": "0px",
+            "color": "rgb(178, 202, 214)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "paddingBottom": "6px",
+            "paddingLeft": "6px",
+            "paddingRight": "6px",
+            "paddingTop": "6px"
+          }
+        },
+        {
+          "index": 11,
+          "tag": "SPAN",
+          "class": "sc-e57a2245-1 lbrFGm",
+          "rect": [
+            16,
+            53,
+            328,
+            24
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": "Insert fields",
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(188, 207, 220)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "520",
+            "lineHeight": "24px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        },
+        {
+          "index": 12,
+          "tag": "DIV",
+          "class": "sc-e57a2245-2 NKeHC",
+          "rect": [
+            16,
+            85,
+            328,
+            42
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": null,
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "99999px",
+            "borderTopColor": "rgb(50, 81, 103)",
+            "borderTopWidth": "1px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24.8px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        },
+        {
+          "index": 14,
+          "tag": "DIV",
+          "class": "m_576c9d4 m_89d33d6d mantine-Tabs-list TabsList_tabsList__1smzw7y0 TabsList_tabsList_variant_primary__1smzw7y1",
+          "rect": [
+            17,
+            86,
+            326,
+            40
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": null,
+          "style": {
+            "backgroundColor": "rgb(29, 32, 33)",
+            "borderRadius": "9999px",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24.8px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        },
+        {
+          "index": 15,
+          "tag": "BUTTON",
+          "class": "mantine-focus-auto m_539e827b m_4ec4dce6 mantine-Tabs-tab TabsTab_tab__1rjdzev0 TabsTab_tab_variant_primary__1rjdzev2 m_87cf2631 mantine-UnstyledButton-root",
+          "rect": [
+            17,
+            86,
+            81.5,
+            40
+          ],
+          "disabled": false,
+          "selected": "false",
+          "text": null,
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "9999px",
+            "borderTopColor": "rgb(225, 226, 228)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "paddingBottom": "8px",
+            "paddingLeft": "12px",
+            "paddingRight": "12px",
+            "paddingTop": "8px"
+          }
+        },
+        {
+          "index": 18,
+          "tag": "BUTTON",
+          "class": "mantine-focus-auto m_539e827b m_4ec4dce6 mantine-Tabs-tab TabsTab_tab__1rjdzev0 TabsTab_tab_variant_primary__1rjdzev2 m_87cf2631 mantine-UnstyledButton-root",
+          "rect": [
+            98.5,
+            86,
+            81.5,
+            40
+          ],
+          "disabled": false,
+          "selected": "false",
+          "text": null,
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "9999px",
+            "borderTopColor": "rgb(225, 226, 228)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "paddingBottom": "8px",
+            "paddingLeft": "12px",
+            "paddingRight": "12px",
+            "paddingTop": "8px"
+          }
+        },
+        {
+          "index": 21,
+          "tag": "BUTTON",
+          "class": "mantine-focus-auto m_539e827b m_4ec4dce6 mantine-Tabs-tab TabsTab_tab__1rjdzev0 TabsTab_tab_variant_primary__1rjdzev2 m_87cf2631 mantine-UnstyledButton-root",
+          "rect": [
+            180,
+            86,
+            81.5,
+            40
+          ],
+          "disabled": false,
+          "selected": "false",
+          "text": null,
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "9999px",
+            "borderTopColor": "rgb(225, 226, 228)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "paddingBottom": "8px",
+            "paddingLeft": "12px",
+            "paddingRight": "12px",
+            "paddingTop": "8px"
+          }
+        },
+        {
+          "index": 24,
+          "tag": "BUTTON",
+          "class": "mantine-focus-auto m_539e827b m_4ec4dce6 mantine-Tabs-tab TabsTab_tab__1rjdzev0 TabsTab_tab_variant_primary__1rjdzev2 m_87cf2631 mantine-UnstyledButton-root",
+          "rect": [
+            261.5,
+            86,
+            81.5,
+            40
+          ],
+          "disabled": false,
+          "selected": "false",
+          "text": null,
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "9999px",
+            "borderTopColor": "rgb(225, 226, 228)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "paddingBottom": "8px",
+            "paddingLeft": "12px",
+            "paddingRight": "12px",
+            "paddingTop": "8px"
+          }
+        },
+        {
+          "index": 27,
+          "tag": "DIV",
+          "class": "BaseScrollContainer-module-scss-module__Ff2yGG__container sc-e57a2245-4 eRjqsI custom-scrollbar-reskin",
+          "rect": [
+            0,
+            129,
+            360,
+            532
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": null,
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24.8px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        },
+        {
+          "index": 30,
+          "tag": "DIV",
+          "class": "sc-e57a2245-6 sc-e57a2245-7 dQkzjH hVbrqI",
+          "rect": [
+            16,
+            141,
+            328,
+            24
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": "Properties",
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(188, 207, 220)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "520",
+            "lineHeight": "24px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        },
+        {
+          "index": 31,
+          "tag": "DIV",
+          "class": "sc-e57a2245-11 jzLHfX",
+          "rect": [
+            16,
+            173,
+            328,
+            18
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": "No field is selected. Select a field to edit its properties",
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(188, 207, 220)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "420",
+            "lineHeight": "18px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        },
+        {
+          "index": 32,
+          "tag": "DIV",
+          "class": "sc-e57a2245-3 cmxxJB",
+          "rect": [
+            0,
+            661,
+            360,
+            58
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": null,
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24.8px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "paddingRight": "16px",
+            "paddingTop": "2px"
+          }
+        },
+        {
+          "index": 33,
+          "tag": "BUTTON",
+          "class": "mantine-focus-auto mantine-active Button_button__pks2047 Button_button_variant_outlined__pks204d Button_button_size_lg__pks204a Button_button_colorType_system__pks204h Button_button_compound_5__pks204t children-btn m_77c9d27d mantine-Button-root m_87cf2631 mantine-UnstyledButton-root",
+          "rect": [
+            16,
+            663,
+            156,
+            40
+          ],
+          "disabled": false,
+          "selected": null,
+          "text": null,
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "borderTopColor": "rgb(178, 202, 214)",
+            "borderTopWidth": "1px",
+            "color": "rgb(178, 202, 214)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "500",
+            "lineHeight": "24px",
+            "paddingBottom": "7px",
+            "paddingLeft": "15px",
+            "paddingRight": "15px",
+            "paddingTop": "7px"
+          }
+        },
+        {
+          "index": 36,
+          "tag": "BUTTON",
+          "class": "mantine-focus-auto Button_button__pks2047 Button_button_variant_filled__pks204c Button_button_size_lg__pks204a Button_button_colorType_system__pks204h Button_button_compound_0__pks204o children-btn m_77c9d27d mantine-Button-root m_87cf2631 mantine-UnstyledButton-root",
+          "rect": [
+            188,
+            663,
+            156,
+            40
+          ],
+          "disabled": true,
+          "selected": null,
+          "text": null,
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "borderTopColor": "rgb(225, 226, 228)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "500",
+            "lineHeight": "24px",
+            "paddingBottom": "8px",
+            "paddingLeft": "16px",
+            "paddingRight": "16px",
+            "paddingTop": "8px"
+          }
+        }
+      ]
+    }
+  ],
+  "caution": "The57.5\u00d724PDFFonticontaglayoutboxequalsTab81.5widthminus24horizontalpadding. Itisnotaglyphadvanceorencodingdiagnosis; original24pxfont/codepointandactualpseudo-elementpaintareseparate."
+}

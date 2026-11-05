@@ -1,0 +1,170 @@
+[
+  {
+    "map": "public/ui/chunks/3U6RFPYL.js.map",
+    "index": 3,
+    "source": "../../../src/ui/src/hooks/useOnContentEditHistoryUndoRedoChanged/index.js",
+    "bytes": 150,
+    "sha256": "9019ae2c3e22a480e75b681728fc7727fec48453c263e1af618c23acfde0c47f"
+  },
+  {
+    "map": "public/ui/chunks/3U6RFPYL.js.map",
+    "index": 4,
+    "source": "../../../src/ui/src/hooks/useOnContentEditHistoryUndoRedoChanged/useOnContentEditHistoryUndoRedoChanged.js",
+    "bytes": 1638,
+    "sha256": "1e0ab31e29f163d4f87e03153058ff3b99eede0a2381f58a106224e2bb91048a"
+  },
+  {
+    "map": "public/ui/chunks/3U6RFPYL.js.map",
+    "index": 10,
+    "source": "../../../src/ui/src/components/TextEditingPanel/TextEditingPanelHelpers/updateContentEditingFonts.js",
+    "bytes": 752,
+    "sha256": "3d132dfa0ea9951fecd1bccda5ac5ea68e2523ab3a4e127b4a1fb28f9f685876"
+  },
+  {
+    "map": "public/ui/chunks/A3RTCIYN.js.map",
+    "index": 1,
+    "source": "../../../src/ui/src/constants/downloads.js",
+    "bytes": 123,
+    "sha256": "fdbceed6c685e650091ab3f170e2c91323cc4a1fcad8c360016806e8944fc6d3"
+  },
+  {
+    "map": "public/ui/chunks/BG2WUSAF.js.map",
+    "index": 135,
+    "source": "../../../src/ui/src/core/createDocument.js",
+    "bytes": 176,
+    "sha256": "94cb6788cdb1e63b5f1cf90cbd2ce1b83a15c3e8333817d0a13a92957f273455"
+  },
+  {
+    "map": "public/ui/chunks/BG2WUSAF.js.map",
+    "index": 137,
+    "source": "../../../src/ui/src/core/getContentEditManager.js",
+    "bytes": 143,
+    "sha256": "ee4e8e767ed5a9d2a6a12247aadee0b57a166b38b4d8567bae326e9ac8cbeed8"
+  },
+  {
+    "map": "public/ui/chunks/EOCBMTRT.js.map",
+    "index": 61,
+    "source": "../../../src/ui/src/event-listeners/onContentEditModeStarted.js",
+    "bytes": 2969,
+    "sha256": "1ee098c4f4cf03cf43eff5582c288a5da4237e30eeb3515e20374155ba20adef"
+  },
+  {
+    "map": "public/ui/chunks/EOCBMTRT.js.map",
+    "index": 62,
+    "source": "../../../src/ui/src/constants/contentEdit.js",
+    "bytes": 50,
+    "sha256": "1f205bcef627d3d7d57dfce45b8e108728689472439bc034ab9c8fe86522c37b"
+  },
+  {
+    "map": "public/ui/chunks/EOCBMTRT.js.map",
+    "index": 63,
+    "source": "../../../src/ui/src/helpers/contentEditHotkeys.js",
+    "bytes": 8186,
+    "sha256": "41a5f956e14c7a96d144a497d01326b970e07fd77bfdfb28ac8166f3514b87a7"
+  },
+  {
+    "map": "public/ui/chunks/EOCBMTRT.js.map",
+    "index": 64,
+    "source": "../../../src/ui/src/event-listeners/onContentEditModeEnded.js",
+    "bytes": 1535,
+    "sha256": "797af4c191a2abf8e4026a6aa135939154d8259b95ff850cb23d14b04712365f"
+  },
+  {
+    "map": "public/ui/chunks/EOCBMTRT.js.map",
+    "index": 67,
+    "source": "../../../src/ui/src/event-listeners/onContentEditDocumentDigitalSigned.js",
+    "bytes": 594,
+    "sha256": "4b8c04b92a674720bc1d1bfe16b51bb36cf3ce4d4a13ca8dd63d8a0a03f5712b"
+  },
+  {
+    "map": "public/ui/chunks/EOCBMTRT.js.map",
+    "index": 68,
+    "source": "../../../src/ui/src/event-listeners/onContentEditPasswordRequired.js",
+    "bytes": 877,
+    "sha256": "5ad7e06ca766b904742e25b575837f2f14660d28ad1f686e83d68a38a3fe9d93"
+  },
+  {
+    "map": "public/ui/chunks/EOCBMTRT.js.map",
+    "index": 69,
+    "source": "../../../src/ui/src/helpers/contentEditPasswordRequiredHelper.js",
+    "bytes": 4574,
+    "sha256": "e028db7d80d8d52f86eb3edf9ee7b49a89ecfd25e77d209fc5b66bb2b3db9e4b"
+  },
+  {
+    "map": "public/ui/chunks/JLF6MAVP.js.map",
+    "index": 5,
+    "source": "../../../src/ui/src/helpers/downloadPdf.js",
+    "bytes": 27680,
+    "sha256": "3b7e439a01b9ecc5e783c047dc20b585b68a8221c84243be0fad9ca17555949f"
+  },
+  {
+    "map": "public/ui/chunks/JLF6MAVP.js.map",
+    "index": 6,
+    "source": "../../../src/ui/src/helpers/downloadHelper.js",
+    "bytes": 2930,
+    "sha256": "69cad2373aa3c5d05ad6ca9149804bd3d453e7c60d81ff0b3d561954afe5ccff"
+  },
+  {
+    "map": "public/ui/chunks/TVQEAFKE.js.map",
+    "index": 0,
+    "source": "../../../src/ui/src/components/ContentEditLinkModal/index.js",
+    "bytes": 105,
+    "sha256": "1cfa12e71409abcf943c9d6025f57c81c2f417ccefd2289d5923c98df6da2229"
+  },
+  {
+    "map": "public/ui/chunks/TVQEAFKE.js.map",
+    "index": 1,
+    "source": "../../../src/ui/src/components/ContentEditLinkModal/ContentEditLinkModalContainer.js",
+    "bytes": 1246,
+    "sha256": "b6d5b58b39e15cabef634c0e3fa2d9dc65ec492162edf2c2ca46bfb3a2a0e309"
+  },
+  {
+    "map": "public/ui/chunks/TVQEAFKE.js.map",
+    "index": 2,
+    "source": "../../../src/ui/src/components/ContentEditLinkModal/ContentEditLinkModal.js",
+    "bytes": 2047,
+    "sha256": "2c80e57243a5b9c4139b476ddce954b420e68c0b0d89e64ed8b203ee23c67066"
+  },
+  {
+    "map": "public/ui/chunks/WYL5LIQZ.js.map",
+    "index": 149,
+    "source": "../../../src/ui/assets/icons/icon-content-edit.svg",
+    "bytes": 920,
+    "sha256": "bdd81a0fe1d38f3bcea2070b611d5c4696455cc4735cb208d326269a59db95da"
+  },
+  {
+    "map": "public/ui/chunks/WYL5LIQZ.js.map",
+    "index": 157,
+    "source": "../../../src/ui/assets/icons/icon-download.svg",
+    "bytes": 428,
+    "sha256": "06b10c5c08a5a95ae9b5fc2bbae9edc72dfb93c69fe18bfe7d0ef5c5d41965d9"
+  },
+  {
+    "map": "public/ui/webviewer-ui.min.js.map",
+    "index": 1,
+    "source": "../../src/ui/src/helpers/isContentEditWarningHidden.js",
+    "bytes": 593,
+    "sha256": "9faf253a0c621fcfcb596528b6ab31ee093aa63b40417c07b99d722360419235"
+  },
+  {
+    "map": "public/ui/webviewer-ui.min.js.map",
+    "index": 172,
+    "source": "../../src/ui/src/components/ModularComponents/PresetButton/buttons/Download.js",
+    "bytes": 2894,
+    "sha256": "c2ea6b45d3c61fed06adab9ad87596fcc249842646662008f60b27cabb6e6658"
+  },
+  {
+    "map": "public/ui/webviewer-ui.min.js.map",
+    "index": 179,
+    "source": "../../src/ui/src/components/ModularComponents/PresetButton/buttons/ContentEdit.js",
+    "bytes": 3594,
+    "sha256": "604c7b567f7137be09c7eb456c3d2c98ba00e12c68102afd4ff8690d6fdfb730"
+  },
+  {
+    "map": "public/ui/webviewer-ui.min.js.map",
+    "index": 377,
+    "source": "../../src/ui/src/apis/downloadPdf.js",
+    "bytes": 3704,
+    "sha256": "6e063a726e98b636891581e62a47612565270eff5100e9e5115ab7103c32ad4e"
+  }
+]

@@ -3,12 +3,44 @@ const s = @import("syntax.zig");
 const A = std.mem.Allocator;
 pub const Object = struct { value: s.Value, body: []const u8, stream: ?[]const u8 = null, changed: ?[]const u8 = null, dirty: bool = false };
 const Xref = struct { offset: usize = 0, generation: u16 = 0, live: bool = false, seen: bool = false, busy: bool = false, object: ?*Object = null };
-pub const Page = struct { object_id: u32 = 0, number: usize, resources: s.Value, media_box: s.Value, contents: []u32, runs: []@import("content.zig").Run = &.{}, annotation_refs: std.ArrayList(s.Value) = .empty };
+pub const Page = struct {
+    object_id: u32 = 0,
+    number: usize,
+    resources: s.Value,
+    media_box: s.Value,
+    crop_box: ?s.Value = null,
+    rotation: i32 = 0,
+    contents: []u32,
+    runs: []@import("content.zig").Run = &.{},
+    annotation_refs: std.ArrayList(s.Value) = .empty,
+    pub fn visibleBox(self: Page) ![4]f64 {
+        var box = try rectangle(self.media_box);
+        if (self.crop_box) |crop| {
+            const c = rectangle(crop) catch return error.InvalidCropBox;
+            box = .{ @max(box[0], c[0]), @max(box[1], c[1]), @min(box[2], c[2]), @min(box[3], c[3]) };
+            if (box[2] <= box[0] or box[3] <= box[1]) return error.InvalidCropBox;
+        }
+        return box;
+    }
+};
+pub fn rectangle(value: s.Value) ![4]f64 {
+    if (value != .array or value.array.len != 4) return error.InvalidMediaBox;
+    var box: [4]f64 = undefined;
+    for (&box, value.array) |*v, n| {
+        v.* = try s.number(n);
+        if (!std.math.isFinite(v.*) or @abs(v.*) > 1e6) return error.InvalidMediaBox;
+    }
+    if (box[2] <= box[0] or box[3] <= box[1]) return error.InvalidMediaBox;
+    return box;
+}
+
 pub const Document = struct {
     arena: std.heap.ArenaAllocator,
     bytes: []const u8,
     entries: []Xref = &.{},
     entries_storage: []Xref = &.{},
+    // Read-only page views share the document index, but own objects they resolve.
+    page_objects: ?std.AutoHashMapUnmanaged(u32, *Object) = null,
     trailer: s.Value = .null,
     pages: ?[]Page = null,
     unsupported_appearance: bool = false,
@@ -87,6 +119,9 @@ pub const Document = struct {
         const x = &self.entries[ref.id];
         if (!x.live or x.generation != ref.generation) return error.MissingReference;
         if (x.object) |o| return o;
+        if (self.page_objects) |cache| {
+            if (cache.get(ref.id)) |o| return o;
+        }
         if (x.busy) return error.ReferenceCycle;
         x.busy = true;
         defer x.busy = false;
@@ -118,7 +153,7 @@ pub const Document = struct {
         if (!p.keyword("endobj")) return error.InvalidObject;
         const o = try self.allocator().create(Object);
         o.* = .{ .value = val, .stream = stream, .body = self.bytes[body_start..body_end] };
-        x.object = o;
+        if (self.page_objects) |*cache| try cache.put(self.allocator(), ref.id, o) else x.object = o;
         return o;
     }
     pub fn addObject(self: *Document, value: s.Value, stream: ?[]const u8) !u32 {
@@ -162,7 +197,7 @@ pub const Document = struct {
         }
         return v;
     }
-    fn walk(self: *Document, value: s.Value, resources: ?s.Value, box: ?s.Value, path: *std.ArrayList(u32), visited: []bool, result: *std.ArrayList(Page)) anyerror!void {
+    fn walk(self: *Document, value: s.Value, resources: ?s.Value, box: ?s.Value, crop: ?s.Value, rotation: ?s.Value, path: *std.ArrayList(u32), visited: []bool, result: *std.ArrayList(Page)) anyerror!void {
         if (path.items.len >= 64 or result.items.len >= 100000) return error.PageLimit;
         if (value != .ref) return error.InvalidPageTree;
         if (std.mem.indexOfScalar(u32, path.items, value.ref.id) != null) return error.PageTreeCycle;
@@ -173,22 +208,31 @@ pub const Document = struct {
         defer _ = path.pop();
         const v = try self.resolve(value);
         if (v != .dict) return error.InvalidPageTree;
-        for ([_][]const u8{ "Rotate", "CropBox", "UserUnit", "Group" }) |key| {
+        for ([_][]const u8{ "UserUnit", "Group" }) |key| {
             if (s.get(v, key) != null) self.unsupported_appearance = true;
         }
         const res = s.get(v, "Resources") orelse resources;
         const media = s.get(v, "MediaBox") orelse box;
+        const crop_box = s.get(v, "CropBox") orelse crop;
+        const rotate = s.get(v, "Rotate") orelse rotation;
         const kind = s.get(v, "Type") orelse return error.InvalidPageTree;
         if (kind != .name) return error.InvalidPageTree;
         if (std.mem.eql(u8, kind.name, "Pages")) {
             if (s.get(v, "Annots") != null) self.unsupported_appearance = true;
             const kids = try self.resolve(s.get(v, "Kids") orelse return error.InvalidPageTree);
             if (kids != .array) return error.InvalidPageTree;
-            for (kids.array) |k| try self.walk(k, res, media, path, visited, result);
+            for (kids.array) |k| try self.walk(k, res, media, crop_box, rotate, path, visited, result);
         } else if (std.mem.eql(u8, kind.name, "Page")) {
             const mb = try self.resolve(media orelse return error.MissingMediaBox);
             if (mb != .array or mb.array.len != 4) return error.InvalidMediaBox;
-            for (mb.array) |n| _ = try s.number(n);
+            _ = try rectangle(mb);
+            const cb = if (crop_box) |value_| try self.resolve(value_) else null;
+            var degrees: i32 = 0;
+            if (rotate) |value_| {
+                const n = try self.resolve(value_);
+                if (n != .integer or @mod(n.integer, 90) != 0) return error.InvalidRotation;
+                degrees = @intCast(@mod(n.integer, 360));
+            }
             var ids: std.ArrayList(u32) = .empty;
             if (s.get(v, "Contents")) |contents| {
                 if (contents == .ref and (try self.object(contents.ref)).stream != null) {
@@ -202,11 +246,10 @@ pub const Document = struct {
                     }
                 }
             }
-            try result.append(self.allocator(), .{ .object_id = value.ref.id, .number = result.items.len + 1, .resources = try self.resolve(res orelse return error.MissingResources), .media_box = mb, .contents = try ids.toOwnedSlice(self.allocator()) });
+            try result.append(self.allocator(), .{ .object_id = value.ref.id, .number = result.items.len + 1, .resources = try self.resolve(res orelse return error.MissingResources), .media_box = mb, .crop_box = cb, .rotation = degrees, .contents = try ids.toOwnedSlice(self.allocator()) });
         } else return error.InvalidPageTree;
     }
-    pub fn inspect(self: *Document) anyerror![]Page {
-        if (self.pages) |pages| return pages;
+    pub fn indexPages(self: *Document) anyerror![]Page {
         const root = try self.resolve(s.get(self.trailer, "Root").?);
         for ([_][]const u8{ "AcroForm", "OCProperties", "OutputIntents" }) |key| {
             if (s.get(root, key) != null) self.unsupported_appearance = true;
@@ -215,13 +258,19 @@ pub const Document = struct {
         var pages: std.ArrayList(Page) = .empty;
         const visited = try self.allocator().alloc(bool, self.entries.len);
         @memset(visited, false);
-        try self.walk(s.get(root, "Pages") orelse return error.InvalidCatalog, null, null, &path, visited, &pages);
-        for (pages.items) |*page| {
+        try self.walk(s.get(root, "Pages") orelse return error.InvalidCatalog, null, null, null, null, &path, visited, &pages);
+        for (pages.items) |page| _ = try page.visibleBox();
+        return pages.toOwnedSlice(self.allocator());
+    }
+    pub fn inspect(self: *Document) anyerror![]Page {
+        if (self.pages) |pages| return pages;
+        const pages = try self.indexPages();
+        for (pages) |*page| {
             self.context.page = page.number;
             page.runs = try @import("content.zig").inspect(self, page);
         }
-        self.pages = try pages.toOwnedSlice(self.allocator());
-        return self.pages.?;
+        self.pages = pages;
+        return pages;
     }
     pub fn replace(self: *Document, page: usize, run: usize, text: []const u8) !void {
         try @import("content.zig").replace(self, page, run, text);

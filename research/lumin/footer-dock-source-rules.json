@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "path": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "sha256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 375900,
+      "charEndExclusive": 389700,
+      "excerpt": "research/lumin/toolbar-source/extracted/footer/dock-and-navigation.source.js",
+      "excerptSHA256": "d6870006ffa5ae6a5b83f79ae993774639e2a2ff77c9d97ca5d30d4220970fa3"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/1x14mso6dmfsd.js",
+      "sha256": "0c4b8f23b6edabdc1d10c5047047424668b0c747c9e6035c929ed33cf8e82608",
+      "charStart": 43994,
+      "charEndExclusive": 45700,
+      "excerpt": "research/lumin/toolbar-source/extracted/footer/zoom-validation.source.js",
+      "excerptSHA256": "2c215127ac4e5870d60ddfabcd34fa1aaf48f35c02555fc39b02352a6c141612"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/2p7ff6utm04ap.css",
+      "sha256": "e2db125cd0576c4d3abe84df4dba6610b060bea4e13ca4dec845f7858df32c4d",
+      "charStart": 1762,
+      "charEndExclusive": 2395,
+      "excerpt": "research/lumin/toolbar-source/extracted/footer/input-button.css",
+      "excerptSHA256": "945602e23fcd670632b31e9edeeeaeb3ef8eba0f7bad06c993072952bbcce82a"
+    }
+  ],
+  "container": {
+    "height": 44,
+    "bottom": 16,
+    "alignment": "full viewport center",
+    "padding": [
+      6,
+      8
+    ],
+    "radius": 8,
+    "idleOpacity": 0.7,
+    "activeOpacity": 1,
+    "mouseleaveDelayMs": 3000
+  },
+  "zoom": {
+    "button": 32,
+    "glyph": 20,
+    "fieldMinimum": [
+      48,
+      32
+    ],
+    "gap": 4,
+    "min": 5,
+    "max": 9999,
+    "invalid": "retain current percentage"
+  },
+  "navigation": {
+    "button": 32,
+    "glyph": 20,
+    "fieldMinimum": [
+      48,
+      32
+    ],
+    "gap": 4,
+    "totalFont": {
+      "family": "Inter-Medium",
+      "size": 12,
+      "weight": 500,
+      "lineHeight": 16
+    },
+    "invalid": "retain current page"
+  },
+  "input": {
+    "font": {
+      "family": "Inter variable",
+      "size": 12,
+      "weight": 420,
+      "lineHeight": 18
+    },
+    "radius": 8,
+    "padding": 4,
+    "hover": "1px on-surface outline",
+    "focus": "3px secondary-container shadow"
+  },
+  "divider": {
+    "width": 1,
+    "declaredHeight": 16,
+    "liveComputedHeight": 0,
+    "horizontalMargin": 4
+  }
+}

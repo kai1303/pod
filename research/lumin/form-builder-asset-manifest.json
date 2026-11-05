@@ -1,0 +1,51 @@
+{
+  "scope": "Original public referenced UI artwork only; alternate onboarding/paywall branches static-derived, no personal form payloads",
+  "assets": [
+    {
+      "name": "welcome-intro",
+      "url": "https://static.luminpdf.com/_next/static/media/welcome-intro.0r4l80lyzh_4e.png",
+      "path": "research/lumin/toolbar-source/form-builder-assets/welcome-intro.png",
+      "sha256": "77da8d889d4cc053716b671778715ff791b6a0eb883d2825d3e9c8a054e0ba89",
+      "bytes": 233485,
+      "pixel_dimensions": [
+        1680,
+        2080
+      ]
+    },
+    {
+      "name": "welcome-intro-dark",
+      "url": "https://static.luminpdf.com/_next/static/media/welcome-intro-dark.0m6ni2u9ya_el.png",
+      "path": "research/lumin/toolbar-source/form-builder-assets/welcome-intro-dark.png",
+      "sha256": "ff728fffd9c4835727ab6f7c0d70283b19cc89ffcc3fcd8eb6c1b898b8571f77",
+      "bytes": 296205,
+      "pixel_dimensions": [
+        1680,
+        2080
+      ]
+    },
+    {
+      "name": "badge_premium",
+      "url": "https://www.luminpdf.com/pdf-assets/lumin-svgs/badge_premium.svg",
+      "path": "research/lumin/toolbar-source/form-builder-assets/badge_premium.svg",
+      "sha256": "badbe773ee44607d37ec0d32084409c42a9476c3924bd4b1c1e0d5beac7b2ae8",
+      "bytes": 463,
+      "svg_dimensions": {
+        "width": "20",
+        "height": "20",
+        "viewBox": "0 0 20 20"
+      }
+    },
+    {
+      "name": "paywall-internal-illustration",
+      "url": "https://www.luminpdf.com/pdf-assets/lumin-svgs/paywall-internal-illustration.svg",
+      "path": "research/lumin/toolbar-source/form-builder-assets/paywall-internal-illustration.svg",
+      "sha256": "d427d2f7996884c1e405802b2c4c51f435e756a937d5e076d75ca1460887acac",
+      "bytes": 252628,
+      "svg_dimensions": {
+        "width": "112",
+        "height": "100",
+        "viewBox": "0 0 112 100"
+      }
+    }
+  ]
+}

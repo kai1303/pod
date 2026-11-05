@@ -1,0 +1,4157 @@
+{
+  "scope": "Ordinary rail hover menus from original source DOM/CSS; no screenshots",
+  "variants": [
+    {
+      "name": "popular",
+      "focus": {
+        "role": null,
+        "tag": "DIV"
+      },
+      "footer": {
+        "button": {
+          "disabled": false,
+          "icon": null,
+          "iconStyle": null,
+          "images": [],
+          "label": [
+            63.4609375,
+            406,
+            153.078125,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(208, 204, 255)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            16,
+            400,
+            248,
+            32
+          ],
+          "style": {
+            "backgroundColor": "rgb(58, 40, 192)",
+            "borderRadius": "8px",
+            "color": "rgb(208, 204, 255)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "6px",
+            "paddingLeft": "12px",
+            "paddingRight": "12px",
+            "paddingTop": "6px"
+          },
+          "text": "Request signatures"
+        },
+        "description": {
+          "rect": [
+            16,
+            344,
+            248,
+            56
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "420",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "8px"
+          },
+          "text": "Digitally sign your documents with Lumin Sign"
+        },
+        "rect": [
+          8,
+          336,
+          264,
+          104
+        ],
+        "separator": [
+          0,
+          336,
+          280,
+          1
+        ],
+        "separatorStyle": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "color": "rgb(225, 226, 228)",
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "gap": "normal",
+          "lineHeight": "24.8px",
+          "marginBottom": "0px",
+          "marginTop": "0px",
+          "opacity": "1",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "paddingTop": "0px"
+        },
+        "style": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "color": "rgb(225, 226, 228)",
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "gap": "normal",
+          "lineHeight": "24.8px",
+          "marginBottom": "0px",
+          "marginTop": "8px",
+          "opacity": "1",
+          "paddingBottom": "8px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px",
+          "paddingTop": "8px"
+        }
+      },
+      "menu": {
+        "position": "right-start",
+        "rect": [
+          81,
+          36,
+          280,
+          448
+        ],
+        "style": {
+          "backgroundColor": "rgb(40, 43, 44)",
+          "borderRadius": "8px",
+          "color": "rgb(225, 226, 228)",
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "gap": "normal",
+          "lineHeight": "24.8px",
+          "marginBottom": "0px",
+          "marginTop": "0px",
+          "opacity": "1",
+          "paddingBottom": "8px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px",
+          "paddingTop": "8px"
+        }
+      },
+      "rows": [
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_comment_teardrop_text pdf-icon__24",
+          "icon": [
+            16,
+            16,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            18,
+            65.2578125,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            8,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Comment"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_signature pdf-icon__24",
+          "icon": [
+            16,
+            56,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            58,
+            64.3203125,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            48,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Signature"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_text_tool pdf-icon__24",
+          "icon": [
+            16,
+            96,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            98,
+            33.046875,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            88,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Type"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_freehand pdf-icon__24",
+          "icon": [
+            16,
+            136,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            138,
+            34.9375,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            128,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Draw"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_highlight pdf-icon__24",
+          "icon": [
+            16,
+            176,
+            23.8359375,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(227, 229, 232)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            47.8359375,
+            178,
+            144.1640625,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            168,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(227, 229, 232)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "420",
+            "gap": "normal",
+            "lineHeight": "21px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "0px",
+            "paddingTop": "8px"
+          },
+          "text": "Text highlight"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_free_hand_highlight pdf-icon__24",
+          "icon": [
+            16,
+            216,
+            23.8359375,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(227, 229, 232)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            47.8359375,
+            218,
+            144.1640625,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            208,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(227, 229, 232)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "420",
+            "gap": "normal",
+            "lineHeight": "21px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "0px",
+            "paddingTop": "8px"
+          },
+          "text": "Freehand highlight"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_rectangle pdf-icon__24",
+          "icon": [
+            16,
+            256,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            258,
+            42.2734375,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            248,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Shape"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_eraser pdf-icon__24",
+          "icon": [
+            16,
+            296,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            298,
+            42.828125,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            288,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Eraser"
+        }
+      ],
+      "viewport": [
+        1512,
+        834
+      ]
+    },
+    {
+      "name": "fill-sign",
+      "focus": {
+        "role": null,
+        "tag": "DIV"
+      },
+      "footer": {
+        "button": {
+          "disabled": false,
+          "icon": null,
+          "iconStyle": null,
+          "images": [],
+          "label": [
+            63.4609375,
+            494,
+            153.078125,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(208, 204, 255)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            16,
+            488,
+            248,
+            32
+          ],
+          "style": {
+            "backgroundColor": "rgb(58, 40, 192)",
+            "borderRadius": "8px",
+            "color": "rgb(208, 204, 255)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "6px",
+            "paddingLeft": "12px",
+            "paddingRight": "12px",
+            "paddingTop": "6px"
+          },
+          "text": "Request signatures"
+        },
+        "description": {
+          "rect": [
+            16,
+            432,
+            248,
+            56
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "420",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "8px"
+          },
+          "text": "Digitally sign your documents with Lumin Sign"
+        },
+        "rect": [
+          8,
+          424,
+          264,
+          104
+        ],
+        "separator": [
+          0,
+          424,
+          280,
+          1
+        ],
+        "separatorStyle": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "color": "rgb(225, 226, 228)",
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "gap": "normal",
+          "lineHeight": "24.8px",
+          "marginBottom": "0px",
+          "marginTop": "0px",
+          "opacity": "1",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "paddingTop": "0px"
+        },
+        "style": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "color": "rgb(225, 226, 228)",
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "gap": "normal",
+          "lineHeight": "24.8px",
+          "marginBottom": "0px",
+          "marginTop": "8px",
+          "opacity": "1",
+          "paddingBottom": "8px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px",
+          "paddingTop": "8px"
+        }
+      },
+      "menu": {
+        "position": "right-start",
+        "rect": [
+          81,
+          110,
+          280,
+          536
+        ],
+        "style": {
+          "backgroundColor": "rgb(40, 43, 44)",
+          "borderRadius": "8px",
+          "color": "rgb(225, 226, 228)",
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "gap": "normal",
+          "lineHeight": "24.8px",
+          "marginBottom": "0px",
+          "marginTop": "0px",
+          "opacity": "1",
+          "paddingBottom": "8px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px",
+          "paddingTop": "8px"
+        }
+      },
+      "rows": [
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_signature pdf-icon__24",
+          "icon": [
+            16,
+            16,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            18,
+            64.3203125,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            8,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Signature"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_text_tool pdf-icon__24",
+          "icon": [
+            16,
+            56,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            58,
+            33.046875,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            48,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Type"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_date_stamp pdf-icon__24",
+          "icon": [
+            16,
+            96,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            98,
+            31.421875,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            88,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Date"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_stamp pdf-icon__24",
+          "icon": [
+            16,
+            136,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [
+            {
+              "alt": "premium icon",
+              "rect": [
+                95.1953125,
+                140,
+                16,
+                16
+              ]
+            }
+          ],
+          "label": [
+            48,
+            138,
+            43.1953125,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            128,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Stamp"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-tool_dot_stamp pdf-icon__24",
+          "icon": [
+            16,
+            176,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            178,
+            23.7421875,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            168,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Dot"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-tool_check_stamp pdf-icon__24",
+          "icon": [
+            16,
+            216,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            218,
+            28.34375,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            208,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Tick"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-tool_cross_stamp pdf-icon__24",
+          "icon": [
+            16,
+            256,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            258,
+            38.8359375,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            248,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Cross"
+        },
+        {
+          "disabled": false,
+          "glyph": "kiwi-icon-pencil-lg Icomoon_icon__1piihjp0",
+          "icon": [
+            16,
+            344,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "kiwi-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": null,
+          "labelStyle": null,
+          "rect": [
+            8,
+            336,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Prepare form"
+        },
+        {
+          "disabled": false,
+          "glyph": "kiwi-icon-sparkles-lg Icomoon_icon__1piihjp0",
+          "icon": [
+            16,
+            384,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "kiwi-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": null,
+          "labelStyle": null,
+          "rect": [
+            8,
+            376,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "AI auto-detect"
+        }
+      ],
+      "viewport": [
+        1512,
+        834
+      ]
+    },
+    {
+      "name": "markup",
+      "focus": {
+        "role": null,
+        "tag": "DIV"
+      },
+      "footer": null,
+      "menu": {
+        "position": "right-start",
+        "rect": [
+          81,
+          184,
+          280,
+          456
+        ],
+        "style": {
+          "backgroundColor": "rgb(40, 43, 44)",
+          "borderRadius": "8px",
+          "color": "rgb(225, 226, 228)",
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "gap": "normal",
+          "lineHeight": "24.8px",
+          "marginBottom": "0px",
+          "marginTop": "0px",
+          "opacity": "1",
+          "paddingBottom": "8px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px",
+          "paddingTop": "8px"
+        }
+      },
+      "rows": [
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_comment_teardrop_text pdf-icon__24",
+          "icon": [
+            16,
+            16,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            18,
+            65.2578125,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            8,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Comment"
+        },
+        {
+          "disabled": false,
+          "glyph": "kiwi-icon-ph-ruler Icomoon_icon__1piihjp0",
+          "icon": [
+            16,
+            56,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "kiwi-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            58,
+            57.9140625,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            48,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Measure"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_text_tool pdf-icon__24",
+          "icon": [
+            16,
+            96,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            98,
+            33.046875,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            88,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Type"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_freehand pdf-icon__24",
+          "icon": [
+            16,
+            136,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            138,
+            34.9375,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            128,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Draw"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_highlight pdf-icon__24",
+          "icon": [
+            16,
+            176,
+            23.8359375,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(227, 229, 232)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            47.8359375,
+            178,
+            144.1640625,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            168,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(227, 229, 232)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "420",
+            "gap": "normal",
+            "lineHeight": "21px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "0px",
+            "paddingTop": "8px"
+          },
+          "text": "Text highlight"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_free_hand_highlight pdf-icon__24",
+          "icon": [
+            16,
+            216,
+            23.8359375,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(227, 229, 232)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            47.8359375,
+            218,
+            144.1640625,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            208,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(227, 229, 232)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "420",
+            "gap": "normal",
+            "lineHeight": "21px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "0px",
+            "paddingTop": "8px"
+          },
+          "text": "Freehand highlight"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_text_underline pdf-icon__24",
+          "icon": [
+            16,
+            256,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            258,
+            65.65625,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            248,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Text tools"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_rectangle pdf-icon__24",
+          "icon": [
+            16,
+            296,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            298,
+            42.2734375,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            288,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Shape"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_eraser pdf-icon__24",
+          "icon": [
+            16,
+            336,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            338,
+            42.828125,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            328,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Eraser"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_image pdf-icon__24",
+          "icon": [
+            16,
+            376,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            378,
+            40.9765625,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            368,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Image"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_OCR pdf-icon__24",
+          "icon": [
+            16,
+            416,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [
+            {
+              "alt": "premium icon",
+              "rect": [
+                139.734375,
+                420,
+                16,
+                16
+              ]
+            }
+          ],
+          "label": [
+            48,
+            418,
+            87.734375,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            408,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Perform OCR"
+        }
+      ],
+      "viewport": [
+        1512,
+        834
+      ]
+    },
+    {
+      "name": "security",
+      "focus": {
+        "role": null,
+        "tag": "DIV"
+      },
+      "footer": null,
+      "menu": {
+        "position": "right-start",
+        "rect": [
+          81,
+          332,
+          280,
+          136
+        ],
+        "style": {
+          "backgroundColor": "rgb(40, 43, 44)",
+          "borderRadius": "8px",
+          "color": "rgb(225, 226, 228)",
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "gap": "normal",
+          "lineHeight": "24.8px",
+          "marginBottom": "0px",
+          "marginTop": "0px",
+          "opacity": "1",
+          "paddingBottom": "8px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px",
+          "paddingTop": "8px"
+        }
+      },
+      "rows": [
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_redaction pdf-icon__24",
+          "icon": [
+            16,
+            16,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [
+            {
+              "alt": "premium icon",
+              "rect": [
+                119.3203125,
+                20,
+                16,
+                16
+              ]
+            }
+          ],
+          "label": [
+            48,
+            18,
+            67.3203125,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            8,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Redaction"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-set-password pdf-icon__24",
+          "icon": [
+            16,
+            56,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [
+            {
+              "alt": "premium icon",
+              "rect": [
+                143.375,
+                60,
+                16,
+                16
+              ]
+            }
+          ],
+          "label": [
+            48,
+            58,
+            91.375,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            48,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Set password"
+        },
+        {
+          "disabled": true,
+          "glyph": "pdf-icon pdf-icon-remove-password pdf-icon__24",
+          "icon": [
+            16,
+            96,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": null,
+          "labelStyle": null,
+          "rect": [
+            8,
+            88,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "0.38",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Remove password"
+        }
+      ],
+      "viewport": [
+        1512,
+        834
+      ]
+    },
+    {
+      "name": "organize",
+      "focus": {
+        "role": null,
+        "tag": "DIV"
+      },
+      "footer": null,
+      "menu": {
+        "position": "right-start",
+        "rect": [
+          81,
+          406,
+          280,
+          336
+        ],
+        "style": {
+          "backgroundColor": "rgb(40, 43, 44)",
+          "borderRadius": "8px",
+          "color": "rgb(225, 226, 228)",
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "gap": "normal",
+          "lineHeight": "24.8px",
+          "marginBottom": "0px",
+          "marginTop": "0px",
+          "opacity": "1",
+          "paddingBottom": "8px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px",
+          "paddingTop": "8px"
+        }
+      },
+      "rows": [
+        {
+          "disabled": false,
+          "glyph": "kiwi-icon-ph-list-numbers Icomoon_icon__1piihjp0",
+          "icon": [
+            16,
+            16,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "kiwi-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            18,
+            113.59375,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            8,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Bates numbering"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_merge pdf-icon__24",
+          "icon": [
+            16,
+            56,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            58,
+            42.7578125,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            48,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Merge"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_split pdf-icon__24",
+          "icon": [
+            16,
+            96,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            98,
+            94.15625,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            88,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Split & Extract"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_rotate pdf-icon__24",
+          "icon": [
+            16,
+            136,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            138,
+            43.890625,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            128,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Rotate"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_delete pdf-icon__24",
+          "icon": [
+            16,
+            176,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            178,
+            43.3828125,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            168,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Delete"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_move pdf-icon__24",
+          "icon": [
+            16,
+            216,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            218,
+            36.6171875,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            208,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Move"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_insert pdf-icon__24",
+          "icon": [
+            16,
+            256,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            258,
+            134.234375,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            248,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Insert blank page(s)"
+        },
+        {
+          "disabled": false,
+          "glyph": "pdf-icon pdf-icon-md_crop pdf-icon__24",
+          "icon": [
+            16,
+            296,
+            24,
+            24
+          ],
+          "iconStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "pdf-icomoon",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "gap": "normal",
+            "lineHeight": "24px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "images": [],
+          "label": [
+            48,
+            298,
+            32.4765625,
+            20
+          ],
+          "labelStyle": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "normal",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "rect": [
+            8,
+            288,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "8px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "8px"
+          },
+          "text": "Crop"
+        }
+      ],
+      "viewport": [
+        1512,
+        834
+      ]
+    }
+  ],
+  "extras": {
+    "popular": {
+      "labels": [
+        {
+          "rect": [
+            48,
+            18,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Comment"
+        },
+        {
+          "rect": [
+            48,
+            58,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Signature"
+        },
+        {
+          "rect": [
+            48,
+            98,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Type"
+        },
+        {
+          "rect": [
+            48,
+            138,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Draw"
+        },
+        {
+          "rect": [
+            47.8359375,
+            178,
+            144.1640625,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Text highlight"
+        },
+        {
+          "rect": [
+            47.8359375,
+            218,
+            144.1640625,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Freehand highlight"
+        },
+        {
+          "rect": [
+            48,
+            258,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Shape"
+        },
+        {
+          "rect": [
+            48,
+            298,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Eraser"
+        }
+      ],
+      "paragraphs": [
+        {
+          "rect": [
+            47.8359375,
+            178,
+            144.1640625,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Text highlight"
+        },
+        {
+          "rect": [
+            47.8359375,
+            218,
+            144.1640625,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Freehand highlight"
+        },
+        {
+          "rect": [
+            16,
+            344,
+            248,
+            56
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "420",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "8px"
+          },
+          "text": "Digitally sign your documents with Lumin Sign"
+        }
+      ],
+      "separators": [
+        {
+          "rect": [
+            0,
+            336,
+            280,
+            1
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgb(66, 71, 74)",
+            "borderTopWidth": "1px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24.8px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        }
+      ],
+      "svgs": [
+        {
+          "rect": [
+            63.4609375,
+            406,
+            20,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(208, 204, 255)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        }
+      ]
+    },
+    "fill-sign": {
+      "labels": [
+        {
+          "rect": [
+            48,
+            18,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Signature"
+        },
+        {
+          "rect": [
+            48,
+            58,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Type"
+        },
+        {
+          "rect": [
+            48,
+            98,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Date"
+        },
+        {
+          "rect": [
+            48,
+            138,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Stamp"
+        },
+        {
+          "rect": [
+            48,
+            178,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Dot"
+        },
+        {
+          "rect": [
+            48,
+            218,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Tick"
+        },
+        {
+          "rect": [
+            48,
+            258,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Cross"
+        },
+        {
+          "rect": [
+            48,
+            346,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Prepare form"
+        },
+        {
+          "rect": [
+            48,
+            386,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "AI auto-detect"
+        }
+      ],
+      "paragraphs": [
+        {
+          "rect": [
+            8,
+            296,
+            264,
+            40
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "paddingRight": "8px",
+            "paddingTop": "12px"
+          },
+          "text": "Form builder"
+        },
+        {
+          "rect": [
+            16,
+            432,
+            248,
+            56
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "420",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "8px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "8px"
+          },
+          "text": "Digitally sign your documents with Lumin Sign"
+        }
+      ],
+      "separators": [
+        {
+          "rect": [
+            0,
+            296,
+            280,
+            1
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgb(66, 71, 74)",
+            "borderTopWidth": "1px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24.8px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        },
+        {
+          "rect": [
+            0,
+            424,
+            280,
+            1
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgb(66, 71, 74)",
+            "borderTopWidth": "1px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24.8px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        }
+      ],
+      "svgs": [
+        {
+          "rect": [
+            63.4609375,
+            494,
+            20,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(208, 204, 255)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          }
+        }
+      ]
+    },
+    "security": {
+      "labels": [
+        {
+          "rect": [
+            48,
+            18,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Redaction"
+        },
+        {
+          "rect": [
+            48,
+            58,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Set password"
+        },
+        {
+          "rect": [
+            48,
+            98,
+            216,
+            20
+          ],
+          "style": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "opacity": "1",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "paddingRight": "0px",
+            "paddingTop": "0px"
+          },
+          "text": "Remove password"
+        }
+      ],
+      "paragraphs": [],
+      "separators": [],
+      "svgs": []
+    }
+  },
+  "anchors": {
+    "popular": [
+      4,
+      60,
+      72,
+      58
+    ],
+    "fill-sign": [
+      4,
+      134,
+      72,
+      58
+    ],
+    "markup": [
+      4,
+      208,
+      72,
+      58
+    ],
+    "security": [
+      4,
+      356,
+      72,
+      58
+    ],
+    "organize": [
+      4,
+      430,
+      72,
+      58
+    ]
+  },
+  "keyboardPopularTraversal": [
+    "Comment",
+    "Signature",
+    "Type",
+    "Draw",
+    "Shape",
+    "Eraser",
+    "Comment",
+    "Signature"
+  ],
+  "editTextHoverExcluded": true,
+  "nestedSignature": {
+    "beforeEscape": {
+      "parentMenuItems": 8,
+      "addSignatureButtonPresent": true
+    },
+    "afterSettledEscape": {
+      "parentMenuAbsent": true,
+      "addSignatureButtonAbsent": true
+    },
+    "nativeProbeMatches": true
+  }
+}

@@ -1,0 +1,494 @@
+{
+  "schema": "lumin-premium-catalog-source-rules-v1",
+  "manifest": "toolbar-source/extracted/premium-catalog/manifest.json",
+  "evidence_scope": "Downloaded shipped JS/CSS, original referenced public asset bytes and parent whitelisted live Edit gate/context fixtures. No captured JS execution/screenshots/UI actions in this subtask.",
+  "observed_default_edit": {
+    "access": "Current account gated; editing engine/toolbars behind gate remain inaccessible",
+    "title": "Edit text directly — no retyping needed",
+    "body": "Level up your work and edit any PDF text in seconds.",
+    "cta": "Upgrade now",
+    "fixture": "toolbar-source/edit-text-gate-computed-live.json",
+    "original_html_fixture": "toolbar-source/edit-text-premium-gate-live.json",
+    "context_fixture": "toolbar-source/edit-text-preserved-context-live.json",
+    "outer_px": [
+      480,
+      229
+    ],
+    "padded_image_frame": [
+      191.234375,
+      24,
+      97.5234375,
+      80
+    ],
+    "image_content_frame": [
+      199.234375,
+      32,
+      81.5234375,
+      64
+    ],
+    "title_frame": [
+      56.484375,
+      104,
+      367.0234375,
+      28
+    ],
+    "body_frame": [
+      66.890625,
+      136,
+      346.21875,
+      21
+    ],
+    "cta_frame": [
+      24,
+      173,
+      432,
+      32
+    ],
+    "navigation": "Popular remains active; Edit text never selected by gate",
+    "type_strip": "OpenType Inter12 remains visible under modal and after Escape (parent observation)",
+    "backdrop": "rgba(0,0,0,0.5) parent live-confirmed",
+    "explore_context": {
+      "fixture": "toolbar-source/edit-text-explore-context-live.json",
+      "under_gate": "Actual Explorepanel retained",
+      "immediate_escape": "Restores Searchinput focus with existing query/scroll",
+      "later_deactivation": "Separate panel dismissal behavior; do not conflate with gate closure"
+    }
+  },
+  "edit_content_selector": {
+    "module": 7871942,
+    "can_take_action": "baseGate.buttons.length>0",
+    "when_no_action": "No outcome title/message/icon overrides; may remain permission/member/generic gate",
+    "title_key": "viewer.editPdfOutcomeCopy",
+    "body_selector": "canUseProTrial && canUseBusinessTrial ? editPdfOutcomeCopySubtitle : editPdfOutcomeCopySubtitle2",
+    "trial_body": "Start your free 7-day trial and edit any PDF text in seconds.",
+    "nontrial_body": "Level up your work and edit any PDF text in seconds.",
+    "image": "170961.default.src direct string; no theme branch",
+    "higher_precedence": [
+      "join-workspace replacement gate may suppress standard gate",
+      "seat gate can replace title/message/CTA",
+      "outcome overrides apply before OCR overrides when not seat-gated"
+    ],
+    "evidence": [
+      "outcome-copy-selector",
+      "gate-overlay-content-render",
+      "edit-join-workspace-eligibility",
+      "edit-join-workspace-suppression",
+      "seat-gate-variants"
+    ]
+  },
+  "edit_artwork": {
+    "declared_url": "https://static.luminpdf.com/_next/static/media/illustration-magic-light.1dsydhts2-o6j.png",
+    "source_modules": [
+      3120154,
+      170961
+    ],
+    "intrinsic_dimensions_px": [
+      214,
+      168
+    ],
+    "light": "same original file",
+    "dark": "same original file, current dark HTML confirmed",
+    "dark_asset_search": "Bounded complete downloaded JS search found only light declaration in3 duplicate build artifacts; no magic-dark referenced asset. Do not invent/fetch a guessed dark filename.",
+    "display_rule": "generic img padding8/max-height80; global border-box plus intrinsic ratio yields64px image content height and81.5234375px width; padded box97.5234375×80",
+    "manifest": "premium-catalog-asset-manifest.json",
+    "evidence": [
+      "edit-magic-asset-declaration",
+      "gate-content-css-render"
+    ]
+  },
+  "shared_gate_layout": {
+    "modal": {
+      "wrapper": "6719595 AvailabilityToolCheckProvider useModal=true→307143 medium legacy modal→7048309 renderContentOnly=true→4300018 largeTitle=true",
+      "width_px": 480,
+      "padding_px": 24,
+      "radius_px": 16,
+      "close_icon": false,
+      "title_type": "Kiwi headline-lg PPAgrandir20/500/28, centered, margin-top0",
+      "body_type": "legacy body-medium Inter14/420/21 centered, margin-top4",
+      "single_cta": "filled/system/md32h,margin-top16,width100%",
+      "backdrop": "MUI default black0.5",
+      "focus": "307143 disableEnforceFocus=true, default autoFocus/restoreFocus",
+      "dismiss": "topmost Escape stops propagation then closes; backdrop target/container match"
+    },
+    "popover": {
+      "width_px": 304,
+      "padding_px": 16,
+      "radius_px": 16,
+      "title_type": "legacy title-medium Inter16/520/24, margin-top16",
+      "body_type": "same Inter14/420/21,margin-top4",
+      "normal_anchor_gap_px": 0,
+      "quick_search_gap_px": 16,
+      "fade_ms": 300,
+      "placement": "bottom/right-start/left-start depends host quicksearch/overflow/navigation"
+    },
+    "icons": {
+      "default_premium": "/pdf-assets/lumin-svgs/icon-three-stars.svg",
+      "permission_limit_signin": "/pdf-assets/images/permission_required.svg",
+      "unsupported_light": "https://static.luminpdf.com/_next/static/media/unsupported-file-type.263u5s3a4_rse.png",
+      "unsupported_dark": "https://static.luminpdf.com/_next/static/media/dark-unsupported-file-type.3stekmozbplzm.png"
+    },
+    "color_role_mix": "Paper/CTA Kiwi; outcome title/body legacy on-surface. See prior stamp/password source rules for exact theme values.",
+    "evidence": [
+      "premium-provider-modal-popover",
+      "gate-content-css-render",
+      "gate-overlay-content-render",
+      "gate-modal-size-defaults",
+      "generic-gate-icon-assets"
+    ]
+  },
+  "edit_entrypoints": [
+    {
+      "entry": "rail Edit text",
+      "source": "0qwcgrq08z83b.js/i7 +2w731319 metadata",
+      "gate": "AvailabilityToolCheckProvider tool CONTENT_EDIT,event EditPdf,useModal=true",
+      "short_circuit": "onClick premiumBadge ? toggleCheckPopper() : cleanup/convert-document/onClickNavigation(tab). Premium branch does not invoke navigation callback or tool/toolbar setters.",
+      "state_preservation": "current toolbar,selected navigation,Type strip/current tool unaffected by this branch; parent runtime confirms",
+      "hover": "EditPDF hover menu explicitly disabled",
+      "evidence": [
+        "rail-edit-shortcircuit",
+        "edit-rail-metadata",
+        "rail-allowed-mode-transition"
+      ]
+    },
+    {
+      "entry": "Explore Edit content",
+      "source": "9594849 in1vmims6r5cffr.js; quick-search group keyEDIT_CONTENT→function element",
+      "gate": "sameCONTENT_EDIT/EventEditPdf/useModal=true",
+      "short_circuit": "premiumBadge ? toggleCheckPopper : onClickNavigationButton(EDIT_PDF)",
+      "state_preservation": "Static callback omits nav/closeQuickSearch/query/Type resets; parent live confirms actualExplore retained and immediateEscape restores Searchfocus.",
+      "label": "getToolLabel common.editText versus viewer.quickSearch.editPdfTools.editContent per toolbar profile",
+      "evidence": [
+        "explore-edit-command",
+        "explore-edit-metadata",
+        "explore-entry-routing"
+      ],
+      "premium_badge_distinction": "The provider shouldShowPremiumIcon flag controls routing but this component renders no premium badge. Catalogpremium=false/absent artwork is not availability proof.",
+      "fixture": "toolbar-source/edit-text-explore-context-live.json"
+    },
+    {
+      "entry": "Type/Add text annotation",
+      "source": "896021 FREETEXT HOC, exposed as862964/FreeTextTool",
+      "gate": "separate FREETEXT availability; does not useEditPdf outcome event",
+      "behavior": "switchTool(FREETEXT) when available, otherwise its own permission gate; source model FREETEXT in permission-only switch branch",
+      "warning": "Do not gate Type as premium Edit text or hide/reset already-open Type strip when Edit gate opens",
+      "evidence": [
+        "type-freetext-entry",
+        "generic-gate-content-model",
+        "explore-entry-routing"
+      ]
+    },
+    {
+      "entry": "Add Paragraph",
+      "source": "6569340 (and9409999 alternate) inside actual EditPDF toolbar",
+      "behavior": "setToolMode(ADD_PARAGRAPH),disabled AI processing;6569340 hidden forNEXT_LUMIN",
+      "reachability": "inside already-allowed Edit mode; not same as Type/FREETEXT",
+      "evidence": [
+        "edit-add-paragraph"
+      ]
+    },
+    {
+      "entry": "legacy top header Edit text config",
+      "source": "9977117 CONTENT_EDIT_TOOL metadata",
+      "gate_metadata": "CONTENT_EDIT,premiumRequired:true,permissionRequired:true,eventEditPdf",
+      "limitation": "independent legacy header renderer transition preservation not fully traced; current native header-mode chooser can route shared gate as adaptation, not claim a separate observed source header entry",
+      "evidence": [
+        "legacy-top-header-edit-metadata"
+      ]
+    },
+    {
+      "entry": "URL/action EDIT_TEXT",
+      "source": "6378622 action routing +3vfdy tool config",
+      "gate": "CONTENT_EDIT with AppFeatures.EDIT_PDF",
+      "short_circuit": "TAB triggerOpenContainer returns if config unavailable&&shouldCloseTabAtLimit; triggerOpenTool routes access modal before handler",
+      "limitation": "feature-enabled landing-page alternate states can alter availability; not current runtime observed",
+      "evidence": [
+        "edit-url-action-routing",
+        "edit-url-action-gate-config",
+        "shared-access-modal-entry"
+      ]
+    }
+  ],
+  "named_event_catalog": [
+    {
+      "event": "redact",
+      "enum": "Redaction",
+      "tool": "REDACTION",
+      "base_plan_branch": "Business",
+      "entry": "Redaction tool provider useModal=true",
+      "copy": "generic premium unless seat/permission override",
+      "evidence": [
+        "redaction-provider"
+      ]
+    },
+    {
+      "event": "editPdf",
+      "enum": "EditPdf",
+      "tool": "CONTENT_EDIT",
+      "base_plan_branch": "Pro",
+      "entry": "Edit text rail/Explore Edit content useModal=true",
+      "copy": "EditPdf outcome override when actionable; magic-light asset in both themes",
+      "evidence": [
+        "outcome-copy-selector",
+        "rail-edit-shortcircuit",
+        "explore-edit-command"
+      ]
+    },
+    {
+      "event": "formBuilder",
+      "enum": "FormBuilder",
+      "tool": "FORM_BUILDER",
+      "base_plan_branch": "Business",
+      "entry": "form specific-tool provider; modal/hover placement right-start,width304 depending host",
+      "copy": "generic premium unless seat/permission override",
+      "evidence": [
+        "form-provider"
+      ]
+    },
+    {
+      "event": "OCR",
+      "enum": "OCR",
+      "tool": "OCR",
+      "base_plan_branch": "Pro",
+      "entry": "OCR toolbar provider uses host useModal",
+      "copy": "optional OCR outcome copy behind LWG_347_OCR_OUTCOME_COPY and trial/actionable predicate",
+      "evidence": [
+        "ocr-toolbar-provider",
+        "ocr-outcome-flag"
+      ]
+    },
+    {
+      "event": "rubberStamp",
+      "enum": "RubberStamp",
+      "tool": "RUBBER_STAMP",
+      "base_plan_branch": "Pro",
+      "entry": "Stamp toolbar HOC popover; host useModal may override",
+      "copy": "Stamp outcome only when actionable and canUseProTrial; otherwise generic",
+      "evidence": [
+        "stamp-provider",
+        "outcome-copy-selector"
+      ]
+    },
+    {
+      "event": "passwordProtection",
+      "enum": "PasswordProtection",
+      "tool": "PASSWORD_PROTECTION",
+      "feature": "SET_PASSWORD",
+      "base_plan_branch": "Business",
+      "entry": "Set/Change provider useModal=true; Remove bypasses this premium wrapper",
+      "copy": "generic premium unless seat/permission override",
+      "evidence": [
+        "password-provider"
+      ]
+    },
+    {
+      "event": "splitExtract",
+      "enum": "SplitPage",
+      "tool": "SPLIT_PAGE",
+      "base_plan_branch": "Pro",
+      "entry": "Split tool provider uses host useModal",
+      "copy": "Split outcome only when actionable and canUseProTrial",
+      "evidence": [
+        "split-provider",
+        "outcome-copy-selector"
+      ]
+    },
+    {
+      "event": "merge",
+      "enum": "MergePage",
+      "tool": "MERGE_PAGE",
+      "base_plan_branch": "Pro generic branch; document-size/doc-stack rules also apply",
+      "entry": "multiple-merge custom xs modal, merge pane size-limit/content gate, URL/modal path",
+      "copy": "generic trial/upgrade metadata or size/stack-specific copy; not universally480 shared gate",
+      "evidence": [
+        "merge-custom-premium-modal"
+      ]
+    },
+    {
+      "event": "duplicatePage",
+      "enum": "DuplicatePage",
+      "tool": "DUPLICATE_PAGE",
+      "base_plan_branch": "Pro generic branch",
+      "entry": "duplicate action validates then accessToolModalActions.openModal on PREMIUM_FEATURE before mutation",
+      "copy": "generic premium unless seat override; size-limit checks separate",
+      "evidence": [
+        "duplicate-action-gate"
+      ]
+    },
+    {
+      "event": "batesNumbering",
+      "enum": "BatesNumbering",
+      "tool": "PAGE_NUMBERS",
+      "base_plan_branch": "Pro generic branch",
+      "entry": "Bates toolbar provider uses host useModal",
+      "copy": "generic premium unless seat/permission override",
+      "evidence": [
+        "bates-provider"
+      ]
+    },
+    {
+      "event": "versionHistory",
+      "enum": "VersionHistory",
+      "tool": "version-history-specific component",
+      "base_plan_branch": "documentVersioning entitlement; do not infer generic tool branch",
+      "entry": "custom revision plan panel",
+      "copy": "revision upgrade title/description/time/quantity limits and seat-specific descriptions; manager CTA rules",
+      "evidence": [
+        "version-history-custom-gate"
+      ]
+    }
+  ],
+  "generic_content_model": {
+    "source_module": 5261040,
+    "business_tool_cases": [
+      "PASSWORD_PROTECTION",
+      "COMPRESS_PDF",
+      "FORM_BUILDER",
+      "SYNC_ONE_DRIVE",
+      "REDACTION"
+    ],
+    "pro": "other premium tools fall through default Pro branch; validateFeature decides if PREMIUM_FEATURE applies",
+    "default_title": "Upgrade to access",
+    "trial_body": "Start your free 7 days trial to experience this feature",
+    "nontrial_body": "Level up your work by unlocking this feature",
+    "trial_ctas": "Go Plan +Start free trial, or featureflag removes Go Plan leavingStart free trial",
+    "nontrial_cta": "shared/guest or old-plan branch Upgrade now; otherwise Go Plan",
+    "nonactionable_member_body": "This feature is for {{plan}} plans. Contact your plan administrator to upgrade.",
+    "permission": {
+      "title_key": "viewer.requestPermissionUpModal.permissionRequired",
+      "body_spectator": "Only user with Comment permission can use this feature",
+      "body_other": "Only user with Edit permission can use this feature",
+      "action": "Request permission button fromtype,not checkoutbuttons"
+    },
+    "signin": {
+      "title": "Sign in required",
+      "body": "Sign in to unlock this feature",
+      "cta": "Sign In Now"
+    },
+    "unsupported": {
+      "title": "Unsupported file type",
+      "body": "This feature is only available for PDF files.",
+      "cta": "Got it"
+    },
+    "evidence": [
+      "generic-gate-content-model",
+      "outcome-english-copy",
+      "permission-english-copy",
+      "unsupported-english-copy"
+    ]
+  },
+  "outcome_variants": {
+    "rubberStamp": {
+      "predicate": "actionable &&canUseProTrial",
+      "title": "Stamp documents instantly",
+      "body": "Start your free 7-day trial and stamp documents in seconds.",
+      "icon": "no override→defaultstars"
+    },
+    "splitExtract": {
+      "predicate": "actionable &&canUseProTrial",
+      "title": "Split & extract pages instantly",
+      "body": "Start your free 7-day trial and split/extract just the pages you need, in seconds.",
+      "icon": "defaultstars"
+    },
+    "OCR": {
+      "predicate": "eventOCR &&canUseProTrial &&actionable &&featureflagLWG_347_OCR_OUTCOME_COPY value true",
+      "title": "Turn scans into searchable text instantly",
+      "body": "Start your free 7-day trial and instantly convert scanned pages into selectable, searchable text.",
+      "icon": "default map unchanged"
+    },
+    "seat": {
+      "versions": [
+        "startTrial",
+        "upgrade",
+        "requestSeat",
+        "changeSeat"
+      ],
+      "predicate": "seat-plan workspace whose seat is neitherCOLLAB norFULL; freeworkspace picks trial/upgrade else owneradmin changeSeat/member requestSeat",
+      "effect": "replace title/body/CTA; request/change actions distinct external operations",
+      "entry_tools": [
+        "editPdfContent",
+        "redact",
+        "prepareForm",
+        "ocr",
+        "rubberStamp",
+        "splitExtractPage",
+        "merge",
+        "duplicatePage",
+        "batesNumbering",
+        "viewRestoreVersion",
+        "passwordProtection",
+        "manualSyncOneDrive",
+        "compress"
+      ],
+      "evidence": [
+        "seat-gate-variants",
+        "seat-gate-tool-map"
+      ]
+    },
+    "edit_join_workspace": {
+      "predicate": "EditPdf +personal +actionable +business domain +unifyfree +orglistloaded/allfree +notdismissed +featureflag",
+      "effect": "loading or suggestedworkspace replacement and follow-up success/request/failure; standard gate suppressed",
+      "status": "static-only alternate; personal/org identifiers not captured",
+      "evidence": [
+        "edit-join-workspace-eligibility",
+        "edit-join-workspace-suppression"
+      ]
+    }
+  },
+  "special_gate_families": {
+    "Compress": {
+      "not_event_enum": true,
+      "generic_branch": "COMPRESS_PDF business or FORM_BUILDER business provider with entryToolNamecompress",
+      "entitlement": "fileSizeLimitMB,availableCompressQuality;None alwaysallowed; disabled quality ifsizeexceeds or not allowed; undefinedentitlement unknown",
+      "contact_admin": "modern RadixDialog480width,padding24,radius16,shadow4,noX; hidden title/description and shared4300018largeTitle,noCTA,stars; legacybillingnonmanager branch",
+      "trial_offer": "inline smallerfile/lowerquality reframe with24sparkles,estimatedsize andStartfreetrial; eligiblefree+canStartTrial+canUseBusinessTrial+no sizeexceed+no servercompression",
+      "evidence": [
+        "compress-entitlement-check",
+        "compress-contact-admin-dialog",
+        "compress-inline-trial-offer",
+        "compress-warning-gate"
+      ]
+    },
+    "Merge": {
+      "custom_modal": "4699264modernModal xs328width,padding16,fullwidth CTA group,stars; ownCSS",
+      "alternate": "doc-size/doc-stack merge flows and genericaccess gates differ",
+      "evidence": [
+        "merge-custom-premium-modal"
+      ]
+    },
+    "VersionHistory": {
+      "component": "customrevisionplanpanel,not universal304/480gate",
+      "copy": "revision.upgrade.title/description with documentVersioning quantity/maxSaveTime,Google storage limits and Learnmore",
+      "cta": "manager/enhanced/enterprise/storage conditions;seat override uses its own descriptions",
+      "evidence": [
+        "version-history-custom-gate"
+      ]
+    }
+  },
+  "limits": {
+    "runtime_verified_by_parent": [
+      "currentEditPdfdefaultmodal",
+      "priorStampgenericpopover",
+      "Passwordgenericmodal",
+      "EditmodeandTypepreservation"
+    ],
+    "static_only": [
+      "all trial/seat/member/permission/signin/unsupported alternates unless prior dedicated evidence saysotherwise",
+      "OCR/Compress/Merge/Versionhistory/Bates/Duplicate/Formgate runtime states",
+      "licensedEditPDFtoolbars/engine"
+    ],
+    "unresolved": [
+      "independentlegacytopheader renderertransition",
+      "fullvariants dimensions/typemetrics/shadows/keyboard/focus/motion",
+      "allserver/checkout/seat actions deferred",
+      "completeapplicationpremiumgate inventory beyond namedmodule/eventcatalog"
+    ],
+    "not_done": [
+      "screenshots",
+      "capturedJavaScript execution",
+      "sourceUI interaction bysubagent",
+      "sourcegatebypass",
+      "sourcePDFchange",
+      "checkout/networkmutations"
+    ]
+  }
+}

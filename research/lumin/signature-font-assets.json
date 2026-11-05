@@ -1,0 +1,72 @@
+{
+  "schema": "lumin-signature-font-assets-v1",
+  "provenance": "Font declarations in downloaded original CSS; URLs resolved against captured stylesheet URL. No font download performed in this subtask.",
+  "fonts": [
+    {
+      "family": "DrSugiyama",
+      "weight": 300,
+      "style": "normal",
+      "font_display": "swap",
+      "observed_relative_url": "../media/DrSugiyama-Regular.1jim-6ykxh3il.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "observed_css_url": "https://static.luminpdf.com/_next/static/chunks/0hmqw_9wcmxid.css?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "resolved_url": "https://static.luminpdf.com/_next/static/media/DrSugiyama-Regular.1jim-6ykxh3il.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "local_asset_present": false,
+      "evidence": "font-face-DrSugiyama"
+    },
+    {
+      "family": "AlexBrush",
+      "weight": 300,
+      "style": "normal",
+      "font_display": "swap",
+      "observed_relative_url": "../media/AlexBrush-Regular.3kp_1vi09j3uo.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "observed_css_url": "https://static.luminpdf.com/_next/static/chunks/0hmqw_9wcmxid.css?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "resolved_url": "https://static.luminpdf.com/_next/static/media/AlexBrush-Regular.3kp_1vi09j3uo.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "local_asset_present": false,
+      "evidence": "font-face-AlexBrush"
+    },
+    {
+      "family": "DancingScript",
+      "weight": 400,
+      "style": "normal",
+      "font_display": "swap",
+      "observed_relative_url": "../media/DancingScript-Regular.01ofyh--jk1x3.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "observed_css_url": "https://static.luminpdf.com/_next/static/chunks/0hmqw_9wcmxid.css?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "resolved_url": "https://static.luminpdf.com/_next/static/media/DancingScript-Regular.01ofyh--jk1x3.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "local_asset_present": false,
+      "evidence": "font-face-DancingScript"
+    },
+    {
+      "family": "ArchitectsDaughter",
+      "weight": 300,
+      "style": "normal",
+      "font_display": "swap",
+      "observed_relative_url": "../media/ArchitectsDaughter-Regular.4307ujrgud2a7.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "observed_css_url": "https://static.luminpdf.com/_next/static/chunks/0hmqw_9wcmxid.css?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "resolved_url": "https://static.luminpdf.com/_next/static/media/ArchitectsDaughter-Regular.4307ujrgud2a7.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "local_asset_present": false,
+      "evidence": "font-face-ArchitectsDaughter"
+    },
+    {
+      "family": "HomemadeApple",
+      "weight": 300,
+      "style": "normal",
+      "font_display": "swap",
+      "observed_relative_url": "../media/HomemadeApple-Regular.1k1gk982h-94-.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "observed_css_url": "https://static.luminpdf.com/_next/static/chunks/0hmqw_9wcmxid.css?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "resolved_url": "https://static.luminpdf.com/_next/static/media/HomemadeApple-Regular.1k1gk982h-94-.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "local_asset_present": false,
+      "evidence": "font-face-HomemadeApple"
+    },
+    {
+      "family": "RockSalt",
+      "weight": 300,
+      "style": "normal",
+      "font_display": "swap",
+      "observed_relative_url": "../media/RockSalt-Regular.1bm6qn3owsy90.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "observed_css_url": "https://static.luminpdf.com/_next/static/chunks/0hmqw_9wcmxid.css?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "resolved_url": "https://static.luminpdf.com/_next/static/media/RockSalt-Regular.1bm6qn3owsy90.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "local_asset_present": false,
+      "evidence": "font-face-RockSalt"
+    }
+  ]
+}

@@ -22,13 +22,16 @@ const s = @import("syntax.zig");
 const f = @import("font.zig");
 const annotations = @import("annotations.zig");
 const A = std.mem.Allocator;
-const P = struct { x: f64, y: f64 };
-const Edge = struct { a: P, b: P };
+const P = extern struct { x: f64, y: f64 };
+pub const Edge = extern struct { a: P, b: P };
 const Color = [3]u8;
 pub const Bitmap = struct { width: u32, height: u32, pixels: []u8 };
-const Paint = struct { fill: Color = .{ 0, 0, 0 }, stroke: Color = .{ 0, 0, 0 }, width: f64 = 1, join: u8 = 0, miter: f64 = 10 };
+const Paint = struct { fill: Color = .{ 0, 0, 0 }, stroke: Color = .{ 0, 0, 0 }, width: f64 = 1, round_cap: bool = false, join: u8 = 0, miter: f64 = 10 };
 const Contour = struct { start: usize, closed: bool = false };
 const Path = struct {
+    // Stroking expands one input segment into several polygons (and round arcs).
+    point_limit: usize = 65536,
+    contour_limit: usize = 16384,
     points: std.ArrayList(P) = .empty,
     contours: std.ArrayList(Contour) = .empty,
     fn clear(self: *Path) void {
@@ -36,13 +39,13 @@ const Path = struct {
         self.contours.clearRetainingCapacity();
     }
     fn begin(self: *Path, a: A, p: P) !void {
-        if (self.contours.items.len >= 16384) return error.PathLimit;
+        if (self.contours.items.len >= self.contour_limit) return error.PathLimit;
         try self.contours.append(a, .{ .start = self.points.items.len });
         try self.add(a, p);
     }
     fn add(self: *Path, a: A, p: P) !void {
         if (!std.math.isFinite(p.x) or !std.math.isFinite(p.y) or @abs(p.x) > 1e9 or @abs(p.y) > 1e9) return error.InvalidTransform;
-        if (self.points.items.len >= 65536) return error.PathLimit;
+        if (self.points.items.len >= self.point_limit) return error.PathLimit;
         if (self.contours.items.len == 0) return error.InvalidPath;
         try self.points.append(a, p);
     }
@@ -72,6 +75,10 @@ fn len(a: P, b: P) f64 {
 fn flat(a: P, control: P, b: P) f64 {
     const distance = len(a, b);
     if (distance < 1e-12) return len(a, control);
+    // Distance to the finite chord also catches a collinear curve reversing direction.
+    const projection = (control.x - a.x) * (b.x - a.x) + (control.y - a.y) * (b.y - a.y);
+    if (projection < 0) return len(a, control);
+    if (projection > distance * distance) return len(b, control);
     return @abs((b.x - a.x) * (a.y - control.y) - (a.x - control.x) * (b.y - a.y)) / distance;
 }
 fn quadratic(path: *Path, a: A, p: P, q: P, r: P, depth: u8) anyerror!void {
@@ -114,15 +121,13 @@ pub fn validate(doc: *d.Document) !void {
     }
 }
 fn pageBox(page: d.Page) ![4]f64 {
-    var box: [4]f64 = undefined;
-    for (&box, page.media_box.array) |*v, n| {
-        v.* = try s.number(n);
-        if (!std.math.isFinite(v.*) or @abs(v.*) > 1e6) return error.InvalidMediaBox;
-    }
-    if (box[2] <= box[0] or box[3] <= box[1]) return error.InvalidMediaBox;
-    return box;
+    return page.visibleBox();
 }
-pub fn render(a: A, doc: *d.Document, page_index: usize, font_bytes: []const u8, width: u32) !Bitmap {
+const Layout = struct { page: *d.Page, height: u32, view: c.Matrix };
+pub const PaintCallback = *const fn (*anyopaque, [*]const Edge, usize, u32, f64, bool, bool) callconv(.c) bool;
+pub const Collector = struct { context: *anyopaque, paint: PaintCallback, hairlines: *bool };
+
+fn layout(doc: *d.Document, page_index: usize, width: u32) !Layout {
     if (width == 0 or width > 4096) return error.BitmapLimit;
     const pages = try doc.inspect();
     if (doc.unsupported_appearance) return error.UnsupportedPageAppearance;
@@ -130,23 +135,85 @@ pub fn render(a: A, doc: *d.Document, page_index: usize, font_bytes: []const u8,
     const page = &pages[page_index];
     try checkResources(doc, page.*);
     const box = try pageBox(page.*);
-    const scale = @as(f64, @floatFromInt(width)) / (box[2] - box[0]);
-    const h = @ceil((box[3] - box[1]) * scale);
+    const swap = @mod(page.rotation, 180) != 0;
+    const display_width = if (swap) box[3] - box[1] else box[2] - box[0];
+    const display_height = if (swap) box[2] - box[0] else box[3] - box[1];
+    const scale = @as(f64, @floatFromInt(width)) / display_width;
+    const h = @ceil(display_height * scale);
+    const view: c.Matrix = switch (page.rotation) {
+        0 => .{ scale, 0, 0, -scale, -box[0] * scale, box[3] * scale },
+        90 => .{ 0, scale, scale, 0, -box[1] * scale, -box[0] * scale },
+        180 => .{ -scale, 0, 0, scale, box[2] * scale, -box[1] * scale },
+        270 => .{ 0, -scale, -scale, 0, box[3] * scale, box[2] * scale },
+        else => return error.InvalidRotation,
+    };
     if (h < 1 or h > 16384 or h * @as(f64, @floatFromInt(width)) * 4 > 64 * 1024 * 1024) return error.BitmapLimit;
     const height: u32 = @intFromFloat(h);
+    return .{ .page = page, .height = height, .view = view };
+}
+pub fn collect(a: A, doc: *d.Document, page_index: usize, font_bytes: []const u8, width: u32, collector: Collector) !u32 {
+    const target = try layout(doc, page_index, width);
+    var arena = std.heap.ArenaAllocator.init(a);
+    defer arena.deinit();
+    var r = Renderer{ .allocator = arena.allocator(), .collector = collector, .view = target.view, .font_bytes = font_bytes };
+    try r.paintPage(doc, target.page, page_index);
+    return target.height;
+}
+pub fn render(a: A, doc: *d.Document, page_index: usize, font_bytes: []const u8, width: u32) !Bitmap {
+    const target = try layout(doc, page_index, width);
+    const height = target.height;
     const pixels = try a.alloc(u8, @as(usize, width) * height * 4);
     errdefer a.free(pixels);
     @memset(pixels, 255);
     var arena = std.heap.ArenaAllocator.init(a);
     defer arena.deinit();
-    var r = Renderer{ .allocator = arena.allocator(), .bitmap = .{ .width = width, .height = height, .pixels = pixels }, .view = .{ scale, 0, 0, -scale, -box[0] * scale, box[3] * scale }, .font_bytes = font_bytes };
-    _ = try c.interpretAllocated(doc, page, r.sink(), arena.allocator());
-    if (r.path.contours.items.len != 0) return error.UnpaintedPath;
-    try renderAnnotations(doc, page_index, &r);
+    var r = Renderer{ .allocator = arena.allocator(), .bitmap = .{ .width = width, .height = height, .pixels = pixels }, .view = target.view, .font_bytes = font_bytes };
+    try r.paintPage(doc, target.page, page_index);
     return r.bitmap.?;
 }
 fn renderAnnotations(doc: *d.Document, page_index: usize, renderer: *Renderer) !void {
     for (try annotations.list(doc, page_index)) |ann| {
+        renderer.opacity = annotations.effectiveOpacity(ann);
+        renderer.multiply_blend = annotations.isImportedMarkup(ann) and ann.kind == .highlight;
+        if (ann.imported_ink) {
+            const lo = point(renderer.view, ann.rect[0], ann.rect[1]);
+            const hi = point(renderer.view, ann.rect[2], ann.rect[3]);
+            const clip = [4]f64{ @min(lo.x, hi.x), @min(lo.y, hi.y), @max(lo.x, hi.x), @max(lo.y, hi.y) };
+            renderer.paint = .{ .width = ann.style.width, .round_cap = true, .join = 1 };
+            for (&renderer.paint.stroke, ann.style.stroke) |*channel, v| channel.* = @intFromFloat(@round(v * 255));
+            for (0..@max(1, ann.ink.starts.len)) |i| {
+                const points = ann.ink.subpath(ann.points, i);
+                // PDFKit emits a solitary move for move-only paths, which paints no mark.
+                if (ann.pdfkit_ink and points.len == 1) continue;
+                try renderer.path.begin(renderer.allocator, point(renderer.view, points[0].x, points[0].y));
+                const tail = if (points.len == 1) points else points[1..];
+                for (tail) |p| try renderer.path.add(renderer.allocator, point(renderer.view, p.x, p.y));
+                if (ann.pdfkit_ink) {
+                    try renderer.stroke(renderer.view, clip);
+                    renderer.path.clear();
+                }
+            }
+            if (!ann.pdfkit_ink) {
+                try renderer.stroke(renderer.view, clip);
+                renderer.path.clear();
+            }
+            continue;
+        }
+        if (annotations.isImportedMarkup(ann)) {
+            var color: Color = undefined;
+            for (&color, ann.style.stroke) |*channel, v| channel.* = @intFromFloat(@round(v * 255));
+            var i: usize = 0;
+            while (i < ann.points.len) : (i += 4) {
+                var buf: annotations.MarkupPolygon = undefined;
+                const outline = annotations.markupPolygon(ann, i, &buf);
+                var transformed: [buf.len]P = undefined;
+                for (transformed[0..outline.len], outline) |*p, q| p.* = point(renderer.view, q.x, q.y);
+                try polygon(&renderer.path, renderer.allocator, transformed[0..outline.len]);
+                try renderer.fill(&renderer.path, color, false);
+                renderer.path.clear();
+            }
+            continue;
+        }
         const obj = try annotations.appearanceObject(doc, ann);
         const saved = obj.changed;
         defer obj.changed = saved;
@@ -157,7 +224,6 @@ fn renderAnnotations(doc: *d.Document, page_index: usize, renderer: *Renderer) !
         var ids = [_]u32{normal};
         var page = d.Page{ .number = page_index + 1, .resources = s.get(obj.value, "Resources").?, .media_box = (try doc.inspect())[page_index].media_box, .contents = &ids };
         renderer.paint = .{};
-        renderer.opacity = annotations.effectiveOpacity(ann);
         _ = try c.interpretAllocated(doc, &page, renderer.sink(), renderer.allocator);
         if (renderer.path.contours.items.len != 0) return error.UnpaintedPath;
     }
@@ -165,15 +231,22 @@ fn renderAnnotations(doc: *d.Document, page_index: usize, renderer: *Renderer) !
 const Renderer = struct {
     allocator: A,
     bitmap: ?Bitmap = null,
+    collector: ?Collector = null,
     view: c.Matrix = .{ 1, 0, 0, 1, 0, 0 },
     font_bytes: []const u8 = &.{},
     font: ?f.Font = null,
     opacity: f64 = 1,
+    multiply_blend: bool = false,
     paint: Paint = .{},
     stack: std.ArrayList(Paint) = .empty,
     path: Path = .{},
     glyph_path: Path = .{},
     outline: f.Outline = .{},
+    fn paintPage(self: *Renderer, doc: *d.Document, page: *d.Page, page_index: usize) !void {
+        _ = try c.interpretAllocated(doc, page, self.sink(), self.allocator);
+        if (self.path.contours.items.len != 0) return error.UnpaintedPath;
+        try renderAnnotations(doc, page_index, self);
+    }
     fn sink(self: *Renderer) c.Sink {
         return .{ .context = self, .operator = operator, .glyph = glyph };
     }
@@ -200,9 +273,10 @@ const Renderer = struct {
             if (ns[0] < 0 or ns[0] > 1e6) return error.UnsupportedStroke;
             self.paint.width = ns[0];
         } else if (eq(op, "J")) {
-            if (ns[0] != 0) return error.UnsupportedStroke;
+            if (ns[0] != 0 and ns[0] != 1) return error.UnsupportedStroke;
+            self.paint.round_cap = ns[0] == 1;
         } else if (eq(op, "j")) {
-            if (ns[0] != 0 and ns[0] != 2) return error.UnsupportedStroke;
+            if (ns[0] != 0 and ns[0] != 1 and ns[0] != 2) return error.UnsupportedStroke;
             self.paint.join = @intFromFloat(ns[0]);
         } else if (eq(op, "M")) {
             if (ns[0] < 1 or ns[0] > 1e6) return error.UnsupportedStroke;
@@ -234,13 +308,13 @@ const Renderer = struct {
         } else if (eq(op, "S") or eq(op, "s") or eq(op, "B") or eq(op, "B*") or eq(op, "b") or eq(op, "b*")) {
             if (op[0] == 's' or op[0] == 'b') try self.path.close();
             if (op[0] == 'B' or op[0] == 'b') try self.fill(&self.path, self.paint.fill, op.len == 2);
-            try self.stroke(m);
+            try self.stroke(m, null);
             self.path.clear();
         }
     }
     fn glyph(ctx: *anyopaque, char: u8, transform: c.Matrix, state: c.State) anyerror!void {
         const self: *Renderer = @ptrCast(@alignCast(ctx));
-        if (state.mode == 3 or self.bitmap == null) return;
+        if (state.mode == 3 or (self.bitmap == null and self.collector == null)) return;
         if (state.mode != 0) return error.UnsupportedTextRendering;
         if (self.font == null) self.font = try f.Font.init(self.font_bytes);
         const font = self.font.?;
@@ -277,20 +351,38 @@ const Renderer = struct {
         }
         try self.fill(&self.glyph_path, self.paint.fill, false);
     }
-    fn stroke(self: *Renderer, m: c.Matrix) !void {
+    fn stroke(self: *Renderer, m: c.Matrix, clip: ?[4]f64) !void {
         const sx = @sqrt(m[0] * m[0] + m[1] * m[1]);
         const sy = @sqrt(m[2] * m[2] + m[3] * m[3]);
         if (@abs(sx - sy) > 1e-6 * @max(1, sx) or @abs(m[0] * m[2] + m[1] * m[3]) > 1e-6 * @max(1, sx * sy)) return error.UnsupportedStrokeTransform;
+        if (self.paint.width == 0) {
+            if (self.collector) |collector| collector.hairlines.* = true;
+        }
         const radius = if (self.paint.width == 0) @as(f64, 0.5) else self.paint.width * sx / 2;
-        var outline: Path = .{};
+        var outline: Path = .{ .point_limit = 2_000_000, .contour_limit = 262144 };
         defer {
             outline.points.deinit(self.allocator);
             outline.contours.deinit(self.allocator);
         }
         for (self.path.contours.items, 0..) |contour, ci| {
             const end = if (ci + 1 < self.path.contours.items.len) self.path.contours.items[ci + 1].start else self.path.points.items.len;
-            const pts = self.path.points.items[contour.start..end];
+            var pts = self.path.points.items[contour.start..end];
             if (pts.len < 2) continue;
+            if (self.paint.join == 1) {
+                var used: usize = 1;
+                for (pts[1..]) |p| {
+                    if (len(p, pts[used - 1]) > 1e-10) {
+                        pts[used] = p;
+                        used += 1;
+                    }
+                }
+                pts = pts[0..used];
+            }
+            if (!contour.closed and self.paint.round_cap) {
+                try roundSector(&outline, self.allocator, pts[0], radius, 0, 2 * std.math.pi);
+                if (len(pts[0], pts[pts.len - 1]) > 1e-10)
+                    try roundSector(&outline, self.allocator, pts[pts.len - 1], radius, 0, 2 * std.math.pi);
+            }
             const segments = if (contour.closed) pts.len else pts.len - 1;
             for (0..segments) |i| {
                 const a = pts[i];
@@ -305,10 +397,20 @@ const Renderer = struct {
                     if (nd < 1e-10) continue;
                     const n2 = P{ .x = -(next.y - b.y) * radius / nd, .y = (next.x - b.x) * radius / nd };
                     const cross = (b.x - a.x) * (next.y - b.y) - (b.y - a.y) * (next.x - b.x);
+                    if (self.paint.join == 1 and @abs(cross) < 1e-12 and n.x * n2.x + n.y * n2.y < 0) {
+                        try roundSector(&outline, self.allocator, b, radius, 0, 2 * std.math.pi);
+                    }
                     if (@abs(cross) < 1e-12) continue;
                     const sign: f64 = if (cross > 0) -1 else 1;
                     const p = P{ .x = b.x + sign * n.x, .y = b.y + sign * n.y };
                     const q = P{ .x = b.x + sign * n2.x, .y = b.y + sign * n2.y };
+                    if (self.paint.join == 1) {
+                        const start = if (cross > 0) q else p;
+                        const angle = std.math.atan2(start.y - b.y, start.x - b.x);
+                        const sweep = std.math.atan2(@abs(n.x * n2.y - n.y * n2.x), n.x * n2.x + n.y * n2.y);
+                        try roundSector(&outline, self.allocator, b, radius, angle, sweep);
+                        continue;
+                    }
                     var tip = b;
                     if (self.paint.join == 0) {
                         const dot = (n.x * n2.x + n.y * n2.y) / (radius * radius);
@@ -321,13 +423,21 @@ const Renderer = struct {
                 }
             }
         }
+        if (clip) |box| {
+            for (outline.points.items) |p| {
+                if (p.x < box[0] or p.y < box[1] or p.x > box[2] or p.y > box[3]) {
+                    const clipped = try clipPolygons(self.allocator, outline, box);
+                    return self.fill(&clipped, self.paint.stroke, false);
+                }
+            }
+        }
         try self.fill(&outline, self.paint.stroke, false);
     }
-    fn fill(self: *Renderer, path: *Path, color: Color, even: bool) !void {
-        const bitmap = self.bitmap orelse return;
+    fn fill(self: *Renderer, path: *const Path, color: Color, even: bool) !void {
+        if (self.bitmap == null and self.collector == null) return;
         var edges: std.ArrayList(Edge) = .empty;
         defer edges.deinit(self.allocator);
-        var miny: f64 = @floatFromInt(bitmap.height);
+        var miny: f64 = std.math.inf(f64);
         var maxy: f64 = 0;
         for (path.contours.items, 0..) |contour, ci| {
             const end = if (ci + 1 < path.contours.items.len) path.contours.items[ci + 1].start else path.points.items.len;
@@ -341,6 +451,13 @@ const Renderer = struct {
                 try edges.append(self.allocator, .{ .a = a, .b = b });
             }
         }
+        if (edges.items.len == 0) return;
+        if (self.collector) |collector| {
+            const rgb = (@as(u32, color[0]) << 16) | (@as(u32, color[1]) << 8) | color[2];
+            if (!collector.paint(collector.context, edges.items.ptr, edges.items.len, rgb, self.opacity, even, self.multiply_blend)) return error.SceneLimit;
+            return;
+        }
+        const bitmap = self.bitmap.?;
         const y0: usize = @intFromFloat(std.math.clamp(@floor(miny), 0, @as(f64, @floatFromInt(bitmap.height))));
         const y1: usize = @intFromFloat(std.math.clamp(@ceil(maxy), 0, @as(f64, @floatFromInt(bitmap.height))));
         if (y0 >= y1) return;
@@ -380,11 +497,58 @@ const Renderer = struct {
                 if (alpha == 0) continue;
                 const at = (y * bitmap.width + x) * 4;
                 const coverage_alpha = @as(f64, @floatFromInt(alpha)) / 16 * self.opacity;
-                for (color, 0..) |v, i| bitmap.pixels[at + i] = @intFromFloat(@round(@as(f64, @floatFromInt(v)) * coverage_alpha + @as(f64, @floatFromInt(bitmap.pixels[at + i])) * (1 - coverage_alpha)));
+                for (color, 0..) |v, i| {
+                    const background: f64 = @floatFromInt(bitmap.pixels[at + i]);
+                    var ink: f64 = @floatFromInt(v);
+                    if (self.multiply_blend) ink *= background / 255;
+                    bitmap.pixels[at + i] = @intFromFloat(@round(ink * coverage_alpha + background * (1 - coverage_alpha)));
+                }
             }
         }
     }
 };
+// Walk clockwise so the sector and the segment rectangles share a nonzero winding.
+fn clipPolygons(a: A, input: Path, box: [4]f64) !Path {
+    var output: Path = .{ .point_limit = input.point_limit, .contour_limit = input.contour_limit };
+    var buffers = [2]std.ArrayList(P){ .empty, .empty };
+    defer for (&buffers) |*b| b.deinit(a);
+    for (input.contours.items, 0..) |contour, i| {
+        const end = if (i + 1 < input.contours.items.len) input.contours.items[i + 1].start else input.points.items.len;
+        var vertices: []const P = input.points.items[contour.start..end];
+        for (box, 0..) |boundary, side| {
+            if (vertices.len == 0) break;
+            const next = &buffers[side % 2];
+            next.clearRetainingCapacity();
+            var prev = vertices[vertices.len - 1];
+            for (vertices) |p| {
+                const from = if (side % 2 == 0) prev.x else prev.y;
+                const to = if (side % 2 == 0) p.x else p.y;
+                const prev_in = if (side < 2) from >= boundary else from <= boundary;
+                const inside = if (side < 2) to >= boundary else to <= boundary;
+                if (prev_in != inside) {
+                    const t = (boundary - from) / (to - from);
+                    try next.append(a, .{ .x = prev.x + t * (p.x - prev.x), .y = prev.y + t * (p.y - prev.y) });
+                }
+                if (inside) try next.append(a, p);
+                prev = p;
+            }
+            vertices = next.items;
+        }
+        if (vertices.len >= 3) try polygon(&output, a, vertices);
+    }
+    return output;
+}
+
+fn roundSector(path: *Path, a: A, center: P, radius: f64, angle: f64, sweep: f64) !void {
+    const step = @max(0.01, @min(std.math.pi / 6.0, 2 * std.math.acos(@max(0, 1 - 0.12 / radius))));
+    const count: usize = @intFromFloat(@max(1, @ceil(sweep / step)));
+    try path.begin(a, center);
+    for (0..count + 1) |i| {
+        const t = angle - sweep * @as(f64, @floatFromInt(i)) / @as(f64, @floatFromInt(count));
+        try path.add(a, .{ .x = center.x + radius * @cos(t), .y = center.y + radius * @sin(t) });
+    }
+    try path.close();
+}
 fn polygon(path: *Path, a: A, points: []const P) !void {
     try path.begin(a, points[0]);
     for (points[1..]) |p| try path.add(a, p);
@@ -429,7 +593,7 @@ test "render validation rejects unsupported appearance and text states" {
     const cases = .{
         .{ "BT /F1 12 Tf 1 Tr (x) Tj ET", error.UnsupportedTextRendering },
         .{ "1 0 0 0 k", error.UnsupportedColorSpace },
-        .{ "1 J", error.UnsupportedStroke },
+        .{ "2 J", error.UnsupportedStroke },
         .{ "2 0 0 1 0 0 cm 1 1 m 10 10 l S", error.UnsupportedStrokeTransform },
         .{ "0 0 m", error.UnpaintedPath },
     };
@@ -513,7 +677,7 @@ test "inherited page appearance metadata is rejected before rendering" {
     const a = std.testing.allocator;
     const bytes = try pod.create(a, "test");
     defer a.free(bytes);
-    inline for (.{ "Rotate", "CropBox", "Annots", "Group", "UserUnit" }) |key| {
+    inline for (.{ "Annots", "Group", "UserUnit" }) |key| {
         var doc = try d.Document.open(a, bytes);
         defer doc.deinit();
         const pages = try doc.object(.{ .id = 2, .generation = 0 });

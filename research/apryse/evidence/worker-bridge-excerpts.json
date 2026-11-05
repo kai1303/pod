@@ -1,0 +1,20 @@
+[
+  {
+    "file": "public/core/webviewer-core.min.js",
+    "term": "contentEditRunCommand",
+    "charOffset": 2047198,
+    "excerpt": "or(t,e,n?.Sp,n?.dp)}};_TextLocatorFactory=TextLocatorFactory,_TextLocatorFactory.TextLocatorType=TextLocatorType;var WorkerCommand={JGt:\"contentEditLoad\",tzt:\"contentEditEnd\",ezt:\"contentEditRunCommand\",nzt:\"contentEditEditPage\",izt:\"contentEditRenderPage\"},ContentEditMessageBroker=class{constructor(t,e){this.szt=Promise.resolve(),this.rzt=e,this.documentId=t,this.initialize()}initialize(){this.ozt=new Map,this.taskId=0}azt(t,e){return`${t}-${e}`}hzt(t,e){const n=this.azt(t,e);return this.ozt?.get(n)}dispose(){this.ozt?.clear(),this.ozt=null,this.documentId=null,this.rzt=null,this.taskId=null}async sendMessage(t){this.taskId++;let e=t.YRt()?.join(\"\")??\"\";e=e.replace(\"SavePDF\",\"Version\"),e=e.replace(\"LoadPDF\",\"Version\");const n={commandXML:e,"
+  },
+  {
+    "file": "public/core/webviewer-core.min.js",
+    "term": "contentEditEditPage",
+    "charOffset": 2047226,
+    "excerpt": "ocatorFactory=TextLocatorFactory,_TextLocatorFactory.TextLocatorType=TextLocatorType;var WorkerCommand={JGt:\"contentEditLoad\",tzt:\"contentEditEnd\",ezt:\"contentEditRunCommand\",nzt:\"contentEditEditPage\",izt:\"contentEditRenderPage\"},ContentEditMessageBroker=class{constructor(t,e){this.szt=Promise.resolve(),this.rzt=e,this.documentId=t,this.initialize()}initialize(){this.ozt=new Map,this.taskId=0}azt(t,e){return`${t}-${e}`}hzt(t,e){const n=this.azt(t,e);return this.ozt?.get(n)}dispose(){this.ozt?.clear(),this.ozt=null,this.documentId=null,this.rzt=null,this.taskId=null}async sendMessage(t){this.taskId++;let e=t.YRt()?.join(\"\")??\"\";e=e.replace(\"SavePDF\",\"Version\"),e=e.replace(\"LoadPDF\",\"Version\");const n={commandXML:e,taskId:this.taskId,...t.HM"
+  },
+  {
+    "file": "public/core/webviewer-core.min.js",
+    "term": "contentEditRenderPage",
+    "charOffset": 2047252,
+    "excerpt": "actory,_TextLocatorFactory.TextLocatorType=TextLocatorType;var WorkerCommand={JGt:\"contentEditLoad\",tzt:\"contentEditEnd\",ezt:\"contentEditRunCommand\",nzt:\"contentEditEditPage\",izt:\"contentEditRenderPage\"},ContentEditMessageBroker=class{constructor(t,e){this.szt=Promise.resolve(),this.rzt=e,this.documentId=t,this.initialize()}initialize(){this.ozt=new Map,this.taskId=0}azt(t,e){return`${t}-${e}`}hzt(t,e){const n=this.azt(t,e);return this.ozt?.get(n)}dispose(){this.ozt?.clear(),this.ozt=null,this.documentId=null,this.rzt=null,this.taskId=null}async sendMessage(t){this.taskId++;let e=t.YRt()?.join(\"\")??\"\";e=e.replace(\"SavePDF\",\"Version\"),e=e.replace(\"LoadPDF\",\"Version\");const n={commandXML:e,taskId:this.taskId,...t.HMt()},i=this.azt(n.docId,this"
+  }
+]

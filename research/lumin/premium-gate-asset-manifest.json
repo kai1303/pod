@@ -1,0 +1,8 @@
+{
+  "url": "https://www.luminpdf.com/pdf-assets/lumin-svgs/icon-three-stars.svg",
+  "svg": "macos/Resources/Lumin/Premium/three-stars.svg",
+  "svg_sha256": "62eaee686c03f0f6d62b852179b7ba9b470b8a0b7b87b21fc01673b6344349c2",
+  "png": "macos/Resources/Lumin/Premium/three-stars.png",
+  "png_sha256": "99e77dc1e7627ec4929a6d64032323b2468fb325f7375af1181a6da476ab1f46",
+  "conversion": "rsvg-convert192x192;4x original48px artwork;asset preparation only"
+}

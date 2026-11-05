@@ -10,3 +10,5 @@ research/apryse/recovered-ui/
 research/apryse/evidence/*.bundle.json
 dist/
 .build/
+# Local vendor/browser research captures can contain authenticated account UI.
+research/lumin/toolbar-source/

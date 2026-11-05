@@ -1,0 +1,12 @@
+{
+  "url": "https://showcase.apryse.com/res/webviewer/12.2/core/webviewer-core.min.js",
+  "fetchedSha256": "fe3b2db5dab91e8d2a9ae61151a02c3bc6d183173cfd345f096bd6afc7fda8c4",
+  "packageSha256": "1512ef313054885c3c4bd86e59581a26511542bac88cef6c9fcb5602e18dc317",
+  "bytes": 2960344,
+  "identical": false,
+  "headers": {
+    "etag": "\"9527bdd365ccf4c43a4d2ccf4734d521\"",
+    "lastModified": "Wed, 28 Oct 2026 11:33:30 GMT"
+  },
+  "limitation": "Separate fetch after runtime capture; captured runtime response body was not retained."
+}

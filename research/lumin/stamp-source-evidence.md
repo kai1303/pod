@@ -1,0 +1,35 @@
+# Stamp surfaces — shipped-source evidence
+
+The current source account exposes the premium gate for Stamp. The parent observed **Upgrade to access**, **Level up your work by unlocking this feature**, and **Upgrade now**, and captured its live DOM/computed CSS in ignored `toolbar-source/stamp-gate-live.json`. The actual Stamp dropdown and creator were not runtime-accessible. Their rules below are static alternate-branch evidence, not live parity claims. No gate bypass, source Create/upload/delete/reorder action, personal custom stamp payload, account author value, canvas pixel export, screenshot or image-render check was performed.
+
+`stamp-source-rules.json` preserves source identities, hierarchy, dimensions, defaults, branches and unknowns. The ignored packet `toolbar-source/extracted/stamp/manifest.json` contains47 bounded verbatim excerpts with complete original-artifact/excerpt SHA256 and zero-based character/UTF-8 byte spans (exclusive ends). `extract.py` verifies each slice against original bytes and never executes captured JavaScript.
+
+## Accessible premium gate
+
+The toolbar's Stamp tool (`1vmims6r5cffr.js`, module8665499) goes through the module6719595 availability HOC (`12f_9niz_vx64.js`). Its7168852 hook calls5261040 `getToolChecker`, which returns available only when source title/message are empty. The unavailable click toggles the premium popover; it does not open the actual Stamp panel. The current gate's source model uses the default Pro-plan tool branch. Trial availability, shared/guest/legacy-plan status, seat gating and workspace/member permissions select other copy and actions. No current account status is inferred from source metadata alone.
+
+Gate content/style module4300018/3910986 is in `1tn7lso3420mt.js`, followed by7048309. The ordinary gate has304px width,16px inner padding and a16px-radius Paper. It vertically centers the original stars artwork (48px asset plus8px padding each side),16/520/24 title with16px upper margin,14/420/21 body with4px upper margin, and full-width filled/md CTA with16px upper margin. Parent live geometry is304×230; padded icon120/16/64/64; title82.078125/96/139.8359375/24; body16/124/272/42; CTA16/182/272/32.
+
+The observed zero anchor gap is explained by shipped modifier precedence. Shared popper3239307 defines an8px default. Gate7048309 appends an `offset` modifier with two successive spreads; the second spread sets `enabled` to quick-search state and replaces the first spread. Outside quick search that disables the modifier, producing0gap. Quick search uses16px. Navigation/overflow placement and shared300ms Fade remain separate states.
+
+Paper uses **Kiwi** `surface-surface-bright` (light#FFFFFF/dark#282B2C). Title/body use **legacy** `le_main_on_surface` (light#161C21/dark#E3E5E8). Filled system CTA uses Kiwi core-secondary (light#1C333D/dark#B2CAD6) and core-on-secondary (light#FFFFFF/dark#1C333D). These are not interchangeable theme roles. Source CSS specifies hover shadow and after-layer state paint; full focus/hover/ripple fidelity needs separate native comparison. Source CTA navigation/checkout remains outside the requested UI-only implementation.
+
+## Static Stamp dropdown and creation
+
+Dropdown module3341097 is complete in `1tssr0c234xk-.js`, with a duplicate build in `2hgjb8uahj05d.js`. `useIsRubberStampV2` follows editor-shell profile, not merely toolbar profile. The legacy toolbar host declares360px width/max-width; its panel has16px padding, Standard/Custom tabs and a repeat checkbox. Standard uses two columns/gap8 and64px cards:12px top/bottom plus40px default stamp height; each image is constrained to84×40. Its scroller caps at300px. The27 original PNGs come from constants module3653117 and the URL builder2456501.
+
+Legacy Custom has272px scrolling content. Empty content uses the original80×65 rubber-stamp illustration,16px vertical gap,16px/0/24px padding, the14/420/21 copy **You haven’t created any stamps yet**, and a tonal plus16 **Create new stamp** button. Nonempty content instead has the full-width48px dashed outlined creation button and saved-card rows. Local synthetic empty state is safe to reconstruct; user-owned saved images are excluded. The100-stamp quota, offline/sync/delete/reorder branches are described in the rules, not claimed runtime-verified.
+
+Creation module4329155 is complete in `1fki9ucjmcf4z.js`. Legacy default modal307143 uses480px width/max-width and24px padding. `showCloseIcon` creates an otherwise empty relative header with12px bottom margin; close32px sits at right−9/top−4. The inner title is **Add Stamp ({{total}}/100)**,16/520/24, followed by preview, Content input/error, font/style/text-color row, background palette, author toggle/input, repeat checkbox and Cancel/Create footer with16px gap. Default draft is **Sample Text**, Helvetica bold, white text, background#629769, date `MMMM DD, YYYY`, no time, author current user or Guest, show-author false. Author data was not captured.
+
+The source font menu lists Helvetica, Times New Roman, Roboto, Aladin, Allura, Cookie, Courgette, DancingScript, GillSans, Italianno, Lora and Merriweather. Date formats are None, DD/M/YYYY, YYYY/M/DD, DD MMM YYYY, MMMM DD, YYYY and MMM DD YYYY; time is None, H:mm:ss or h:mm:ss A. Date/time controls are right-start menus. Validation uses ECMAScript-trimmed UTF-16 length: empty and>254 errors disable Create. Close resets the form and restores Select while retaining repeat preference. Source canvas draws via PDF-engine `drawCustomStamp` at164×56; static layout does not prove pixel-exact engine rasterization.
+
+V2 uses a different400px creator and modern Tabs/card/menu controls, including120×32 standard image constraints and a104px preview. These must not be mixed into the legacy implementation. The old `.rubber-stamp-modal-content` global stylesheet is not evidence for the active styled-component tree unless that class is present; avoid inheriting its outdated132px font width or80px preview sizing.
+
+## Original public assets
+
+`stamp-asset-manifest.json` records27 original default-stamp PNGs and the empty rubber-stamp SVG, totaling553532 bytes. Files are in ignored `toolbar-source/stamp-assets/`; source URL formulas and exact asset names are preserved. PNG dimensions were read from IHDR bytes and SHA256 verified; assets were not rendered or used as screenshot checks. The original name **Inital Here** is intentionally preserved because that misspelling is shipped source. These assets contain no personal custom stamp images.
+
+## Remaining evidence
+
+Full dropdown/creator runtime geometry, line boxes, nested menu placement and current branch behavior remain unavailable behind the current gate. A future authorized source account/profile with access would permit live verification; no access change was attempted. Source rules can guide reconstruction meanwhile, but an authored reconstruction must be labeled static-derived until live evidence establishes it. Gate motion/shadow/ripple/focus/light-state behavior, original Stamp font file identities and engine raster fidelity also remain open.

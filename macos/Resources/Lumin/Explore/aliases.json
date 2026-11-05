@@ -1,0 +1,488 @@
+{
+  "agreementGen": [
+    "generate",
+    "agreement",
+    "contract",
+    "generate agreement",
+    "ai draft",
+    "create",
+    "convert"
+  ],
+  "summaryDocument": [
+    "summary",
+    "summarize",
+    "overview"
+  ],
+  "askAboutDocument": [
+    "ask",
+    "question",
+    "inquire"
+  ],
+  "redactSensitiveInfo": [
+    "redact",
+    "sensitive",
+    "hide",
+    "mask",
+    "remove"
+  ],
+  "addComment": [
+    "add",
+    "comment",
+    "note",
+    "feedback",
+    "annotation"
+  ],
+  "measure": [
+    "measure",
+    "ruler",
+    "distance",
+    "dimensions"
+  ],
+  "type": [
+    "insert",
+    "type",
+    "add",
+    "text",
+    "add text",
+    "input",
+    "fill",
+    "form"
+  ],
+  "draw": [
+    "draw",
+    "sketch",
+    "pen",
+    "freehand",
+    "scribble"
+  ],
+  "textHighlight": [
+    "highlight",
+    "mark",
+    "mark text",
+    "emphasize"
+  ],
+  "freehandHighlight": [
+    "highlight",
+    "mark",
+    "freehand",
+    "mark manually"
+  ],
+  "shape": [
+    "insert",
+    "draw",
+    "shape",
+    "rectangle",
+    "ellipse",
+    "arrow",
+    "polyline",
+    "polygon",
+    "cloud",
+    "star",
+    "cross",
+    "tick",
+    "circle",
+    "line"
+  ],
+  "textTools": [
+    "edit",
+    "format",
+    "text tools",
+    "underline",
+    "strikeout",
+    "squiggly"
+  ],
+  "eraser": [
+    "erase",
+    "remove",
+    "eraser",
+    "delete",
+    "remove drawing"
+  ],
+  "image": [
+    "insert",
+    "add",
+    "image",
+    "insert image",
+    "add picture"
+  ],
+  "performOcr": [
+    "ocr",
+    "text recognition",
+    "extract text",
+    "scanned"
+  ],
+  "redaction": [
+    "redact",
+    "hide",
+    "remove",
+    "black out",
+    "hide text",
+    "sensitive"
+  ],
+  "configureAccess": [
+    "set",
+    "protect",
+    "secure",
+    "password",
+    "security",
+    "lock"
+  ],
+  "removeAccess": [
+    "remove",
+    "unlock",
+    "remove password",
+    "security"
+  ],
+  "signature": [
+    "insert",
+    "sign",
+    "add",
+    "signature",
+    "add signature"
+  ],
+  "date": [
+    "insert",
+    "add",
+    "date",
+    "insert date",
+    "timestamp",
+    "fill",
+    "form"
+  ],
+  "stamp": [
+    "insert",
+    "add",
+    "place",
+    "stamp",
+    "approved",
+    "rejected",
+    "mark"
+  ],
+  "dot": [
+    "insert",
+    "mark",
+    "dot",
+    "point",
+    "fill",
+    "form"
+  ],
+  "tick": [
+    "insert",
+    "mark",
+    "tick",
+    "check",
+    "fill",
+    "form"
+  ],
+  "cross": [
+    "insert",
+    "mark",
+    "cross",
+    "x mark",
+    "reject",
+    "fill",
+    "form"
+  ],
+  "customizeFields": [
+    "form builder",
+    "build",
+    "form",
+    "text field",
+    "checkbox field",
+    "radio button field",
+    "field",
+    "edit"
+  ],
+  "autoDetectFields": [
+    "detect",
+    "identify",
+    "auto",
+    "fillable field",
+    "field",
+    "form builder",
+    "build",
+    "edit"
+  ],
+  "editContent": [
+    "edit",
+    "modify",
+    "edit text",
+    "content"
+  ],
+  "addParagraph": [
+    "add",
+    "insert",
+    "type",
+    "paragraph"
+  ],
+  "mergeDocs": [
+    "merge",
+    "combine",
+    "add"
+  ],
+  "splitExtract": [
+    "split",
+    "extract",
+    "separate"
+  ],
+  "rotatePages": [
+    "rotate",
+    "turn",
+    "organize"
+  ],
+  "deletePages": [
+    "delete",
+    "remove",
+    "organize"
+  ],
+  "movePages": [
+    "move",
+    "drag",
+    "relocate",
+    "organize"
+  ],
+  "insertBlankPages": [
+    "insert",
+    "add",
+    "blank"
+  ],
+  "cropPages": [
+    "crop",
+    "trim"
+  ],
+  "batesNumbering": [
+    "bates",
+    "numbering",
+    "page number",
+    "stamp"
+  ],
+  "addToStarred": [
+    "star",
+    "favorite",
+    "mark"
+  ],
+  "makeCopy": [
+    "copy",
+    "duplicate"
+  ],
+  "moveDocument": [
+    "move",
+    "drag",
+    "relocate",
+    "organize"
+  ],
+  "download": [
+    "download",
+    "export",
+    "save"
+  ],
+  "autoSync": [
+    "sync",
+    "auto sync",
+    "google",
+    "save"
+  ],
+  "darkMode": [
+    "dark mode",
+    "light mode",
+    "theme",
+    "day",
+    "night"
+  ],
+  "fullScreen": [
+    "fullscreen",
+    "expand",
+    "view"
+  ],
+  "darkPage": [
+    "dark page",
+    "invert",
+    "page color",
+    "night",
+    "eye strain"
+  ],
+  "presenterMode": [
+    "present",
+    "presentation",
+    "mode"
+  ],
+  "fileInfo": [
+    "file info",
+    "properties",
+    "metadata"
+  ],
+  "versionHistory": [
+    "history",
+    "versions",
+    "changes"
+  ],
+  "aiAssistant": [
+    "ai",
+    "assistant",
+    "help",
+    "chatbot",
+    "automation"
+  ],
+  "commentHistory": [
+    "comments",
+    "history",
+    "notes"
+  ],
+  "print": [
+    "print",
+    "hard copy"
+  ],
+  "helpCenter": [
+    "help",
+    "support",
+    "guide"
+  ],
+  "contactSupport": [
+    "support",
+    "contact",
+    "help",
+    "issue",
+    "bug",
+    "crash"
+  ],
+  "giveFeedback": [
+    "feedback",
+    "suggest",
+    "report",
+    "issue",
+    "bug"
+  ],
+  "thumbnails": [
+    "thumbnails",
+    "preview",
+    "pages"
+  ],
+  "outlines": [
+    "outline",
+    "bookmarks",
+    "sections"
+  ],
+  "readAloud": [
+    "read",
+    "text to speech",
+    "audio"
+  ],
+  "viewControl": [
+    "view",
+    "zoom",
+    "layout"
+  ],
+  "select": [
+    "select",
+    "choose",
+    "highlight"
+  ],
+  "pan": [
+    "pan",
+    "move view"
+  ],
+  "undo": [
+    "undo",
+    "revert",
+    "back"
+  ],
+  "redo": [
+    "redo",
+    "repeat",
+    "forward"
+  ],
+  "singleView": [
+    "view",
+    "layout"
+  ],
+  "gridView": [
+    "view",
+    "layout"
+  ],
+  "renameDocument": [
+    "rename",
+    "change name"
+  ],
+  "focusMode": [
+    "focus",
+    "distraction free"
+  ],
+  "signSecurely": [
+    "sign",
+    "secure",
+    "certify",
+    "digital signature",
+    "request signature"
+  ],
+  "quickSearchCompress": [
+    "compress",
+    "reduce size",
+    "shrink",
+    "compress pdf",
+    "compress file",
+    "pdf compress"
+  ],
+  "quickSearchConvertToDocx": [
+    "convert to docx",
+    "convert to word",
+    "pdf to word",
+    "pdf to docx",
+    "export word"
+  ],
+  "quickSearchConvertToXlsx": [
+    "convert to xlsx",
+    "convert to excel",
+    "pdf to excel",
+    "pdf to xlsx",
+    "export excel"
+  ],
+  "quickSearchConvertToPptx": [
+    "convert to pptx",
+    "convert to powerpoint",
+    "pdf to powerpoint",
+    "pdf to pptx",
+    "export powerpoint"
+  ],
+  "quickSearchConvertToJpg": [
+    "convert to jpg",
+    "pdf to jpg",
+    "pdf to image",
+    "export jpg",
+    "export image"
+  ],
+  "quickSearchConvertToPng": [
+    "convert to png",
+    "pdf to png",
+    "export png"
+  ],
+  "quickSearchFlattenPdf": [
+    "flatten",
+    "flatten pdf",
+    "merge annotations"
+  ],
+  "quickSearchConvertGeneric": [
+    "convert",
+    "convert to",
+    "export",
+    "save as"
+  ],
+  "quickSearchInvoiceExtraction": [
+    "invoice",
+    "invoice extraction",
+    "extract invoice",
+    "bill",
+    "receipt"
+  ],
+  "quickSearchTranslatePdf": [
+    "translate",
+    "translate pdf",
+    "translation",
+    "language"
+  ],
+  "quickSearchResumeChecker": [
+    "resume",
+    "cv",
+    "resume checker",
+    "review resume"
+  ]
+}

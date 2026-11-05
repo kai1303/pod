@@ -1,0 +1,64 @@
+# Password protection — source evidence
+
+This packet reads already-downloaded shipped JavaScript/CSS and the parent's whitelisted live menu/gate captures. It never executes captured JavaScript, interacts with source/native UI, exports passwords/account data, or changes the PDF/security state. No screenshots or image-render checks are used. Actual Set/Change/Remove forms are inaccessible behind the current source account's premium gate; their descriptions remain **static-derived**, not runtime-verified.
+
+Rules: `password-source-rules.json`. Asset provenance: `password-asset-manifest.json`. The ignored original packet `toolbar-source/extracted/password/manifest.json` contains47 verbatim bounded excerpts with full artifact/excerpt SHA256 and zero-based character/UTF-8 byte spans (exclusive ends). Its extraction script verifies original byte equality without executing JavaScript.
+
+## Password menu
+
+The source menu/dialog cluster is module9268756 in `1vmims6r5cffr.js`; permissions and handlers are5894736/2679537/9212837 in `16qvla-7muiyk.js`. Legacy Password protection uses the original `lg_password`24 toolbar icon and a dense menu with minimum width200. The parent's `password-menu-live.json` confirms200×80,8px padding, two184×32 rows at8/8 and8/40,24px icons at16/12 and16/44, labels at48/14 and48/46, and16px premium artwork beside Set. Surface is Kiwi bright, radius8; row radius4, Inter14/500/20 and Kiwi on-surface. Set and Change use `set-password`; Remove uses `remove-password`.
+
+Set is present when the document encryption check is false and settled. Change and Remove apply when encrypted and settled. Remove remains a row in the default menu but is disabled unless `canDelete`. Base disable is offline or an authenticated user without `canEnable`; Set additionally disables templates. `canEnable` requires owner/admin/billing-moderator/team-admin or system-document status, valid mime/storage and no synchronization. The source checks encryption again when opening the menu and hovering Security. User/workspace permissions are not inferred from the local native UI.
+
+Set/Change run through the feature/premium provider with `useModal:true`; Remove is not premium-gated in this component. Premium Set/Change deliberately retain the menu because `closeMenuOnClick` is false while the premium badge is shown. Provider dismissal toggles only the gate. Render modes DEFAULT, SET_OR_CHANGE and REMOVE select the same rows for other entry points; modern toolbar rows have a separate20px icon treatment and overflow close handling.
+
+## Accessible premium modal
+
+`AvailabilityToolCheckProvider`6719595 renders shared legacy modal307143, passing7048309 `renderContentOnly:true`. That suppresses the Stamp-style304px/16px popover wrapper and uses large title paint: PPAgrandir20/500/28 with0 upper margin. The medium modal is480px wide with24px padding, radius16 and no close icon (default `showCloseIcon:false`). Parent live `password-premium-gate-live.json` confirms480×213: padded stars64×64 at208/24, title151.109375/88/177.78125/28, body95.4296875/120/289.1328125/21, filled medium CTA24/157/432/32. The visible copy is Upgrade to access / Level up your work by unlocking this feature / Upgrade now.
+
+Shared307143 explicitly disables enforced focus while retaining MUI's default automatic and restored focus. Underlying2171208 MUI implementation (original `135rz6eba_uzd.js`) closes the topmost modal for Escape and stops propagation; backdrop dismissal requires the correct target/container mouse-down relationship. Its manager hides other modal siblings and restores them. The parent separately confirmed that the menu remains before/after Escape. Focus restoration details beyond that observed state remain scoped to the parent's checks. These gate properties differ from the licensed forms' modern focus-lock Dialog below.
+
+The gate's Paper uses Kiwi surface-surface-bright. Its heading/body retain legacy on-surface roles; CTA uses Kiwi core-secondary/on-secondary. Existing Stamp gate evidence documents these separate systems. Source checkout/trial/seat actions are not invoked or implemented as part of UI reconstruction.
+
+## Static licensed password forms
+
+All three forms use modern4699264 `Modal`, wrapping3511112 `Dialog`, rather than307143. The call sets `centered:true`, `titleCentered:true`, `hideDefaultButtons:true`, size sm, and the same `data-element="changePasswordModal"` for every type. Source sm resolves to480px, body padding24 and radius16. No close button is enabled. Modal content is a16px-gap vertical stack containing centered theme illustration, centered Kiwi headline-lg title and children. Original illustration display height is80px with intrinsic127:160 ratio (63.5px width). Do not substitute the premium stars.
+
+Set: **Encrypt with Password**, labeled New password and Re-enter new password fields, then Cancel/Apply. Change: **Change your password**, labeled Current password/New password/Re-enter new password fields, then Cancel/Save. Its description translation exists but the render does not display it. Remove: **Remove password**,14/420/20 h3 **Please enter your current password to confirm.**, one unlabeled field with **Your Password** placeholder, then Cancel/Remove. Current-password placeholders in Change use **Enter a password**; new/re-enter placeholders match their labels.
+
+Forms are flex columns with16px gap. Their own footer adds8px upper margin,16px button gap and right alignment; the form gap also participates. Cancel is text/lg with80px minimum width. Submit is tonal/lg with80px minimum width, disabled while loading or while form `isDirty` is false. All inputs start empty. Closing is blocked only while loading; otherwise reset then close. Source handlers perform encryption/session-password storage/PDF reload/sync and remain outside the authorized UI-only implementation.
+
+All schemas validate/revalidate on submit. New passwords require4–32 characters; confirmations are required and equal the first field. No trim operation or extra character-class rules are supplied. Remove requires a nonempty current password. The first error in `Object.values(formState.errors)` is shown in an8px-padded/radius8 semantic-error-container box with semantic-error text14/420/20; that boolean error marks all currently rendered input borders. Source Change has a translation quirk: current-password required passes the raw `errorMessage.allFieldsRequired` key without translation, unlike its other validators. This is recorded rather than silently normalized into an observed result.
+
+Required copy: **Please fill in all required fields.** Length copy: **Password must be at least 4 characters.** / **Password must be no more than 32 characters.** Mismatch: **Passwords do not match.** Wrong-password handler: **Password is incorrect.** Additional SDK errors distinguish no password set, owner password required, denied permissions and removal required. No real password or server error was induced.
+
+## Original PasswordInput and focus
+
+Module3298793 (`2tpdm_9gkz6id.js`) wraps6606830 default medium TextInput. Its wrapper is32px high, radius8 and padding4; input text is Inter variable14/420/20 with2px horizontal padding. Labels use14/500/20 and Kiwi on-surface-variant. Base border is1px outline-variant, hover/focused border core-secondary, error border semantic-error. Focus paint includes core-secondary-container shadows with a3px spread for medium. Placeholder uses on-surface at disabled-on-container opacity. It is not a generic40px field.
+
+Original inline lock SVG has32px viewBox, displayed24px with2px padding. The right icon is the original eye initially, changing to original closed-eye when visible; each input owns its visibility state and switches type password/text. The icon button is small, role button, tabIndex−1 and receives no explicit accessibility label from this wrapper. The source sets autocomplete new-password even for current-password fields. This control detail must not be confused with browser autofill behavior.
+
+The licensed modern Dialog disables Mantine's built-in trap/return focus and replaces them with persistent FocusLock, default returnFocus true and InitialFocus sentinel. The first password input has autoFocus. Change explicitly sets shouldFocusError true; Set/Remove leave that React Hook Form default unmodified. Keyboard, pointer and browser autofill behavior still require live access to the actual forms before claiming parity.
+
+## Assets and limits
+
+Two original public illustration URLs are recovered from module3et36v0kuzyfz: `https://static.luminpdf.com/_next/static/media/password-img.1e2oidbxq3goj.png` and `https://static.luminpdf.com/_next/static/media/password-img-dark.3ncw7k7q9wa_6.png`. Their original bytes/hashes/IHDR dimensions are retained under ignored `toolbar-source/password-assets/`. Three SVGs reconstruct only the original lock/eye/closed-eye path bytes, changing color binding to currentColor so a native renderer can apply the same source theme role; their source spans and fragment hashes are retained in the asset manifest. This is asset preparation, not image-based checking.
+
+The source menu/gate fixtures prove only their captured branch. Actual licensed-form final heights, line boxes, focus/error/show-hide states, light runtime paint and source backend/security behavior remain unverified. No application source was edited by this subtask.
+
+
+## Gate backdrop and menu keyboard follow-up
+
+MUI backdrop in original `135rz6eba_uzd.js` explicitly paints rgba(0,0,0,0.5); invisible=true would paint transparent. Shared307143 passes no backdrop override. A bounded search of the downloaded JavaScript found no MuiBackdrop theme override and downloaded CSS contained no MuiBackdrop selector. This supports a black0.5 default for this modal gate, separate from other native dialog opacity assumptions; the parent owns current computed-backdrop confirmation.
+
+The ordinary dense menu keeps focus/return focus and loops enabled items. Mantine MenuItem navigation selects `[data-menu-item]:not([data-disabled])`, excluding disabled Remove. Up/Down wraps; Home/End go to enabled bounds. With Set as the only enabled row, these keys stay on Set. Target Enter/Space changes initial-focus-placeholder behavior for keyboard opening; when the dropdown itself receives Up/Down it focuses the first non-disabled item. Rows prevent mouse-down default focus. Source callbacks and layout do not themselves establish browser/native parity for every key path.
+
+## Applied current-profile reconstruction
+
+The parent implemented the observed200×80 default menu using shared dense rows, original set/remove glyphs, the16px premium artwork, disabled Remove state and enabled-item keyboard navigation. `LuminPremiumGate` now has the distinct480×213 modal layout: original PPAgrandir20/500/28 heading, single-line Inter14/420/21 message,24px padding and32px filled CTA. Stamp's304×230 popover remains a separate layout. The legacy modal backdrop uses the byte-backed black0.5 declaration; Signature/Share retain their existing independent opacity defaults.
+
+The actual menu view is temporarily reparented beneath the in-window backdrop, hidden from accessibility with the background and returned to its popper on dismissal. It does not float above the modal in a separate native panel. Modal focus clears the old row focus paint. Toolbar Password protection opens the menu; rail/Explore Set password opens the gated action directly. Current-profile Redaction opens the same observed modal gate, and unavailable Remove commands stay disabled. No encryption, decryption, password persistence, security setting, checkout or source PDF mutation was implemented or performed.
+
+Validation: all17 source-only suites passed, followed by focused viewer checks after direct-route and focus-restoration refinements; the final application rebuild and signature check passed. Native accessibility verified keyboard Set entry, disabled Remove, modal-only hierarchy, Escape returning the password menu, second Escape restoring the viewer, Redaction Tab/Escape and Explore's direct gated action. The app and source were restored to Popular/Select; native page1/95% retained Undo disabled. The separate PDF-tools worktree app remained running.47 source excerpt hashes/spans and5 asset hashes/inline path fragments were independently checked. No screenshots or image-render checks were used.
+
+Licensed Set/Change/Remove forms are still static research rather than implemented/runtime-verified UI. Remaining differences include alternate account/document/template/offline/encrypted states, complete focus/keyboard/typeahead behavior, source transitions, exact CSS/native shadow/text/ripple rasterization and downstream upgrade UI. Source shell-access and full application parity remain incomplete.

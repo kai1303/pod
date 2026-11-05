@@ -1,0 +1,169 @@
+{
+  "source": "Live supplied viewer Explore + shipped module9358512; metadata captures kept in ignored research folder",
+  "searchLibrary": {
+    "version": "6.6.2",
+    "source": "npm:fuse.js@6.6.2",
+    "license": "Apache-2.0",
+    "sha256": "c57339c3fa16b1d69d9a6b46749a8139ef8d4fc9bbfe48144ff897aa7d4222ec"
+  },
+  "assets": [
+    {
+      "file": "quickSearchInvoiceExtraction.svg",
+      "source": "https://www.luminpdf.com/app/pdf/assets/images/invoice-extraction.svg",
+      "sha256": "895ebdaf6ba22ecd66eed965c72f7ebc170422f82cfdf1209cbc44ba993dc686"
+    },
+    {
+      "file": "quickSearchTranslatePdf.svg",
+      "source": "https://www.luminpdf.com/app/pdf/assets/images/translate-pdf.svg",
+      "sha256": "3b3755f0324dd3520e0b9d355c0aed5f4f9ae2201573d9959f16eaa99bbda826"
+    },
+    {
+      "file": "quickSearchResumeChecker.svg",
+      "source": "https://www.luminpdf.com/app/pdf/assets/images/resume-checker.svg",
+      "sha256": "f7da7c9b7aad104c92268bf7c5b716dc823a39a690357bbe8b88aed10383c326"
+    },
+    {
+      "file": "darkPage.svg",
+      "source": "Inline SVG captured for Dark page",
+      "sha256": "41ddfee1a259ead9d014ef1e2a154aaf7833a8436a1807f24186e0081e89f9a5",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "aiAssistant.svg",
+      "source": "Inline SVG captured for AI assistant",
+      "sha256": "fd4b138f0cd33ddab68448a5b6b1044a2b5c6fa45208e097a3a3f067d43eeb82",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "commentHistory.svg",
+      "source": "Inline SVG captured for Comment history",
+      "sha256": "7f52432c0d7a777b09a86994499e47cd46866ef6e03101c2a82090a777040120",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "helpCenter.svg",
+      "source": "Inline SVG captured for Help center",
+      "sha256": "9cd3e895976ddfcd368fd88cc09462e85d991a7df5bb23a0761cd7093fcb818e",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "contactSupport.svg",
+      "source": "Inline SVG captured for Contact Support",
+      "sha256": "d1ac38ef2091ce7ca30c40d1b27769860fbdea18bec5b09bb8bc4f67a6f15c2e",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "giveFeedback.svg",
+      "source": "Inline SVG captured for Give Feedback",
+      "sha256": "4d82533a5fad70868cba93b0aafc06bbf385b7ff9dd27a92148157f3c6209f8a",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "readAloud.svg",
+      "source": "Inline SVG captured for Read aloud",
+      "sha256": "77c9d1d2d1d1a4533cfd3f5c70f87b62fc5c5e0a8c7918cab2c0e5afc8ebf5d2",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "select.svg",
+      "source": "Inline SVG captured for Select",
+      "sha256": "f0a4c438edd420dc835537c78f708affa7066476a35e7b582f5209d1f625367a",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "pan.svg",
+      "source": "Inline SVG captured for Pan",
+      "sha256": "94973462e37e78a8db4c6adac9f0a5a18fe1e7f250e9a7249ab2e78c5f830a8b",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "undo.svg",
+      "source": "Inline SVG captured for Undo",
+      "sha256": "f976fcfb6718d17c2a35b3d1bf1e1da80c531d7ff3feaca8b1a7730f4d23334b",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "redo.svg",
+      "source": "Inline SVG captured for Redo",
+      "sha256": "59d14ef1e882be5b9352718af79f13acd5d4c02174413ec0936b7325bd67479e",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "renameDocument.svg",
+      "source": "Inline SVG captured for Rename document",
+      "sha256": "8e9dc531ba261bcf0e9ede5c0c3c690764a56e3e392b51efbb7e55e17df26cb2",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "signSecurely.svg",
+      "source": "Inline SVG captured for Request signatures",
+      "sha256": "532f791ae87f49bd2d13f1b75fc3c3ca9bab4ee0676084b8e1a6b3603539d334",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "quickSearchCompress.svg",
+      "source": "Inline SVG captured for Compress",
+      "sha256": "c1147cc732d479a8c416b07ce6782cd596662fda4d5414b7282db4c61f69c7df",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "quickSearchConvertToDocx.svg",
+      "source": "Inline SVG captured for Convert to Word (.docx)",
+      "sha256": "25e0b3786cb0260b7288b1eef5f57a41ab87926d1700a3efd830410ca188470d",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "quickSearchConvertToXlsx.svg",
+      "source": "Inline SVG captured for Convert to Excel (.xlsx)",
+      "sha256": "d8c2815bc08296d49cc8459c2dcc2a3b75fcaec18be1a3bc7172d5c7a316221e",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "quickSearchConvertToPptx.svg",
+      "source": "Inline SVG captured for Convert to PowerPoint (.pptx)",
+      "sha256": "a64c6b83d51d48b9a89d1def0eeeacf06586a139930e86070781b526310df6cb",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "quickSearchConvertToJpg.svg",
+      "source": "Inline SVG captured for Convert to JPG",
+      "sha256": "39087866f95e039b5f5c6636a592b758b9a7f6286fbb8bf6175c40c06eba8c96",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "quickSearchConvertToPng.svg",
+      "source": "Inline SVG captured for Convert to PNG",
+      "sha256": "c9eab8fffe5de1a980ed44e6c52933f8f96c9eee65193747f769a5a36870c52b",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "quickSearchFlattenPdf.svg",
+      "source": "Inline SVG captured for Flatten PDF",
+      "sha256": "2cd8abde51c301e3f72cd0b4d445e5339138873930dbfb72f8db9ffb15d09c42",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "quickSearchConvertGeneric.svg",
+      "source": "Inline SVG captured for Convert to ...",
+      "sha256": "60b1505a3780012b74e537dd140626f9330053096481367a4a311d9c3ed7e1dd",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "query-chatbot.svg",
+      "source": "Inline SVG from explore-type-search-live.json",
+      "sha256": "568db9dc93fb043f4b29e3281f47545b977b7f1588ea34d56eb6d5ec5b8250c5",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "query-document.svg",
+      "source": "Inline SVG from explore-type-search-live.json",
+      "sha256": "6de7f4bb2b9f19e448955596d89c98b098fa25b4f87948eaba5d35eeff598dce",
+      "render": "4x PNG; monochrome template retains original path geometry"
+    },
+    {
+      "file": "premium.svg",
+      "source": "https://www.luminpdf.com/pdf-assets/lumin-svgs/badge_premium.svg",
+      "sha256": "badbe773ee44607d37ec0d32084409c42a9476c3924bd4b1c1e0d5beac7b2ae8"
+    }
+  ]
+}

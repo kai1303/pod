@@ -1,0 +1,25 @@
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="google_drive_mask" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<path d="M7.24716 3.62348C9.35947 -0.03515 14.6405 -0.0353 16.7528 3.62348L23.2566 14.88835C25.3689 18.54715 22.7284 23.12055 18.5037 23.12055H5.49633C1.27157 23.12055 -1.36889 18.54715 0.74342 14.88835L7.24716 3.62348Z" fill="white"/>
+</mask>
+<g mask="url(#google_drive_mask)">
+<path d="M28.0181 23.12355H14.7474L12.0013 18.36715L18.6366 6.87435L28.0181 23.12355Z" fill="url(#google_drive_paint0)"/>
+<path d="M-4.0181 23.12155L5.36338 6.87235V6.87265L2.61822 11.62785H8.1091L14.745 23.12125L-4.01796 23.12135L-4.0181 23.12155Z" fill="url(#google_drive_paint1)"/>
+<path d="M12.002 -4.62055L18.6377 6.87325L15.8921 11.62875H2.6205L12.002 -4.62055Z" fill="url(#google_drive_paint2)"/>
+</g>
+<defs>
+<linearGradient id="google_drive_paint0" x1="26.0965" y1="22.19635" x2="13.0249" y2="14.34125" gradientUnits="userSpaceOnUse">
+<stop offset="0.09" stop-color="#FFE921"/>
+<stop offset="1" stop-color="#FEC700"/>
+</linearGradient>
+<linearGradient id="google_drive_paint1" x1="14.6584" y1="24.50855" x2="0.37939" y2="15.87075" gradientUnits="userSpaceOnUse">
+<stop offset="0.15" stop-color="#A9A8FF"/>
+<stop offset="0.33" stop-color="#6D97FF"/>
+<stop offset="0.48" stop-color="#3186FF"/>
+</linearGradient>
+<linearGradient id="google_drive_paint2" x1="16.7495" y1="3.75085" x2="2.2814" y2="10.50405" gradientUnits="userSpaceOnUse">
+<stop offset="0.55" stop-color="#0EBC5F"/>
+<stop offset="0.85" stop-color="#78C9FF"/>
+</linearGradient>
+</defs>
+</svg>

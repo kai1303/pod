@@ -1,0 +1,38 @@
+[
+  {
+    "file": "sign-logo.svg",
+    "source": "Original inline SVG in source Sign securely button",
+    "sha256": "532f791ae87f49bd2d13f1b75fc3c3ca9bab4ee0676084b8e1a6b3603539d334",
+    "render": "4x monochrome PNG; original paths retained"
+  },
+  {
+    "file": "sign-caret.svg",
+    "source": "Original inline SVG in source Sign securely button",
+    "sha256": "5ef1f8e1a3ef2e68b0a24a48e41fe555458acf780fc30553e8ad7d7e8ab47f7d",
+    "render": "4x monochrome PNG; original paths retained"
+  },
+  {
+    "file": "premium.svg",
+    "source": "https://www.luminpdf.com/pdf-assets/lumin-svgs/badge_premium.svg",
+    "sha256": "badbe773ee44607d37ec0d32084409c42a9476c3924bd4b1c1e0d5beac7b2ae8",
+    "render": "4x original-color PNG"
+  },
+  {
+    "file": "utility-ai.svg",
+    "source": "Original utility-rail inline SVG",
+    "sha256": "bfc4cdfbf12f09a0c34228859833421a0d6dadddcf1d273e515f6cb5620031ae",
+    "render": "Original bitmap or4x SVG raster; original SVG retained"
+  },
+  {
+    "file": "utility-xero.png",
+    "source": "https://app.luminpdf.com/_mf/marketplace/static/image/xero-icon.220ad3be.png",
+    "sha256": "931a419c0dbd9a2ef0a0079f1fc3e542cbc8d38726f43de8e72e761117fa200b",
+    "render": "Original bitmap or4x SVG raster; original SVG retained"
+  },
+  {
+    "file": "utility-apps.svg",
+    "source": "Original utility-rail inline SVG",
+    "sha256": "85dccadb0bcacb2492e272b3ed223b4a2bfb023847b12bf1aa61ce3dacb7c6f3",
+    "render": "Original bitmap or4x SVG raster; original SVG retained"
+  }
+]

@@ -1,0 +1,337 @@
+{
+  "scope": "Original public UI artwork only; no personal custom stamp images",
+  "assets": [
+    {
+      "name": "Sign Here",
+      "src": "sign-here",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/sign-here.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/sign-here.png",
+      "sha256": "4c7e9dc1d5ee561bd9a019f3a2b4c53bfb1d827f3a9baddbd70731064b671f63",
+      "bytes": 23721,
+      "pixel_dimensions": [
+        1822,
+        512
+      ]
+    },
+    {
+      "name": "Inital Here",
+      "src": "initial-here",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/initial-here.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/initial-here.png",
+      "sha256": "2d6e857745aa910276ec9ca031d08412803f4e2c58816866beb9a189244b2898",
+      "bytes": 21314,
+      "pixel_dimensions": [
+        1822,
+        512
+      ]
+    },
+    {
+      "name": "Paid",
+      "src": "paid",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/paid.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/paid.png",
+      "sha256": "c7a5e9ed9cea0c40aac252496e8dae8231769dbeca52408e619dad5d2430c263",
+      "bytes": 14120,
+      "pixel_dimensions": [
+        753,
+        512
+      ]
+    },
+    {
+      "name": "Copy",
+      "src": "copy",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/copy.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/copy.png",
+      "sha256": "628196ecd05bf4feede6a96c281aaa5b06f45b273ca21086b83f71518e0eda2d",
+      "bytes": 17311,
+      "pixel_dimensions": [
+        813,
+        512
+      ]
+    },
+    {
+      "name": "Big Doc Energy",
+      "src": "big-doc-energy",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/big-doc-energy.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/big-doc-energy.png",
+      "sha256": "6d55c4edbfc3eb79f546a81130624a1f573eb338d68e736df4b2a71d81bd8daf",
+      "bytes": 34901,
+      "pixel_dimensions": [
+        1075,
+        512
+      ]
+    },
+    {
+      "name": "Star",
+      "src": "star",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/star.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/star.png",
+      "sha256": "f442eee0fa9d7e1bc2a303f76ec17f389c24cf9146ac88663a3275b1872c1ed2",
+      "bytes": 14385,
+      "pixel_dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Cancel",
+      "src": "cancel",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/cancel.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/cancel.png",
+      "sha256": "3808f845c578f1a3e3ade8729aff7d78cef25a31fc4b0ebbcc616782647d5013",
+      "bytes": 12063,
+      "pixel_dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Check",
+      "src": "check",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/check.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/check.png",
+      "sha256": "9f8b8c39425b46a11b15f39893c6061023e2f56d79aacbc3e1fd175e6cbdfcf5",
+      "bytes": 11898,
+      "pixel_dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Witness",
+      "src": "witness",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/witness.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/witness.png",
+      "sha256": "3605e5e753cc376738d0b891cb54222300ae1d18520f12d3b51cb00d61a9b628",
+      "bytes": 25909,
+      "pixel_dimensions": [
+        1822,
+        512
+      ]
+    },
+    {
+      "name": "Approved",
+      "src": "approved",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/approved.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/approved.png",
+      "sha256": "b4fbabca4c06a431c22d536ac9c3346c415d9efb52c9ec8ca8177d669d4a5094",
+      "bytes": 22570,
+      "pixel_dimensions": [
+        1295,
+        512
+      ]
+    },
+    {
+      "name": "As Is",
+      "src": "as-is",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/as-is.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/as-is.png",
+      "sha256": "41e237c02fb3bb3e105396d8c412ba3fd3befb2e5daca82ab1748107038963eb",
+      "bytes": 16756,
+      "pixel_dimensions": [
+        753,
+        512
+      ]
+    },
+    {
+      "name": "Completed",
+      "src": "completed",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/completed.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/completed.png",
+      "sha256": "ad403520111297efe2bd30fba5fe5240f73036626dfcf094df7a784741ce1edc",
+      "bytes": 21070,
+      "pixel_dimensions": [
+        1416,
+        512
+      ]
+    },
+    {
+      "name": "Departmental",
+      "src": "departmental",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/departmental.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/departmental.png",
+      "sha256": "06d6b71b285d53f259ec3892e737dfede4dd24fa6e937539e28da06fd5d895f5",
+      "bytes": 22692,
+      "pixel_dimensions": [
+        1747,
+        512
+      ]
+    },
+    {
+      "name": "Experimental",
+      "src": "experimental",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/experimental.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/experimental.png",
+      "sha256": "d91422863890b0bf74973badb52544ea011ba0534723d8558613e787b34709e0",
+      "bytes": 22986,
+      "pixel_dimensions": [
+        1687,
+        512
+      ]
+    },
+    {
+      "name": "Final",
+      "src": "final",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/final.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/final.png",
+      "sha256": "fde707562884b7f1cf0da60d7934c28d19291ffa17fb4ca87d7ec258f35ac1f6",
+      "bytes": 13748,
+      "pixel_dimensions": [
+        813,
+        512
+      ]
+    },
+    {
+      "name": "For Public Release",
+      "src": "for-public-release",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/for-public-release.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/for-public-release.png",
+      "sha256": "cb21c163f2e0aaff237ecfe8d031a16274898743262574a268cfca83c46203b4",
+      "bytes": 20937,
+      "pixel_dimensions": [
+        1249,
+        512
+      ]
+    },
+    {
+      "name": "Not For Public Release",
+      "src": "not-for-public-release",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/not-for-public-release.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/not-for-public-release.png",
+      "sha256": "e9e2b65616d59e21c528429d375429ac6ac85f955f10da18c1d58d95d811b75b",
+      "bytes": 22992,
+      "pixel_dimensions": [
+        1249,
+        512
+      ]
+    },
+    {
+      "name": "Preliminary Results",
+      "src": "preliminary-results",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/preliminary-results.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/preliminary-results.png",
+      "sha256": "4e8c88095a95add285a21caecf7dc40b33092e8cbe694311f41315b288cb45ef",
+      "bytes": 21849,
+      "pixel_dimensions": [
+        1249,
+        512
+      ]
+    },
+    {
+      "name": "Top Secret",
+      "src": "top-secret",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/top-secret.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/top-secret.png",
+      "sha256": "182618be6c9e0db7a35943f22200d855133ebe0db7fb89dfb751744b077218cf",
+      "bytes": 21677,
+      "pixel_dimensions": [
+        1416,
+        512
+      ]
+    },
+    {
+      "name": "Sold",
+      "src": "sold",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/sold.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/sold.png",
+      "sha256": "1902b4ac6e77ff936b63d614d5eb7ce083aa034e00326a870f6da8587156cd0b",
+      "bytes": 16578,
+      "pixel_dimensions": [
+        783,
+        512
+      ]
+    },
+    {
+      "name": "Void",
+      "src": "void",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/void.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/void.png",
+      "sha256": "06ad9adaa70d7a6e4717fcaf8cf44b449706f6ddb24fdc8a3f79df2de0520763",
+      "bytes": 15771,
+      "pixel_dimensions": [
+        753,
+        512
+      ]
+    },
+    {
+      "name": "Not Approved",
+      "src": "not-approved",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/not-approved.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/not-approved.png",
+      "sha256": "16fa64713b05bd5eab28b7534438d188fecea4fc6bec4d6b2c5f11ab2d5583c5",
+      "bytes": 26620,
+      "pixel_dimensions": [
+        1717,
+        512
+      ]
+    },
+    {
+      "name": "Confidential",
+      "src": "confidential",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/confidential.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/confidential.png",
+      "sha256": "331c4a31aec7fd8bab8157f39113df53e8ba51f927f35c8d0fddf239736f4c79",
+      "bytes": 22971,
+      "pixel_dimensions": [
+        1626,
+        512
+      ]
+    },
+    {
+      "name": "Draft",
+      "src": "draft",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/draft.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/draft.png",
+      "sha256": "9c583f9f45bccfba6a74b1d1b96e74bcf1f914acf333f26918f2edfff2e14cbe",
+      "bytes": 15350,
+      "pixel_dimensions": [
+        904,
+        512
+      ]
+    },
+    {
+      "name": "Expired",
+      "src": "expired",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/expired.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/expired.png",
+      "sha256": "e0e3d6d2d172c53b2ae02e3fd467376370700f0bfbb3084ae28e61c0b47b833a",
+      "bytes": 16971,
+      "pixel_dimensions": [
+        1054,
+        512
+      ]
+    },
+    {
+      "name": "For Comment",
+      "src": "for-comment",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/for-comment.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/for-comment.png",
+      "sha256": "9e9c9fe5b762c6796d2020737c8ee4d2d93418418934c9c317bf5d42944d32b4",
+      "bytes": 25679,
+      "pixel_dimensions": [
+        1656,
+        512
+      ]
+    },
+    {
+      "name": "Information Only",
+      "src": "information-only",
+      "url": "https://www.luminpdf.com/pdf-assets/images/default-rubber-stamps/information-only.png",
+      "path": "research/lumin/toolbar-source/stamp-assets/information-only.png",
+      "sha256": "77a14bbf97ec2b47b01e1a85cb40bf5dae63cf25d3ac59cf68e47331cc04a39a",
+      "bytes": 21566,
+      "pixel_dimensions": [
+        1249,
+        512
+      ]
+    },
+    {
+      "name": "Empty custom stamps illustration",
+      "src": "rubber-stamp",
+      "url": "https://www.luminpdf.com/pdf-assets/lumin-svgs/rubber-stamp.svg",
+      "path": "research/lumin/toolbar-source/stamp-assets/rubber-stamp.svg",
+      "sha256": "74ae67b57b8c94192f00342f9cd182a88e211cd4148f17cfe89892c7a0cf8766",
+      "bytes": 9127
+    }
+  ]
+}

@@ -1,0 +1,810 @@
+{
+  "groups": [
+    {
+      "key": "agreementGen",
+      "title": "Convert to editable blocks",
+      "searchOnly": false,
+      "commands": [
+        {
+          "key": "agreementGen",
+          "title": "AgreementGen",
+          "searchTitle": "AgreementGen",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-lm-agreement-gen",
+          "premium": false
+        }
+      ]
+    },
+    {
+      "key": "luminAi",
+      "title": "Lumin AI",
+      "searchOnly": false,
+      "commands": [
+        {
+          "key": "summaryDocument",
+          "title": "Summarize document",
+          "searchTitle": "Summarize document",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-sparkles-lg",
+          "premium": false
+        },
+        {
+          "key": "askAboutDocument",
+          "title": "Ask about document",
+          "searchTitle": "Ask about document",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-sparkles-lg",
+          "premium": false
+        },
+        {
+          "key": "redactSensitiveInfo",
+          "title": "Redact sensitive information",
+          "searchTitle": "Redact sensitive information",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-sparkles-lg",
+          "premium": false
+        }
+      ]
+    },
+    {
+      "key": "miniApps",
+      "title": "Lumin mini-app",
+      "searchOnly": false,
+      "commands": [
+        {
+          "key": "quickSearchInvoiceExtraction",
+          "title": "Invoice extraction",
+          "searchTitle": "Invoice extraction",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/quickSearchInvoiceExtraction",
+          "colored": true,
+          "premium": false
+        },
+        {
+          "key": "quickSearchTranslatePdf",
+          "title": "Translate PDF",
+          "searchTitle": "Translate PDF",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/quickSearchTranslatePdf",
+          "colored": true,
+          "premium": false
+        },
+        {
+          "key": "quickSearchResumeChecker",
+          "title": "Resume checker",
+          "searchTitle": "Resume checker",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/quickSearchResumeChecker",
+          "colored": true,
+          "premium": false
+        }
+      ]
+    },
+    {
+      "key": "annotate",
+      "title": "Mark up",
+      "searchOnly": false,
+      "commands": [
+        {
+          "key": "addComment",
+          "title": "Add comment",
+          "searchTitle": "Add comment",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_comment_teardrop_text",
+          "shortcut": "N",
+          "premium": false
+        },
+        {
+          "key": "measure",
+          "title": "Measure",
+          "searchTitle": "Measure",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-ph-ruler",
+          "premium": false
+        },
+        {
+          "key": "type",
+          "title": "Type",
+          "searchTitle": "Type",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_text_tool",
+          "shortcut": "T",
+          "premium": false
+        },
+        {
+          "key": "freehandHighlight",
+          "title": "Freehand highlight",
+          "searchTitle": "Freehand highlight",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_free_hand_highlight",
+          "premium": false
+        },
+        {
+          "key": "textHighlight",
+          "title": "Highlight",
+          "searchTitle": "Text highlight",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_highlight",
+          "shortcut": "H",
+          "premium": false
+        },
+        {
+          "key": "textTools",
+          "title": "Text tools",
+          "searchTitle": "Text tools",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_text_underline",
+          "shortcut": "U",
+          "premium": false
+        },
+        {
+          "key": "shape",
+          "title": "Shape",
+          "searchTitle": "Shape",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_rectangle",
+          "shortcut": "R",
+          "premium": false
+        },
+        {
+          "key": "eraser",
+          "title": "Eraser",
+          "searchTitle": "Eraser",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_eraser",
+          "shortcut": "E",
+          "premium": false
+        },
+        {
+          "key": "image",
+          "title": "Image",
+          "searchTitle": "Image",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_image",
+          "shortcut": "I",
+          "premium": false
+        },
+        {
+          "key": "draw",
+          "title": "Draw",
+          "searchTitle": "Draw",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_freehand",
+          "shortcut": "F",
+          "premium": false
+        },
+        {
+          "key": "performOcr",
+          "title": "Perform OCR",
+          "searchTitle": "Perform OCR",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_OCR",
+          "premium": true
+        }
+      ]
+    },
+    {
+      "key": "security",
+      "title": "Security",
+      "searchOnly": false,
+      "commands": [
+        {
+          "key": "redaction",
+          "title": "Redaction",
+          "searchTitle": "Redact",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_redaction",
+          "premium": true
+        },
+        {
+          "key": "configureAccess",
+          "title": "Set password",
+          "searchTitle": "Set password",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-set-password",
+          "premium": true
+        },
+        {
+          "key": "removeAccess",
+          "title": "Remove password",
+          "searchTitle": "Remove password",
+          "renders": true,
+          "disabled": true,
+          "icon": "pdf-icon-remove-password",
+          "premium": false
+        }
+      ]
+    },
+    {
+      "key": "fillAndSign",
+      "title": "Fill & Sign",
+      "searchOnly": false,
+      "commands": [
+        {
+          "key": "signature",
+          "title": "Signature",
+          "searchTitle": "Signature",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_signature",
+          "shortcut": "S",
+          "premium": false
+        },
+        {
+          "key": "date",
+          "title": "Date",
+          "searchTitle": "Date",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_date_stamp",
+          "premium": false
+        },
+        {
+          "key": "stamp",
+          "title": "Stamp",
+          "searchTitle": "Stamp",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_stamp",
+          "premium": true
+        },
+        {
+          "key": "dot",
+          "title": "Dot",
+          "searchTitle": "Dot",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-tool_dot_stamp",
+          "premium": false
+        },
+        {
+          "key": "tick",
+          "title": "Tick",
+          "searchTitle": "Tick",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-tool_check_stamp",
+          "premium": false
+        },
+        {
+          "key": "cross",
+          "title": "Cross",
+          "searchTitle": "Cross",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-tool_cross_stamp",
+          "premium": false
+        },
+        {
+          "key": "customizeFields",
+          "title": "Prepare form",
+          "searchTitle": "Prepare form",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-pencil-lg",
+          "premium": false
+        },
+        {
+          "key": "autoDetectFields",
+          "title": "AI auto-detect",
+          "searchTitle": "AI auto-detect",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-sparkles-lg",
+          "premium": false
+        }
+      ]
+    },
+    {
+      "key": "editPdf",
+      "title": "Edit text",
+      "searchOnly": false,
+      "commands": [
+        {
+          "key": "editContent",
+          "title": "Edit content",
+          "searchTitle": "Edit content",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-ph-pencil-simple",
+          "premium": false
+        }
+      ]
+    },
+    {
+      "key": "pageTools",
+      "title": "Organize",
+      "searchOnly": false,
+      "commands": [
+        {
+          "key": "mergeDocs",
+          "title": "Merge documents",
+          "searchTitle": "Merge documents",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_merge",
+          "premium": false
+        },
+        {
+          "key": "splitExtract",
+          "title": "Split & Extract",
+          "searchTitle": "Split & Extract",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_split",
+          "premium": false
+        },
+        {
+          "key": "rotatePages",
+          "title": "Rotate pages",
+          "searchTitle": "Rotate pages",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_rotate",
+          "premium": false
+        },
+        {
+          "key": "deletePages",
+          "title": "Delete pages",
+          "searchTitle": "Delete pages",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_delete",
+          "premium": false
+        },
+        {
+          "key": "movePages",
+          "title": "Move pages",
+          "searchTitle": "Move pages",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_move",
+          "premium": false
+        },
+        {
+          "key": "insertBlankPages",
+          "title": "Insert blank pages",
+          "searchTitle": "Insert blank pages",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_insert",
+          "premium": false
+        },
+        {
+          "key": "cropPages",
+          "title": "Crop pages",
+          "searchTitle": "Crop pages",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_crop",
+          "premium": false
+        },
+        {
+          "key": "batesNumbering",
+          "title": "Bates numbering",
+          "searchTitle": "Bates numbering",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-ph-list-numbers",
+          "premium": false
+        }
+      ]
+    },
+    {
+      "key": "fileMenuTools",
+      "title": "Other",
+      "searchOnly": false,
+      "commands": [
+        {
+          "key": "addToStarred",
+          "title": "Add to starred",
+          "searchTitle": "Add to starred",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_star_document",
+          "premium": false
+        },
+        {
+          "key": "makeCopy",
+          "title": "Make a copy",
+          "searchTitle": "Make a copy",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_copy",
+          "premium": false
+        },
+        {
+          "key": "moveDocument",
+          "title": "Move document",
+          "searchTitle": "Move document",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_move-1",
+          "premium": false
+        },
+        {
+          "key": "download",
+          "title": "Download",
+          "searchTitle": "Download",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_download",
+          "premium": false
+        },
+        {
+          "key": "autoSync",
+          "title": "Auto-sync",
+          "searchTitle": "Auto-sync",
+          "renders": false
+        },
+        {
+          "key": "darkMode",
+          "title": "Light Mode",
+          "searchTitle": "Light Mode",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_lightmode",
+          "premium": false
+        },
+        {
+          "key": "fullScreen",
+          "title": "Full screen",
+          "searchTitle": "Full screen",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_full_screen",
+          "premium": false
+        },
+        {
+          "key": "darkPage",
+          "title": "Dark page",
+          "searchTitle": "Dark page",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/darkPage",
+          "premium": false,
+          "isSwitch": true
+        },
+        {
+          "key": "presenterMode",
+          "title": "Presenter mode",
+          "searchTitle": "Presenter mode",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-monitor-play",
+          "shortcut": "⌘ Enter",
+          "premium": false
+        },
+        {
+          "key": "fileInfo",
+          "title": "File information",
+          "searchTitle": "File information",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_info",
+          "premium": false
+        },
+        {
+          "key": "versionHistory",
+          "title": "Version history",
+          "searchTitle": "Version History",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-ph-clock-counter-clockwise",
+          "premium": false
+        }
+      ]
+    },
+    {
+      "key": "rightSideBarTools",
+      "title": "",
+      "searchOnly": true,
+      "commands": [
+        {
+          "key": "aiAssistant",
+          "title": "AI assistant",
+          "searchTitle": "AI assistant",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/aiAssistant",
+          "shortcut": "⌘ /",
+          "premium": false,
+          "colored": true
+        },
+        {
+          "key": "commentHistory",
+          "title": "Comment history",
+          "searchTitle": "Comment history",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/commentHistory",
+          "premium": false
+        },
+        {
+          "key": "print",
+          "title": "Print",
+          "searchTitle": "Print",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-ph-printer",
+          "premium": false
+        }
+      ]
+    },
+    {
+      "key": "helpCenterTools",
+      "title": "",
+      "searchOnly": true,
+      "commands": [
+        {
+          "key": "helpCenter",
+          "title": "Help center",
+          "searchTitle": "Help center",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/helpCenter",
+          "trailingIcon": "kiwi-icon-external-link-sm",
+          "premium": false
+        },
+        {
+          "key": "contactSupport",
+          "title": "Contact Support",
+          "searchTitle": "Contact Support",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/contactSupport",
+          "trailingIcon": "kiwi-icon-external-link-sm",
+          "premium": false
+        },
+        {
+          "key": "giveFeedback",
+          "title": "Give Feedback",
+          "searchTitle": "Give Feedback",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/giveFeedback",
+          "trailingIcon": "kiwi-icon-external-link-sm",
+          "premium": false
+        }
+      ]
+    },
+    {
+      "key": "leftToolbarTools",
+      "title": "",
+      "searchOnly": true,
+      "commands": [
+        {
+          "key": "viewControl",
+          "title": "View controls",
+          "searchTitle": "View controls",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-ph-file",
+          "premium": false,
+          "mode": "viewer"
+        },
+        {
+          "key": "gridView",
+          "title": "Grid view",
+          "searchTitle": "Grid view",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_grid",
+          "premium": false,
+          "mode": "organize"
+        },
+        {
+          "key": "singleView",
+          "title": "Single view",
+          "searchTitle": "Single view",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-md_list",
+          "premium": false,
+          "mode": "organize"
+        },
+        {
+          "key": "thumbnails",
+          "title": "Thumbnails",
+          "searchTitle": "Thumbnails",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-thumbnail-lg",
+          "premium": false
+        },
+        {
+          "key": "outlines",
+          "title": "Outlines",
+          "searchTitle": "Outlines",
+          "renders": true,
+          "disabled": false,
+          "icon": "kiwi-icon-bookmark-lg",
+          "premium": false
+        },
+        {
+          "key": "readAloud",
+          "title": "Read aloud",
+          "searchTitle": "Read aloud",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/readAloud",
+          "premium": false
+        },
+        {
+          "key": "select",
+          "title": "Select",
+          "searchTitle": "Select",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/select",
+          "shortcut": "ESC",
+          "premium": false
+        },
+        {
+          "key": "pan",
+          "title": "Pan",
+          "searchTitle": "Pan",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/pan",
+          "shortcut": "P",
+          "premium": false
+        },
+        {
+          "key": "undo",
+          "title": "Undo",
+          "searchTitle": "Undo",
+          "renders": true,
+          "disabled": true,
+          "bitmap": "Explore/undo",
+          "shortcut": "⌘Z",
+          "premium": false
+        },
+        {
+          "key": "redo",
+          "title": "Redo",
+          "searchTitle": "Redo",
+          "renders": true,
+          "disabled": true,
+          "bitmap": "Explore/redo",
+          "shortcut": "⌘⇧Z",
+          "premium": false
+        }
+      ]
+    },
+    {
+      "key": "remainingTools",
+      "title": "",
+      "searchOnly": true,
+      "commands": [
+        {
+          "key": "renameDocument",
+          "title": "Rename document",
+          "searchTitle": "Rename document",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/renameDocument",
+          "premium": false
+        },
+        {
+          "key": "focusMode",
+          "title": "Focus mode",
+          "searchTitle": "Focus mode",
+          "renders": true,
+          "disabled": false,
+          "icon": "pdf-icon-lg_collapse_right_panel",
+          "shortcut": "⌘\\",
+          "premium": false
+        },
+        {
+          "key": "signSecurely",
+          "title": "Request signatures",
+          "searchTitle": "Sign securely",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/signSecurely",
+          "premium": false
+        }
+      ]
+    },
+    {
+      "key": "downloadActions",
+      "title": "Compress & Convert",
+      "searchOnly": false,
+      "commands": [
+        {
+          "key": "quickSearchCompress",
+          "title": "Compress",
+          "searchTitle": "Compress",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/quickSearchCompress",
+          "premium": false
+        },
+        {
+          "key": "quickSearchConvertToDocx",
+          "title": "Convert to Word (.docx)",
+          "searchTitle": "Convert to Word (.docx)",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/quickSearchConvertToDocx",
+          "premium": false
+        },
+        {
+          "key": "quickSearchConvertToXlsx",
+          "title": "Convert to Excel (.xlsx)",
+          "searchTitle": "Convert to Excel (.xlsx)",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/quickSearchConvertToXlsx",
+          "premium": false
+        },
+        {
+          "key": "quickSearchConvertToPptx",
+          "title": "Convert to PowerPoint (.pptx)",
+          "searchTitle": "Convert to PowerPoint (.pptx)",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/quickSearchConvertToPptx",
+          "premium": false
+        },
+        {
+          "key": "quickSearchConvertToJpg",
+          "title": "Convert to JPG",
+          "searchTitle": "Convert to JPG",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/quickSearchConvertToJpg",
+          "premium": false
+        },
+        {
+          "key": "quickSearchConvertToPng",
+          "title": "Convert to PNG",
+          "searchTitle": "Convert to PNG",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/quickSearchConvertToPng",
+          "premium": false
+        },
+        {
+          "key": "quickSearchFlattenPdf",
+          "title": "Flatten PDF",
+          "searchTitle": "Flatten PDF",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/quickSearchFlattenPdf",
+          "premium": false
+        },
+        {
+          "key": "quickSearchConvertGeneric",
+          "title": "Convert to ...",
+          "searchTitle": "Convert to ...",
+          "renders": true,
+          "disabled": false,
+          "bitmap": "Explore/quickSearchConvertGeneric",
+          "premium": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "fonts": [
+    {
+      "family": "AlexBrush",
+      "resource": "macos/Resources/Lumin/Signature/AlexBrush.ttf",
+      "woff2": "research/lumin/toolbar-source/signature-assets/AlexBrush.woff2",
+      "woff2_sha256": "3bcd1b5398bd80d42c71c7dcb77b4944869362ae831285175be21cb72cf4bbeb",
+      "ttf_sha256": "ee14397a79272ae4af29c927e028509255cb9fe0b76e15debfebfdd27876e869",
+      "names": {
+        "0": "Copyright 2011 The Alex Brush Project Authors (https://github.com/googlefonts/alex-brush)",
+        "1": "Alex Brush",
+        "2": "Regular",
+        "4": "Alex Brush Regular",
+        "6": "AlexBrush-Regular",
+        "13": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+        "14": "https://scripts.sil.org/OFL"
+      },
+      "unitsPerEm": 1000,
+      "ascender": 825,
+      "descender": -425,
+      "lineGap": 0,
+      "unicode_count": 466,
+      "glyphs": 482,
+      "conversion": "Installed fonttools WOFF2 decompression; full cmap and hmtx equality verified"
+    },
+    {
+      "family": "ArchitectsDaughter",
+      "resource": "macos/Resources/Lumin/Signature/ArchitectsDaughter.ttf",
+      "woff2": "research/lumin/toolbar-source/signature-assets/ArchitectsDaughter.woff2",
+      "woff2_sha256": "c23488cd520e8f3bc357aa0e5f4738c72b02ba6bb3f71872af03e7af4c1fec33",
+      "ttf_sha256": "2b3557af84ebcd9a370dfd7f8335821c03ea76c175e4b328cbbdb42b6ca45108",
+      "names": {
+        "0": "Copyright (c) 2010, Kimberly Geswein (kimberlygeswein.com)",
+        "1": "Architects Daughter",
+        "2": "Regular",
+        "4": "Architects Daughter Regular",
+        "6": "ArchitectsDaughter-Regular",
+        "13": "Copyright (c) 2010, Kimberly Geswein (kimberlygeswein.com)\r\n\r\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.  This license is copied below, and is also available with a FAQ at:  http://scripts.sil.org/OFL\r\n\r\n\r\n-----------------------------------------------------------\r\nSIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\r\n-----------------------------------------------------------\r\n\r\nPREAMBLE\r\nThe goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership\r\nwith others.\r\n\r\nThe OFL allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. The fonts, including any derivative works, can be bundled, embedded, redistributed and/or sold with any software provided that any reserved names are not used by derivative works. The fonts and derivatives, however, cannot be released under any other type of license. The requirement for fonts to remain under this license does not apply to any document created using the fonts or their derivatives.\r\n\r\nDEFINITIONS\r\n\"Font Software\" refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation.\r\n\r\n\"Reserved Font Name\" refers to any names specified as such after the copyright statement(s).\r\n\r\n\"Original Version\" refers to the collection of Font Software components as distributed by the Copyright Holder(s).\r\n\r\n\"Modified Version\" refers to any derivative made by adding to, deleting, or substituting -- in part or in whole -- any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.\r\n\r\n\"Author\" refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.\r\n\r\nPERMISSION & CONDITIONS\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:\r\n\r\n1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.\r\n\r\n2) Original or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.\r\n\r\n3) No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as\r\npresented to the users.\r\n\r\n4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written\r\npermission.\r\n\r\n5) The Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.\r\n\r\nTERMINATION\r\nThis license becomes null and void if any of the above conditions are not met.\r\n\r\nDISCLAIMER\r\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\r\nCOPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.",
+        "14": " http://scripts.sil.org/OFL"
+      },
+      "unitsPerEm": 1024,
+      "ascender": 1010,
+      "descender": -413,
+      "lineGap": 0,
+      "unicode_count": 348,
+      "glyphs": 351,
+      "conversion": "Installed fonttools WOFF2 decompression; full cmap and hmtx equality verified"
+    },
+    {
+      "family": "DancingScript",
+      "resource": "macos/Resources/Lumin/Signature/DancingScript.ttf",
+      "woff2": "research/lumin/toolbar-source/signature-assets/DancingScript.woff2",
+      "woff2_sha256": "0f74b2be3feeda4c4f69d8589d68e96f2d510443e5575f1a4c72e039ec2d5e58",
+      "ttf_sha256": "14b2dd1b7812d3fad7f8bf37cbeb299398f06c89d059d8e03a962f4f49ce010b",
+      "names": {
+        "0": "Copyright 2016 The Dancing Script Project Authors (impallari@gmail.com), with Reserved Font Name 'Dancing Script'.",
+        "1": "Dancing Script",
+        "2": "Regular",
+        "4": "Dancing Script Regular",
+        "6": "DancingScript-Regular",
+        "13": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+        "14": "http://scripts.sil.org/OFL"
+      },
+      "unitsPerEm": 1000,
+      "ascender": 920,
+      "descender": -280,
+      "lineGap": 0,
+      "unicode_count": 559,
+      "glyphs": 612,
+      "conversion": "Installed fonttools WOFF2 decompression; full cmap and hmtx equality verified"
+    },
+    {
+      "family": "DrSugiyama",
+      "resource": "macos/Resources/Lumin/Signature/DrSugiyama.ttf",
+      "woff2": "research/lumin/toolbar-source/signature-assets/DrSugiyama.woff2",
+      "woff2_sha256": "fe03a431443ace69f9cc540cde3bbd2d8913ba3fba60eb41dbd693ecf353e344",
+      "ttf_sha256": "86294fbb001901064274419b59945ff15b72e950c8e82caeba3cd70061369282",
+      "names": {
+        "0": "Copyright (c) 2004 Alejandro Paul (sudtipos@sudtipos.com),\rwith Reserved Font Name \"Dr Sujiyama\"",
+        "1": "Dr Sugiyama",
+        "2": "Regular",
+        "4": "Dr Sugiyama Regular",
+        "6": "DrSugiyama-Regular",
+        "13": "This Font Software is licensed under the SIL Open Font License,\rVersion 1.1. This license is available with a FAQ at:\rhttp://scripts.sil.org/OFL",
+        "14": "http://scripts.sil.org/OFL"
+      },
+      "unitsPerEm": 1000,
+      "ascender": 1009,
+      "descender": -450,
+      "lineGap": 0,
+      "unicode_count": 230,
+      "glyphs": 233,
+      "conversion": "Installed fonttools WOFF2 decompression; full cmap and hmtx equality verified"
+    },
+    {
+      "family": "HomemadeApple",
+      "resource": "macos/Resources/Lumin/Signature/HomemadeApple.ttf",
+      "woff2": "research/lumin/toolbar-source/signature-assets/HomemadeApple.woff2",
+      "woff2_sha256": "c23a47110f0958eda16b6f803eeabd8dc84360203b879d51bd32cb832f838eea",
+      "ttf_sha256": "7e109f99e9b942c884cd48a03022e625b5d011e95cbae47e9d60fe688fa9db89",
+      "names": {
+        "0": "Copyright (c) 2010 by Font Diner, Inc. All rights reserved.",
+        "1": "Homemade Apple",
+        "2": "Regular",
+        "4": "Homemade Apple Regular",
+        "6": "HomemadeApple-Regular",
+        "13": "Licensed under the Apache License, Version 2.0",
+        "14": "http://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "unitsPerEm": 1024,
+      "ascender": 1327,
+      "descender": -866,
+      "lineGap": 18,
+      "unicode_count": 229,
+      "glyphs": 232,
+      "conversion": "Installed fonttools WOFF2 decompression; full cmap and hmtx equality verified"
+    },
+    {
+      "family": "RockSalt",
+      "resource": "macos/Resources/Lumin/Signature/RockSalt.ttf",
+      "woff2": "research/lumin/toolbar-source/signature-assets/RockSalt.woff2",
+      "woff2_sha256": "3737a99897ebe8ee2f246ca08d25ac1b5db2ef895899d2733d7474338d14cbff",
+      "ttf_sha256": "bdbad2eeb37d7a897f885a90a9918284251d157564c854259631ab6494f6be58",
+      "names": {
+        "0": "Copyright (c) 2010 by Font Diner, Inc DBA Sideshow. All rights reserved.",
+        "1": "Rock Salt",
+        "2": "Regular",
+        "4": "Rock Salt Regular",
+        "6": "RockSalt-Regular",
+        "13": "Licensed under the Apache License, Version 2.0",
+        "14": "http://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "unitsPerEm": 1024,
+      "ascender": 1623,
+      "descender": -788,
+      "lineGap": 32,
+      "unicode_count": 227,
+      "glyphs": 228,
+      "conversion": "Installed fonttools WOFF2 decompression; full cmap and hmtx equality verified"
+    }
+  ],
+  "image_upload": {
+    "url": "https://www.luminpdf.com/pdf-assets/lumin-svgs/img.svg",
+    "svg": "macos/Resources/Lumin/Signature/image-upload.svg",
+    "svg_sha256": "1333ae670f22ee6a4dd7a263a91d48e30b3f633ebe694e85bdfd282605986d27",
+    "png": "macos/Resources/Lumin/Signature/image-upload.png",
+    "png_sha256": "9ee27d41fefe4d6d738aefd9440434a97eee799aa244e7529e9e70077dee9f5f",
+    "logical_size": [
+      44,
+      44
+    ],
+    "prepared_size": [
+      176,
+      176
+    ],
+    "conversion": "Installed rsvg-convert; asset preparation only, no image checking"
+  },
+  "drop_image": {
+    "url": "https://www.luminpdf.com/pdf-assets/lumin-svgs/drop-img.svg",
+    "svg": "macos/Resources/Lumin/Signature/drop-image.svg",
+    "svg_sha256": "545b1d3c9da29ff0506dcb1be9d0a9d75ac27e137e4f10b708fa5900e5d87de8",
+    "png": "macos/Resources/Lumin/Signature/drop-image.png",
+    "png_sha256": "ac4c507e5001d155941c0aaff98986c471e0d4ba9eebc3d9a21df396074615b6",
+    "logical_size": [
+      44,
+      44
+    ],
+    "prepared_size": [
+      176,
+      176
+    ],
+    "conversion": "Installed rsvg-convert; asset preparation only, no image checking"
+  }
+}

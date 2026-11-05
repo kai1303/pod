@@ -1,0 +1,234 @@
+{
+  "method": "Static lexical extraction from original shipped source; no captured JavaScript executed",
+  "source": "markup_files/1vmims6r5cffr.js",
+  "groups": {
+    "Popular": [
+      {
+        "order": 0,
+        "key": "eraser"
+      },
+      {
+        "order": 1,
+        "key": "shape"
+      },
+      {
+        "order": 2,
+        "key": "highlight"
+      },
+      {
+        "order": 3,
+        "key": "free_hand"
+      },
+      {
+        "order": 4,
+        "key": "free_text"
+      },
+      {
+        "order": null,
+        "key": "divider"
+      },
+      {
+        "order": 5,
+        "key": "signature"
+      },
+      {
+        "order": null,
+        "key": "divider"
+      },
+      {
+        "order": 6,
+        "key": "comment"
+      },
+      {
+        "order": 7,
+        "key": "sign_send"
+      }
+    ],
+    "Fill & Sign": [
+      {
+        "order": 0,
+        "key": "form_builder"
+      },
+      {
+        "order": null,
+        "key": "divider"
+      },
+      {
+        "order": 1,
+        "key": "cross_stamp"
+      },
+      {
+        "order": 2,
+        "key": "tick_stamp"
+      },
+      {
+        "order": 3,
+        "key": "dot_stamp"
+      },
+      {
+        "order": 4,
+        "key": "rubber_stamp"
+      },
+      {
+        "order": 5,
+        "key": "date_stamp"
+      },
+      {
+        "order": 6,
+        "key": "free_text"
+      },
+      {
+        "order": 7,
+        "key": "signature"
+      },
+      {
+        "order": 8,
+        "key": "sign_send"
+      }
+    ],
+    "Mark up": [
+      {
+        "order": 0,
+        "key": "ocr"
+      },
+      {
+        "order": null,
+        "key": "divider"
+      },
+      {
+        "order": 1,
+        "key": "image"
+      },
+      {
+        "order": 2,
+        "key": "eraser"
+      },
+      {
+        "order": 3,
+        "key": "shape"
+      },
+      {
+        "order": 4,
+        "key": "text"
+      },
+      {
+        "order": 5,
+        "key": "highlight"
+      },
+      {
+        "order": 6,
+        "key": "free_hand"
+      },
+      {
+        "order": 7,
+        "key": "free_text"
+      },
+      {
+        "order": null,
+        "key": "divider"
+      },
+      {
+        "order": 8,
+        "key": "measure"
+      },
+      {
+        "order": null,
+        "key": "divider"
+      },
+      {
+        "order": 9,
+        "key": "comment"
+      }
+    ],
+    "Security": [
+      {
+        "order": 0,
+        "key": "redaction"
+      },
+      {
+        "order": 1,
+        "key": "password"
+      }
+    ]
+  },
+  "widthConstants": {
+    "leftRail": 80,
+    "rightRail": 50,
+    "minimumGap": 96,
+    "rightPanelFallback": 368,
+    "expandedNavigation": 260,
+    "collapseDifference": 54,
+    "largeScreenOverride": 1808
+  },
+  "fieldExceptions": [
+    "sign_send does not consume collapse order",
+    "password does not consume collapse order"
+  ],
+  "geometryDeclarations": {
+    "outerPadding": 8,
+    "outerTopRadius": 16,
+    "sectionGap": 4,
+    "verticalDividerHeight": 18,
+    "mainButtonHeight": 32,
+    "mainButtonMinimumWidth": 32,
+    "mainButtonHorizontalPadding": 4,
+    "labelMarginLeft": 4,
+    "fontSize": 12,
+    "fontWeight": 460,
+    "lineHeightPercent": 115,
+    "splitPadding": 1,
+    "splitSecondaryMinimumWidth": 20,
+    "splitArrowSize": 20
+  },
+  "limitations": [
+    "One-time baseline measurement and parent/child layout-effect ordering can differ from later full-width DOM; source denominator remains non-null order count",
+    "Feature/permission states and resolved widths require live DOM/computed CSS"
+  ],
+  "liveParentObservations": {
+    "Popular1512Settled": {
+      "rightWidth": 837.90625,
+      "hiddenLabels": [
+        "Eraser"
+      ]
+    },
+    "Popular1180": {
+      "rightWidth": 533.953125,
+      "ordinaryLabelsHidden": 7,
+      "signSecurelyLabelVisible": true
+    },
+    "MarkUp1180": {
+      "rightWidth": 503,
+      "ordinaryLabelsHidden": 10,
+      "moreTools": false
+    },
+    "Security": {
+      "leftWidth": 300,
+      "dividerHeight": 32
+    }
+  },
+  "overflow": {
+    "width": 280,
+    "placement": "bottom-end",
+    "mainAxisOffset": 4,
+    "crossAxisOffset": 12,
+    "closeOnItemClick": false,
+    "icon": "kiwi-icon-dots-md",
+    "glyph": "U+E9AF",
+    "order": "reverse non-divider/non-form_builder/non-sign_send tools, then append form_builder/sign_send in original relative order"
+  },
+  "signSecurely": {
+    "startSvg": "LmSignatureIcon",
+    "endSvg": "CaretDownIcon",
+    "svgSize": 20,
+    "backgroundToken": "--kiwi-colors-custom-brand-sign-sign-surface-container",
+    "foregroundToken": "--kiwi-colors-custom-brand-sign-on-sign-container",
+    "light": {
+      "background": "#D0CCFF",
+      "foreground": "#160F57"
+    },
+    "dark": {
+      "background": "#3A28C0",
+      "foreground": "#D0CCFF"
+    }
+  }
+}

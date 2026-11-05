@@ -1,0 +1,433 @@
+{
+  "scope": "Static shipped source extraction only; parent-owned live DOM confirms rectangles/states. No screenshots, browser interaction or account identity data.",
+  "artifacts": [
+    {
+      "path": "research/lumin/toolbar-source/markup_files/0qwcgrq08z83b.js",
+      "sha256": "964f5557e4d435d204299da641cde06e2e48f6da8cac12195e66ac09fa76251b",
+      "charStart": 77900,
+      "charEndExclusive": 85800,
+      "utf8Start": 91391,
+      "utf8EndExclusive": 99291,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/file-item-components.source.js",
+      "excerptSHA256": "cd22416b6e0321c7c7a576a188f1f21fd1a81c7b5e268128144154401076f478"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/0qwcgrq08z83b.js",
+      "sha256": "964f5557e4d435d204299da641cde06e2e48f6da8cac12195e66ac09fa76251b",
+      "charStart": 86650,
+      "charEndExclusive": 92400,
+      "utf8Start": 100141,
+      "utf8EndExclusive": 105891,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/file-items-order.source.js",
+      "excerptSHA256": "284f104f22c783709d6c0b262eb848c47026dc8c003e02963efd96f715843509"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/0qwcgrq08z83b.js",
+      "sha256": "964f5557e4d435d204299da641cde06e2e48f6da8cac12195e66ac09fa76251b",
+      "charStart": 97000,
+      "charEndExclusive": 98100,
+      "utf8Start": 110491,
+      "utf8EndExclusive": 111591,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/file-menu-target.source.js",
+      "excerptSHA256": "f024fc1d23c100ac523b2429eb747453c2a325121c5b196cba479bbc8705f1e5"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/0qwcgrq08z83b.js",
+      "sha256": "964f5557e4d435d204299da641cde06e2e48f6da8cac12195e66ac09fa76251b",
+      "charStart": 161400,
+      "charEndExclusive": 164820,
+      "utf8Start": 174891,
+      "utf8EndExclusive": 178311,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/share-options.source.js",
+      "excerptSHA256": "9b20180f5c2e3a25237f959368f3829a5ec0d1602cbbab524ff1032b17256afb"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/3paunvfp0my3g.js",
+      "sha256": "2a16e028296a1e77d3e38b76f9927cc6bd222c7812133a47c90e94e7ce46fbf4",
+      "charStart": 50000,
+      "charEndExclusive": 54680,
+      "utf8Start": 50000,
+      "utf8EndExclusive": 54680,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/menu-wrapper.source.js",
+      "excerptSHA256": "920d4b882b7340068b37630f941da2e1add0ca7deb1292b60db14b7f02b6c299"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/3paunvfp0my3g.js",
+      "sha256": "2a16e028296a1e77d3e38b76f9927cc6bd222c7812133a47c90e94e7ce46fbf4",
+      "charStart": 89834,
+      "charEndExclusive": 96200,
+      "utf8Start": 89834,
+      "utf8EndExclusive": 96200,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/kiwi-switch.source.js",
+      "excerptSHA256": "cedc0f12e8761b00537f02d998fa1fea0dfdf5d6a8447467b1805e60f9be7f10"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "sha256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 287715,
+      "charEndExclusive": 290600,
+      "utf8Start": 287715,
+      "utf8EndExclusive": 290600,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/menu-item.css",
+      "excerptSHA256": "91581dac08915a61ccb4ea63a68586aa792e0befaa94291c98f2b4f7b81c364d"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "sha256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 305991,
+      "charEndExclusive": 308230,
+      "utf8Start": 305991,
+      "utf8EndExclusive": 308230,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/switch.css",
+      "excerptSHA256": "98748a1738d47bbced350504e29643840f1d599567c78b52bc481a7d55422f22"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/2orfcd3fei0sw.css",
+      "sha256": "2313fbf5d17525aaae3b495479084ee7763579147c22cf864eddf42cbb1d8769",
+      "charStart": 14520,
+      "charEndExclusive": 14945,
+      "utf8Start": 14520,
+      "utf8EndExclusive": 14945,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/file-menu.css",
+      "excerptSHA256": "e55ea2209fb2def6b3b6049d84ede3f3ef79411a783e86eba7d5adcf0b4c0e52"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/2dqtb2c9lrr2n.js",
+      "sha256": "e814783f8271f4dd017928e8f54173e617a289a628603a9021f19f5a39bf9f4a",
+      "charStart": 60395,
+      "charEndExclusive": 60900,
+      "utf8Start": 60397,
+      "utf8EndExclusive": 60902,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/legacy-divider.source.js",
+      "excerptSHA256": "d7281bbb422e9108a98834e76b2e8695fd44f69bb11a2a40ab80af0b5b42808b"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/3zmc88ww60v7f.js",
+      "sha256": "2b8f45312d75b13a8ce211d47a88531a7f4471e01b6c42221ab7cb2cdca88de1",
+      "charStart": 25760,
+      "charEndExclusive": 26490,
+      "utf8Start": 25764,
+      "utf8EndExclusive": 26512,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/keyboard-shortcuts.source.js",
+      "excerptSHA256": "a14ad36a75b35521d3769abd0fef8fbd7ac39e1031432a080caa473dbeee58f6"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "sha256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 793107,
+      "charEndExclusive": 794980,
+      "utf8Start": 793286,
+      "utf8EndExclusive": 795159,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/help-rows.source.js",
+      "excerptSHA256": "1034cc49999285f1d80dee2f4cbada4b00a657a25d8dea656712b88f4233bf18"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/13awzrgnr9-2o.js",
+      "sha256": "b6388d8aa19d1a10c1183d7f857bdaa1165d40b6c223146cfd9f36225637bc42",
+      "charStart": 57615,
+      "charEndExclusive": 58020,
+      "utf8Start": 57615,
+      "utf8EndExclusive": 58020,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/help-link.source.js",
+      "excerptSHA256": "80c90f9dff1a3018b435b820e0c36a40a2bb82c983392946fe85130775cd250f"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/3ecqp71ogrms5.js",
+      "sha256": "2236bc8a6474cbb550ab2d9e10dc260de9f8164e5353abf517cd31c1cc7f9eff",
+      "charStart": 20443,
+      "charEndExclusive": 23430,
+      "utf8Start": 20445,
+      "utf8EndExclusive": 23432,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/help-list-styles.source.js",
+      "excerptSHA256": "732843619c50d9322e7cbad06294957d735a5adea4cee6e92c3039dbdadcec86"
+    },
+    {
+      "path": "research/lumin/toolbar-source/markup_files/12f_9niz_vx64.js",
+      "sha256": "81b10aef438270665eba84bb87ebb584939d0081fae9299bfd3ce3db72cdf2c1",
+      "charStart": 23732,
+      "charEndExclusive": 26060,
+      "utf8Start": 23732,
+      "utf8EndExclusive": 26060,
+      "excerpt": "research/lumin/toolbar-source/extracted/header-menus/help-popper.source.js",
+      "excerptSHA256": "73860ea752ae2c8127e0ebdb90bc7a41f12b4ba4fb6d65837f6550b86f18006c"
+    }
+  ],
+  "genericMenu": {
+    "padding": 8,
+    "radius": 8,
+    "shadowRole": "--kiwi-shadow-2",
+    "surfaceRole": "--kiwi-colors-surface-surface-bright",
+    "trapFocus": true,
+    "returnFocus": true,
+    "loop": true,
+    "closeOnItemClick": true,
+    "itemTabIndex": -1,
+    "initialFocusPlaceholder": true,
+    "openDelayMs": 0,
+    "closeDelayMs": 100
+  },
+  "row": {
+    "size": "dense",
+    "minHeight": 32,
+    "padding": [
+      4,
+      8
+    ],
+    "radius": 4,
+    "gap": 8,
+    "font": {
+      "family": "Inter",
+      "size": 14,
+      "weight": 500,
+      "lineHeight": 20
+    },
+    "foregroundRole": "--kiwi-colors-surface-on-surface",
+    "hoverOpacity": 0.08,
+    "pressedOpacity": 0.12,
+    "disabledOpacity": 0.38,
+    "defaultIconWrapper": [
+      24,
+      24
+    ]
+  },
+  "fileMenu": {
+    "minWidth": 304,
+    "position": "not explicitly passed: inherited Mantine Popover default; parent live evidence bottom center",
+    "defaultRows": [
+      {
+        "key": "star",
+        "label": "Add to starred",
+        "selectedLabel": "Remove from starred",
+        "icon": "pdf-icon-md_star_document",
+        "selectedIcon": "pdf-icon-md_unstar_document",
+        "iconSize": 24,
+        "when": "signed-in, not tour/system-file/template-viewer",
+        "disabledWhen": "offline or caching storage",
+        "closesMenu": false
+      },
+      {
+        "key": "copy",
+        "label": "Make a copy",
+        "icon": "pdf-icon-md_copy",
+        "iconSize": 24,
+        "when": "signed-in, not system-file/template-viewer",
+        "disabledWhen": "cannot copy or offline"
+      },
+      {
+        "key": "move",
+        "label": "Move",
+        "icon": "pdf-icon-md_move-1",
+        "iconSize": 24,
+        "when": "signed-in and not disabledMoveDocument/template-viewer",
+        "disabledWhen": "offline"
+      },
+      {
+        "key": "download",
+        "label": "Download",
+        "icon": "pdf-icon-md_download",
+        "iconSize": 24,
+        "when": "signed-in",
+        "disabledWhen": "export permission"
+      },
+      {
+        "key": "saveAsTemplate",
+        "label": "Save as template",
+        "svgExport": "StickerIcon",
+        "module": 8242609,
+        "iconSize": 24,
+        "when": "template management enabled, not system-file/offline/template-viewer"
+      },
+      {
+        "key": "offline",
+        "label": "Available offline",
+        "svgExport": "CloudSlashIcon",
+        "module": 3695171,
+        "iconSize": 20,
+        "suffix": "Switch",
+        "when": "offline feature enabled and not system-file",
+        "disabledWhen": "offline/downloading/pending",
+        "closesMenu": false
+      },
+      {
+        "key": "autoSync",
+        "label": "Auto-sync",
+        "icon": "google storage image",
+        "iconSize": 24,
+        "suffix": "Switch",
+        "when": "Google service and signed-in and isAutoSync(document)",
+        "disabledWhen": "over time limit or loading",
+        "closesMenu": false
+      },
+      {
+        "key": "divider",
+        "when": "not system-file and signed-in"
+      },
+      {
+        "key": "theme",
+        "labelWhenDark": "Light mode",
+        "labelWhenLight": "Dark mode",
+        "iconWhenDark": "pdf-icon-md_lightmode",
+        "iconWhenLight": "pdf-icon-md_darkmode",
+        "iconSize": 24
+      },
+      {
+        "key": "fullScreen",
+        "label": "Full screen",
+        "activeLabel": "Exit full screen",
+        "icon": "pdf-icon-md_full_screen",
+        "activeIcon": "pdf-icon-md_full_screen_closed",
+        "iconSize": 20
+      },
+      {
+        "key": "darkPage",
+        "label": "Dark page",
+        "svgExport": "MoonStarsIcon",
+        "module": 4848502,
+        "iconSize": 24,
+        "suffix": "Switch",
+        "closesMenu": false
+      },
+      {
+        "key": "presenter",
+        "label": "Presenter mode",
+        "icon": "kiwi-icon-monitor-play",
+        "iconSize": 24,
+        "shortcutMac": "⌘ Enter",
+        "shortcutOther": "Ctrl Enter",
+        "when": "signed-in"
+      },
+      {
+        "key": "divider",
+        "when": "signed-in"
+      },
+      {
+        "key": "info",
+        "label": "File information",
+        "icon": "pdf-icon-md_info",
+        "iconSize": 24,
+        "when": "signed-in"
+      },
+      {
+        "key": "versions",
+        "label": "Version history",
+        "icon": "kiwi-icon-ph-clock-counter-clockwise",
+        "iconSize": 24,
+        "disabledWhen": "shouldHideVersionHistoryInViewerMenu"
+      },
+      {
+        "key": "divider",
+        "when": "not Electron/system-file"
+      },
+      {
+        "key": "desktop",
+        "label": "Open in desktop app",
+        "svgExport": "MonitorArrowUpIcon",
+        "module": 1390298,
+        "iconSize": 24,
+        "badge": "NEW",
+        "badgeSize": "sm",
+        "badgeVariant": "yellow",
+        "when": "not Electron/system-file"
+      },
+      {
+        "key": "divider",
+        "when": "new viewer switch visible"
+      },
+      {
+        "key": "newViewer",
+        "label": "New PDF Viewer",
+        "svgExport": "SparkleIcon",
+        "module": 1810868,
+        "iconSize": 24,
+        "suffix": "Switch",
+        "closesMenu": false,
+        "when": "new viewer switch visible"
+      }
+    ],
+    "separator": {
+      "margin": [
+        8,
+        0
+      ],
+      "backgroundRole": "theme.le_main_outline_variant",
+      "minWidth": 1
+    },
+    "shortcutFont": {
+      "size": 14,
+      "weight": 420,
+      "lineHeight": 20,
+      "foregroundRole": "--kiwi-colors-surface-on-surface-variant"
+    }
+  },
+  "shareMenu": {
+    "position": "bottom-end",
+    "itemSize": "dense",
+    "closeOnItemClick": true,
+    "closeOnClickOutside": true,
+    "rows": [
+      {
+        "label": "Copy link",
+        "locale": "modalShare.copyLink",
+        "icon": "kiwi-icon-link-lg",
+        "iconSize": 24
+      },
+      {
+        "label": "Send for signatures",
+        "locale": "viewer.bananaSign.sendForSignatures",
+        "icon": "kiwi-icon-send-lg",
+        "iconSize": 24,
+        "disabledWhen": "!canSendForSignatures && !(newRequestSignatureFlow && signedIn && !canEdit)"
+      }
+    ]
+  },
+  "switch": {
+    "defaultSize": "sm",
+    "width": 36,
+    "height": 20,
+    "borderWidth": 1,
+    "thumbSize": 16,
+    "hoverHalo": 32,
+    "radiusRole": "--kiwi-border-radius-xl",
+    "off": {
+      "track": "--kiwi-colors-surface-surface-container-low",
+      "border": "--kiwi-colors-surface-outline",
+      "thumb": "--kiwi-colors-surface-on-surface-variant"
+    },
+    "on": {
+      "track": "--kiwi-colors-core-secondary",
+      "border": "--kiwi-colors-core-secondary",
+      "thumb": "--kiwi-colors-core-on-secondary"
+    }
+  },
+  "helpMenu": {
+    "rows": [
+      "Help center",
+      "Contact Support",
+      "Give Feedback"
+    ],
+    "structure": "legacy MUI MenuList UL, anchor LinkItem wrapping newer dense MenuItemBase",
+    "listPadding": 8,
+    "rowStyle": "same newer dense MenuItemBase as above",
+    "outerLinkStyle": "legacy le_title_small/on-surface, overridden inside row",
+    "popper": {
+      "defaultOffset": [
+        0,
+        8
+      ],
+      "arrowOffset": [
+        0,
+        22
+      ],
+      "preventOverflowPadding": 8,
+      "preventOverflowAltAxis": true,
+      "defaultElevation": 1,
+      "fadeMs": 300,
+      "arrow": false
+    }
+  },
+  "unknowns": [
+    "Account/document feature flags and permissions select actual rows; static declaration is not proof all rows are visible.",
+    "Source file-menu/Share/Help live rectangles and inline SVG payloads belong to parent DOM capture; no private account data copied.",
+    "All hover, keyboard, permission, mobile and dynamic tooltip states require native/runtime comparison."
+  ]
+}

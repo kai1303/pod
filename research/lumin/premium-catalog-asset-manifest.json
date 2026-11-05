@@ -1,0 +1,29 @@
+{
+  "scope": "Original public referenced EditPdf magic artwork only; no rendered checks",
+  "assets": [
+    {
+      "name": "EditPdf illustration-magic-light (both light/dark appearances use same source)",
+      "url": "https://static.luminpdf.com/_next/static/media/illustration-magic-light.1dsydhts2-o6j.png?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "declared_url": "https://static.luminpdf.com/_next/static/media/illustration-magic-light.1dsydhts2-o6j.png",
+      "path": "research/lumin/toolbar-source/premium-assets/illustration-magic-light.png",
+      "sha256": "ceeaea17241299ff004d9de4a460c7a0103e7458a289e27f0c357b9874afc40a",
+      "bytes": 25983,
+      "pixel_dimensions": [
+        214,
+        168
+      ],
+      "source_modules": [
+        3120154,
+        170961,
+        7871942
+      ],
+      "source_intrinsic_dimensions": [
+        214,
+        168
+      ],
+      "resource": "macos/Resources/Lumin/Premium/magic.png",
+      "resource_sha256": "ceeaea17241299ff004d9de4a460c7a0103e7458a289e27f0c357b9874afc40a"
+    }
+  ],
+  "dark_variant": "No separately referenced magic-dark asset found in bounded complete downloaded JS search; EditPdf outcome override supplies a direct string URL independent of theme. Current dark gate HTML references light asset."
+}

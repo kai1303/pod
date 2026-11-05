@@ -1,0 +1,68 @@
+{
+  "source": "https://www.luminpdf.com/app/pdf/viewer/building-event-driven-microservices-636b09b620c811cc94d171a5",
+  "observed_on": "2026-11-04",
+  "method": "Live browser screenshots and read-only DOM/getComputedStyle through CUA. Not REA output.",
+  "scope": "Viewer in dark mode, Mark up toolbar, Shape popover and Fill/Border line tabs. No document edits.",
+  "viewport": {
+    "width": 1512,
+    "height": 778
+  },
+  "layout": {
+    "header_height": 56,
+    "toolbar_height": 48,
+    "toolbar_padding": 8,
+    "left_rail_width": 80,
+    "navigation_button": {
+      "width": 72,
+      "height": 58
+    },
+    "control_size": 32,
+    "large_control_size": 40,
+    "button_radius": 8,
+    "palette_width": 300,
+    "palette_padding": 16,
+    "palette_content_width": 268,
+    "palette_section_gap": 16,
+    "palette_tab_height": 32,
+    "palette_tab_width": 134,
+    "palette_tab_radius": "pill"
+  },
+  "typography": {
+    "toolbar": {
+      "family": "Inter",
+      "size": 12,
+      "weight": 460,
+      "line_height": 13.8
+    },
+    "rail": {
+      "family": "Inter",
+      "size": 12,
+      "weight": 500,
+      "line_height": 16
+    },
+    "palette_tabs": {
+      "size": 14,
+      "weight": 520
+    }
+  },
+  "dark_colors": {
+    "header": "#191C1D",
+    "toolbar": "#1D2021",
+    "canvas": "#111415",
+    "popover": "#282B2C",
+    "text": "#E1E2E4",
+    "secondary_text": "#C2C7CA",
+    "outline": "#42474A",
+    "primary": "#8EDEF4",
+    "primary_container": "#087191",
+    "on_primary_container": "#C4F0FD",
+    "toolbar_foreground": "#BCCFDC",
+    "disabled": "rgba(228,231,236,0.38)"
+  },
+  "limitations": [
+    "Only dark appearance was observed live.",
+    "Original CSS rule declarations could not be retrieved; values are resolved computed styles.",
+    "No source decompilation, hover sweep, mobile audit, or complete Lumin design-system coverage.",
+    "Native measurements are adapted from CSS pixels to AppKit points; typography uses macOS system fonts."
+  ]
+}

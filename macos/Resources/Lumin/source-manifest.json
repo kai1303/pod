@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-04",
+  "fonts": [
+    {
+      "file": "Inter-VariableFont.ttf",
+      "source": "https://static.luminpdf.com/fonts/Inter/Inter-VariableFont.woff2",
+      "conversion": "WOFF2 decompressed to SFNT without changing glyph outlines",
+      "sha256": "668477c35dd3d1debe08c277b6bcab66dcb85eaadce8765e8196f439a164ab20"
+    },
+    {
+      "file": "pdf-icomoon.ttf",
+      "source": "https://static.luminpdf.com/fonts/pdf-icomoon/pdf-icomoon.woff2",
+      "conversion": "WOFF2 decompressed to SFNT without changing glyph outlines",
+      "sha256": "59ad9c31fe43e84221e77fe6e0a9fa1b86ba43d36501ce93f0780d36906dc1a6"
+    },
+    {
+      "file": "kiwi-icomoon.ttf",
+      "source": "https://static.luminpdf.com/fonts/kiwi-icomoon/kiwi-icomoon.woff2",
+      "conversion": "WOFF2 decompressed to SFNT without changing glyph outlines",
+      "sha256": "35dcb0a1557a147fde168af935771567f411e003cdf5592a870697bc6e045573"
+    }
+  ],
+  "navigation": "Original inline SVG from supplied viewer leftSideBar; monochrome template PNG rasterized at 4x using rsvg-convert",
+  "glyphs": "Original pdf-icon/kiwi-icon CSS codepoint map",
+  "colorFormat": {
+    "source": "Original inline SVG path in the supplied viewer ChromePicker, captured in research/lumin/toolbar-source/color-picker-live.json",
+    "conversion": "SVG retained; PNG rasterized at 4x using rsvg-convert",
+    "sha256": {
+      "color-format.svg": "7230529a1e2afe87f826bcee5e61817c87f3eb64e9729b2adec37b4ad33ecf98",
+      "color-format.png": "c90e23fee6cb38ff3f5256f8dfb502a5b4943a4a71da508a9e1861ae06d97b27"
+    }
+  },
+  "staticMedium": {
+    "file": "Inter-Medium.ttf",
+    "source": "https://static.luminpdf.com/_next/static/media/Inter-Medium.1imyydg22an_k.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "sha256": "58850230fd973d0cde58d52531f4e7fc1de3af585ee0e5e75cfd01572c119164",
+    "evidence": "Live CSS.getPlatformFontsForNode proves 500 = Inter-Medium, while 400/420 use Inter Variable. Other canonical static weights are not selected without live evidence."
+  }
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "family": "Arimo",
+    "source": "https://static.luminpdf.com/_next/static/media/Arimo-Regular.0nukntuirfzsw.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "2cad989ddffa60dcb2ce9f25a96402d9c855bd763d06f2ac1c6ef74bf69132dd",
+    "file": "Arimo.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 11752
+  },
+  {
+    "family": "EBGaramond",
+    "source": "https://static.luminpdf.com/_next/static/media/EBGaramond-Regular.074b80aikbeqn.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "77dcd56c5ce40082a59686fd91c7c5c9e7e22f8d014ea3ec904530051670ea00",
+    "file": "EBGaramond.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 29668
+  },
+  {
+    "family": "Lora",
+    "source": "https://static.luminpdf.com/_next/static/media/Lora-VariableFont.34joiehucu2dw.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "4eda552121ad5ab70819616cb9874945d87adc89e59df73c200fc8b85f38f110",
+    "file": "Lora.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 41016
+  },
+  {
+    "family": "Merriweather",
+    "source": "https://static.luminpdf.com/_next/static/media/Merriweather-Regular.3h_cd17_kobyv.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "62bc639f83e46d74fa5ba50e0d3b8ab17bc14f45e66a38275390322da7857ba0",
+    "file": "Merriweather.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 24720
+  },
+  {
+    "family": "Montserrat",
+    "source": "https://static.luminpdf.com/_next/static/media/Montserrat-Regular.0nk98cvzx7k_a.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "c56e1d743f5e76b93c93f8ebddfff8fc469bbff524a79b1ffd792af0a09e3296",
+    "file": "Montserrat.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 29032
+  },
+  {
+    "family": "NotoSans",
+    "source": "https://static.luminpdf.com/_next/static/media/NotoSans-Regular.1q3n3qopn66te.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "8f2418f81dbef87580fbcd5832cd9272bb162672181a4b6bba5e9f2fb85b3ff0",
+    "file": "NotoSans.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 14416
+  },
+  {
+    "family": "NotoSansJP",
+    "source": "https://static.luminpdf.com/_next/static/media/NotoSansJP-Regular.3dd3v_u0n36do.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "12956ec8383f00badcc13e090b9b5eaebd2d6f4b2c23ec7c2baa8f14220bf187",
+    "file": "NotoSansJP.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 17672
+  },
+  {
+    "family": "NotoSansKR",
+    "source": "https://static.luminpdf.com/_next/static/media/NotoSansKR-Regular.1up_qrvb2vq_p.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "601daed80a4a93567b15808af70f540814dc9c38bd401ba01f66d5d086638e9f",
+    "file": "NotoSansKR.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 18800
+  },
+  {
+    "family": "NotoSansSC",
+    "source": "https://static.luminpdf.com/_next/static/media/NotoSansSC-Regular.34r2ftuypz4t0.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "d99c8d1457fda8332522f43a3d3d799fad2c8934fa3a5a793d370e1ca4191bcd",
+    "file": "NotoSansSC.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 17672
+  },
+  {
+    "family": "NotoSansTC",
+    "source": "https://static.luminpdf.com/_next/static/media/NotoSansTC-Regular.151j-vc52z3e0.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "b07e5748cbe7de4cd7ebd6a9386bdbfa771d8b3fe53093c5493ca38c12c73744",
+    "file": "NotoSansTC.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 17672
+  },
+  {
+    "family": "Nunito",
+    "source": "https://static.luminpdf.com/_next/static/media/Nunito-Regular.0xapsakm8qsq2.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "eecd9875ba1c2555504cf3404f1fd8f14a6f4ecf934f0a1527ab884f49b6274c",
+    "file": "Nunito.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 19708
+  },
+  {
+    "family": "OpenSans",
+    "source": "https://static.luminpdf.com/_next/static/media/OpenSans-Regular.3h2ix367z7ica.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "24553173af9f7beeb4c6f84671d573f00aa49411714c29ea7847845c1f089397",
+    "file": "OpenSans.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 20172
+  },
+  {
+    "family": "Roboto",
+    "source": "https://static.luminpdf.com/_next/static/media/Roboto-Regular.0d_5_tjk8ha9e.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "c5fbb89399a794fabe5aa2d19a6ef8ec6f7c9b2bb1c5e36db55504f728b5248f",
+    "file": "Roboto.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 22432
+  },
+  {
+    "family": "SourceSans",
+    "source": "https://static.luminpdf.com/_next/static/media/SourceSans3-Regular.0ot1l8y2-5izu.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "e0a0f1659498afe65a3c8679956c70c8107ac321e5a0b56c4de781abdb487b9e",
+    "file": "SourceSans.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 18448
+  },
+  {
+    "family": "SourceSerif",
+    "source": "https://static.luminpdf.com/_next/static/media/SourceSerif4-Regular.34gbpnkmg4ru4.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "561f4da71e657b7166f5764bac797cee72220f55c7b67af32da3114e8d359f9e",
+    "file": "SourceSerif.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 30840
+  },
+  {
+    "family": "Spectral",
+    "source": "https://static.luminpdf.com/_next/static/media/Spectral-Regular.3fzpghq1-xsvo.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "5f8e62131f45b7e191296cd57422d008fe2e5d0cc8e73c6b6a6122f5e7907730",
+    "file": "Spectral.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 35652
+  },
+  {
+    "family": "Vollkorn",
+    "source": "https://static.luminpdf.com/_next/static/media/Vollkorn-Regular.3_msks22uj2ff.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "original_sha256": "0b2f14ae26fecd966f0ebc9ce6e740b61b356765843e2e3a4bcf8086de3f9b18",
+    "file": "Vollkorn.ttf",
+    "purpose": "Original outline/metrics subset for ASCII font-menu labels; not a PDF font implementation",
+    "bytes": 30716
+  }
+]

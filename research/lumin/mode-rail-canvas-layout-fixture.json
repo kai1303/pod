@@ -1,0 +1,1999 @@
+{
+  "scope": "Public mode rail/CSS canvas geometry and live selected states; no screenshots/account data.",
+  "variants": [
+    {
+      "name": "popular",
+      "viewport": [
+        1512,
+        834
+      ],
+      "rect": [
+        0,
+        56,
+        80,
+        778
+      ],
+      "buttons": [
+        {
+          "active": true,
+          "icon": [
+            28,
+            12,
+            24,
+            24
+          ],
+          "iconBackground": "rgb(8, 113, 145)",
+          "iconWrapper": [
+            20,
+            4,
+            40,
+            40
+          ],
+          "label": [
+            18.1015625,
+            46,
+            43.7890625,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(142, 222, 244)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(196, 240, 253)"
+          ],
+          "rect": [
+            4,
+            4,
+            72,
+            58
+          ],
+          "title": "Popular",
+          "assetKey": "popularTab-activeDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            86,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            78,
+            40,
+            40
+          ],
+          "label": [
+            12.2734375,
+            120,
+            55.4453125,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            78,
+            72,
+            58
+          ],
+          "title": "Fill & Sign",
+          "assetKey": "fillAndSignTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            160,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            152,
+            40,
+            40
+          ],
+          "label": [
+            16.6875,
+            194,
+            46.6171875,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            152,
+            72,
+            58
+          ],
+          "title": "Mark up",
+          "assetKey": "annotateTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            234,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            226,
+            40,
+            40
+          ],
+          "label": [
+            16.125,
+            268,
+            47.7421875,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            226,
+            72,
+            58
+          ],
+          "title": "Edit text",
+          "assetKey": "editPdfTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            308,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            300,
+            40,
+            40
+          ],
+          "label": [
+            16.203125,
+            342,
+            47.5859375,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            300,
+            72,
+            58
+          ],
+          "title": "Security",
+          "assetKey": "securityTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            382,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            374,
+            40,
+            40
+          ],
+          "label": [
+            14.265625,
+            416,
+            51.4609375,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            374,
+            72,
+            58
+          ],
+          "title": "Organize",
+          "assetKey": "pageToolsTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            456,
+            24,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            448,
+            40,
+            40
+          ],
+          "label": [
+            18.5546875,
+            490,
+            42.890625,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            448,
+            72,
+            58
+          ],
+          "title": "Explore",
+          "assetKey": "exploreTab-normalDark"
+        }
+      ]
+    },
+    {
+      "name": "fill-sign",
+      "viewport": [
+        1512,
+        834
+      ],
+      "rect": [
+        0,
+        56,
+        80,
+        778
+      ],
+      "buttons": [
+        {
+          "active": false,
+          "icon": [
+            28,
+            12,
+            24,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            4,
+            40,
+            40
+          ],
+          "label": [
+            18.1015625,
+            46,
+            43.7890625,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            4,
+            72,
+            58
+          ],
+          "title": "Popular",
+          "assetKey": "popularTab-normalDark"
+        },
+        {
+          "active": true,
+          "icon": [
+            28,
+            86,
+            24,
+            24
+          ],
+          "iconBackground": "rgb(8, 113, 145)",
+          "iconWrapper": [
+            20,
+            78,
+            40,
+            40
+          ],
+          "label": [
+            12.2734375,
+            120,
+            55.4453125,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(142, 222, 244)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(196, 240, 253)"
+          ],
+          "rect": [
+            4,
+            78,
+            72,
+            58
+          ],
+          "title": "Fill & Sign",
+          "assetKey": "fillAndSignTab-activeDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            160,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            152,
+            40,
+            40
+          ],
+          "label": [
+            16.6875,
+            194,
+            46.6171875,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            152,
+            72,
+            58
+          ],
+          "title": "Mark up",
+          "assetKey": "annotateTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            234,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            226,
+            40,
+            40
+          ],
+          "label": [
+            16.125,
+            268,
+            47.7421875,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            226,
+            72,
+            58
+          ],
+          "title": "Edit text",
+          "assetKey": "editPdfTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            308,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            300,
+            40,
+            40
+          ],
+          "label": [
+            16.203125,
+            342,
+            47.5859375,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            300,
+            72,
+            58
+          ],
+          "title": "Security",
+          "assetKey": "securityTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            382,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            374,
+            40,
+            40
+          ],
+          "label": [
+            14.265625,
+            416,
+            51.4609375,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            374,
+            72,
+            58
+          ],
+          "title": "Organize",
+          "assetKey": "pageToolsTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            456,
+            24,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            448,
+            40,
+            40
+          ],
+          "label": [
+            18.5546875,
+            490,
+            42.890625,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            448,
+            72,
+            58
+          ],
+          "title": "Explore",
+          "assetKey": "exploreTab-normalDark"
+        }
+      ]
+    },
+    {
+      "name": "markup",
+      "viewport": [
+        1512,
+        834
+      ],
+      "rect": [
+        0,
+        56,
+        80,
+        778
+      ],
+      "buttons": [
+        {
+          "active": false,
+          "icon": [
+            28,
+            12,
+            24,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            4,
+            40,
+            40
+          ],
+          "label": [
+            18.1015625,
+            46,
+            43.7890625,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            4,
+            72,
+            58
+          ],
+          "title": "Popular",
+          "assetKey": "popularTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            86,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            78,
+            40,
+            40
+          ],
+          "label": [
+            12.2734375,
+            120,
+            55.4453125,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            78,
+            72,
+            58
+          ],
+          "title": "Fill & Sign",
+          "assetKey": "fillAndSignTab-normalDark"
+        },
+        {
+          "active": true,
+          "icon": [
+            28,
+            160,
+            25,
+            24
+          ],
+          "iconBackground": "rgb(8, 113, 145)",
+          "iconWrapper": [
+            20,
+            152,
+            40,
+            40
+          ],
+          "label": [
+            16.6875,
+            194,
+            46.6171875,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(142, 222, 244)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(196, 240, 253)"
+          ],
+          "rect": [
+            4,
+            152,
+            72,
+            58
+          ],
+          "title": "Mark up",
+          "assetKey": "annotateTab-activeDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            234,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            226,
+            40,
+            40
+          ],
+          "label": [
+            16.125,
+            268,
+            47.7421875,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            226,
+            72,
+            58
+          ],
+          "title": "Edit text",
+          "assetKey": "editPdfTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            308,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            300,
+            40,
+            40
+          ],
+          "label": [
+            16.203125,
+            342,
+            47.5859375,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            300,
+            72,
+            58
+          ],
+          "title": "Security",
+          "assetKey": "securityTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            382,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            374,
+            40,
+            40
+          ],
+          "label": [
+            14.265625,
+            416,
+            51.4609375,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            374,
+            72,
+            58
+          ],
+          "title": "Organize",
+          "assetKey": "pageToolsTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            456,
+            24,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            448,
+            40,
+            40
+          ],
+          "label": [
+            18.5546875,
+            490,
+            42.890625,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            448,
+            72,
+            58
+          ],
+          "title": "Explore",
+          "assetKey": "exploreTab-normalDark"
+        }
+      ]
+    },
+    {
+      "name": "security",
+      "viewport": [
+        1512,
+        834
+      ],
+      "rect": [
+        0,
+        56,
+        80,
+        778
+      ],
+      "buttons": [
+        {
+          "active": false,
+          "icon": [
+            28,
+            12,
+            24,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            4,
+            40,
+            40
+          ],
+          "label": [
+            18.1015625,
+            46,
+            43.7890625,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            4,
+            72,
+            58
+          ],
+          "title": "Popular",
+          "assetKey": "popularTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            86,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            78,
+            40,
+            40
+          ],
+          "label": [
+            12.2734375,
+            120,
+            55.4453125,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            78,
+            72,
+            58
+          ],
+          "title": "Fill & Sign",
+          "assetKey": "fillAndSignTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            160,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            152,
+            40,
+            40
+          ],
+          "label": [
+            16.6875,
+            194,
+            46.6171875,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            152,
+            72,
+            58
+          ],
+          "title": "Mark up",
+          "assetKey": "annotateTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            234,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            226,
+            40,
+            40
+          ],
+          "label": [
+            16.125,
+            268,
+            47.7421875,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            226,
+            72,
+            58
+          ],
+          "title": "Edit text",
+          "assetKey": "editPdfTab-normalDark"
+        },
+        {
+          "active": true,
+          "icon": [
+            28,
+            308,
+            24,
+            24
+          ],
+          "iconBackground": "rgb(8, 113, 145)",
+          "iconWrapper": [
+            20,
+            300,
+            40,
+            40
+          ],
+          "label": [
+            16.203125,
+            342,
+            47.5859375,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(142, 222, 244)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(196, 240, 253)"
+          ],
+          "rect": [
+            4,
+            300,
+            72,
+            58
+          ],
+          "title": "Security",
+          "assetKey": "securityTab-activeDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            382,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            374,
+            40,
+            40
+          ],
+          "label": [
+            14.265625,
+            416,
+            51.4609375,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            374,
+            72,
+            58
+          ],
+          "title": "Organize",
+          "assetKey": "pageToolsTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            456,
+            24,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            448,
+            40,
+            40
+          ],
+          "label": [
+            18.5546875,
+            490,
+            42.890625,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            448,
+            72,
+            58
+          ],
+          "title": "Explore",
+          "assetKey": "exploreTab-normalDark"
+        }
+      ]
+    },
+    {
+      "name": "organize",
+      "viewport": [
+        1512,
+        834
+      ],
+      "rect": [
+        0,
+        56,
+        80,
+        778
+      ],
+      "buttons": [
+        {
+          "active": false,
+          "icon": [
+            28,
+            12,
+            24,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            4,
+            40,
+            40
+          ],
+          "label": [
+            18.1015625,
+            46,
+            43.7890625,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            4,
+            72,
+            58
+          ],
+          "title": "Popular",
+          "assetKey": "popularTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            86,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            78,
+            40,
+            40
+          ],
+          "label": [
+            12.2734375,
+            120,
+            55.4453125,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            78,
+            72,
+            58
+          ],
+          "title": "Fill & Sign",
+          "assetKey": "fillAndSignTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            160,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            152,
+            40,
+            40
+          ],
+          "label": [
+            16.6875,
+            194,
+            46.6171875,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            152,
+            72,
+            58
+          ],
+          "title": "Mark up",
+          "assetKey": "annotateTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            234,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            226,
+            40,
+            40
+          ],
+          "label": [
+            16.125,
+            268,
+            47.7421875,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            226,
+            72,
+            58
+          ],
+          "title": "Edit text",
+          "assetKey": "editPdfTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            308,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            300,
+            40,
+            40
+          ],
+          "label": [
+            16.203125,
+            342,
+            47.5859375,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            300,
+            72,
+            58
+          ],
+          "title": "Security",
+          "assetKey": "securityTab-normalDark"
+        },
+        {
+          "active": true,
+          "icon": [
+            28,
+            382,
+            24,
+            24
+          ],
+          "iconBackground": "rgb(8, 113, 145)",
+          "iconWrapper": [
+            20,
+            374,
+            40,
+            40
+          ],
+          "label": [
+            14.265625,
+            416,
+            51.4609375,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(142, 222, 244)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(196, 240, 253)",
+            "rgb(196, 240, 253)"
+          ],
+          "rect": [
+            4,
+            374,
+            72,
+            58
+          ],
+          "title": "Organize",
+          "assetKey": "pageToolsTab-activeDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            456,
+            24,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            448,
+            40,
+            40
+          ],
+          "label": [
+            18.5546875,
+            490,
+            42.890625,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            448,
+            72,
+            58
+          ],
+          "title": "Explore",
+          "assetKey": "exploreTab-normalDark"
+        }
+      ]
+    },
+    {
+      "name": "explore-open",
+      "viewport": [
+        1512,
+        834
+      ],
+      "rect": [
+        0,
+        56,
+        80,
+        778
+      ],
+      "buttons": [
+        {
+          "active": true,
+          "icon": [
+            28,
+            12,
+            24,
+            24
+          ],
+          "iconBackground": "rgb(8, 113, 145)",
+          "iconWrapper": [
+            20,
+            4,
+            40,
+            40
+          ],
+          "label": [
+            18.1015625,
+            46,
+            43.7890625,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(142, 222, 244)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(196, 240, 253)"
+          ],
+          "rect": [
+            4,
+            4,
+            72,
+            58
+          ],
+          "title": "Popular",
+          "assetKey": "popularTab-activeDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            86,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            78,
+            40,
+            40
+          ],
+          "label": [
+            12.2734375,
+            120,
+            55.4453125,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            78,
+            72,
+            58
+          ],
+          "title": "Fill & Sign",
+          "assetKey": "fillAndSignTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            160,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            152,
+            40,
+            40
+          ],
+          "label": [
+            16.6875,
+            194,
+            46.6171875,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            152,
+            72,
+            58
+          ],
+          "title": "Mark up",
+          "assetKey": "annotateTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            234,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            226,
+            40,
+            40
+          ],
+          "label": [
+            16.125,
+            268,
+            47.7421875,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            226,
+            72,
+            58
+          ],
+          "title": "Edit text",
+          "assetKey": "editPdfTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            308,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            300,
+            40,
+            40
+          ],
+          "label": [
+            16.203125,
+            342,
+            47.5859375,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)",
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            300,
+            72,
+            58
+          ],
+          "title": "Security",
+          "assetKey": "securityTab-normalDark"
+        },
+        {
+          "active": false,
+          "icon": [
+            28,
+            382,
+            25,
+            24
+          ],
+          "iconBackground": "rgba(0, 0, 0, 0)",
+          "iconWrapper": [
+            20,
+            374,
+            40,
+            40
+          ],
+          "label": [
+            14.265625,
+            416,
+            51.4609375,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(194, 199, 202)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(194, 199, 202)"
+          ],
+          "rect": [
+            4,
+            374,
+            72,
+            58
+          ],
+          "title": "Organize",
+          "assetKey": "pageToolsTab-normalDark"
+        },
+        {
+          "active": true,
+          "icon": [
+            28,
+            456,
+            24,
+            24
+          ],
+          "iconBackground": "rgb(8, 113, 145)",
+          "iconWrapper": [
+            20,
+            448,
+            40,
+            40
+          ],
+          "label": [
+            18.5546875,
+            490,
+            42.890625,
+            16
+          ],
+          "labelStyle": {
+            "color": "rgb(142, 222, 244)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "pathFills": [
+            "rgb(196, 240, 253)"
+          ],
+          "rect": [
+            4,
+            448,
+            72,
+            58
+          ],
+          "title": "Explore",
+          "assetKey": "exploreTab-activeDark"
+        }
+      ]
+    }
+  ],
+  "canvas": {
+    "cls": "sc-bc984496-0 eunWHe DocumentContainer custom-scrollbar-reskin custom-scrollbar-reskin",
+    "rect": {
+      "bottom": 834,
+      "height": 730,
+      "left": 82,
+      "right": 1454,
+      "top": 104,
+      "width": 1372,
+      "x": 82,
+      "y": 104
+    },
+    "styles": {
+      "alignItems": "normal",
+      "backgroundColor": "rgb(17, 20, 21)",
+      "backgroundImage": "radial-gradient(color(srgb 0.882353 0.886275 0.894118 / 0.16) 1px, rgba(0, 0, 0, 0) 1px)",
+      "backgroundPosition": "0% 0%",
+      "backgroundRepeat": "repeat",
+      "backgroundSize": "26px 26px",
+      "border": "0px solid rgba(255, 255, 255, 0.1)",
+      "borderRadius": "8px 8px 0px 0px",
+      "boxShadow": "none",
+      "display": "flex",
+      "gap": "normal",
+      "height": "730px",
+      "justifyContent": "normal",
+      "margin": "0px",
+      "overflow": "auto",
+      "padding": "48px 0px",
+      "width": "1372px"
+    }
+  },
+  "focus": {
+    "focusFlag": "true",
+    "regions": [
+      {
+        "cls": "sc-4a6be7b6-0 sc-4a6be7b6-1 sc-6ae5ac19-0 lgsCiK gfsYdj hkbzlY",
+        "rect": [
+          0,
+          0,
+          1512,
+          0
+        ],
+        "selector": "#titleBar",
+        "styles": {
+          "backgroundColor": "rgb(25, 28, 29)",
+          "backgroundImage": "none",
+          "backgroundPosition": "0% 0%",
+          "backgroundSize": "auto",
+          "borderRadius": "0px",
+          "display": "flex",
+          "opacity": "0",
+          "padding": "0px",
+          "visibility": "hidden"
+        }
+      },
+      {
+        "cls": "sc-4a6be7b6-0 sc-4a6be7b6-2 sc-b1327f45-0 lgsCiK gwYKum bnBTvU",
+        "rect": [
+          0,
+          0,
+          0,
+          834
+        ],
+        "selector": "#leftSideBar",
+        "styles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "backgroundPosition": "0% 0%",
+          "backgroundSize": "auto",
+          "borderRadius": "0px",
+          "display": "block",
+          "opacity": "0",
+          "padding": "0px",
+          "visibility": "hidden"
+        }
+      },
+      {
+        "cls": "sc-afcd8a5e-1 jleSoE",
+        "rect": [
+          0,
+          0,
+          1512,
+          48
+        ],
+        "selector": "#ToolbarInner",
+        "styles": {
+          "backgroundColor": "rgb(29, 32, 33)",
+          "backgroundImage": "none",
+          "backgroundPosition": "0% 0%",
+          "backgroundSize": "auto",
+          "borderRadius": "16px 16px 0px 0px",
+          "display": "flex",
+          "opacity": "1",
+          "padding": "8px",
+          "visibility": "visible"
+        }
+      },
+      {
+        "cls": "sc-bc984496-0 eunWHe DocumentContainer custom-scrollbar-reskin custom-scrollbar-reskin",
+        "rect": [
+          2,
+          48,
+          1508,
+          786
+        ],
+        "selector": "#DocumentContainer",
+        "styles": {
+          "backgroundColor": "rgb(17, 20, 21)",
+          "backgroundImage": "radial-gradient(color(srgb 0.882353 0.886275 0.894118 / 0.16) 1px, rgba(0, 0, 0, 0) 1px)",
+          "backgroundPosition": "0% 0%",
+          "backgroundSize": "26px 26px",
+          "borderRadius": "8px 8px 0px 0px",
+          "display": "flex",
+          "opacity": "1",
+          "padding": "48px 0px",
+          "visibility": "visible"
+        }
+      },
+      {
+        "cls": "sc-e8665097-1 isYiDg",
+        "rect": [
+          0,
+          774,
+          36,
+          48
+        ],
+        "selector": ".sc-e8665097-1[data-is-focus-mode=\"true\"]",
+        "styles": {
+          "backgroundColor": "rgb(29, 32, 33)",
+          "backgroundImage": "none",
+          "backgroundPosition": "0% 0%",
+          "backgroundSize": "auto",
+          "borderRadius": "0px 8px 8px 0px",
+          "display": "block",
+          "opacity": "1",
+          "padding": "4px",
+          "visibility": "visible"
+        }
+      },
+      {
+        "cls": "MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary sc-77bdab6e-0 fMwEDW sc-e8665097-2 fLNojd css-idih2h",
+        "rect": [
+          4,
+          778,
+          28,
+          40
+        ],
+        "selector": ".sc-e8665097-1[data-is-focus-mode=\"true\"] button",
+        "styles": {
+          "backgroundColor": "rgb(17, 20, 21)",
+          "backgroundImage": "none",
+          "backgroundPosition": "0% 0%",
+          "backgroundSize": "auto",
+          "borderRadius": "8px",
+          "display": "inline-flex",
+          "opacity": "1",
+          "padding": "4px",
+          "visibility": "visible"
+        }
+      }
+    ],
+    "viewport": [
+      1512,
+      834
+    ]
+  },
+  "settledPage": {
+    "canvas": {
+      "bottom": 834,
+      "height": 730,
+      "left": 82,
+      "right": 1454,
+      "top": 104,
+      "width": 1372,
+      "x": 82,
+      "y": 104
+    },
+    "focusMode": "false",
+    "margin": "11px",
+    "page": {
+      "bottom": 1927,
+      "height": 1764,
+      "left": 95,
+      "right": 1440,
+      "top": 163,
+      "width": 1345,
+      "x": 95,
+      "y": 163
+    },
+    "zoom": "267%"
+  },
+  "captureNotes": "Mode states recaptured after CSS transitions settled; original transient rgba values are retained in ignored raw captures. No screenshots."
+}

@@ -1,0 +1,8 @@
+Generated with the built-in image generation tool.
+
+Use case: logo-brand
+Asset type: primary logo concept for Pod, a lightweight native macOS PDF editor built for speed and simplicity.
+Primary request: Design a polished original logo consisting of a distinctive abstract folded-paper P symbol and the lowercase wordmark "pod". The mark should use a bold continuous geometric silhouette with a clever negative-space counter suggesting a folded document, simple enough to remain recognizable at app-icon scale. Pair it with carefully balanced rounded geometric sans-serif lettering, bespoke optical spacing, warm and precise rather than corporate.
+Composition: One horizontal logo lockup only, symbol left and wordmark right, visually centered with generous transparent margins. Large clear artwork. Text verbatim: "pod".
+Style: Flat vector-like graphic, exceptionally clean curves and edges, professional identity design. Solid near-black monochrome artwork on a genuinely transparent background.
+Constraints: No mockup, no presentation board, no additional text or tagline, no gradients, no shadows, no 3D, no hairline strokes, no ornamental details, no watermark. This is a usable isolated logo asset, not a photograph.

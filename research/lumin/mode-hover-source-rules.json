@@ -1,0 +1,674 @@
+{
+  "scope": "Static shipped legacy viewer mode hover menus. No captured JS execution, browser actions, screenshots or native implementation changes. Parent live fixtures resolve runtime conditions.",
+  "artifacts": [
+    {
+      "name": "navigation-hover.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/0qwcgrq08z83b.js",
+      "artifactSHA256": "964f5557e4d435d204299da641cde06e2e48f6da8cac12195e66ac09fa76251b",
+      "charStart": 133272,
+      "charEndExclusive": 136999,
+      "utf8Start": 146763,
+      "utf8EndExclusive": 150490,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/navigation-hover.source.js",
+      "excerptSHA256": "a9751c8c66e989572d9996c9a8015dfa141a8849fb32e0656be7cdfe7627058c"
+    },
+    {
+      "name": "tool-registry.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 798454,
+      "charEndExclusive": 803362,
+      "utf8Start": 798633,
+      "utf8EndExclusive": 803541,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/tool-registry.source.js",
+      "excerptSHA256": "b3131716e73e0cddff085e6a24b9076fd4b508b5a3de197a46a14a03d9b50a30"
+    },
+    {
+      "name": "tool-menu-action.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 102453,
+      "charEndExclusive": 103049,
+      "utf8Start": 102453,
+      "utf8EndExclusive": 103049,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/tool-menu-action.source.js",
+      "excerptSHA256": "9372ddb13a909549cd4ec7c0088dce6ba5fa812d79fa7e89d16bcfc3c3d2cf9b"
+    },
+    {
+      "name": "legacy-menu-tool-renderer.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 795403,
+      "charEndExclusive": 797098,
+      "utf8Start": 795582,
+      "utf8EndExclusive": 797277,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/legacy-menu-tool-renderer.source.js",
+      "excerptSHA256": "089766d7ce0a30a142e8f13674e85ad61e8ca381329c7902dc32de13436c5ee2"
+    },
+    {
+      "name": "ordinary-menu-base.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/3paunvfp0my3g.js",
+      "artifactSHA256": "2a16e028296a1e77d3e38b76f9927cc6bd222c7812133a47c90e94e7ce46fbf4",
+      "charStart": 143159,
+      "charEndExclusive": 144885,
+      "utf8Start": 143159,
+      "utf8EndExclusive": 144885,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/ordinary-menu-base.source.js",
+      "excerptSHA256": "2b36002e27b448696f8650c3b1898a243fc00dffa02cf8a9f3ab8b4c419c7ce9"
+    },
+    {
+      "name": "mantine-menu-hover.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/3paunvfp0my3g.js",
+      "artifactSHA256": "2a16e028296a1e77d3e38b76f9927cc6bd222c7812133a47c90e94e7ce46fbf4",
+      "charStart": 49896,
+      "charEndExclusive": 54055,
+      "utf8Start": 49896,
+      "utf8EndExclusive": 54055,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/mantine-menu-hover.source.js",
+      "excerptSHA256": "0365ecd207dfdf6fbb3e8767ffee386a361fab9f7a5394094e5226af1896a7cf"
+    },
+    {
+      "name": "menu-item.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 287715,
+      "charEndExclusive": 290261,
+      "utf8Start": 287715,
+      "utf8EndExclusive": 290261,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/menu-item.css",
+      "excerptSHA256": "f857d9e5ecf5473a1d4933fa9508a41b396a9ab73ca384acf1e031be329e6439"
+    },
+    {
+      "name": "menu-tool.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/13oun9t944hks.css",
+      "artifactSHA256": "56524e09ec9c0aac83d6a0fd9b1de4923f727f43bcca557596c02cbccd9b87d5",
+      "charStart": 6994,
+      "charEndExclusive": 7742,
+      "utf8Start": 6994,
+      "utf8EndExclusive": 7742,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/menu-tool.css",
+      "excerptSHA256": "28a0ef3cc34b597ee260c1c4680a120d6bb5819b03ad5fc3330a84b01bdbf3ca"
+    },
+    {
+      "name": "legacy-highlight-menu-item.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/3ecqp71ogrms5.js",
+      "artifactSHA256": "2236bc8a6474cbb550ab2d9e10dc260de9f8164e5353abf517cd31c1cc7f9eff",
+      "charStart": 20880,
+      "charEndExclusive": 27661,
+      "utf8Start": 20882,
+      "utf8EndExclusive": 27663,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/legacy-highlight-menu-item.source.js",
+      "excerptSHA256": "0ae09cff720e17ef216425e17442b306627fe472c2786bab4e6256c815816ed0"
+    },
+    {
+      "name": "highlight-navigation.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 702930,
+      "charEndExclusive": 709447,
+      "utf8Start": 703109,
+      "utf8EndExclusive": 709626,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/highlight-navigation.source.js",
+      "excerptSHA256": "c1cb6ef9c3b7f264cac01b33e3ef69ddea7766a3162504c869df8bfd8cde35aa"
+    },
+    {
+      "name": "form-navigation.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 713012,
+      "charEndExclusive": 722896,
+      "utf8Start": 713191,
+      "utf8EndExclusive": 723075,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/form-navigation.source.js",
+      "excerptSHA256": "3b46673b593a0023f241c418c2d59e7c21704bec65c9c681be3068f42f899746"
+    },
+    {
+      "name": "form-navigation.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/2bovcb6362u_6.css",
+      "artifactSHA256": "47119239850a1f0f55c5c902adab13c31f1d1134da7b40297d8f5e6633e9d891",
+      "charStart": 104469,
+      "charEndExclusive": 104943,
+      "utf8Start": 104471,
+      "utf8EndExclusive": 104945,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/form-navigation.css",
+      "excerptSHA256": "a6352b6aa624e163612fd9420a15bbcb6d2484bc00c2ac923b56019d680a6667"
+    },
+    {
+      "name": "sign-navigation.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 736748,
+      "charEndExclusive": 738074,
+      "utf8Start": 736927,
+      "utf8EndExclusive": 738253,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/sign-navigation.source.js",
+      "excerptSHA256": "595ef122076245d2a0a1f955158008547b4bad6767bf4f14974ed595e557d1f7"
+    },
+    {
+      "name": "sign-navigation.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/2orfcd3fei0sw.css",
+      "artifactSHA256": "2313fbf5d17525aaae3b495479084ee7763579147c22cf864eddf42cbb1d8769",
+      "charStart": 7526,
+      "charEndExclusive": 8927,
+      "utf8Start": 7526,
+      "utf8EndExclusive": 8927,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/sign-navigation.css",
+      "excerptSHA256": "1d8c807cc812cff7cb7fc92559a4c01dc65784116504c6f25191f98432be453b"
+    },
+    {
+      "name": "password-navigation.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 649465,
+      "charEndExclusive": 653513,
+      "utf8Start": 649644,
+      "utf8EndExclusive": 653692,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/password-navigation.source.js",
+      "excerptSHA256": "36e09655ef66e1cc8350ff4e13bbb46d6f00811cff64767f8628f4c127423d82"
+    },
+    {
+      "name": "organize-tool-definitions.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 681094,
+      "charEndExclusive": 691637,
+      "utf8Start": 681273,
+      "utf8EndExclusive": 691816,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/organize-tool-definitions.source.js",
+      "excerptSHA256": "d922d52b0a020b9a687eb54adfdb93bfc1c5d620ada218b8f378552bbc5e46c6"
+    },
+    {
+      "name": "button-md.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 252853,
+      "charEndExclusive": 253195,
+      "utf8Start": 252853,
+      "utf8EndExclusive": 253195,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/button-md.css",
+      "excerptSHA256": "9d89e7ff22006263d90ee5ddef194435a2f8b17b8676a0b49c5e2878c2403213"
+    },
+    {
+      "name": "token-kiwi-colors-surface-surface-bright-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 326068,
+      "charEndExclusive": 326113,
+      "utf8Start": 326068,
+      "utf8EndExclusive": 326113,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/token-kiwi-colors-surface-surface-bright-1.css",
+      "excerptSHA256": "4d6133ab7d51eee55f01e8860863e3c5c32bdf82fa0d378ec223b92d2e9c7a48"
+    },
+    {
+      "name": "token-kiwi-colors-surface-surface-bright-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 343377,
+      "charEndExclusive": 343419,
+      "utf8Start": 343377,
+      "utf8EndExclusive": 343419,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/token-kiwi-colors-surface-surface-bright-2.css",
+      "excerptSHA256": "c8beaadb2d8c2ac9ff63d9f8ba4ba93b8d007e82c2beeb8e4f70905bc3c390a8"
+    },
+    {
+      "name": "token-kiwi-colors-core-primary-container-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 323515,
+      "charEndExclusive": 323560,
+      "utf8Start": 323515,
+      "utf8EndExclusive": 323560,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/token-kiwi-colors-core-primary-container-1.css",
+      "excerptSHA256": "dcb66276ff718cd1b1387df5694df42b72977f08afaf4800a39cdfee7876cb4f"
+    },
+    {
+      "name": "token-kiwi-colors-core-primary-container-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 340845,
+      "charEndExclusive": 340890,
+      "utf8Start": 340845,
+      "utf8EndExclusive": 340890,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/token-kiwi-colors-core-primary-container-2.css",
+      "excerptSHA256": "134922427b3445411f7f7eb499b5f0b25b0e52d922315e65bea861c1fd8a6c28"
+    },
+    {
+      "name": "token-kiwi-colors-custom-brand-sign-sign-surface-container-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 327600,
+      "charEndExclusive": 327663,
+      "utf8Start": 327600,
+      "utf8EndExclusive": 327663,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/token-kiwi-colors-custom-brand-sign-sign-surface-container-1.css",
+      "excerptSHA256": "15ed71c6f4a6590383111404762a40ffb9eeef0f4c238022a951ab459d728629"
+    },
+    {
+      "name": "token-kiwi-colors-custom-brand-sign-sign-surface-container-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 344942,
+      "charEndExclusive": 345005,
+      "utf8Start": 344942,
+      "utf8EndExclusive": 345005,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/token-kiwi-colors-custom-brand-sign-sign-surface-container-2.css",
+      "excerptSHA256": "ae1021f5dd1210e7642924b60a3be3dbb226b58b6bb46c2d95c14750101aab90"
+    },
+    {
+      "name": "token-kiwi-colors-custom-brand-sign-on-sign-container-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 327287,
+      "charEndExclusive": 327345,
+      "utf8Start": 327287,
+      "utf8EndExclusive": 327345,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/token-kiwi-colors-custom-brand-sign-on-sign-container-1.css",
+      "excerptSHA256": "65b2e5b2a9e5f7e613dc04959b21e80ebf4256b13e0e4c10236ffa5da2617221"
+    },
+    {
+      "name": "token-kiwi-colors-custom-brand-sign-on-sign-container-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 344629,
+      "charEndExclusive": 344687,
+      "utf8Start": 344629,
+      "utf8EndExclusive": 344687,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/token-kiwi-colors-custom-brand-sign-on-sign-container-2.css",
+      "excerptSHA256": "99ad8a4b25c2b790c6f0613d17e296629eb2ff6cc3e1c50a4b6b00a93ee4434e"
+    },
+    {
+      "name": "token-kiwi-opacity-disabled-on-container-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 321843,
+      "charEndExclusive": 321884,
+      "utf8Start": 321843,
+      "utf8EndExclusive": 321884,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/token-kiwi-opacity-disabled-on-container-1.css",
+      "excerptSHA256": "d15ee94784448746b53a632f863f44d7d57c164bb14ad0b3ffb8864ea2d31614"
+    },
+    {
+      "name": "token-kiwi-opacity-state-layer-hovered-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 321968,
+      "charEndExclusive": 322006,
+      "utf8Start": 321968,
+      "utf8EndExclusive": 322006,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/token-kiwi-opacity-state-layer-hovered-1.css",
+      "excerptSHA256": "b9cdeb4f5d1ea476c001fc270bcf183b4e830acb3e4fbb8f6e17e97dc1c642aa"
+    },
+    {
+      "name": "token-kiwi-opacity-state-layer-pressed-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 322006,
+      "charEndExclusive": 322045,
+      "utf8Start": 322006,
+      "utf8EndExclusive": 322045,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/token-kiwi-opacity-state-layer-pressed-1.css",
+      "excerptSHA256": "24f23f458b7d9563935e873dca8803a152f346b3438ea8bfb0c151e13ddd07b9"
+    },
+    {
+      "name": "token-font-weight-bold-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 449001,
+      "charEndExclusive": 449024,
+      "utf8Start": 450623,
+      "utf8EndExclusive": 450646,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/token-font-weight-bold-1.css",
+      "excerptSHA256": "2a418f68e09a23b3f47527776746205975f8e9ab6a53711183bc76d4361e64af"
+    },
+    {
+      "name": "typography-title-sm.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 359531,
+      "charEndExclusive": 359656,
+      "utf8Start": 359531,
+      "utf8EndExclusive": 359656,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/typography-title-sm.css",
+      "excerptSHA256": "29700e85d08a54fd760006fbca8288580f816e34d237a1641c2fd049c0975e03"
+    },
+    {
+      "name": "typography-body-md.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 360030,
+      "charEndExclusive": 360154,
+      "utf8Start": 360030,
+      "utf8EndExclusive": 360154,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/typography-body-md.css",
+      "excerptSHA256": "4d35d1c26dc5d08536e4e40be17159a77c91c9850a6775a198ee5c03bb0c3511"
+    },
+    {
+      "name": "typography-label-md.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 360802,
+      "charEndExclusive": 360927,
+      "utf8Start": 360802,
+      "utf8EndExclusive": 360927,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/typography-label-md.css",
+      "excerptSHA256": "d6c225f447ca7b2be0b6c59d8a12b26004b5dce64cc3d4b1ac2962c9cd3771c8"
+    },
+    {
+      "name": "signature-popup-controller.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 778119,
+      "charEndExclusive": 779852,
+      "utf8Start": 778298,
+      "utf8EndExclusive": 780031,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/signature-popup-controller.source.js",
+      "excerptSHA256": "1d86fe1a8eaed4eebfd43bd67d99574025ec88f1506b1665df8f7faaa1441732"
+    },
+    {
+      "name": "popup-escape-wrapper.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1tn7lso3420mt.js",
+      "artifactSHA256": "8cc50a494f38cea5cf0f532c6e529b0f834e6c0b927ad6a3b82264de531c51d0",
+      "charStart": 17365,
+      "charEndExclusive": 17463,
+      "utf8Start": 17365,
+      "utf8EndExclusive": 17463,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/popup-escape-wrapper.source.js",
+      "excerptSHA256": "2c1256b08831614a71d8899fa2d0c66488426dd3f4c8928ebb65bae793a7d26b"
+    },
+    {
+      "name": "shared-tool-popup.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1tn7lso3420mt.js",
+      "artifactSHA256": "8cc50a494f38cea5cf0f532c6e529b0f834e6c0b927ad6a3b82264de531c51d0",
+      "charStart": 18330,
+      "charEndExclusive": 20441,
+      "utf8Start": 18330,
+      "utf8EndExclusive": 20441,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/shared-tool-popup.source.js",
+      "excerptSHA256": "d43e8f55e4e31820f8d77badba0d24bf3e6b6e6a6c70273515dfe0291c251c2f"
+    },
+    {
+      "name": "use-key-hook.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/3zmc88ww60v7f.js",
+      "artifactSHA256": "2b8f45312d75b13a8ce211d47a88531a7f4471e01b6c42221ab7cb2cdca88de1",
+      "charStart": 112,
+      "charEndExclusive": 566,
+      "utf8Start": 112,
+      "utf8EndExclusive": 566,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/use-key-hook.source.js",
+      "excerptSHA256": "c1b8f5eea1973bd6b63c5f815c5cf8d12dfa1f0894d08b366e1ab1c488e40ad9"
+    },
+    {
+      "name": "use-event-window-default.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/2dqtb2c9lrr2n.js",
+      "artifactSHA256": "e814783f8271f4dd017928e8f54173e617a289a628603a9021f19f5a39bf9f4a",
+      "charStart": 31011,
+      "charEndExclusive": 31387,
+      "utf8Start": 31011,
+      "utf8EndExclusive": 31387,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/use-event-window-default.source.js",
+      "excerptSHA256": "cb0b28b44615ec53a565470fe277c9aca33baad7fd85c4b7f124b8df8a266554"
+    },
+    {
+      "name": "parent-dropdown-escape-capture.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/3paunvfp0my3g.js",
+      "artifactSHA256": "2a16e028296a1e77d3e38b76f9927cc6bd222c7812133a47c90e94e7ce46fbf4",
+      "charStart": 124075,
+      "charEndExclusive": 124304,
+      "utf8Start": 124075,
+      "utf8EndExclusive": 124304,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/parent-dropdown-escape-capture.source.js",
+      "excerptSHA256": "c92ab2a0d3ece5e02b635dadcf91c28c54f4dd3af3e9f90e2a93ce19ceb24f9c"
+    },
+    {
+      "name": "parent-popover-defaults.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/3paunvfp0my3g.js",
+      "artifactSHA256": "2a16e028296a1e77d3e38b76f9927cc6bd222c7812133a47c90e94e7ce46fbf4",
+      "charStart": 125764,
+      "charEndExclusive": 126314,
+      "utf8Start": 125764,
+      "utf8EndExclusive": 126314,
+      "excerpt": "research/lumin/toolbar-source/extracted/mode-hover/parent-popover-defaults.source.js",
+      "excerptSHA256": "0a0194438c12b7aaaa14905d79efedc273b2020a2a8095f5c2b371a72994cdac"
+    }
+  ],
+  "menu": {
+    "width": 280,
+    "padding": 8,
+    "radius": 8,
+    "background": {
+      "dark": "#282B2C",
+      "light": "#FFFFFF"
+    },
+    "declaredPosition": "left-start",
+    "overflowFlip": "Mantine/FloatingUI may flip to right-start in narrow left rail; parent DOM is authoritative",
+    "mainAxisOffset": 5,
+    "crossAxisOffset": -24,
+    "openDelayMs": 400,
+    "mantineCloseDelayMs": 100,
+    "hoveredTabClearDelayMs": 200,
+    "transition": "fade-right200ms",
+    "editTextHoverDisabled": true,
+    "onHoverModeDoesNotChangeSelectedToolbar": true
+  },
+  "row": {
+    "defaultSize": "regular",
+    "padding": [
+      8,
+      8
+    ],
+    "minHeight": 40,
+    "radius": 8,
+    "font": {
+      "family": "Inter",
+      "size": 14,
+      "weight": 500,
+      "lineHeight": 20
+    },
+    "gap": 8,
+    "iconSize": 24,
+    "disabledOpacity": 0.38,
+    "hoverOpacity": 0.08,
+    "pressedOpacity": 0.12,
+    "activatedBackground": {
+      "dark": "#087191",
+      "light": "#C4F0FD"
+    },
+    "showsOptionsButtons": false,
+    "showsKeyboardShortcuts": false
+  },
+  "menus": {
+    "Popular": [
+      "comment",
+      "signature",
+      "free_text",
+      "free_hand",
+      "highlight(text and freehand inline)",
+      "shape",
+      "eraser",
+      "sign_send(rich footer)"
+    ],
+    "Fill & Sign": [
+      "signature",
+      "free_text",
+      "date_stamp",
+      "rubber_stamp",
+      "dot_stamp",
+      "tick_stamp",
+      "cross_stamp",
+      "form_builder(heading/customize/optionalAI)",
+      "sign_send(rich footer)"
+    ],
+    "Mark up": [
+      "comment",
+      "measure(if SDK feature)",
+      "free_text",
+      "free_hand",
+      "highlight(text and freehand inline)",
+      "text",
+      "shape",
+      "eraser",
+      "image",
+      "ocr(if source storage supports)"
+    ],
+    "Security": [
+      "redaction",
+      "password(set or change conditional, remove)"
+    ],
+    "Organize": [
+      "bates_numbering(if new layout enabled)",
+      "merge",
+      "split",
+      "rotate",
+      "delete",
+      "move",
+      "insert",
+      "crop"
+    ]
+  },
+  "highlight": {
+    "sourceModule": 7494799,
+    "rows": [
+      "annotation.highlight",
+      "annotation.freehandHighlight"
+    ],
+    "legacyMui": true,
+    "navigationDescription": null,
+    "navigationSuffix": null,
+    "retainsEmptySuffixWrapper": true,
+    "emptySuffixWrapperWidth": 64,
+    "labelWrapperMarginRight": 16,
+    "rowPaddingRight": 0,
+    "iconMarginRight": 8,
+    "iconCanFlexShrink": true,
+    "textChild": {
+      "type": "label",
+      "size": "md",
+      "color": "surface-on-surface"
+    },
+    "onChoose": "if available: exit read-aloud if active, switch selected navigation tab, close left sidebar popup, switch highlight mode; unavailable routes premium gate"
+  },
+  "form": {
+    "wrapperMarginTop": 8,
+    "divider": {
+      "absolute": true,
+      "top": 0,
+      "left": -8,
+      "width": "100%+16px"
+    },
+    "heading": {
+      "translation": "generalLayout.toolProperties.formBuilder",
+      "textType": "title",
+      "textSize": "sm",
+      "fontWeight": 500,
+      "padding": [
+        12,
+        8,
+        8
+      ],
+      "oldModuleDeclarationFontWeight": 700,
+      "weightEvidence": "Parent extra live DOM capture confirms500. Old module declaration700 is overridden/ineffective at current runtime; preserve both facts without inferring cascade cause.",
+      "currentEnglish": "Form builder"
+    },
+    "rows": [
+      {
+        "translation": "viewer.formFieldDetection.toolMenu.customizeFields",
+        "kiwiIcon": "pencil-lg",
+        "size": 24,
+        "currentEnglish": "Prepare form"
+      },
+      {
+        "translation": "viewer.formFieldDetection.toolMenu.aiAutoDetect",
+        "kiwiIcon": "sparkles-lg",
+        "size": 24,
+        "conditional": "enabledFormFieldDetection && !document.isSystemFile && !offline",
+        "disabled": "!user || overQuota || syncing",
+        "loading": "skeleton icon and two skeleton text lines",
+        "currentEnglish": "AI auto-detect"
+      }
+    ]
+  },
+  "signFooter": {
+    "wrapperMarginTop": 8,
+    "wrapperPadding": 8,
+    "divider": {
+      "absolute": true,
+      "top": 0,
+      "left": -8,
+      "width": "100%+16px"
+    },
+    "description": {
+      "translation": "viewer.bananaSign.inviteOthersViaLuminSign",
+      "type": "body",
+      "size": "md",
+      "paddingTopBottom": 8,
+      "currentEnglish": "Digitally sign your documents with Lumin Sign"
+    },
+    "button": {
+      "translation": "viewer.bananaSign.requestSignatures",
+      "width": "100%",
+      "variant": "filled",
+      "colorType": "lumin_sign",
+      "size": "md(default)",
+      "minHeight": 32,
+      "padding": [
+        6,
+        12
+      ],
+      "font": {
+        "family": "Inter",
+        "size": 14,
+        "weight": 500,
+        "lineHeight": 20
+      },
+      "icon": "LmSignatureIcon",
+      "iconSize": 20,
+      "dark": {
+        "background": "#3A28C0",
+        "foreground": "#D0CCFF"
+      },
+      "light": {
+        "background": "#D0CCFF",
+        "foreground": "#160F57"
+      },
+      "currentEnglish": "Request signatures"
+    }
+  },
+  "organizeIcons": {
+    "crop": "pdf-icon-md_crop",
+    "insert": "pdf-icon-md_insert",
+    "move": "pdf-icon-md_move",
+    "delete": "pdf-icon-md_delete",
+    "rotate": "pdf-icon-md_rotate",
+    "split": "pdf-icon-md_split",
+    "merge": "pdf-icon-md_merge",
+    "bates_numbering": "kiwi-icon-ph-list-numbers"
+  },
+  "actions": {
+    "ordinary": "useToolMenuItemAction exits read-aloud; premium-badged tools do not switch nav first; available nonpremium tools call onChangeNavigationTab before action unless source page tool convert modal handles it",
+    "closeAfterChoose": "available && !premium && dataElement not signatureToolButton/rubberStampToolButton",
+    "signatureAndStamp": "keep menu open while nested picker is opened",
+    "security": "password has own canSet/canChange/canDelete/offline/template/permission branches"
+  },
+  "unknowns": [
+    "Runtime availability and premium status vary by user/document; parent live capture proves current branch only.",
+    "Full menu height depends on inline expansions, rich footer wrapping, auto-detect visibility, measurement flag and organize beta flag.",
+    "Keyboard loop/focus trap, pointer crossing timing, menu flip/clamp and exact typography metrics need parent runtime DOM/native checks."
+  ],
+  "parentRuntimeEvidence": [
+    "research/lumin/toolbar-source/mode-hover-popular-live.json",
+    "research/lumin/toolbar-source/mode-hover-fill-sign-live.json",
+    "research/lumin/toolbar-source/mode-hover-fill-sign-extra-live.json",
+    "research/lumin/toolbar-source/mode-hover-markup-live.json",
+    "research/lumin/toolbar-source/mode-hover-security-live.json"
+  ],
+  "signatureEscape": {
+    "staticObservations": [
+      "Signature controller uses shared tool popup9123382 with width400 in legacy branch.",
+      "Shared tool popup disables portal and wraps its Popper in5452091.",
+      "5452091 registers useKey(Escape,close); useKey5520012 defaults to keydown and useEvent8094186 defaults to window. The hook does not stop propagation or prevent default.",
+      "Parent Mantine Popover.Dropdown handles Escape in onKeyDownCapture by calling onClose/onDismiss. Popover defaults closeOnEscape:true."
+    ],
+    "inference": "When Escape originates within the nonportaled child or focused parent dropdown, the parent capture handler closes the rail menu and unmounts its Signature child; window handler can also close child. Thus both-close is predicted for that event path. This static trace alone does not observe actual focus path or transition settling.",
+    "runtimeOwner": "Parent independently checked live source; both absent after transition settled. Parent owns clean runtime fixture."
+  }
+}

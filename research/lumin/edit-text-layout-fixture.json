@@ -1,0 +1,54 @@
+{
+  "evidence": "edit-text-gate-computed-live.json;getBoundingClientRect/getComputedStyle;edit-text-preserved-context-live.json;edit-text-explore-context-live.json",
+  "size": [
+    480,
+    229
+  ],
+  "controls": {
+    "artwork": [
+      199.234375,
+      32,
+      81.5234375,
+      64
+    ],
+    "heading": [
+      56.484375,
+      104,
+      367.0234375,
+      28
+    ],
+    "message": [
+      66.890625,
+      136,
+      346.21875,
+      21
+    ],
+    "upgrade": [
+      24,
+      173,
+      432,
+      32
+    ]
+  },
+  "title": "Edit text directly \u2014 no retyping needed",
+  "message": "Level up your work and edit any PDF text in seconds.",
+  "heading_font": {
+    "family": "PPAgrandir",
+    "size": 20,
+    "weight": 500,
+    "lineHeight": 28
+  },
+  "image": {
+    "original_dimensions": [
+      214,
+      168
+    ],
+    "theme": "same light asset in observed dark theme; no alternate image inferred"
+  },
+  "backdrop": "rgba(0,0,0,0.5)",
+  "preserves": [
+    "active navigation mode",
+    "Type strip and font state",
+    "Explore panel and restored Search focus"
+  ]
+}

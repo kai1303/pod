@@ -1,0 +1,47 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  },
+  "start_url": {
+    "url": "https://showcase.apryse.com/"
+  },
+  "actions": [
+    {
+      "step_id": "cookies",
+      "action": "click",
+      "locator": {
+        "kind": "role",
+        "role": "button",
+        "name": "Reject Non-Essential"
+      },
+      "timeout_ms": 10000
+    },
+    {
+      "step_id": "edit_category",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "img[src=\"/assets/icons/category-edit.svg\"]"
+      },
+      "timeout_ms": 10000
+    },
+    {
+      "step_id": "settle",
+      "action": "wait_for_timeout",
+      "duration_ms": 1500
+    }
+  ],
+  "capture": {
+    "at_end": [
+      "dom",
+      "accessibility",
+      "url"
+    ],
+    "events": [
+      "network",
+      "console"
+    ]
+  },
+  "command_timeout_ms": 60000
+}

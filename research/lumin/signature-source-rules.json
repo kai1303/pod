@@ -1,0 +1,624 @@
+{
+  "schema": "lumin-signature-source-rules-v1",
+  "scope": "Shipped source and CSS only; no browser, native UI, screenshots, stored signatures, account payloads, or captured JavaScript execution.",
+  "manifest": "research/lumin/toolbar-source/extracted/signature/manifest.json",
+  "font_assets": "research/lumin/signature-font-assets.json",
+  "module_graph": {
+    "creation_dialog": {
+      "module": 8648838,
+      "artifact": "2tnjkf58nm1d7.js"
+    },
+    "signature_toolbar": {
+      "module": 1561561,
+      "artifact": "1vmims6r5cffr.js"
+    },
+    "signature_variant": {
+      "module": 4778880,
+      "rule": "useEditorShellVariant() === v2"
+    },
+    "editor_variant": {
+      "module": 9219392,
+      "rule": "NEXT_LUMIN runtime profile selects v2; otherwise v1"
+    },
+    "legacy_modal": {
+      "module": 4699264,
+      "artifact": "3paunvfp0my3g.js"
+    },
+    "legacy_dialog": {
+      "module": 3511112,
+      "artifact": "340lzxi71x8e3.js"
+    },
+    "legacy_checkbox": {
+      "module": 651006,
+      "artifact": "3paunvfp0my3g.js"
+    },
+    "v2_repeat_checkbox": {
+      "module": 3580432,
+      "artifact": "0vib-sgti_c2q.js"
+    }
+  },
+  "legacy_dropdown": {
+    "evidence": [
+      "dropdown-checkbox-certify",
+      "dropdown-legacy-style-add",
+      "dropdown-legacy-quota-list",
+      "dropdown-host"
+    ],
+    "outer_width_px": 400,
+    "outer_padding_px": 16,
+    "nominal_inner_width_px": 368,
+    "order": [
+      "optional Sign securely heading",
+      "optional Create a certified version card",
+      "Your Signatures heading",
+      "optional quota/upgrade text",
+      "signature scroll area with Add Signature and list",
+      "Place signature multiple times checkbox"
+    ],
+    "secure_section": {
+      "show_when": "canRequest OR temporary edit mode",
+      "hide_rest_when": "onlyAllowRequest",
+      "gap_px": 8,
+      "margin_bottom_px": 8,
+      "only_allow_request_margin_bottom_px": 0,
+      "card_background_role": "le_main_tertiary_container",
+      "card_foreground_role": "le_main_on_tertiary_container",
+      "card_padding": "8px 4px",
+      "card_gap_px": 4,
+      "card_radius_px": 8,
+      "icon_wrapper_padding_px": 4,
+      "icon_size_px": 40,
+      "title_type": "legacy title-small14/520/170%",
+      "description_type": "legacy body-small12/420/150%",
+      "disabled": "digital processing OR missing user OR annotations not loaded OR offline OR temp-edit OR system file OR no canSaveACertifiedVersion OR template viewer",
+      "hover": "tertiary-container hovered state layer over same container"
+    },
+    "your_signatures_heading": {
+      "type": "legacy title-small14/520/170%",
+      "color_role": "le_main_on_surface",
+      "margin_bottom_px": 4,
+      "heading_only_margin_bottom_px": 0
+    },
+    "quota": {
+      "base_free_limit": 2,
+      "base_premium_limit": 100,
+      "actual_limit": "currentDocument.premiumToolsInfo.maximumNumberSignature with free fallback",
+      "count": "computed current store count, not exported here",
+      "show_count_text": "free plan OR count>=limit",
+      "show_upgrade": "online AND free plan AND count>=limit",
+      "upgrade_action": "opens static pricing URL in new tab"
+    },
+    "scroll_area": {
+      "max_height_px": 400,
+      "radius": "var(--border-radius-primary)",
+      "background_role": "le_main_surface_container",
+      "margin_bottom_px": 8,
+      "inner_padding_px": 12,
+      "inferred_add_button_width_px": 344,
+      "inference_note": "400 outer minus32 outer padding minus24 list padding; confirm computed live DOM"
+    },
+    "add_button": {
+      "show_when": "count < limit",
+      "height_px": 48,
+      "width": "100%",
+      "padding_px": 0,
+      "radius_px": 8,
+      "border": "1px dashed le_main_outline",
+      "foreground_role": "le_main_on_surface_variant",
+      "type": "legacy label-large14/520/115%",
+      "icon": "md_add24",
+      "icon_margin_right_px": 4
+    },
+    "add_action_order": [
+      "clear signature tool widget",
+      "set selected widget null",
+      "if toolbar overflow open, close it and reset toolbar-popover state",
+      "open signatureModal",
+      "close Signature popper",
+      "close sidebar popover"
+    ],
+    "list": {
+      "gap_px": 8,
+      "margin_top_px": 8,
+      "empty_variant": "empty mapped list; no invented signature cards or image examples",
+      "item_height_px": 64,
+      "item_padding_px": 8,
+      "item_radius_px": 8,
+      "item_background_role": "le_signature_signature_container",
+      "item_disabled": "capacity helper decides, opacity0.5 and pointer-events:none",
+      "image_height": "calc(100% -16px)",
+      "delete_and_sync_controls": "absolute right4 top4 gap4;16px icons in medium controls",
+      "loading_more": "16px vertical loader padding"
+    },
+    "repeat_checkbox": {
+      "outside_scroll_area": true,
+      "margin_top_px": 8,
+      "padding_left_px": 4,
+      "label": "Place signature multiple times",
+      "checked": "store.isPlacingMultipleSignatures",
+      "disabled": "signatureWidgetSelected is nonnull",
+      "on_change": "write localStorage placingMultipleSignatures and dispatch updated boolean"
+    }
+  },
+  "v2_dropdown": {
+    "evidence": [
+      "dropdown-v2-layout-empty",
+      "dropdown-v2-add",
+      "dropdown-host"
+    ],
+    "outer_container_max_width_px": 320,
+    "outer_classes": "flex w-full flex-col gap-2 p-4",
+    "your_signatures_classes": "flex w-full flex-col items-start gap-1",
+    "list_classes": "flex w-full flex-col items-start gap-2 rounded-lg bg-sidebar p-2",
+    "empty_marker": "your-signatures-v2-empty: an empty div when no signatures",
+    "add_button": "outline; widthfull; justifycenter; gap2; dashed border;PlusIcon16",
+    "add_hidden_when": "quota reached AND free plan",
+    "add_disabled_when": "quota reached",
+    "list_scroller": "max-height220;flexcolumn;gap8;overflow-y:auto",
+    "repeat_visible_when": "list has entries; after separator my-1",
+    "note": "Do not substitute this320px branch for the400px legacy dropdown."
+  },
+  "creation_common": {
+    "evidence": [
+      "modes-fonts-defaults",
+      "creation-lifecycle-validation",
+      "creation-clear-save",
+      "creation-upload-text-events",
+      "creation-render-tabs-actions",
+      "creation-dialog-host"
+    ],
+    "title": "Create New Signature (count/max(count,limit))",
+    "tab_order": [
+      {
+        "value": 0,
+        "label": "Draw"
+      },
+      {
+        "value": 1,
+        "label": "Image"
+      },
+      {
+        "value": 2,
+        "label": "Type"
+      }
+    ],
+    "initial": {
+      "selected_tab": 0,
+      "image_present": false,
+      "text": "",
+      "font": "DrSugiyama",
+      "save_disabled": true,
+      "error": "",
+      "drawing_started": false,
+      "style_popover_open": false,
+      "font_menu_open": false
+    },
+    "mode_change": "reset initial form state then select target mode: text/image/font/error/open-palettes/Save-disabled fields reset. The separate strokes array is NOT cleared, and returning to Draw can re-enable Save for retained drawing. Pen mode remains preserved because it is absent from initialState.",
+    "initial_mount": "close print/error/loading/progress modals; set Signature tool; setup canvas; subscribe signatureSaved",
+    "unmount": "remove signatureSaved listener and handwriting pointer listeners",
+    "save_enable_gate": "modal open AND count < quota, plus tab-specific content condition",
+    "tab_save_conditions": {
+      "Draw": "drawing is nonempty",
+      "Image": "imageSignature true",
+      "Type": "raw text nonempty AND error string empty"
+    },
+    "save_checkbox": "No save/store-signature checkbox exists in this component. The checkbox controls repeated placement.",
+    "save_action": "create/select signature image, call addSignatureMutation(base64,id,status adding), place immediately if tool has location or enter placement preview otherwise, close signatureModal",
+    "save_loading_ui": "footer Save receives disabled only; no loading prop in shown footer",
+    "cancel_action": "clear tool location and canvas/state, selected widget=null, close signatureModal, restore desktop AnnotationEdit (Pan on iOS/Android)",
+    "host_dismiss_action": "close signatureModal, reset toolbar-popover state, restore default tool",
+    "host_dismiss_handler_evidence": [
+      "creation-dialog-host",
+      "legacy-dialog-default-close",
+      "modal-escape-handler",
+      "modal-overlay-close-handler",
+      "desktop-dismiss-tool"
+    ],
+    "host_dismiss_handler_exact": "c=()=>{n(),i(),l.default.setToolMode(h.default)}; legacy r.Modal gets onClose:c. n=closeSignatureModal,i=resetToolbarPopover,h.default=desktop AnnotationEdit/mobile Pan.",
+    "repeat_checkbox": {
+      "label": "Place signature multiple times",
+      "checked": "existing global store boolean",
+      "disabled_when": "signatureWidgetSelected",
+      "persistent_key": "placingMultipleSignatures",
+      "not_a_save_signature_option": true
+    }
+  },
+  "empty_local_template": {
+    "source_formula": "Creation header always renders count/max(count,limit). Legacy dropdown quota message renders only for count>=limit OR free limit2.",
+    "chosen_template_count": 0,
+    "chosen_template_max": 100,
+    "creation_title": "Create New Signature (0/100)",
+    "legacy_dropdown": "Your Signatures; Add Signature; empty list wrapper; Place signature multiple times. No quota count or upgrade message for0/100.",
+    "provenance": "Synthetic empty local-template values applying shipped formulas; not a reproduction of source account state.",
+    "ui_first_save_rationale": "Use local synthetic/user-entered draft state to review valid/disabled and close behavior. Backend signature creation, document placement and source account persistence are deferred functionality; UI Save must not claim those operations occurred.",
+    "source_save_action_executed": false
+  },
+  "legacy_creation": {
+    "evidence": [
+      "creation-title",
+      "signature-modal-css",
+      "legacy-dialog-size-host",
+      "legacy-dialog-default-close",
+      "kiwi-modal-wrapper",
+      "kiwi-dialog-css",
+      "kiwi-dialog-tokens",
+      "legacy-draw-type-styles",
+      "legacy-errors-footer-style",
+      "legacy-color-font-footer",
+      "creation-render-tabs-actions"
+    ],
+    "modal_size": "lg -> --kiwi-sizing-dialogs-lg880px",
+    "body_padding_px": 24,
+    "radius_px": 16,
+    "background": "var(--kiwi-colors-surface-surface-bright)",
+    "centered": true,
+    "outside_click_closes": true,
+    "escape_closes": true,
+    "with_overlay": true,
+    "lock_scroll": true,
+    "keep_mounted": false,
+    "header_close_button": false,
+    "transition": "fade; underlying duration200ms",
+    "focus": "Mantine trapFocus/returnFocus disabled in wrapper; wrapper supplies persistent FocusLock with returnFocus enabled",
+    "title": {
+      "font": "Inter18/520/145%",
+      "color_role": "le_main_on_surface",
+      "margin_bottom_px": 16
+    },
+    "tabs": {
+      "height_px": 40,
+      "radius": "pill",
+      "background_role": "le_main_surface_container_high",
+      "margin_bottom_px": 8,
+      "icons": [
+        "md_pen24",
+        "md_image24",
+        "md_font_size24"
+      ]
+    },
+    "action_row": {
+      "display": "flex aligncenter",
+      "margin_bottom_px": 4,
+      "left": "Draw:Handwriting/Classic segmented buttons;Type:Change Font menu;Image:optional Change image",
+      "right": "Change Color control +20px vertical divider +trash24IconButton32",
+      "right_gap_px": 4,
+      "clear_disabled": "isDisabledButton && !errorTextSignature"
+    },
+    "board": {
+      "container_height_px": 300,
+      "container_display": "flex positionrelative",
+      "canvas": "positionabsolute;z-index1;width100%;height100%;cursorcrosshair",
+      "canvas_hidden_when": "selected tab !=Draw",
+      "shared_radius_px": 8,
+      "shared_border": "1px solid le_main_outline_variant",
+      "shared_overflow": "hidden"
+    },
+    "footer": {
+      "justify": "flex-end",
+      "gap_px": 8,
+      "order": [
+        "Cancel",
+        "Save"
+      ],
+      "button_variants": [
+        "outlined",
+        "filled"
+      ],
+      "button_size": "lg",
+      "button_typography": "Inter16/500/24px",
+      "button_min_height_px": 40,
+      "button_padding": "(8px -borderWidth) (16px -borderWidth)",
+      "button_radius_px": 8
+    },
+    "repeat_checkbox_margin_top_px": 8,
+    "no_personal_signature_preview": "Use an empty board/list until user supplies local input; do not use stored account images."
+  },
+  "legacy_draw": {
+    "evidence": [
+      "legacy-draw-type-styles",
+      "legacy-errors-footer-style",
+      "legacy-color-font-footer",
+      "draw-mode-introduction",
+      "creation-draw-modes",
+      "creation-clear-save"
+    ],
+    "pen_mode_order": [
+      "Handwriting",
+      "Classic"
+    ],
+    "initial_pen_mode": "localStorage signatureDrawMode if handwriting/classic; else handwriting",
+    "pen_switch": "clear drawing/listeners and disable Save; persist chosen mode; show blank hint",
+    "pen_toggle": {
+      "padding_px": 2,
+      "radius_px": 8,
+      "background_fallback": "#f1f3f5",
+      "button_padding": "4px 10px",
+      "button_radius_px": 6,
+      "type": "Inter12/420/150%",
+      "active_fallback_foreground": "#102d42",
+      "inactive_fallback_foreground": "#868e96",
+      "active_fallback_background": "#fff",
+      "active_shadow": "0 1px 2px rgba(0,0,0,.12)"
+    },
+    "empty_hint": {
+      "icon": "md_pen24",
+      "label": "Draw your signature here",
+      "static_semantic_type_role": "S.typographies.le_headline_small",
+      "live_resolved_type": "Inter20px/460/30px",
+      "live_evidence": "draw-empty-hint-live-resolution;signature-draw-handwriting-live.json/nodes/45/style",
+      "type_note": "The static component names the semantic role; the observed active runtime resolves it to20px/460/30px. Do not infer36px from a separate bundled token export.",
+      "gap_px": 8,
+      "padding": "8px 0",
+      "margin": "0 40px 48px",
+      "border_bottom": "1px outline-variant",
+      "color_role": "le_signature_on_signature_container_variant",
+      "hidden_after_start_drawing": true
+    },
+    "change_color": {
+      "circle_icon_px": 24,
+      "caret_px": 20,
+      "padding": "4px 8px",
+      "gap_px": 4,
+      "label": "Change Color",
+      "selected_background_role": "le_main_secondary_container",
+      "nested_palette_width_px": 270,
+      "nested_palette_padding_px": 8,
+      "nested_palette_gap_px": 8,
+      "nested_palette_background_role": "le_main_surface",
+      "nested_children_order": [
+        "stroke width slider min1",
+        "StrokeColor palette"
+      ],
+      "nested_popover_priority": "ModalPriority.MEDIUM",
+      "click_away": "mousedown"
+    },
+    "handwriting_parameters": {
+      "size": 8,
+      "thinning": 0.7,
+      "smoothing": 0.5,
+      "streamline": 0.5,
+      "simulate_pressure": true
+    },
+    "classic_setup": "signatureTool.setSignatureCanvas, StrokeThickness3; pen redraw uses3*StrokeThickness",
+    "introduction_popover": {
+      "show_once_key": "INTRODUCE_HANDWRITING_SIGNATURE_POPOVER",
+      "delay_ms": 500,
+      "placement": "bottom-start",
+      "max_width_px": 280,
+      "padding_px": 16,
+      "has_arrow": true,
+      "action": "Got it"
+    }
+  },
+  "legacy_type": {
+    "evidence": [
+      "modes-fonts-defaults",
+      "legacy-draw-type-styles",
+      "legacy-checkbox-type",
+      "legacy-color-font-footer",
+      "creation-upload-text-events"
+    ],
+    "font_order": [
+      "DrSugiyama",
+      "AlexBrush",
+      "DancingScript",
+      "ArchitectsDaughter",
+      "HomemadeApple",
+      "RockSalt"
+    ],
+    "default_font": "DrSugiyama",
+    "input_placeholder": "Type your Signature here",
+    "input_font_px": 48,
+    "smaller_input_font_px": 24,
+    "smaller_font_families": [
+      "ArchitectsDaughter",
+      "HomemadeApple",
+      "RockSalt"
+    ],
+    "input_font_weight": "bold if StrokeThickness>=6, otherwise normal",
+    "input_color": "current StrokeColor with current Opacity, fallback rgba(16,45,66,1)",
+    "input_style": "border0;backgroundtransparent;padding0;centered;width100%;line-heightnormal;no focusoutline",
+    "input_position": "absolute wrapper left48 right48 bottom61;max-width calc(100%-96px);underline1px atbottom6",
+    "type_board_padding": "0 40px 48px",
+    "counter": "raw text length/50;12px/420;on-surface-variant",
+    "validation": "show error only when text.trim().length>50; no maxlength attribute; whitespace-only is truthy raw text and passes this source enable check",
+    "error": "legacy body-small12/420 with error role",
+    "font_menu": "MenuItem list in six-font order;each item renders own cursivefamily;selected showscheck;max zIndex111111;menu closes onselection",
+    "color_menu": "same270px nested palette;without width slider when Type tab",
+    "clear": "reset text and error",
+    "save_rasterization": "signature family100*canvasMultiplier*2px;bold rule above;dynamic canvas if textbounds exceedwidth;centered text"
+  },
+  "legacy_image": {
+    "evidence": [
+      "legacy-draw-type-styles",
+      "legacy-image",
+      "creation-upload-text-events",
+      "image-max-size"
+    ],
+    "empty_board_height_px": 236,
+    "outer_canvas_container_height_px": 300,
+    "height_note": "236px is the inner empty Image actionboard. The shared outer canvasContainer remains300px, so Image does not reduce the overall dialog by64px.",
+    "empty_board_padding": "24px 48px",
+    "empty_hint": {
+      "original_asset": "img44",
+      "copy": [
+        "Drag and drop image files (JPG, JPEG or PNG)",
+        "or browse file"
+      ],
+      "layout": "absolute center;width100%;flexcolumn;gap4",
+      "browse": "underline primary-fixed-variant;opens hidden file input",
+      "live_evidence": "signature-image-empty-live.json/nodes/35-36; normal empty-state copy differs from drag-overlay label"
+    },
+    "drag_overlay": {
+      "original_asset": "drop-img44",
+      "label": "Drop your image here",
+      "foreground_role": "le_main_inverse_on_surface",
+      "scrim": "le_main_scrim at.68",
+      "foreground_z_index": 2,
+      "scrim_z_index": 1
+    },
+    "accept": [
+      "image/png",
+      "image/jpeg",
+      "image/jpg"
+    ],
+    "dropzone": {
+      "max_files": 1,
+      "no_click": true,
+      "no_keyboard": true,
+      "disabled_when_image_exists": true
+    },
+    "optimization": "if input file>512000bytes, image resize to jpeg/min-width based on defaultsignaturedimension400 before handleUploadFile",
+    "max_after_optimization_bytes": 2097152,
+    "validation_errors": "nested error modal: unsupported type OR size exceeds2MiB after optimization",
+    "preview_height_px": 200,
+    "preview_fit": "object-fitcontain;width100%;height100%",
+    "preview_checkerboard": "four45deglinear-gradients with surface-container-highest,20px grid;positions0/0,0/10,10/-10,-10/0",
+    "change_image": "shows only after accepted image;topright;opens same hidden file input",
+    "accepted_change_button_exact": {
+      "evidence": [
+        "accepted-image-change-button",
+        "accepted-image-toolbar-wrapper",
+        "button-implicit-defaults",
+        "button-default-variant-mapping",
+        "button-base-border",
+        "button-medium-css",
+        "button-filled-system-css"
+      ],
+      "variant": "filled (implicit default)",
+      "size": "md (implicit default)",
+      "color_type": "system (implicit default)",
+      "icons": false,
+      "fixed_width": false,
+      "width": "intrinsic text width +24px; no width property supplied",
+      "height_px": 32,
+      "font": "Inter14/500/20px",
+      "padding": "6px 12px; base borderWidthVar0 and filled system border:none",
+      "radius_px": 8,
+      "background_role": "var(--kiwi-colors-core-secondary)",
+      "foreground_role": "var(--kiwi-colors-core-on-secondary)",
+      "wrapper": "t2/sc-7cb00772-13:margin-left:auto;inside tQ/sc-7cb00772-10 displayflex,aligncenter,margin-bottom4",
+      "layout_at_880": "right edge856px (24px right dialog padding); x856-intrinsicButtonWidth; actionrow begins114.1015625px for source default dialog"
+    },
+    "accepted_preview_exact": {
+      "evidence": [
+        "accepted-image-content-style",
+        "image-checker-color-light",
+        "image-checker-color-dark",
+        "signature-colors-light",
+        "signature-colors-dark"
+      ],
+      "outer_canvas_container": "832x300px in880px dialog with24pxpadding",
+      "image_box": "width100%,height200px,border1pxoutline-variant,radius8,overflowhidden,padding24px48px,border-box",
+      "img": "width100%,height100%,object-fitcontain;no max-width/max-height declarations in this legacy component",
+      "content_rect_at_832": "x49,y25,width734,height150; inference from border-box1pxborder+24/48padding",
+      "checker_background_color": "le_signature_signature_container (#F9F9FA light/#C1C7CE dark)",
+      "checker_foreground_color": "le_main_surface_container_highest (#E3E5E8 light/#2F363B dark)",
+      "background_image": "linear-gradient(45deg,color25%,transparent25%),linear-gradient(-45deg,color25%,transparent25%),linear-gradient(45deg,transparent75%,color75%),linear-gradient(-45deg,transparent75%,color75%)",
+      "background_size": "20px 20px for each layer",
+      "background_positions": "0 0,0 10px,10px -10px,-10px 0px",
+      "cells": "10px square checker cells within20px repeating period"
+    },
+    "drag_hover_exact": {
+      "evidence": [
+        "empty-image-drag-overlay-style",
+        "empty-image-drag-render",
+        "original-drop-svg-path"
+      ],
+      "active": "useDropzone.isDragActive;dropzone disabled if imageSignature true",
+      "scrim": "absolute inset0,z1,backgroundle_main_scrim(#000),opacity.68",
+      "content": "absolute inset0,z2,flexcolumn,gap8,aligncenter,justifycenter",
+      "icon": "content drop-img;44x44 wrapper;SVGElement fill declared le_main_inverse_on_surface",
+      "label": "generalLayout.signAndSend.dropYourImageHere;legacy bodymedium Inter14/420/150%;le_main_inverse_on_surface",
+      "normal_hint_hidden": "normal empty hint renders only when !imageSignature && !isDragActive",
+      "root_relative_asset_path": "/pdf-assets/lumin-svgs/drop-img.svg",
+      "resolved_document_origin_asset_url": "https://www.luminpdf.com/pdf-assets/lumin-svgs/drop-img.svg",
+      "path_proof": "module4050050 builds /pdf-assets/${isReskin?reskin/:empty}lumin-svgs/${content}.svg;isReskin defaultsfalse"
+    },
+    "file_input_reset": "e.target.value=null after handleUploadFile",
+    "no_image_exported": true
+  },
+  "v2_creation": {
+    "evidence": [
+      "v2-draw-color-footer",
+      "v2-tabs-type",
+      "v2-image-layout",
+      "creation-dialog-host",
+      "v2-button-variants"
+    ],
+    "dialog_content": "gap0;overflowhidden;rounded-xl;padding0;sm:max-w-3xl",
+    "declared_desktop_max_width_px": 768,
+    "header_padding_px": 16,
+    "title": "text-base/font-medium/leading-none/foreground",
+    "body": "px16,pb16,flexcolumn,gap12",
+    "tabs": "height32;width100%;mutedbg;padding3;radius8;3equalflex tabs;icons16;selectedbackground+shadow",
+    "canvas_board": "height200;width100%;overflowhidden;radius6;borderborder;backgroundmuted",
+    "footer": "border-top;bg-muted;padding16;flexright;gap8;Canceloutline thenSavedefault;default buttons32h,14px/medium,padding-x10",
+    "draw_toolbar": "Style label12 +Handwriting/Classic dropdown,separator20h,Color label12,colorpopover trigger,flexspacer,trash16inside28button",
+    "draw_empty_hint": "PenNib24 +18pxmedium text centered;baseline inset-x40,bottom48,#9ca3af;hint#898e99",
+    "type": "fontdropdown owncursivefont;inputabsolute fullboard;padding-x40;textcenter;font30 except last3families24;counter12 andinline destructiveerror;no legacy underline wrapper",
+    "color_popover": "auto-width;padding10;legacy palette82830 inside disablePortaltrue;14px colorchip inside7px padding",
+    "image": "ImageIcon32;empty centeredhint14;browsebuttonunderline;acceptedpreviewcheckerboard repeatingconic#E5E5E5/#FAFAFA at8pxgrid;changeimagebuttontopright",
+    "repeat_checkbox": "PlaceMultipleTimeV2,not legacycheckbox"
+  },
+  "legacy_signature_color_roles": {
+    "evidence": [
+      "signature-colors-light",
+      "signature-colors-dark"
+    ],
+    "light": {
+      "container": "#F9F9FA",
+      "on_container": "#161C21",
+      "on_container_variant": "#325167"
+    },
+    "dark": {
+      "container": "#C1C7CE",
+      "on_container": "#090F14",
+      "on_container_variant": "#233F52"
+    },
+    "note": "The dark legacy signatureboard is lightgray, unlike generic dark raised surfaces."
+  },
+  "checkbox_styles": {
+    "evidence": [
+      "kiwi-checkbox-sizes",
+      "kiwi-checkbox-wrapper",
+      "kiwi-checkbox-css",
+      "repeat-checkbox-v2",
+      "kiwi-checkbox-inverse-dark-theme",
+      "kiwi-checkbox-inverse-light-theme"
+    ],
+    "check_icon_color": {
+      "css_variable": "--kiwi-colors-surface-inverse-on-surface",
+      "light": "#FFFFFF",
+      "dark": "#191C1D",
+      "light_selector": ":root,.light-mode",
+      "dark_selector": ":root,.dark-mode",
+      "distinction": "Kiwi checkbox inverse-on-surface is separate from legacy le_main_inverse_on_surface. Each bounded excerpt includes its own theme selector and the exact variable declaration."
+    },
+    "legacy_default": {
+      "size_px": 18,
+      "border_width_px": 1.5,
+      "radius_px": 2,
+      "color": "Kiwi surface-on-surface",
+      "check_icon": "12x10publicSVG;inverse-on-surface",
+      "inner_wrapper_px": 20,
+      "hover_halo_px": 40,
+      "hover_halo_opacity": "Kiwi hovered state layer",
+      "disabled_opacity": 0.38
+    },
+    "label": "inlineflex gap8;Inter14/420/20px;Kiwi on-surface",
+    "v2_label": "flexrow gap8;14pxmedium;foreground"
+  },
+  "limits": {
+    "missing_code": "No missing lazy creation chunk found: full creation component and both branches are already downloaded.",
+    "missing_assets": "All six exact signature WOFF2 resources recovered from observed public stylesheet URLs; decompressed file-backed TTFs and original upload/drop SVGs are bundled. See signature-asset-manifest.json.",
+    "live_validation_required": [
+      "active legacy/v2 profile",
+      "computed dialog width after viewport constraints",
+      "final action-board line boxes and footer position",
+      "nested palette/menu placement and focus",
+      "current quota and repeat preference"
+    ],
+    "excluded": "No account identifiers, signature image URLs/base64, stored handwriting paths, or personal signature images were read from runtime or exported."
+  }
+}

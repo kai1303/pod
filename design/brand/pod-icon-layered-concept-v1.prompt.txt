@@ -1,0 +1,8 @@
+Mode: built-in image generation
+Palette source: https://incident.io/brand
+Reference: /Users/kai/.codex/skills/artifact-template-incident-io-complete-brand/assets/reference.png
+
+Use case: logo-brand
+Create one polished macOS app icon concept for Pod, a fast lightweight PDF editor. Target square 1024 x 1024 image. User direction: the app icon should clearly reflect multiple layers, using incident.io brand colors.
+Reference image attached is ONLY a palette and material/style reference; do not reproduce its layout, text, flame, or identity.
+Design: a warm Light Sand #F8F5F0 rounded-square macOS icon tile, straight-on view. Center three distinct overlapping rounded document sheets, deliberately offset diagonally so all three layers are immediately legible. Back sheet Burgundy #5A0A17, middle sheet Sand #E4D9C8, front sheet vivid Alarmalade #F25533 coral-orange. The front document has one beautifully simple folded upper-right corner in a lighter warm paper tone. Arrange stack with calm balance, generous internal padding, and a strong unmistakable layered-paper silhouette. The front sheet should be a slightly tall document rectangle. The offset exposed edges of the sheets must be broad enough to read at small size. Subtle tasteful tactile depth, very restrained soft shadows between sheets, crisp clean geometric edges and rounded corners. Professional minimal native Mac utility aesthetic. No text, letters, wordmark, lines of text, flames, pencils, badges, or extra symbols. One icon only, no presentation board or mockup. Transparent outside the rounded square tile. Tile nearly fills the image with consistent small transparent safe margins.

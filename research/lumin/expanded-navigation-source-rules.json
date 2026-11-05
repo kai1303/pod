@@ -1,0 +1,972 @@
+{
+  "scope": "Static shipped-artifact REA plus parent sanitized live-DOM corroboration. No target JS execution, browser interaction or screenshots by this worker. UI only; no private recent-document values are retained.",
+  "artifacts": [
+    {
+      "name": "header-navigation.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/0qwcgrq08z83b.js",
+      "artifactSHA256": "964f5557e4d435d204299da641cde06e2e48f6da8cac12195e66ac09fa76251b",
+      "charStart": 147858,
+      "charEndExclusive": 148967,
+      "utf8Start": 161349,
+      "utf8EndExclusive": 162458,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/header-navigation.source.js",
+      "excerptSHA256": "6b9d099aef6f69c1c3e7d58acdd42c342f96ce37bd541cb9250ceb5b9a75f640"
+    },
+    {
+      "name": "header-navigation.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/13oun9t944hks.css",
+      "artifactSHA256": "56524e09ec9c0aac83d6a0fd9b1de4923f727f43bcca557596c02cbccd9b87d5",
+      "charStart": 56854,
+      "charEndExclusive": 58143,
+      "utf8Start": 56854,
+      "utf8EndExclusive": 58143,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/header-navigation.css",
+      "excerptSHA256": "d02d81c334507578f3aeff82c5645bf3b64ccf5911a8297a02f739d51ac9ff57"
+    },
+    {
+      "name": "upload-container.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/0qwcgrq08z83b.js",
+      "artifactSHA256": "964f5557e4d435d204299da641cde06e2e48f6da8cac12195e66ac09fa76251b",
+      "charStart": 131411,
+      "charEndExclusive": 133271,
+      "utf8Start": 144902,
+      "utf8EndExclusive": 146762,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/upload-container.source.js",
+      "excerptSHA256": "4f4310fae2ffbd90368f6c803f5b75bc9b0417403f76724f7b567742ac5bba10"
+    },
+    {
+      "name": "upload-container.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/13oun9t944hks.css",
+      "artifactSHA256": "56524e09ec9c0aac83d6a0fd9b1de4923f727f43bcca557596c02cbccd9b87d5",
+      "charStart": 51199,
+      "charEndExclusive": 53053,
+      "utf8Start": 51199,
+      "utf8EndExclusive": 53053,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/upload-container.css",
+      "excerptSHA256": "af82a583d9a94f49540741d352f75c3ed612a50ed04d21c06bb4ef5fa978f51f"
+    },
+    {
+      "name": "expanded-rail.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 535309,
+      "charEndExclusive": 537545,
+      "utf8Start": 535487,
+      "utf8EndExclusive": 537723,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/expanded-rail.source.js",
+      "excerptSHA256": "c05997be80aab6174f6e6cf049fe3e42a1a6426d3e2d4aeb5d82689ce7b77b0c"
+    },
+    {
+      "name": "expanded-content-branch.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/0qwcgrq08z83b.js",
+      "artifactSHA256": "964f5557e4d435d204299da641cde06e2e48f6da8cac12195e66ac09fa76251b",
+      "charStart": 133452,
+      "charEndExclusive": 136999,
+      "utf8Start": 146943,
+      "utf8EndExclusive": 150490,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/expanded-content-branch.source.js",
+      "excerptSHA256": "2e856f9c1c2ed7bda15866c57ca864f666c291b85824fd5959455869c2f745bf"
+    },
+    {
+      "name": "expanded-focus-footer.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/0qwcgrq08z83b.js",
+      "artifactSHA256": "964f5557e4d435d204299da641cde06e2e48f6da8cac12195e66ac09fa76251b",
+      "charStart": 141010,
+      "charEndExclusive": 141865,
+      "utf8Start": 154501,
+      "utf8EndExclusive": 155356,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/expanded-focus-footer.source.js",
+      "excerptSHA256": "6ddf0183279c3d832a7b45694c97fdb9c583f01fde5c49de3cc723257200aacf"
+    },
+    {
+      "name": "toolbar-budget.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 668246,
+      "charEndExclusive": 669766,
+      "utf8Start": 668425,
+      "utf8EndExclusive": 669945,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/toolbar-budget.source.js",
+      "excerptSHA256": "93d422938c8f0d08af7345fc6d93bd031c41a983cc8dace69970e2a9d3f9f183"
+    },
+    {
+      "name": "toolbar-budget-constants.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/2r6nqfv294i-d.js",
+      "artifactSHA256": "765a6dc1ccfa2e56486913ec34633fac645275fa0c0d0964afd7a933744486d6",
+      "charStart": 137542,
+      "charEndExclusive": 137693,
+      "utf8Start": 137542,
+      "utf8EndExclusive": 137693,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/toolbar-budget-constants.source.js",
+      "excerptSHA256": "715fdba6deb58a5f6516a22c835f9d22c201be52d0e1cc6b730d8db850189908"
+    },
+    {
+      "name": "navigation-state.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/2wlhxxp1u3z2q.js",
+      "artifactSHA256": "9524d773cfee5b5d5e8ff236caaa716c8b0b9b25a51d689805fcf692222c0139",
+      "charStart": 2019637,
+      "charEndExclusive": 2020061,
+      "utf8Start": 2021992,
+      "utf8EndExclusive": 2022416,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/navigation-state.source.js",
+      "excerptSHA256": "c16b1c34ed7feea652e3b5a3ee308bb6da6c39e451952f080997aa80c4f4f4ee"
+    },
+    {
+      "name": "navigation-enabled-hook.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/2bp20npj_hzm7.js",
+      "artifactSHA256": "60846cfcde2ea3c84f86e7f9b1f2ac84c36726459ed739709632fa95fe9606c6",
+      "charStart": 16922,
+      "charEndExclusive": 17189,
+      "utf8Start": 16922,
+      "utf8EndExclusive": 17189,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/navigation-enabled-hook.source.js",
+      "excerptSHA256": "051981533089ae0cef3a83bdd491caf16942377d792a4a9c51b618ecfcbfe945"
+    },
+    {
+      "name": "upload-provider-menu.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/18mz4iu1jje8-.js",
+      "artifactSHA256": "372a9667a3aec0a888dd7b7018d3490ec5dba287e769e57c520e6169fc6f51aa",
+      "charStart": 83159,
+      "charEndExclusive": 86129,
+      "utf8Start": 83159,
+      "utf8EndExclusive": 86129,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/upload-provider-menu.source.js",
+      "excerptSHA256": "605093402ccc9013ede193b00dc61eda653f21655fcd4a12a1fb743eb47f9b6f"
+    },
+    {
+      "name": "upload-dropdown-primitives.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/32dkou205m7bp.js",
+      "artifactSHA256": "63c121ad184b8829a5bfcd50a764e33d412fd98b67dfa993ef1da25219f32588",
+      "charStart": 20711,
+      "charEndExclusive": 22517,
+      "utf8Start": 20711,
+      "utf8EndExclusive": 22517,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/upload-dropdown-primitives.source.js",
+      "excerptSHA256": "5e8d623fc8d87e01ae9e53424031f9acb07e6a238bf2b40134efbc68f0253dd2"
+    },
+    {
+      "name": "history-loader-observed.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/3ybmjzk1ffctr.js",
+      "artifactSHA256": "6bc4edcb4d7c42da75fe3ef821d95da1d0d9288ec1cc61163f0ca774e011b4bd",
+      "charStart": 19997,
+      "charEndExclusive": 20143,
+      "utf8Start": 19997,
+      "utf8EndExclusive": 20143,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/history-loader-observed.source.js",
+      "excerptSHA256": "30e57629e6464a0e473df32f837c44a81e2f39df6861f3548e85ea6343ddba6f"
+    },
+    {
+      "name": "history-loader-alternate.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/3iig5ypql_483.js",
+      "artifactSHA256": "d22ac7e34ad20f2cab76e167232b806a1b518f135fbfb2f3347e16134244048a",
+      "charStart": 5865,
+      "charEndExclusive": 6246,
+      "utf8Start": 5865,
+      "utf8EndExclusive": 6246,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/history-loader-alternate.source.js",
+      "excerptSHA256": "794edb7b20d402e62739763744701ad525472ef8a3403bc652854f9f3b0ceb2a"
+    },
+    {
+      "name": "runtime-first-registration.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/turbopack-13941_57effgq.js",
+      "artifactSHA256": "327f94ad88041d1faff80e34bd5958fc81deee235afae92416b669b214beb9ff",
+      "charStart": 7764,
+      "charEndExclusive": 8542,
+      "utf8Start": 7764,
+      "utf8EndExclusive": 8542,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/runtime-first-registration.source.js",
+      "excerptSHA256": "4009428517cdb36cf7b83aaac2f9edf4dfef2dc29498ab5cd763a0864913f402"
+    },
+    {
+      "name": "history-component.source.js",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/1iy_7psowvg9i.js",
+      "artifactSHA256": "2e6a3648fa5d265d7942761bb11389d7564be831bfcc839fd259b5eb5ef09d56",
+      "charStart": 10484,
+      "charEndExclusive": 13096,
+      "utf8Start": 10484,
+      "utf8EndExclusive": 13096,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/history-component.source.js",
+      "excerptSHA256": "4b483fdb9461e3c34f610b30938d84b06161187efda40d0b20610d10275efe58"
+    },
+    {
+      "name": "recent-list-storage.source.js",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/1iy_7psowvg9i.js",
+      "artifactSHA256": "2e6a3648fa5d265d7942761bb11389d7564be831bfcc839fd259b5eb5ef09d56",
+      "charStart": 13569,
+      "charEndExclusive": 15115,
+      "utf8Start": 13569,
+      "utf8EndExclusive": 15115,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/recent-list-storage.source.js",
+      "excerptSHA256": "f7c0f80ad3e835348a22fd4ce9ca6ea8d4490e6e35ba8f17a8cd7a800beda48f"
+    },
+    {
+      "name": "avatar-component.source.js",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/1iy_7psowvg9i.js",
+      "artifactSHA256": "2e6a3648fa5d265d7942761bb11389d7564be831bfcc839fd259b5eb5ef09d56",
+      "charStart": 5589,
+      "charEndExclusive": 9541,
+      "utf8Start": 5589,
+      "utf8EndExclusive": 9541,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/avatar-component.source.js",
+      "excerptSHA256": "3c9d44cfb30b8eb61d2e6e8d6ce46f510e3288f6c9bf5ab6f4a0a7a8822529a7"
+    },
+    {
+      "name": "fallback-thumbnail-path.source.js",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/1iy_7psowvg9i.js",
+      "artifactSHA256": "2e6a3648fa5d265d7942761bb11389d7564be831bfcc839fd259b5eb5ef09d56",
+      "charStart": 9534,
+      "charEndExclusive": 9629,
+      "utf8Start": 9534,
+      "utf8EndExclusive": 9629,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/fallback-thumbnail-path.source.js",
+      "excerptSHA256": "f3c8c934373821d0a4f2fd2cf46be5fdd064a24d7b319384711e50ba880f2d78"
+    },
+    {
+      "name": "history-styles.css",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/01n40zifuc5s6.css",
+      "artifactSHA256": "7bf4cc79d3e30111c3e5fe5dee40d33527a0c7cb3ed7f0be9fc7ecd19861cb47",
+      "charStart": 0,
+      "charEndExclusive": 3516,
+      "utf8Start": 0,
+      "utf8EndExclusive": 3516,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/history-styles.css",
+      "excerptSHA256": "7bf4cc79d3e30111c3e5fe5dee40d33527a0c7cb3ed7f0be9fc7ecd19861cb47"
+    },
+    {
+      "name": "history-translation.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/13u9fibag1vur.js",
+      "artifactSHA256": "1b805d5b66e244c9ee0127af2fb45a4618838d88ebfc3a400e42c1a76e744460",
+      "charStart": 145671,
+      "charEndExclusive": 145800,
+      "utf8Start": 145834,
+      "utf8EndExclusive": 145963,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/history-translation.source.js",
+      "excerptSHA256": "a1449cfca0fb5f0ba88d19eeace7c2549860c0730acbd56b23f172b5e97cf479"
+    },
+    {
+      "name": "navigation-translation.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/13u9fibag1vur.js",
+      "artifactSHA256": "1b805d5b66e244c9ee0127af2fb45a4618838d88ebfc3a400e42c1a76e744460",
+      "charStart": 144513,
+      "charEndExclusive": 144614,
+      "utf8Start": 144676,
+      "utf8EndExclusive": 144777,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/navigation-translation.source.js",
+      "excerptSHA256": "65d7d2f23d148c99282a2c15f07ae19f451d7f4e9f7f95b291dbbede503976ce"
+    },
+    {
+      "name": "upload-translation.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/13u9fibag1vur.js",
+      "artifactSHA256": "1b805d5b66e244c9ee0127af2fb45a4618838d88ebfc3a400e42c1a76e744460",
+      "charStart": 54662,
+      "charEndExclusive": 54954,
+      "utf8Start": 54742,
+      "utf8EndExclusive": 55034,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/upload-translation.source.js",
+      "excerptSHA256": "abe3ead628e4e875051186b2e126e98fbfe727842f481bf1e92812942300a40f"
+    },
+    {
+      "name": "regular-menu-row.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 288296,
+      "charEndExclusive": 290261,
+      "utf8Start": 288296,
+      "utf8EndExclusive": 290261,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/regular-menu-row.css",
+      "excerptSHA256": "806a66ea26293ff98df00de8a9fc058695d6f751219723076484e13d5e327ca4"
+    },
+    {
+      "name": "phosphor-icon-base.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/36mm6emdov391.js",
+      "artifactSHA256": "4899c160fcef24e246aaa18c2913ad73cc418a0f1b09c5cca95cea2c83f59d7f",
+      "charStart": 12987,
+      "charEndExclusive": 13676,
+      "utf8Start": 12987,
+      "utf8EndExclusive": 13676,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/phosphor-icon-base.source.js",
+      "excerptSHA256": "fecdb8849e35e0450a171cb4e8e018b091a715f475d314200534fb8c4f502c10"
+    },
+    {
+      "name": "cloud-arrow-up-regular.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1tssr0c234xk-.js",
+      "artifactSHA256": "2adbefd4c6c8bae924749e9a168a80298b441e08c2b13e49b97dd8b434e2a70b",
+      "charStart": 9191,
+      "charEndExclusive": 9624,
+      "utf8Start": 9191,
+      "utf8EndExclusive": 9624,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/cloud-arrow-up-regular.source.js",
+      "excerptSHA256": "89fa3007f7307cc878f21589dc1da393a00a3d6d24818250ded4ed24bb76553a"
+    },
+    {
+      "name": "arrow-square-out-regular.source.js",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/1iy_7psowvg9i.js",
+      "artifactSHA256": "2e6a3648fa5d265d7942761bb11389d7564be831bfcc839fd259b5eb5ef09d56",
+      "charStart": 1657,
+      "charEndExclusive": 1967,
+      "utf8Start": 1657,
+      "utf8EndExclusive": 1967,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/arrow-square-out-regular.source.js",
+      "excerptSHA256": "9eea5e8394a0a56413df287ae27c1507cc35a80581aeb275ab81b718dd54b548"
+    },
+    {
+      "name": "desktop-regular.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/3gb2a_ov92a5z.js",
+      "artifactSHA256": "85cc8ffd570a26053176be4fec505cb342bf5140da163acc17aa3920b5b098f6",
+      "charStart": 6055,
+      "charEndExclusive": 6367,
+      "utf8Start": 6055,
+      "utf8EndExclusive": 6367,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/desktop-regular.source.js",
+      "excerptSHA256": "ddc7eb473cbcbb913ea17cecc6910b1f3b62c573acb7c10eeae04182f97bde9c"
+    },
+    {
+      "name": "focus-shortcut-expanded-guard.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/0-ijaa_iuctuw.js",
+      "artifactSHA256": "28fd9904a1dfd6b2c00c27681a75fffdae33b01d31337880665f4e3ff5ec1d42",
+      "charStart": 43204,
+      "charEndExclusive": 43509,
+      "utf8Start": 43204,
+      "utf8EndExclusive": 43509,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/focus-shortcut-expanded-guard.source.js",
+      "excerptSHA256": "dfa559dd34135a9cc32d2cde9d82b5947177d68d1a8297147f101768523c4356"
+    },
+    {
+      "name": "radix-light-tokens.css",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/36i91pvs6_85-.css",
+      "artifactSHA256": "729efc079c08451003504f13586d94a2f6f8ab206378f4e764d7027f5ecb2e62",
+      "charStart": 400030,
+      "charEndExclusive": 403330,
+      "utf8Start": 400042,
+      "utf8EndExclusive": 403342,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/radix-light-tokens.css",
+      "excerptSHA256": "7e7daf2d0a77af9816b71d730660432dc0f1243a13a16d24769a1204022e86f6"
+    },
+    {
+      "name": "radix-dark-tokens.css",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/36i91pvs6_85-.css",
+      "artifactSHA256": "729efc079c08451003504f13586d94a2f6f8ab206378f4e764d7027f5ecb2e62",
+      "charStart": 403330,
+      "charEndExclusive": 406689,
+      "utf8Start": 403342,
+      "utf8EndExclusive": 406701,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/radix-dark-tokens.css",
+      "excerptSHA256": "ad0c54e440d8c224200a6b8a49916601e7dd2b32327cbd01255324237f9720f9"
+    },
+    {
+      "name": "radix-ds-radius-md.css",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/36i91pvs6_85-.css",
+      "artifactSHA256": "729efc079c08451003504f13586d94a2f6f8ab206378f4e764d7027f5ecb2e62",
+      "charStart": 414548,
+      "charEndExclusive": 414567,
+      "utf8Start": 414560,
+      "utf8EndExclusive": 414579,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/radix-ds-radius-md.css",
+      "excerptSHA256": "3e00c05166a058a761cca30dd8918951483bf0a5e36b174a57c5392a29d5fddd"
+    },
+    {
+      "name": "radix-ds-radius-lg.css",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/36i91pvs6_85-.css",
+      "artifactSHA256": "729efc079c08451003504f13586d94a2f6f8ab206378f4e764d7027f5ecb2e62",
+      "charStart": 414567,
+      "charEndExclusive": 414587,
+      "utf8Start": 414579,
+      "utf8EndExclusive": 414599,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/radix-ds-radius-lg.css",
+      "excerptSHA256": "fb821ef30f396073f5dc89b0c9c6e71a8df5edc954dea2087928aaa3a1aad97a"
+    },
+    {
+      "name": "radix-ds-text-sm.css",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/36i91pvs6_85-.css",
+      "artifactSHA256": "729efc079c08451003504f13586d94a2f6f8ab206378f4e764d7027f5ecb2e62",
+      "charStart": 414933,
+      "charEndExclusive": 414951,
+      "utf8Start": 414945,
+      "utf8EndExclusive": 414963,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/radix-ds-text-sm.css",
+      "excerptSHA256": "6d7ead4d5d2e40f5bc7716bd27a1ddb7e1f08af009cd085e2a605e2d1110f33b"
+    },
+    {
+      "name": "radix-ds-text-sm--line-height.css",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/36i91pvs6_85-.css",
+      "artifactSHA256": "729efc079c08451003504f13586d94a2f6f8ab206378f4e764d7027f5ecb2e62",
+      "charStart": 414951,
+      "charEndExclusive": 414982,
+      "utf8Start": 414963,
+      "utf8EndExclusive": 414994,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/radix-ds-text-sm--line-height.css",
+      "excerptSHA256": "9d2c22695484d2695cd7235fe5958dc2c4eb5194bf86cd624d64f26663aefb46"
+    },
+    {
+      "name": "radix-ds-shadow-md.css",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/36i91pvs6_85-.css",
+      "artifactSHA256": "729efc079c08451003504f13586d94a2f6f8ab206378f4e764d7027f5ecb2e62",
+      "charStart": 416577,
+      "charEndExclusive": 416647,
+      "utf8Start": 416589,
+      "utf8EndExclusive": 416659,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/radix-ds-shadow-md.css",
+      "excerptSHA256": "6df07da045b5df72b20cb56a37cf73c29b087c40cc9706c95bdedd6951f002d1"
+    },
+    {
+      "name": "radix-font-sans-Inter.css",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/36i91pvs6_85-.css",
+      "artifactSHA256": "729efc079c08451003504f13586d94a2f6f8ab206378f4e764d7027f5ecb2e62",
+      "charStart": 414808,
+      "charEndExclusive": 414826,
+      "utf8Start": 414820,
+      "utf8EndExclusive": 414838,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/radix-font-sans-Inter.css",
+      "excerptSHA256": "9b1f1cbebec84f4d862e961197805f9e37b6ffc85154627766399aada3250a17"
+    },
+    {
+      "name": "radix-radius-utilities.css",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/36i91pvs6_85-.css",
+      "artifactSHA256": "729efc079c08451003504f13586d94a2f6f8ab206378f4e764d7027f5ecb2e62",
+      "charStart": 69788,
+      "charEndExclusive": 69996,
+      "utf8Start": 69796,
+      "utf8EndExclusive": 70004,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/radix-radius-utilities.css",
+      "excerptSHA256": "0317ffd5c00129105ab20027f47529d366a51a4b5957aff86462f6132bc9bc9f"
+    },
+    {
+      "name": "radix-text-sm-utility.css",
+      "artifact": "research/lumin/toolbar-source/expanded-navigation-live/36i91pvs6_85-.css",
+      "artifactSHA256": "729efc079c08451003504f13586d94a2f6f8ab206378f4e764d7027f5ecb2e62",
+      "charStart": 120856,
+      "charEndExclusive": 120954,
+      "utf8Start": 120864,
+      "utf8EndExclusive": 120962,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/radix-text-sm-utility.css",
+      "excerptSHA256": "110363f397f65945eafde2532e43e9a5eb7ba107738c7267c5c263c6cbb7fa07"
+    },
+    {
+      "name": "token-lumin-left-side-bar-width-expanded-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 448102,
+      "charEndExclusive": 448145,
+      "utf8Start": 449724,
+      "utf8EndExclusive": 449767,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-lumin-left-side-bar-width-expanded-1.css",
+      "excerptSHA256": "cdc1440d62a5076aaeda3c55ae7db8048c1956d5af6b48cd51f75e5d663f4f4d"
+    },
+    {
+      "name": "token-kiwi-spacing-0-5-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 323266,
+      "charEndExclusive": 323289,
+      "utf8Start": 323266,
+      "utf8EndExclusive": 323289,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-spacing-0-5-1.css",
+      "excerptSHA256": "4687bcbf9e50c1ba4fcc0abb048029d902a6021b9e2fe95b4b28e5c9e1db33d4"
+    },
+    {
+      "name": "token-kiwi-spacing-1-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 322951,
+      "charEndExclusive": 322972,
+      "utf8Start": 322951,
+      "utf8EndExclusive": 322972,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-spacing-1-1.css",
+      "excerptSHA256": "ae764adb76584b354abc7124def5ed4aebff0bed5cfa2bb593105b6a41e0f133"
+    },
+    {
+      "name": "token-kiwi-spacing-1-5-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 323338,
+      "charEndExclusive": 323362,
+      "utf8Start": 323338,
+      "utf8EndExclusive": 323362,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-spacing-1-5-1.css",
+      "excerptSHA256": "7040f8c8a0684e583a0f3f0e2e7f39d3a68fb94c30d714131d25027579918d2e"
+    },
+    {
+      "name": "token-kiwi-spacing-2-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 322972,
+      "charEndExclusive": 322994,
+      "utf8Start": 322972,
+      "utf8EndExclusive": 322994,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-spacing-2-1.css",
+      "excerptSHA256": "6d404f8078c2aa096732f8ac0fd6a62f1160c617a1921fc7b5cc2b172cbbd4fa"
+    },
+    {
+      "name": "token-kiwi-colors-surface-on-surface-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 325527,
+      "charEndExclusive": 325568,
+      "utf8Start": 325527,
+      "utf8EndExclusive": 325568,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-colors-surface-on-surface-1.css",
+      "excerptSHA256": "b0c7ca71b39af503c7c11222534611f6dd604ac64f1387e336e485881e359fad"
+    },
+    {
+      "name": "token-kiwi-colors-surface-on-surface-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 342842,
+      "charEndExclusive": 342883,
+      "utf8Start": 342842,
+      "utf8EndExclusive": 342883,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-colors-surface-on-surface-2.css",
+      "excerptSHA256": "92f4fb10caab87920eb38fd32b0d0cc5188eb78c603469b7afaa3128453d98b3"
+    },
+    {
+      "name": "token-kiwi-colors-surface-on-surface-variant-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 325614,
+      "charEndExclusive": 325663,
+      "utf8Start": 325614,
+      "utf8EndExclusive": 325663,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-colors-surface-on-surface-variant-1.css",
+      "excerptSHA256": "9a974915dec5554d1769f308d3101306ed7e6a9bc8ebfe204ac9e3e8d48eefd5"
+    },
+    {
+      "name": "token-kiwi-colors-surface-on-surface-variant-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 342929,
+      "charEndExclusive": 342978,
+      "utf8Start": 342929,
+      "utf8EndExclusive": 342978,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-colors-surface-on-surface-variant-2.css",
+      "excerptSHA256": "8171e39ec9fb5c258518d1fe7aaab196c5b438b60b01bd548c3bba8f0c06a1b6"
+    },
+    {
+      "name": "token-kiwi-colors-surface-outline-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 325413,
+      "charEndExclusive": 325451,
+      "utf8Start": 325413,
+      "utf8EndExclusive": 325451,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-colors-surface-outline-1.css",
+      "excerptSHA256": "383684799f0602d785306cc8993b24a1b0b38036f46bbdb6682da23db3d1060c"
+    },
+    {
+      "name": "token-kiwi-colors-surface-outline-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 342728,
+      "charEndExclusive": 342766,
+      "utf8Start": 342728,
+      "utf8EndExclusive": 342766,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-colors-surface-outline-2.css",
+      "excerptSHA256": "fbdd8416e4f6455eab29cb2b58148a9aac5c4f536621b7f3b1b6db88ee2c4dd7"
+    },
+    {
+      "name": "token-kiwi-colors-surface-outline-variant-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 325758,
+      "charEndExclusive": 325804,
+      "utf8Start": 325758,
+      "utf8EndExclusive": 325804,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-colors-surface-outline-variant-1.css",
+      "excerptSHA256": "0182136127be48e08e4c23d9d5f8921ceb8f12a14b9147f6eb0e50cc4736756f"
+    },
+    {
+      "name": "token-kiwi-colors-surface-outline-variant-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 343070,
+      "charEndExclusive": 343116,
+      "utf8Start": 343070,
+      "utf8EndExclusive": 343116,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-colors-surface-outline-variant-2.css",
+      "excerptSHA256": "c8dc010546c323ab389f1eb9d1161b27fa6c2d34bac0871168d8b9ef257705b7"
+    },
+    {
+      "name": "token-kiwi-colors-core-primary-container-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 323515,
+      "charEndExclusive": 323560,
+      "utf8Start": 323515,
+      "utf8EndExclusive": 323560,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-colors-core-primary-container-1.css",
+      "excerptSHA256": "dcb66276ff718cd1b1387df5694df42b72977f08afaf4800a39cdfee7876cb4f"
+    },
+    {
+      "name": "token-kiwi-colors-core-primary-container-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 340845,
+      "charEndExclusive": 340890,
+      "utf8Start": 340845,
+      "utf8EndExclusive": 340890,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-colors-core-primary-container-2.css",
+      "excerptSHA256": "134922427b3445411f7f7eb499b5f0b25b0e52d922315e65bea861c1fd8a6c28"
+    },
+    {
+      "name": "token-kiwi-colors-core-secondary-1.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 323608,
+      "charEndExclusive": 323645,
+      "utf8Start": 323608,
+      "utf8EndExclusive": 323645,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-colors-core-secondary-1.css",
+      "excerptSHA256": "35c7ccbaecf81ec7c3a8d3466dfa152b8b2369ca5422673026cd71875c0c59c8"
+    },
+    {
+      "name": "token-kiwi-colors-core-secondary-2.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 340938,
+      "charEndExclusive": 340975,
+      "utf8Start": 340938,
+      "utf8EndExclusive": 340975,
+      "excerpt": "research/lumin/toolbar-source/extracted/expanded-navigation/token-kiwi-colors-core-secondary-2.css",
+      "excerptSHA256": "6cf16679cef6411ddd172990b22030be8cbc74d93e0417a2a2787be73c4f6eca"
+    }
+  ],
+  "downloadIdentity": [
+    {
+      "url": "https://static.luminpdf.com/_next/static/chunks/01n40zifuc5s6.css?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "resolvedURL": "https://static.luminpdf.com/_next/static/chunks/01n40zifuc5s6.css?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "file": "research/lumin/toolbar-source/expanded-navigation-live/01n40zifuc5s6.css",
+      "bytes": 3516,
+      "contentType": "text/css",
+      "sha256": "7bf4cc79d3e30111c3e5fe5dee40d33527a0c7cb3ed7f0be9fc7ecd19861cb47"
+    },
+    {
+      "url": "https://static.luminpdf.com/_next/static/chunks/1iy_7psowvg9i.js?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "resolvedURL": "https://static.luminpdf.com/_next/static/chunks/1iy_7psowvg9i.js?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+      "file": "research/lumin/toolbar-source/expanded-navigation-live/1iy_7psowvg9i.js",
+      "bytes": 17451,
+      "contentType": "text/javascript",
+      "sha256": "2e6a3648fa5d265d7942761bb11389d7564be831bfcc839fd259b5eb5ef09d56"
+    }
+  ],
+  "navigationState": {
+    "expandedWidth": 276,
+    "collapsedWidth": 80,
+    "enabled": "feature flag and signed-in current user",
+    "open": "Redux viewerNavigation.isExpanded toggled by header",
+    "visibleExpanded": "isExpanded && currentUser",
+    "sourceDefault": false
+  },
+  "header": {
+    "collapsed": {
+      "icon": "kiwi-icon-hamburger-md",
+      "buttonSize": "lg"
+    },
+    "expanded": {
+      "width": 276,
+      "paddingLeft": 0,
+      "paddingRight": 12,
+      "innerGap": 4,
+      "justifyContent": "space-between",
+      "backButton": {
+        "variant": "text",
+        "startIcon": "kiwi-icon-arrow-narrow-left-md",
+        "label": "dynamic back-route name; current parent DOM My documents",
+        "innerWidth": "100%",
+        "labelOverflow": "nowrap/ellipsis"
+      },
+      "closeButton": {
+        "icon": "kiwi-icon-x-md",
+        "flexShrink": 0
+      },
+      "currentLiveControls": {
+        "back": {
+          "rect": [
+            8,
+            12,
+            147.21875,
+            32
+          ],
+          "glyphRect": [
+            20,
+            18,
+            20,
+            20
+          ],
+          "padding": [
+            6,
+            12
+          ],
+          "labelFont": [
+            14,
+            500,
+            20
+          ],
+          "iconTextGap": 4,
+          "foregroundRole": "core-secondary"
+        },
+        "close": {
+          "rect": [
+            240,
+            12,
+            32,
+            32
+          ],
+          "glyphRect": [
+            246,
+            18,
+            20,
+            20
+          ],
+          "padding": 6,
+          "foregroundRole": "core-secondary"
+        }
+      }
+    },
+    "geometry": "Parent live DOM holds exact header button/glyph metrics; do not infer icon size from button size."
+  },
+  "rail": {
+    "contentPadding": [
+      4,
+      16
+    ],
+    "gap": 16,
+    "contentHeight": "auto",
+    "contentFlexShrink": 0,
+    "modes": "Hidden; expanded branch renders UploadContainer and lazy DocumentHistoryList instead",
+    "focusButton": "Not rendered while navigation expanded; empty bottom padding container remains",
+    "sourceWidthVariable": "--lumin-left-side-bar-width-expanded",
+    "focusShortcut": "Disabled while expanded by explicit !viewerNavigationSelectors.isExpanded guard"
+  },
+  "upload": {
+    "caption": "Click or drag and drop to upload",
+    "captionTranslation": "documentPage.reskin.uploadDocument.dragAndDrop",
+    "container": {
+      "padding": 8,
+      "gap": 8,
+      "border": "1px dashed surface-outline",
+      "radius": 8,
+      "cursor": "pointer",
+      "width": "stretch",
+      "hover": "on-surface pseudo-layer at hovered opacity",
+      "dragHighlight": "primary-container pseudo-layer at alpha50"
+    },
+    "header": {
+      "paddingVertical": 4,
+      "gap": 8,
+      "icon": {
+        "name": "Phosphor CloudArrowUpIcon",
+        "weight": "regular default",
+        "size": 20
+      },
+      "text": {
+        "size": 12,
+        "weight": 420,
+        "lineHeight": 16,
+        "role": "surface-on-surface"
+      }
+    },
+    "button": {
+      "title": "Upload",
+      "variant": "outlined",
+      "size": "md",
+      "fullWidth": true,
+      "height": 32,
+      "text": {
+        "size": 14,
+        "weight": 500,
+        "lineHeight": 20
+      },
+      "disabled": "offline",
+      "foregroundBorderRole": "core-secondary",
+      "defaultBackground": "transparent"
+    },
+    "picker": "Outer click/Enter/Space opens local file picker; child Upload button stops outer click and opens provider dropdown. No file-selection action is needed for UI reconstruction."
+  },
+  "uploadProviderMenu": {
+    "primitive": "Radix DropdownMenu, modal:false, disablePortal:true",
+    "position": {
+      "align": "start",
+      "sideOffset": 4,
+      "width": "trigger width; min128"
+    },
+    "surface": {
+      "padding": 4,
+      "radius": 10,
+      "role": "popover",
+      "shadow": "md",
+      "ring": "1px foreground/10",
+      "transitionMs": 100
+    },
+    "row": {
+      "minHeight": 32,
+      "paddingVertical": 4,
+      "paddingHorizontal": 6,
+      "gap": 8,
+      "radius": 8,
+      "font": "Inter14/400/20",
+      "svgSize": 18,
+      "disabledOpacity": 0.5,
+      "focus": "accent background/foreground"
+    },
+    "order": [
+      "From my device",
+      "Open from my computer (PWA/file-system conditional)",
+      "From Google Drive",
+      "From OneDrive",
+      "From Dropbox"
+    ],
+    "conditions": "Storage availability flags; offline disables network options; Dropbox hidden in Electron; PWA/system picker branch conditional. Default text is resolved by parent current DOM.",
+    "assets": {
+      "Google Drive": "/pdf-assets/reskin/lumin-svgs/logo-googledrive-md.svg",
+      "OneDrive": "/pdf-assets/reskin/lumin-svgs/logo-onedrive-md.svg",
+      "Dropbox": "/pdf-assets/reskin/lumin-svgs/logo-dropbox-md.svg",
+      "My device": "Phosphor DesktopIcon regular; CSS18px"
+    }
+  },
+  "history": {
+    "data": "Recent localStorage entries; newest document prepended, de-duplicated by ID, max20; no stored values exported",
+    "offline": "Uses cached offline document list and Offline documents heading",
+    "onlineHeading": "Recent documents",
+    "heading": {
+      "fontSize": 12,
+      "weight": 500,
+      "lineHeight": 16,
+      "padding": [
+        4,
+        8
+      ],
+      "marginBottom": 4,
+      "role": "surface-on-surface"
+    },
+    "nonemptyContainer": {
+      "display": "flex-column",
+      "height": "100%"
+    },
+    "list": {
+      "gap": 4,
+      "marginHorizontal": -12,
+      "paddingHorizontal": 12,
+      "overflowY": "auto"
+    },
+    "item": {
+      "component": "MenuItemBase regular rendered as Link",
+      "minHeight": 40,
+      "padding": 8,
+      "gap": 8,
+      "radius": 8,
+      "fontSize": 14,
+      "weight": 500,
+      "lineHeight": 20,
+      "activated": "current document ID",
+      "activatedBackground": "primary-container",
+      "textRole": "surface-on-surface",
+      "hover": "default row on-surface state layer; activated row pseudo-layer primary-container",
+      "text": {
+        "ellipsis": true,
+        "nowrap": true,
+        "paddingRight": 40
+      },
+      "thumbnail": {
+        "size": 24,
+        "innerImage": 22,
+        "border": "1px outline-variant",
+        "radius": 4,
+        "imageFit": "cover",
+        "fallbackBackground": "primary-container",
+        "fallbackAsset": "/pdf-assets/reskin/lumin-svgs/pdf-xl.svg"
+      },
+      "openInNewTab": {
+        "width": 32,
+        "height": 32,
+        "padding": 6,
+        "right": 4,
+        "verticalAlignment": "center via top50% translateY\u221250%",
+        "opacity": 0,
+        "liHoverOpacity": 1,
+        "transitionMs": 200,
+        "icon": {
+          "name": "Phosphor ArrowSquareOutIcon",
+          "size": 20,
+          "defaultWeight": "regular",
+          "role": "surface-on-surface"
+        },
+        "hoverLayer": "on-surface8%,radius4",
+        "tooltip": "documentPage.openInNewTab,bottom-end,crossAxis20"
+      }
+    },
+    "click": "Closes expanded navigation and routes to document; new-tab action prevents link default and opens separate viewer",
+    "nameTooltip": {
+      "openDelayMs": 1000,
+      "disabledWhile": "pointer on open-in-new-tab action"
+    },
+    "empty": {
+      "title": "Recent documents",
+      "text": "The latest documents you open will be shown here.",
+      "translation": "viewer.recentDocumentList.empty",
+      "marginTop": 4,
+      "border": "1px dashed outline-variant",
+      "radius": 8,
+      "paddingVertical": 4,
+      "textPadding": [
+        4,
+        8
+      ],
+      "fontSize": 12,
+      "weight": 420,
+      "lineHeight": 16,
+      "role": "surface-on-surface-variant"
+    }
+  },
+  "toolbar": {
+    "expandedNavigationBudget": 260,
+    "otherBudget": [
+      "actual right-panel width or368 if open",
+      96,
+      80,
+      50,
+      "left/common toolbar measured width"
+    ],
+    "formula": "maxRight = viewportWidth - commonWidth - rightPanel - (expandedNavigation ? 260 : 0) - 96 - 80 - 50",
+    "resizeDebounceMs": 100,
+    "warning": "260 is the recovered collapse budget, not the actual276px expanded rail width"
+  },
+  "radixTheme": {
+    "light": {
+      "popover": "#FFFFFF",
+      "foreground": "#0A0A0A",
+      "accent": "#F5F5F5",
+      "accentForeground": "#171717",
+      "mutedForeground": "#737373"
+    },
+    "dark": {
+      "popover": "#171717",
+      "foreground": "#FAFAFA",
+      "accent": "#404040",
+      "accentForeground": "#FAFAFA",
+      "mutedForeground": "#A3A3A3"
+    },
+    "radius": {
+      "md": 8,
+      "lg": 10
+    },
+    "font": {
+      "family": "Inter",
+      "size": 14,
+      "weight": 400,
+      "lineHeight": 20
+    },
+    "shadowMd": "0px4px6px\u22121pxblack10%,0px2px4px\u22122pxblack10%",
+    "ring": "1pxforeground10%"
+  },
+  "icons": "expanded-navigation-icon-sources.json; all3 literalregularpaths match live SVGattributes; public-assets-manifest.json retains4 originalURL/SVG hashes",
+  "parentLiveEvidence": [
+    "toolbar-source/expanded-navigation-sanitized-live.json",
+    "toolbar-source/expanded-navigation-details-live.json",
+    "toolbar-source/expanded-navigation-upload-menu-live.json"
+  ],
+  "unknowns": [
+    "Parent live DOM is authoritative for current default widths, glyph metrics and token cascade.",
+    "Multiple-row scrolling, empty/loading/offline/file-system branches are statically defined but not established by the current one-row DOM.",
+    "Header back destination, recent documents, opening files/new windows and provider uploads are functionality; keep deferred per user.",
+    "Default source frames/styles do not prove raster antialiasing, shadow, dash sampling or motion parity."
+  ]
+}

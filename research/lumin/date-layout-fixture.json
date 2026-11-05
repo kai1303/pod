@@ -1,0 +1,99 @@
+{
+  "evidence": "live DOM/getComputedStyle;date-toolbar-live.json,date-font-menu-live.json,stamp-gate-live.json",
+  "toolbar": [
+    1372,
+    40
+  ],
+  "controls": {
+    "Font family": [
+      9,
+      4,
+      108,
+      32
+    ],
+    "Font size": [
+      126,
+      4,
+      78,
+      32
+    ],
+    "Bold": [
+      213,
+      4,
+      32,
+      32
+    ],
+    "Italic": [
+      249,
+      4,
+      32,
+      32
+    ],
+    "Underline": [
+      285,
+      4,
+      32,
+      32
+    ],
+    "Strikethrough": [
+      321,
+      4,
+      32,
+      32
+    ],
+    "Text color": [
+      362,
+      4,
+      32,
+      32
+    ],
+    "Text frame": [
+      398,
+      4,
+      32,
+      32
+    ],
+    "Opacity": [
+      439,
+      4,
+      72.1171875,
+      32
+    ]
+  },
+  "gate_controls": {
+    "artwork": [
+      128,
+      24,
+      48,
+      48
+    ],
+    "heading": [
+      82.078125,
+      96,
+      139.8359375,
+      24
+    ],
+    "message": [
+      16,
+      124,
+      272,
+      42
+    ],
+    "upgrade": [
+      16,
+      182,
+      272,
+      32
+    ]
+  },
+  "date_default": {
+    "family": "Helvetica",
+    "size": 12,
+    "color": "#000000"
+  },
+  "font_menu": [
+    227.484375,
+    316
+  ],
+  "font_count": 19
+}

@@ -1,0 +1,2989 @@
+{
+  "schema": "lumin-core-palettes-live-v1",
+  "source": "public rendered DOM and computed CSS; no screenshots",
+  "palettes": {
+    "shape-fill": {
+      "size": [
+        300,
+        332.1875
+      ],
+      "controls": [
+        {
+          "index": 4,
+          "parent": 3,
+          "tag": "DIV",
+          "role": null,
+          "text": "Shape",
+          "value": null,
+          "rect": [
+            16,
+            16,
+            268,
+            23.796875
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 6,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            16,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 9,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            56,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 12,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            96,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 15,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            136,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 18,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            176,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 21,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            216,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 24,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            256,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 27,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            16,
+            87.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 30,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            56,
+            87.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 33,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            96,
+            87.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 37,
+          "parent": 36,
+          "tag": "DIV",
+          "role": null,
+          "text": "Style",
+          "value": null,
+          "rect": [
+            16,
+            135.796875,
+            268,
+            23.796875
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 41,
+          "parent": 40,
+          "tag": "BUTTON",
+          "role": "tab",
+          "text": null,
+          "value": null,
+          "rect": [
+            16,
+            167.59375,
+            134,
+            32.1015625
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "true"
+        },
+        {
+          "index": 43,
+          "parent": 42,
+          "tag": "SPAN",
+          "role": null,
+          "text": "Fill",
+          "value": null,
+          "rect": [
+            73.734375,
+            175.59375,
+            18.5234375,
+            16.1015625
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 44,
+          "parent": 40,
+          "tag": "BUTTON",
+          "role": "tab",
+          "text": null,
+          "value": null,
+          "rect": [
+            150,
+            167.59375,
+            134,
+            32.1015625
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 46,
+          "parent": 45,
+          "tag": "SPAN",
+          "role": null,
+          "text": "Border line",
+          "value": null,
+          "rect": [
+            181.1953125,
+            175.59375,
+            71.609375,
+            16.1015625
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 52,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            16,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "true"
+        },
+        {
+          "index": 53,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            45.5,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 54,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            75,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 55,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            104.5,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 56,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            134,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 57,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            163.5,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 58,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            193,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 59,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            222.5,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 60,
+          "parent": 51,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            252,
+            207.59375,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 65,
+          "parent": 64,
+          "tag": "DIV",
+          "role": null,
+          "text": "Opacity",
+          "value": null,
+          "rect": [
+            16,
+            255.59375,
+            268,
+            23.796875
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 70,
+          "parent": 67,
+          "tag": "SPAN",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            16,
+            283.390625,
+            192,
+            26
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 74,
+          "parent": 73,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "100",
+          "rect": [
+            201,
+            289.390625,
+            14,
+            14
+          ],
+          "min": "0",
+          "max": "100",
+          "step": "1",
+          "selected": null
+        },
+        {
+          "index": 78,
+          "parent": 77,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "100",
+          "rect": [
+            233,
+            284.390625,
+            28.3125,
+            30
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 79,
+          "parent": 77,
+          "tag": "SPAN",
+          "role": null,
+          "text": "%",
+          "value": null,
+          "rect": [
+            261.3125,
+            288.890625,
+            13.6875,
+            21
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        }
+      ],
+      "sliderPaint": [
+        {
+          "class": "MuiSlider-rail jss205 jss208 css-3ndvyc",
+          "rect": [
+            14,
+            294.390625,
+            196,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(50, 81, 103)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "0"
+          }
+        },
+        {
+          "class": "MuiSlider-track jss204 jss207 css-10opxo5",
+          "rect": [
+            14,
+            294.390625,
+            192,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(188, 207, 220)",
+            "borderTopColor": "rgb(188, 207, 220)",
+            "borderTopWidth": "1px",
+            "opacity": "0"
+          }
+        },
+        {
+          "class": "MuiSlider-thumb jss203 jss206 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb jss203 jss206 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-qzjlqt",
+          "rect": [
+            200,
+            288.390625,
+            16,
+            16
+          ],
+          "style": {
+            "backgroundColor": "rgb(14, 20, 25)",
+            "borderTopColor": "rgb(139, 145, 152)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        }
+      ]
+    },
+    "shape-border": {
+      "size": [
+        300,
+        372.1875
+      ],
+      "controls": [
+        {
+          "index": 4,
+          "parent": 3,
+          "tag": "DIV",
+          "role": null,
+          "text": "Shape",
+          "value": null,
+          "rect": [
+            16,
+            16,
+            268,
+            23.796875
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 6,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            16,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 9,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            56,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 12,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            96,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 15,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            136,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 18,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            176,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 21,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            216,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 24,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            256,
+            47.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 27,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            16,
+            87.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 30,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            56,
+            87.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 33,
+          "parent": 5,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            96,
+            87.796875,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 37,
+          "parent": 36,
+          "tag": "DIV",
+          "role": null,
+          "text": "Style",
+          "value": null,
+          "rect": [
+            16,
+            135.796875,
+            268,
+            23.796875
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 41,
+          "parent": 40,
+          "tag": "BUTTON",
+          "role": "tab",
+          "text": null,
+          "value": null,
+          "rect": [
+            16,
+            167.59375,
+            134,
+            32.1015625
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 43,
+          "parent": 42,
+          "tag": "SPAN",
+          "role": null,
+          "text": "Fill",
+          "value": null,
+          "rect": [
+            73.734375,
+            175.59375,
+            18.5234375,
+            16.1015625
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 44,
+          "parent": 40,
+          "tag": "BUTTON",
+          "role": "tab",
+          "text": null,
+          "value": null,
+          "rect": [
+            150,
+            167.59375,
+            134,
+            32.1015625
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "true"
+        },
+        {
+          "index": 46,
+          "parent": 45,
+          "tag": "SPAN",
+          "role": null,
+          "text": "Border line",
+          "value": null,
+          "rect": [
+            181.1953125,
+            175.59375,
+            71.609375,
+            16.1015625
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 52,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            16,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 53,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            49.7109375,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 54,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            83.4296875,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 55,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            117.140625,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 56,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            150.859375,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 57,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            184.5703125,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 58,
+          "parent": 51,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            218.2890625,
+            212.59375,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "true"
+        },
+        {
+          "index": 59,
+          "parent": 51,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            252,
+            207.59375,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 68,
+          "parent": 67,
+          "tag": "SPAN",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            56,
+            247.59375,
+            152,
+            26
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 72,
+          "parent": 71,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "1.1",
+          "rect": [
+            55.8671875,
+            253.59375,
+            14,
+            14
+          ],
+          "min": "0.1",
+          "max": "20",
+          "step": "1",
+          "selected": null
+        },
+        {
+          "index": 76,
+          "parent": 75,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "1",
+          "rect": [
+            233,
+            248.9921875,
+            28.984375,
+            30
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 77,
+          "parent": 75,
+          "tag": "SPAN",
+          "role": null,
+          "text": "pt",
+          "value": null,
+          "rect": [
+            261.984375,
+            253.4921875,
+            13.015625,
+            21
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 79,
+          "parent": 78,
+          "tag": "DIV",
+          "role": null,
+          "text": "Opacity",
+          "value": null,
+          "rect": [
+            16,
+            295.59375,
+            268,
+            23.796875
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 84,
+          "parent": 81,
+          "tag": "SPAN",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            16,
+            323.390625,
+            192,
+            26
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 88,
+          "parent": 87,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "100",
+          "rect": [
+            201,
+            329.390625,
+            14,
+            14
+          ],
+          "min": "0",
+          "max": "100",
+          "step": "1",
+          "selected": null
+        },
+        {
+          "index": 92,
+          "parent": 91,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "100",
+          "rect": [
+            233,
+            324.390625,
+            28.3125,
+            30
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 93,
+          "parent": 91,
+          "tag": "SPAN",
+          "role": null,
+          "text": "%",
+          "value": null,
+          "rect": [
+            261.3125,
+            328.890625,
+            13.6875,
+            21
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        }
+      ],
+      "sliderPaint": [
+        {
+          "class": "MuiSlider-rail jss205 jss225 css-3ndvyc",
+          "rect": [
+            54,
+            258.59375,
+            156,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(50, 81, 103)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "1"
+          }
+        },
+        {
+          "class": "MuiSlider-track jss204 jss224 css-10opxo5",
+          "rect": [
+            54,
+            258.59375,
+            6.8671875,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(188, 207, 220)",
+            "borderTopColor": "rgb(188, 207, 220)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        },
+        {
+          "class": "MuiSlider-thumb jss203 jss223 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb jss203 jss223 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-qzjlqt",
+          "rect": [
+            54.8671875,
+            252.59375,
+            16,
+            16
+          ],
+          "style": {
+            "backgroundColor": "rgb(227, 229, 232)",
+            "borderTopColor": "rgb(139, 145, 152)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        },
+        {
+          "class": "MuiSlider-rail jss205 jss208 css-3ndvyc",
+          "rect": [
+            14,
+            334.390625,
+            196,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(50, 81, 103)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "0"
+          }
+        },
+        {
+          "class": "MuiSlider-track jss204 jss207 css-10opxo5",
+          "rect": [
+            14,
+            334.390625,
+            192,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(188, 207, 220)",
+            "borderTopColor": "rgb(188, 207, 220)",
+            "borderTopWidth": "1px",
+            "opacity": "0"
+          }
+        },
+        {
+          "class": "MuiSlider-thumb jss203 jss206 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb jss203 jss206 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-qzjlqt",
+          "rect": [
+            200,
+            328.390625,
+            16,
+            16
+          ],
+          "style": {
+            "backgroundColor": "rgb(14, 20, 25)",
+            "borderTopColor": "rgb(139, 145, 152)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        }
+      ]
+    },
+    "draw": {
+      "size": [
+        304,
+        144.796875
+      ],
+      "controls": [
+        {
+          "index": 8,
+          "parent": 7,
+          "tag": "SPAN",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            56,
+            16,
+            156,
+            26
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 12,
+          "parent": 11,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "1.1",
+          "rect": [
+            56.0546875,
+            22,
+            14,
+            14
+          ],
+          "min": "0.1",
+          "max": "20",
+          "step": "1",
+          "selected": null
+        },
+        {
+          "index": 16,
+          "parent": 15,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "1",
+          "rect": [
+            237,
+            17.3984375,
+            28.984375,
+            30
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 17,
+          "parent": 15,
+          "tag": "SPAN",
+          "role": null,
+          "text": "pt",
+          "value": null,
+          "rect": [
+            265.984375,
+            21.8984375,
+            13.015625,
+            21
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 20,
+          "parent": 19,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            16,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 21,
+          "parent": 19,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            50.2890625,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 22,
+          "parent": 19,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            84.5703125,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 23,
+          "parent": 19,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            118.859375,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 24,
+          "parent": 19,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            153.140625,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 25,
+          "parent": 19,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            187.4296875,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 26,
+          "parent": 19,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            221.7109375,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "true"
+        },
+        {
+          "index": 27,
+          "parent": 19,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            256,
+            56,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 36,
+          "parent": 33,
+          "tag": "SPAN",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            16,
+            96,
+            196,
+            26
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 40,
+          "parent": 39,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "100",
+          "rect": [
+            205,
+            102,
+            14,
+            14
+          ],
+          "min": "0",
+          "max": "100",
+          "step": "1",
+          "selected": null
+        },
+        {
+          "index": 44,
+          "parent": 43,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "100",
+          "rect": [
+            237,
+            97,
+            28.3125,
+            30
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 45,
+          "parent": 43,
+          "tag": "SPAN",
+          "role": null,
+          "text": "%",
+          "value": null,
+          "rect": [
+            265.3125,
+            101.5,
+            13.6875,
+            21
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        }
+      ],
+      "sliderPaint": [
+        {
+          "class": "MuiSlider-rail jss205 jss235 css-3ndvyc",
+          "rect": [
+            54,
+            27,
+            160,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(50, 81, 103)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "1"
+          }
+        },
+        {
+          "class": "MuiSlider-track jss204 jss234 css-10opxo5",
+          "rect": [
+            54,
+            27,
+            7.0546875,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(188, 207, 220)",
+            "borderTopColor": "rgb(188, 207, 220)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        },
+        {
+          "class": "MuiSlider-thumb jss203 jss233 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb jss203 jss233 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-qzjlqt",
+          "rect": [
+            55.0546875,
+            21,
+            16,
+            16
+          ],
+          "style": {
+            "backgroundColor": "rgb(227, 229, 232)",
+            "borderTopColor": "rgb(139, 145, 152)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        },
+        {
+          "class": "MuiSlider-rail jss205 jss245 css-3ndvyc",
+          "rect": [
+            14,
+            107,
+            200,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(50, 81, 103)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "0"
+          }
+        },
+        {
+          "class": "MuiSlider-track jss204 jss244 css-10opxo5",
+          "rect": [
+            14,
+            107,
+            196,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(188, 207, 220)",
+            "borderTopColor": "rgb(188, 207, 220)",
+            "borderTopWidth": "1px",
+            "opacity": "0"
+          }
+        },
+        {
+          "class": "MuiSlider-thumb jss203 jss243 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb jss203 jss243 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-qzjlqt",
+          "rect": [
+            204,
+            101,
+            16,
+            16
+          ],
+          "style": {
+            "backgroundColor": "rgb(14, 20, 25)",
+            "borderTopColor": "rgb(139, 145, 152)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        }
+      ]
+    },
+    "eraser": {
+      "size": [
+        312,
+        64
+      ],
+      "controls": [
+        {
+          "index": 7,
+          "parent": 6,
+          "tag": "SPAN",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            56,
+            16,
+            232,
+            26
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 15,
+          "parent": 14,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "24",
+          "rect": [
+            165,
+            22,
+            14,
+            14
+          ],
+          "min": "8",
+          "max": "32",
+          "step": "8",
+          "selected": null
+        }
+      ],
+      "sliderPaint": [
+        {
+          "class": "MuiSlider-rail jss205 jss255 css-3ndvyc",
+          "rect": [
+            54,
+            27,
+            236,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(50, 81, 103)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "1"
+          }
+        },
+        {
+          "class": "MuiSlider-track jss204 jss254 css-10opxo5",
+          "rect": [
+            54,
+            27,
+            116,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(188, 207, 220)",
+            "borderTopColor": "rgb(188, 207, 220)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        },
+        {
+          "class": "MuiSlider-mark MuiSlider-markActive css-1osy2b3",
+          "rect": [
+            55,
+            28,
+            2,
+            2
+          ],
+          "style": {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "0.8"
+          }
+        },
+        {
+          "class": "MuiSlider-mark MuiSlider-markActive css-1osy2b3",
+          "rect": [
+            132.328125,
+            28,
+            2,
+            2
+          ],
+          "style": {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "0.8"
+          }
+        },
+        {
+          "class": "MuiSlider-mark css-1lyw2jy",
+          "rect": [
+            209.6640625,
+            28,
+            2,
+            2
+          ],
+          "style": {
+            "backgroundColor": "rgb(32, 55, 90)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "1"
+          }
+        },
+        {
+          "class": "MuiSlider-mark css-1lyw2jy",
+          "rect": [
+            287,
+            28,
+            2,
+            2
+          ],
+          "style": {
+            "backgroundColor": "rgb(32, 55, 90)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "1"
+          }
+        },
+        {
+          "class": "MuiSlider-thumb jss203 jss253 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb jss203 jss253 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-qzjlqt",
+          "rect": [
+            164,
+            21,
+            16,
+            16
+          ],
+          "style": {
+            "backgroundColor": "rgb(227, 229, 232)",
+            "borderTopColor": "rgb(139, 145, 152)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        }
+      ]
+    },
+    "text-tools": {
+      "size": [
+        300,
+        177.796875
+      ],
+      "controls": [
+        {
+          "index": 3,
+          "parent": 2,
+          "tag": "DIV",
+          "role": null,
+          "text": "Choose style",
+          "value": null,
+          "rect": [
+            16,
+            20.1015625,
+            156,
+            23.796875
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 5,
+          "parent": 4,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            172,
+            16,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 8,
+          "parent": 4,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            212,
+            16,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 11,
+          "parent": 4,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            252,
+            16,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 14,
+          "parent": 1,
+          "tag": "HR",
+          "role": null,
+          "text": "",
+          "value": null,
+          "rect": [
+            16,
+            64,
+            268,
+            1
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 17,
+          "parent": 16,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            16,
+            86,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "true"
+        },
+        {
+          "index": 18,
+          "parent": 16,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            49.7109375,
+            86,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 19,
+          "parent": 16,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            83.4296875,
+            86,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 20,
+          "parent": 16,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            117.140625,
+            86,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 21,
+          "parent": 16,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            150.859375,
+            86,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 22,
+          "parent": 16,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            184.5703125,
+            86,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 23,
+          "parent": 16,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            218.2890625,
+            86,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": "false"
+        },
+        {
+          "index": 24,
+          "parent": 16,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            252,
+            81,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 33,
+          "parent": 30,
+          "tag": "SPAN",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            16,
+            129,
+            192,
+            26
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 37,
+          "parent": 36,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "100",
+          "rect": [
+            201,
+            135,
+            14,
+            14
+          ],
+          "min": "0",
+          "max": "100",
+          "step": "1",
+          "selected": null
+        },
+        {
+          "index": 41,
+          "parent": 40,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "100",
+          "rect": [
+            233,
+            130,
+            28.3125,
+            30
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 42,
+          "parent": 40,
+          "tag": "SPAN",
+          "role": null,
+          "text": "%",
+          "value": null,
+          "rect": [
+            261.3125,
+            134.5,
+            13.6875,
+            21
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        }
+      ],
+      "sliderPaint": [
+        {
+          "class": "MuiSlider-rail jss356 jss359 css-3ndvyc",
+          "rect": [
+            14,
+            140,
+            196,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(50, 81, 103)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "0"
+          }
+        },
+        {
+          "class": "MuiSlider-track jss355 jss358 css-10opxo5",
+          "rect": [
+            14,
+            140,
+            192,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(188, 207, 220)",
+            "borderTopColor": "rgb(188, 207, 220)",
+            "borderTopWidth": "1px",
+            "opacity": "0"
+          }
+        },
+        {
+          "class": "MuiSlider-thumb jss354 jss357 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb jss354 jss357 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-qzjlqt",
+          "rect": [
+            200,
+            134,
+            16,
+            16
+          ],
+          "style": {
+            "backgroundColor": "rgb(14, 20, 25)",
+            "borderTopColor": "rgb(139, 145, 152)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        }
+      ]
+    },
+    "highlight-text": {
+      "size": [
+        300,
+        112
+      ],
+      "controls": [
+        {
+          "index": 3,
+          "parent": 2,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            16,
+            21,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 4,
+          "parent": 2,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            49.7109375,
+            21,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 5,
+          "parent": 2,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            83.4296875,
+            21,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 6,
+          "parent": 2,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            117.140625,
+            21,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 7,
+          "parent": 2,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            150.859375,
+            21,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 8,
+          "parent": 2,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            184.5703125,
+            21,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 9,
+          "parent": 2,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            218.2890625,
+            21,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 10,
+          "parent": 2,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            252,
+            16,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 19,
+          "parent": 16,
+          "tag": "SPAN",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            16,
+            64,
+            192,
+            26
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 23,
+          "parent": 22,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "50",
+          "rect": [
+            105,
+            70,
+            14,
+            14
+          ],
+          "min": "0",
+          "max": "100",
+          "step": "1",
+          "selected": null
+        },
+        {
+          "index": 27,
+          "parent": 26,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "50",
+          "rect": [
+            233,
+            65,
+            28.3125,
+            30
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 28,
+          "parent": 26,
+          "tag": "SPAN",
+          "role": null,
+          "text": "%",
+          "value": null,
+          "rect": [
+            261.3125,
+            69.5,
+            13.6875,
+            21
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        }
+      ],
+      "sliderPaint": [
+        {
+          "class": "MuiSlider-rail jss263 jss266 css-3ndvyc",
+          "rect": [
+            14,
+            75,
+            196,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(50, 81, 103)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "0"
+          }
+        },
+        {
+          "class": "MuiSlider-track jss262 jss265 css-10opxo5",
+          "rect": [
+            14,
+            75,
+            96,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(188, 207, 220)",
+            "borderTopColor": "rgb(188, 207, 220)",
+            "borderTopWidth": "1px",
+            "opacity": "0"
+          }
+        },
+        {
+          "class": "MuiSlider-thumb jss261 jss264 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb jss261 jss264 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-qzjlqt",
+          "rect": [
+            104,
+            69,
+            16,
+            16
+          ],
+          "style": {
+            "backgroundColor": "rgb(14, 20, 25)",
+            "borderTopColor": "rgb(139, 145, 152)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        }
+      ]
+    },
+    "highlight-freehand": {
+      "size": [
+        300,
+        144
+      ],
+      "controls": [
+        {
+          "index": 7,
+          "parent": 6,
+          "tag": "SPAN",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            55.8359375,
+            16.25,
+            152.1640625,
+            26
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 11,
+          "parent": 10,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "12.1",
+          "rect": [
+            139.828125,
+            22.25,
+            14,
+            14
+          ],
+          "min": "0.1",
+          "max": "20",
+          "step": "1",
+          "selected": null
+        },
+        {
+          "index": 15,
+          "parent": 14,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "12",
+          "rect": [
+            233,
+            17,
+            28.984375,
+            30
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 16,
+          "parent": 14,
+          "tag": "SPAN",
+          "role": null,
+          "text": "pt",
+          "value": null,
+          "rect": [
+            261.984375,
+            21.5,
+            13.015625,
+            21
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 19,
+          "parent": 18,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            16,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 20,
+          "parent": 18,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            49.7109375,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 21,
+          "parent": 18,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            83.4296875,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 22,
+          "parent": 18,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            117.140625,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 23,
+          "parent": 18,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            150.859375,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 24,
+          "parent": 18,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            184.5703125,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 25,
+          "parent": 18,
+          "tag": "SPAN",
+          "role": "button",
+          "text": "",
+          "value": null,
+          "rect": [
+            218.2890625,
+            61,
+            22,
+            22
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 26,
+          "parent": 18,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            252,
+            56,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 35,
+          "parent": 32,
+          "tag": "SPAN",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            16,
+            96,
+            192,
+            26
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 39,
+          "parent": 38,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "50",
+          "rect": [
+            105,
+            102,
+            14,
+            14
+          ],
+          "min": "0",
+          "max": "100",
+          "step": "1",
+          "selected": null
+        },
+        {
+          "index": 43,
+          "parent": 42,
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "value": "50",
+          "rect": [
+            233,
+            97,
+            28.3125,
+            30
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 44,
+          "parent": 42,
+          "tag": "SPAN",
+          "role": null,
+          "text": "%",
+          "value": null,
+          "rect": [
+            261.3125,
+            101.5,
+            13.6875,
+            21
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        }
+      ],
+      "sliderPaint": [
+        {
+          "class": "MuiSlider-rail jss283 jss286 css-3ndvyc",
+          "rect": [
+            53.8359375,
+            27.25,
+            156.1640625,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(50, 81, 103)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "1"
+          }
+        },
+        {
+          "class": "MuiSlider-track jss282 jss285 css-10opxo5",
+          "rect": [
+            53.8359375,
+            27.25,
+            90.9921875,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(188, 207, 220)",
+            "borderTopColor": "rgb(188, 207, 220)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        },
+        {
+          "class": "MuiSlider-thumb jss281 jss284 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb jss281 jss284 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-qzjlqt",
+          "rect": [
+            138.828125,
+            21.25,
+            16,
+            16
+          ],
+          "style": {
+            "backgroundColor": "rgb(227, 229, 232)",
+            "borderTopColor": "rgb(139, 145, 152)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        },
+        {
+          "class": "MuiSlider-rail jss283 jss303 css-3ndvyc",
+          "rect": [
+            14,
+            107,
+            196,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(50, 81, 103)",
+            "borderTopColor": "rgba(255, 255, 255, 0.1)",
+            "borderTopWidth": "0px",
+            "opacity": "0"
+          }
+        },
+        {
+          "class": "MuiSlider-track jss282 jss302 css-10opxo5",
+          "rect": [
+            14,
+            107,
+            96,
+            4
+          ],
+          "style": {
+            "backgroundColor": "rgb(188, 207, 220)",
+            "borderTopColor": "rgb(188, 207, 220)",
+            "borderTopWidth": "1px",
+            "opacity": "0"
+          }
+        },
+        {
+          "class": "MuiSlider-thumb jss281 jss301 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb jss281 jss301 MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-qzjlqt",
+          "rect": [
+            104,
+            101,
+            16,
+            16
+          ],
+          "style": {
+            "backgroundColor": "rgb(14, 20, 25)",
+            "borderTopColor": "rgb(139, 145, 152)",
+            "borderTopWidth": "1px",
+            "opacity": "1"
+          }
+        }
+      ]
+    },
+    "highlight-menu": {
+      "size": [
+        271.328125,
+        115
+      ],
+      "controls": [
+        {
+          "index": 2,
+          "parent": 1,
+          "tag": "LI",
+          "role": "menuitem",
+          "text": null,
+          "value": null,
+          "rect": [
+            8,
+            8,
+            255.328125,
+            40
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 6,
+          "parent": 5,
+          "tag": "SPAN",
+          "role": null,
+          "text": "Text highlight (H)",
+          "value": null,
+          "rect": [
+            47.8359375,
+            16,
+            135.4921875,
+            21
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 9,
+          "parent": 8,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            227.328125,
+            12,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 13,
+          "parent": 1,
+          "tag": "LI",
+          "role": "menuitem",
+          "text": null,
+          "value": null,
+          "rect": [
+            8,
+            48,
+            255.328125,
+            59
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 17,
+          "parent": 16,
+          "tag": "SPAN",
+          "role": null,
+          "text": "Freehand highlight",
+          "value": null,
+          "rect": [
+            47.8359375,
+            56,
+            135.4921875,
+            21
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 18,
+          "parent": 15,
+          "tag": "SPAN",
+          "role": null,
+          "text": "Great for scanned PDFs",
+          "value": null,
+          "rect": [
+            47.8359375,
+            81,
+            135.4921875,
+            18
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        },
+        {
+          "index": 21,
+          "parent": 20,
+          "tag": "BUTTON",
+          "role": null,
+          "text": null,
+          "value": null,
+          "rect": [
+            227.328125,
+            52,
+            32,
+            32
+          ],
+          "min": null,
+          "max": null,
+          "step": null,
+          "selected": null
+        }
+      ],
+      "sliderPaint": []
+    }
+  }
+}

@@ -1,0 +1,675 @@
+{
+  "scope": "Static shipped public HTML/CSS/JS artifacts only; no screenshot, browser/native UI action, API execution or account data. Parent owns live measurements and implementation.",
+  "artifacts": [
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/41qkw8tx6xv__.js",
+      "artifactSHA256": "e2cfaad50189d531b47f9bc383a5581ffba131e7d52d8b2f5d15029c34c5ce10",
+      "charStart": 14752,
+      "charEndExclusive": 21756,
+      "utf8Start": 14752,
+      "utf8EndExclusive": 21756,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/personal-share-dialog.source.js",
+      "excerptSHA256": "992f8c3637e12ac812c48830ee3adece6a9014edcbbf05218da25d16c087319f"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/23u_k5dyuv-q7.js",
+      "artifactSHA256": "10313286d83d06887590e4d6fea5ca9a8edc19c746b08ba2883edcf1f5210062",
+      "charStart": 14730,
+      "charEndExclusive": 17721,
+      "utf8Start": 14730,
+      "utf8EndExclusive": 17721,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-title.source.js",
+      "excerptSHA256": "fb0bfea3842e1cab54f0e1cc34d286dc5095d35a25308ae045ec6593e4e4ffb9"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/3chypc84dls8w.js",
+      "artifactSHA256": "0ca23343fb6e979d4e5ad41d2a21bdb1992d68378ee51a1f016ebc57c7fe4530",
+      "charStart": 50893,
+      "charEndExclusive": 51459,
+      "utf8Start": 50893,
+      "utf8EndExclusive": 51459,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-paper-blocks.source.js",
+      "excerptSHA256": "bf93d982bad23c7f892a34efbd38e46acb0fc19507676a9738e3e94afe5e77cf"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/0uoxhp5c5vxjv.css",
+      "artifactSHA256": "7e29cb321329bce59cc014fc069aa004d91184e5e71b7b6824eb29c1541eb44b",
+      "charStart": 2566,
+      "charEndExclusive": 5621,
+      "utf8Start": 2566,
+      "utf8EndExclusive": 5621,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-modal.css",
+      "excerptSHA256": "a8826c73ca87da017f4e788c695dab4cc5575a56130e785f828d50976e505e2f"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/0uoxhp5c5vxjv.css",
+      "artifactSHA256": "7e29cb321329bce59cc014fc069aa004d91184e5e71b7b6824eb29c1541eb44b",
+      "charStart": 6640,
+      "charEndExclusive": 8466,
+      "utf8Start": 6640,
+      "utf8EndExclusive": 8466,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-link-settings.css",
+      "excerptSHA256": "4ee9dad069c3484a898acc73b561b9c26e8fef6fbb33977b369cba0a4d4bdaa7"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/0q2-l0vc6bd8c.css",
+      "artifactSHA256": "467abfcefc3e35edd196003c81eb0cb7f5c6b499c4ee005d09b6191407bfcb2d",
+      "charStart": 5127,
+      "charEndExclusive": 6735,
+      "utf8Start": 5127,
+      "utf8EndExclusive": 6735,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-autocomplete.css",
+      "excerptSHA256": "26418afb288614aa60e720aabf60bfdc72a7b87452dd1114588212ca245e4cbc"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/0q2-l0vc6bd8c.css",
+      "artifactSHA256": "467abfcefc3e35edd196003c81eb0cb7f5c6b499c4ee005d09b6191407bfcb2d",
+      "charStart": 6735,
+      "charEndExclusive": 7776,
+      "utf8Start": 6735,
+      "utf8EndExclusive": 7776,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-link-footer.css",
+      "excerptSHA256": "f619031b0c0480bc5c34643d3f32a376093b5eef26ef3f356aa79f18fa3d5cb0"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/3i49j1_qur98m.css",
+      "artifactSHA256": "c5deb70e09c46be6e11d83aa94c7367e27fc80f717bd3fda12d98fae8295e7a5",
+      "charStart": 117442,
+      "charEndExclusive": 118454,
+      "utf8Start": 117442,
+      "utf8EndExclusive": 118454,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/sharee-list.css",
+      "excerptSHA256": "49178f86985374434b8ea14a0c675c7b3e0eb2c632fd3108b0ebd71bcb152769"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/13oun9t944hks.css",
+      "artifactSHA256": "56524e09ec9c0aac83d6a0fd9b1de4923f727f43bcca557596c02cbccd9b87d5",
+      "charStart": 69327,
+      "charEndExclusive": 72650,
+      "utf8Start": 69327,
+      "utf8EndExclusive": 72650,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-list-item.css",
+      "excerptSHA256": "73c7dfe3f84f7c50c2f68eb2a78438fbd3257b72fccf17d1b18fd8352521dd57"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/2n_vctikbumox.js",
+      "artifactSHA256": "6d3d73d18bd965c35f870246812ca9b364290b8537bf28ec21af55a9db2286de",
+      "charStart": 33300,
+      "charEndExclusive": 34870,
+      "utf8Start": 33300,
+      "utf8EndExclusive": 34870,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-permission-options.source.js",
+      "excerptSHA256": "a493ab1cddc3adf114ad5c27d55cb782dd463f41ed0b9dafd063fcd39b45b4f0"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/2n_vctikbumox.js",
+      "artifactSHA256": "6d3d73d18bd965c35f870246812ca9b364290b8537bf28ec21af55a9db2286de",
+      "charStart": 35500,
+      "charEndExclusive": 39100,
+      "utf8Start": 35500,
+      "utf8EndExclusive": 39100,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-autocomplete-state.source.js",
+      "excerptSHA256": "24f03fcb3919d49486a98a496fb35386c16f26fd3cda071306fa391b67b5247a"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/2n_vctikbumox.js",
+      "artifactSHA256": "6d3d73d18bd965c35f870246812ca9b364290b8537bf28ec21af55a9db2286de",
+      "charStart": 39400,
+      "charEndExclusive": 41100,
+      "utf8Start": 39400,
+      "utf8EndExclusive": 41100,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/invite-permission-selector.source.js",
+      "excerptSHA256": "d20da93484e291e6030a4fd4f1474b9d0d2dc8b79d8fca0d096776568bd80fea"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/2n_vctikbumox.js",
+      "artifactSHA256": "6d3d73d18bd965c35f870246812ca9b364290b8537bf28ec21af55a9db2286de",
+      "charStart": 43400,
+      "charEndExclusive": 46900,
+      "utf8Start": 43400,
+      "utf8EndExclusive": 46900,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-autocomplete-render.source.js",
+      "excerptSHA256": "55b56a90205e11bcc7bfee820fc58a3e2f581104b2a1bc71b562a9d74756493a"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/2n_vctikbumox.js",
+      "artifactSHA256": "6d3d73d18bd965c35f870246812ca9b364290b8537bf28ec21af55a9db2286de",
+      "charStart": 60785,
+      "charEndExclusive": 66931,
+      "utf8Start": 60785,
+      "utf8EndExclusive": 66931,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-member-row.source.js",
+      "excerptSHA256": "055cdcb3cab935bf85342df96ead51f144f92cef6be16e38cd8fa16aa65e40ba"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/2n_vctikbumox.js",
+      "artifactSHA256": "6d3d73d18bd965c35f870246812ca9b364290b8537bf28ec21af55a9db2286de",
+      "charStart": 50320,
+      "charEndExclusive": 54898,
+      "utf8Start": 50320,
+      "utf8EndExclusive": 54898,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-link-footer.source.js",
+      "excerptSHA256": "5b3470834f89993a6a3041417d8f668b2cf9034662e2abb282a852c7e1fca02f"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/3bdtzb0v98fmm.js",
+      "artifactSHA256": "f4cdd7b61604b060f625ccfd3c40f93bf10b1b84756a1941a10715d95b7792f2",
+      "charStart": 21349,
+      "charEndExclusive": 31134,
+      "utf8Start": 21350,
+      "utf8EndExclusive": 31139,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-link-settings.source.js",
+      "excerptSHA256": "9c7f79fe9d64c0ffcb2091c72a04bdb82d424151b6c944850cbc9ee9b3c150e9"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/2wlhxxp1u3z2q.js",
+      "artifactSHA256": "9524d773cfee5b5d5e8ff236caaa716c8b0b9b25a51d689805fcf692222c0139",
+      "charStart": 2461531,
+      "charEndExclusive": 2462272,
+      "utf8Start": 2466516,
+      "utf8EndExclusive": 2467257,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/sharing-role-icon-map.source.js",
+      "excerptSHA256": "ad1acb60af881ffe0cb892e99fb6037bb15779b1c6ef84d175651b3c2a54553b"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/1ym3byn1a-5ic.css",
+      "artifactSHA256": "39f675b8bdb7c97ca10249b0785fdc19977d6d9dc8641f4e6245af4dc0c1d9df",
+      "charStart": 1239,
+      "charEndExclusive": 2013,
+      "utf8Start": 1239,
+      "utf8EndExclusive": 2013,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/sharing-role-icon-wrapper.css",
+      "excerptSHA256": "c87e66db2c5d1e1e9e51289c6c3fe64a6260ded476ec9303495a27e1ee8bc4f9"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/340lzxi71x8e3.js",
+      "artifactSHA256": "43e4b7d29257f4a1934bffb064df07eb0419d25c2ad6354274c0eef5450f44fb",
+      "charStart": 37986,
+      "charEndExclusive": 40463,
+      "utf8Start": 37986,
+      "utf8EndExclusive": 40463,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/dialog-core.source.js",
+      "excerptSHA256": "8f7516e1661cedea2b4d8f373354c56bad18617b61919ba07da3ba14ceab1f4d"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 273585,
+      "charEndExclusive": 274159,
+      "utf8Start": 273585,
+      "utf8EndExclusive": 274159,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/dialog.css",
+      "excerptSHA256": "0b66e8f569d5dbe2f70694e194376c54e82792ada974576311d460f6bb8b50cc"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 280236,
+      "charEndExclusive": 283118,
+      "utf8Start": 280236,
+      "utf8EndExclusive": 283118,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/text-input.css",
+      "excerptSHA256": "f34bc1370034646b5d82f3234d7101248af72980d26f3db2e5d61d4738205487"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 358781,
+      "charEndExclusive": 361177,
+      "utf8Start": 358781,
+      "utf8EndExclusive": 361177,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-typography.css",
+      "excerptSHA256": "159b3393d315f31ccb6037fa998019b81079ef160a99ccfe184b51f4980b0236"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/23u_k5dyuv-q7.js",
+      "artifactSHA256": "10313286d83d06887590e4d6fea5ca9a8edc19c746b08ba2883edcf1f5210062",
+      "charStart": 6125,
+      "charEndExclusive": 12011,
+      "utf8Start": 6125,
+      "utf8EndExclusive": 12011,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/gear-sharing-settings.source.js",
+      "excerptSHA256": "a9a9de6a07200a3f29c4167b143ad6badac967ab1bce88640654e96a7dba8072"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/23u_k5dyuv-q7.js",
+      "artifactSHA256": "10313286d83d06887590e4d6fea5ca9a8edc19c746b08ba2883edcf1f5210062",
+      "charStart": 619,
+      "charEndExclusive": 4003,
+      "utf8Start": 619,
+      "utf8EndExclusive": 4003,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/document-action-permission.source.js",
+      "excerptSHA256": "adba49f45e5d250b033be0b6278c537e6c6d950e73e24e721aa381483c22cfa6"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/3i49j1_qur98m.css",
+      "artifactSHA256": "c5deb70e09c46be6e11d83aa94c7367e27fc80f717bd3fda12d98fae8295e7a5",
+      "charStart": 93492,
+      "charEndExclusive": 96463,
+      "utf8Start": 93492,
+      "utf8EndExclusive": 96463,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/gear-sharing-settings.css",
+      "excerptSHA256": "9dcb5e8446453fc3a361616d10a60b7e06f36b7302bd2d17db65064b4169865e"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/13yg61aihw9k8.css",
+      "artifactSHA256": "dc041491cdb7e01b62897500ed39a616a88052738108aabe2cfe8e20927a5abd",
+      "charStart": 4551,
+      "charEndExclusive": 4887,
+      "utf8Start": 4551,
+      "utf8EndExclusive": 4887,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/invite-message.css",
+      "excerptSHA256": "353d2239b521013e8ccf8c21a1a862ed649d68ee9fa0f362bf006d488e537a08"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/13u9fibag1vur.js",
+      "artifactSHA256": "1b805d5b66e244c9ee0127af2fb45a4618838d88ebfc3a400e42c1a76e744460",
+      "charStart": 59650,
+      "charEndExclusive": 63580,
+      "utf8Start": 59732,
+      "utf8EndExclusive": 63670,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-public-labels.source.js",
+      "excerptSHA256": "f53c72321f2964cedea7200f6d7a5e0da1c961eb26241216d97100d91e6d1a20"
+    },
+    {
+      "artifact": "research/lumin/toolbar-source/markup_files/13u9fibag1vur.js",
+      "artifactSHA256": "1b805d5b66e244c9ee0127af2fb45a4618838d88ebfc3a400e42c1a76e744460",
+      "charStart": 73695,
+      "charEndExclusive": 73930,
+      "utf8Start": 73792,
+      "utf8EndExclusive": 74029,
+      "excerpt": "research/lumin/toolbar-source/extracted/share-dialog/share-settings-public-labels.source.js",
+      "excerptSHA256": "92a50217eaf796d9778ade24a2112019ef4ec809875f26eb1cf4a2d8bae8dbde"
+    }
+  ],
+  "dialog": {
+    "width": 640,
+    "sizeToken": "--kiwi-sizing-dialogs-md",
+    "centered": true,
+    "background": "none",
+    "shadow": "none",
+    "padding": 0,
+    "withCloseButton": false,
+    "transition": "fade",
+    "focus": "custom react-focus-lock persistentFocus; returnFocus true by default; Mantine trapFocus/returnFocus disabled in favor of custom lock",
+    "outerHorizontalGutter": 16
+  },
+  "blocks": {
+    "top": {
+      "selector": "sc-dba4e592-7",
+      "padding": 24,
+      "radius": 16,
+      "surfaceRole": "--kiwi-colors-surface-surface-bright",
+      "shadow": "lg"
+    },
+    "bottom": {
+      "selector": "sc-dba4e592-9",
+      "padding": [
+        16,
+        24
+      ],
+      "marginTop": 8,
+      "radius": 16,
+      "surfaceRole": "--kiwi-colors-surface-surface-bright",
+      "shadow": "lg"
+    }
+  },
+  "heading": {
+    "type": "headline-lg",
+    "family": "PPAgrandir",
+    "size": 20,
+    "weight": 500,
+    "lineHeight": 28,
+    "fontURLFromCSS": "../media/PPAgrandir-Medium.20ow52u_g_kd4.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "title": "Share \"<local document name>\"",
+    "titleGap": 48,
+    "titleWrapperGap": 6,
+    "lineClamp": 2,
+    "slackBranchLineClamp": 1,
+    "headerButtons": {
+      "gear": "Phosphor GearIcon24 in IconButton lg40",
+      "slack": "original slack-logo.svg, optional branch",
+      "back": "kiwi ph-arrow-left24 in IconButton lg40, margin[-6,0,0,-10]"
+    }
+  },
+  "autocomplete": {
+    "beforeGap": 16,
+    "placeholder": "Enter email address",
+    "size": "lg",
+    "height": 40,
+    "padding": 8,
+    "radius": 8,
+    "icon": "kiwi search-lg24",
+    "font": {
+      "family": "Inter variable",
+      "size": 16,
+      "weight": 420,
+      "lineHeight": 24
+    },
+    "placeholderOpacity": 0.38,
+    "baseBorder": "1px outline-variant",
+    "hoverFocusBorder": "1px secondary",
+    "focusShadow": "0px1px2px secondary-container +0px0px0px input-box-shadow-width secondary-container",
+    "initialRole": "spectator",
+    "searchPopover": {
+      "offset": 6,
+      "width": "match input container",
+      "maxScrollHeight": 400,
+      "transition": "pop",
+      "loadingOpacity": 0.5
+    },
+    "searchSource": "read-only findUser API on mount and debounced query; no queries executed in this investigation",
+    "messageModeTrigger": "selected tags or any nonempty typed text",
+    "chips": {
+      "padding": 8,
+      "gap": 4,
+      "bottomBorder": "outline-variant, margin-bottom -1"
+    },
+    "permissionLine": {
+      "onlyWhen": "tags exist and message mode",
+      "marginTop": 8,
+      "gap": 2,
+      "prefix": "People invited:"
+    }
+  },
+  "people": {
+    "title": "People with access",
+    "titleFont": {
+      "family": "Inter variable",
+      "size": 14,
+      "weight": 420,
+      "lineHeight": 20
+    },
+    "titleColor": "surface-on-surface-low",
+    "containerPadding": [
+      8,
+      0
+    ],
+    "titlePadding": [
+      8,
+      0
+    ],
+    "listGap": 4,
+    "maxScrollHeight": 300,
+    "row": {
+      "padding": 8,
+      "radius": 8,
+      "gridGap": 8,
+      "layout": "1fr max-content",
+      "textStackGap": 2,
+      "avatarTextGap": 8,
+      "textMaxWidth": 400,
+      "rolePadding": [
+        8,
+        16
+      ],
+      "ownerOpacity": 0.38,
+      "hoverRole": "custom-role-web-surface-var-subtext at8%",
+      "pressedRole": "same at12%",
+      "disabledOpacity": 0.38,
+      "accountIdentity": "intentionally excluded; use local account/document content"
+    }
+  },
+  "sharingRoles": {
+    "menuWidth": 180,
+    "invitePlacement": "bottom-start",
+    "memberPlacement": "bottom-end",
+    "itemSize": "default regular, parent live verification required",
+    "hideCurrentRole": true,
+    "roles": [
+      {
+        "value": "spectator",
+        "label": "Can view",
+        "svg": "EyeIcon",
+        "iconSize": 20
+      },
+      {
+        "value": "viewer",
+        "label": "Can comment",
+        "svg": "ChatCircleTextIcon",
+        "iconSize": 20
+      },
+      {
+        "value": "editor",
+        "label": "Can edit",
+        "svg": "PencilSimpleIcon",
+        "iconSize": 20
+      },
+      {
+        "value": "sharer",
+        "label": "Can share",
+        "svg": "LinkSimpleIcon",
+        "iconSize": 20
+      }
+    ],
+    "iconWrapperPadding": 2,
+    "delete": {
+      "label": "Remove",
+      "svg": "TrashIcon",
+      "iconSize": 20,
+      "onlyWhen": "member menu canDelete true"
+    },
+    "nativeSafety": "Role clicks set local draft in invite/bulk/settings controls; existing-member role clicks invoke update callback and are NOT safe read-only probes."
+  },
+  "linkFooter": {
+    "heading": "Share link",
+    "layout": "space-between, align-center",
+    "leftGap": 4,
+    "description": "Only shared people can access with link, or public role-specific description",
+    "change": {
+      "label": "Change",
+      "fontWeight": 700,
+      "underline": true,
+      "color": "surface-on-surface-variant"
+    },
+    "copyButton": {
+      "label": "Copy link",
+      "copiedLabel": "Copied",
+      "variant": "tonal",
+      "size": "lg",
+      "backgroundRole": "surface-container-low",
+      "font": "Inter16/500/24 from generic large button"
+    },
+    "copyAction": "clipboard copy +local copied state +toast; no share-setting mutation",
+    "descriptionFont": "Inter variable14/420/20"
+  },
+  "linkSettings": {
+    "surface": "Paper,shadowlg,radius16,padding24",
+    "title": "Share with others or Share \u201c<local document>\u201d depending mode",
+    "back": "main-share title back control",
+    "sectionDivider": {
+      "height": 1,
+      "verticalMargin": 16,
+      "role": "surface-outline-variant"
+    },
+    "linkLabelType": "title-sm",
+    "inputRow": {
+      "marginTop": 8,
+      "gap": 16,
+      "grid": "auto max-content",
+      "inputReadonly": true,
+      "inputPaddingX": 6,
+      "copyButtonVariant": "outlined",
+      "copyButtonSize": "md"
+    },
+    "scopeMenu": {
+      "width": 216,
+      "position": "bottom-start",
+      "offset": 4,
+      "options": [
+        {
+          "label": "Restricted",
+          "value": "INVITED",
+          "glyph": "kiwi shield-md"
+        },
+        {
+          "label": "Anyone with the link",
+          "value": "ANYONE",
+          "glyph": "kiwi world-md"
+        }
+      ]
+    },
+    "publicRoleMenu": {
+      "onlyWhen": "scope ANYONE",
+      "width": 180,
+      "position": "top-end",
+      "options": [
+        {
+          "label": "Viewer",
+          "value": "SPECTATOR",
+          "glyph": "kiwi eye-md",
+          "description": "View only"
+        },
+        {
+          "label": "Commenter",
+          "value": "VIEWER",
+          "glyph": "kiwi message-circle-md",
+          "description": "View and comment"
+        },
+        {
+          "label": "Editor",
+          "value": "EDITOR",
+          "glyph": "kiwi pencil-md",
+          "description": "View, comment and edit"
+        }
+      ]
+    },
+    "descriptionFont": "body-md, surface-on-surface-variant",
+    "footer": {
+      "marginTop": 16,
+      "align": "end",
+      "doneWidth": 120,
+      "doneSize": "lg"
+    },
+    "draftState": {
+      "scopeClick": "eE(role) only React local linkType state",
+      "roleClick": "eb(role) only React local permission state",
+      "persistence": "Done eG\u2192eK invokes documentServices.updateShareSettingDocument({permission:eS,linkType:ex,documentId:...})",
+      "dismissal": "Back/cancel does not invoke persistence; dismiss draft without Done"
+    }
+  },
+  "gearSettings": {
+    "sourceModule": 492071,
+    "title": "Share settings when document-action permissions enabled, otherwise Bulk Update Permissions",
+    "paper": {
+      "padding": 24,
+      "radius": 16,
+      "columnGap": 16
+    },
+    "documentActionSelect": {
+      "label": "Who can export, print or copy the document",
+      "size": "lg",
+      "font": "Inter variable16/420/24",
+      "leftIcon": 24,
+      "optionIcon": 20,
+      "optionIconWrapperPadding": 2,
+      "options": [
+        "Anyone with document access",
+        "Sharers and editors",
+        "Sharers, editors and commenters"
+      ],
+      "optionRoles": [
+        [
+          "ANYONE"
+        ],
+        [
+          "SHARER",
+          "EDITOR"
+        ],
+        [
+          "SHARER",
+          "EDITOR",
+          "VIEWER"
+        ]
+      ]
+    },
+    "bulkTitleFont": "Inter16/500/24",
+    "bulkWrapper": {
+      "padding": [
+        10,
+        8,
+        12
+      ],
+      "radius": 8,
+      "surface": "surface-container-low"
+    },
+    "checkboxRow": {
+      "padding": [
+        6,
+        8
+      ],
+      "gap": 8,
+      "radius": 6,
+      "betweenMargin": 8
+    },
+    "permissionContainer": {
+      "gap": 2,
+      "justify": "space-between",
+      "disabledWhen": "no selected valid group"
+    },
+    "footer": {
+      "align": "end",
+      "gap": 16,
+      "cancelVariant": "outlined",
+      "size": "lg",
+      "submit": "Save changes when document-action setting enabled, otherwise Update"
+    },
+    "draftOnlyUntilSubmit": true,
+    "persistence": "Save/Update react-hook-form submit X(ec) invokes updateDocumentActionPermissionSettings and/or bulkUpdateSharingPermission"
+  },
+  "inviteMessage": {
+    "marginTop": 16,
+    "gap": 6,
+    "label": "Add a message (optional)",
+    "counter": "<length>/3000",
+    "maxLength": 3000,
+    "textareaHeight": 140,
+    "placeholder": "Your message here",
+    "footer": "Cancel + Share; Share disabled when transferring or no selected user tags",
+    "bottomLinkBlockHidden": true
+  },
+  "colors": {
+    "--kiwi-colors-surface-on-surface-low": {
+      "dark": "#8e9192",
+      "light": "#757779"
+    },
+    "--kiwi-colors-surface-outline-variant": {
+      "dark": "#42474a",
+      "light": "#d6dbde"
+    },
+    "--kiwi-colors-surface-surface-bright": {
+      "dark": "#282b2c",
+      "light": "#fff"
+    },
+    "--kiwi-colors-surface-on-surface": {
+      "dark": "#e1e2e4",
+      "light": "#191c1d"
+    },
+    "--kiwi-colors-surface-on-surface-variant": {
+      "dark": "#c2c7ca",
+      "light": "#42474a"
+    },
+    "--kiwi-colors-core-secondary": {
+      "dark": "#b2cad6",
+      "light": "#1c333d"
+    },
+    "--kiwi-colors-core-secondary-container": {
+      "dark": "#334a54",
+      "light": "#cde6f2"
+    },
+    "--kiwi-colors-core-on-secondary-container": {
+      "dark": "#cde6f2",
+      "light": "#051e27"
+    },
+    "--kiwi-colors-custom-role-web-surface-var-subtext": {
+      "dark": "#bccfdc",
+      "light": "#618298"
+    }
+  },
+  "unknowns": [
+    "Static source does not prove current dialog/control rectangles, wrapped title/member/description heights or effective platform fonts; parent live DOM fixtures are required.",
+    "Slack, request-access, external-recipient warning, offline/restricted-user and permission-denied branches remain condition-dependent.",
+    "Original avatar/account/document identities and fetched contacts are excluded.",
+    "Native shadow/text rasterization, responsive/mobile states and all hover/focus/pressed combinations require separate verification."
+  ]
+}

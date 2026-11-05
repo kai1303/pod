@@ -1,0 +1,79 @@
+[
+  {
+    "name": "link",
+    "source": "Original published Share SVG (live markup or /pdf-assets/reskin/lumin-svgs/slack-logo.svg)",
+    "svgSHA256": "8bdc5b95e973bd1edce6f7b9177f912756c7a987d710afe7a8aa82957a65a1cb",
+    "pngSHA256": "c8fe5815968956e50e5962129645b6cf0deb9027410da388fbd63a1dd28bfa6f",
+    "rasterScale": 4
+  },
+  {
+    "name": "world",
+    "source": "Original published Share SVG (live markup or /pdf-assets/reskin/lumin-svgs/slack-logo.svg)",
+    "svgSHA256": "322159220ac2857d45c61aa6d07cf82d77a7dfb2f49c444fc1604a7334100cc9",
+    "pngSHA256": "b977c646dea58ff0b955f478eec2e610640dfeaf888fb3c93c1aed3b146964d9",
+    "rasterScale": 4
+  },
+  {
+    "name": "gear",
+    "source": "Original published Share SVG (live markup or /pdf-assets/reskin/lumin-svgs/slack-logo.svg)",
+    "svgSHA256": "0b18b14be89c5042c7982491206b29e0e3081ff2e44773958e984093e430db2b",
+    "pngSHA256": "e787ea20d2b5734f84c8663436284db14cf68c20dbc42d16af66197dc3768308",
+    "rasterScale": 4
+  },
+  {
+    "name": "pencil",
+    "source": "Original published Share SVG (live markup or /pdf-assets/reskin/lumin-svgs/slack-logo.svg)",
+    "svgSHA256": "f7fa843569cbb7734f07439fb29a53e55b165d9ba9d22486d1fc3dc2f13ef80b",
+    "pngSHA256": "6e898f27c53e82d2c5565817501a11b6a5b3057f4573ff35ba744daf0797c3d0",
+    "rasterScale": 4
+  },
+  {
+    "name": "eye",
+    "source": "Original published Share SVG (live markup or /pdf-assets/reskin/lumin-svgs/slack-logo.svg)",
+    "svgSHA256": "43f9f9ba52100a7229a5fe2d68f1cb201d42dd59f188bbf9e3ff1e521821c362",
+    "pngSHA256": "ab1be14722f91544176867012f83a0118e10046558609ba96d91fb7e55a4d363",
+    "rasterScale": 4
+  },
+  {
+    "name": "comment",
+    "source": "Original published Share SVG (live markup or /pdf-assets/reskin/lumin-svgs/slack-logo.svg)",
+    "svgSHA256": "f2bb6e7914e173ac1459d6bdd8092469b7c21c594d02d4b1e5932c09d45e6435",
+    "pngSHA256": "1344b069b7f9710fd3b307e1fc5e1edbdb898649536dae83effcf992146f0540",
+    "rasterScale": 4
+  },
+  {
+    "name": "slack-logo",
+    "source": "Original published Share SVG (live markup or /pdf-assets/reskin/lumin-svgs/slack-logo.svg)",
+    "svgSHA256": "b201488e41f1c354dfcd436ded76324cf85616c331bbdcb9db15c0da095e92e7",
+    "pngSHA256": "ead784da98b6a5dbe6bcc7a66dcf24deda1f751719498d3e5c8fc7fc6bef86ff",
+    "rasterScale": 4
+  },
+  {
+    "name": "PPAgrandir-Medium",
+    "url": "https://static.luminpdf.com/_next/static/media/PPAgrandir-Medium.20ow52u_g_kd4.woff2?dpl=6eb20d7b02f4c149a4627b76b39d94e938d2de1f",
+    "woff2SHA256": "cc2b29f0c775f8b4bec2a2b4462866a4b8070cf5bc99b6020d9eb02a020392ab",
+    "otfSHA256": "1dfe14eda77feb693161d2facfa73e12d34574c68c46485be95124b95e13936a",
+    "legacyBytesIdentical": true
+  },
+  {
+    "name": "check",
+    "source": "Original live Share settings SVG",
+    "svgSHA256": "3e7781bc279d121c0b5e5c745248ad7cc0eb1bcb6e73aa5c51c31f6b1802aab9",
+    "pngSHA256": "65c2384d4f6800908fc98ece46f64ff7dd68daed5f44358d451ce8373c283666",
+    "rasterScale": 4
+  },
+  {
+    "name": "caret",
+    "source": "Original live Share settings SVG",
+    "svgSHA256": "a314a6c1c481e69eba632f2555aeb626efcd4d648cfbb7850963c0c35948ae7e",
+    "pngSHA256": "039b07cabd8dd9d1a0798e5d123796780d5b5677c4713aa7f275d44a4e3644be",
+    "rasterScale": 4
+  },
+  {
+    "name": "export-world",
+    "source": "Original live Share settings SVG",
+    "svgSHA256": "b903bc56754b0b9154748d718f7883da12025e8892f0dbc3a959221390fd3071",
+    "pngSHA256": "5787bca53ee94e1e6c70ab18ddcd24a053b044e847d185c82f8367a11aadc2e6",
+    "rasterScale": 4
+  }
+]

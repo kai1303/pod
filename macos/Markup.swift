@@ -49,11 +49,137 @@ struct Markup {
     var rect:CGRect
     var text:String=""
     var style:MarkupStyle
+    // Offsets into page-space points. An empty list denotes one continuous path.
+    var inkPathStarts: [Int] = []
+    var link: String = ""
+    var legacyInk = false
+    var importedInk = false
+    var inkLocked = false
+    var hasEditableText: Bool { kind == .ink || kind.isText || (kind.isTextMarkup && points.count >= 4) }
     func translated(x:CGFloat,y:CGFloat) -> Markup {
         var result=self; result.points=points.map{CGPoint(x:$0.x+x,y:$0.y+y)}; result.rect=rect.offsetBy(dx:x,dy:y); return result
     }
+    func rotated(by radians: CGFloat) -> Markup {
+        let box = geometryBounds
+        let cosine = cos(radians), sine = sin(radians)
+        var result = self
+        result.points = points.map { point in
+            let x = point.x-box.midX, y = point.y-box.midY
+            return CGPoint(x:box.midX+x*cosine-y*sine, y:box.midY+x*sine+y*cosine)
+        }
+        result.rect = result.geometryBounds
+        return result
+    }
+    private var inkRanges: [Range<Int>] {
+        let starts = inkPathStarts.isEmpty ? [0] : inkPathStarts
+        return zip(starts, starts.dropFirst() + [points.count]).map { $0..<$1 }
+    }
+    // Some PDF writers encode a dot as a move and line to the same point.
+    private func isDot(_ range: Range<Int>) -> Bool {
+        range.dropFirst().allSatisfy { points[$0] == points[range.lowerBound] }
+    }
+    private func inkLine(_ range: Range<Int>, transform: (CGPoint) -> CGPoint) -> CGPath {
+        let path = CGMutablePath()
+        path.move(to: transform(points[range.lowerBound]))
+        if legacyInk || importedInk || range.count <= 2 {
+            for i in range.dropFirst() { path.addLine(to:transform(points[i])) }
+        } else {
+            for i in (range.lowerBound+1)..<(range.upperBound-1) {
+                let control=transform(points[i]), next=transform(points[i+1])
+                let end=i == range.upperBound-2 ? next : CGPoint(x:(control.x+next.x)/2,y:(control.y+next.y)/2)
+                path.addQuadCurve(to:end,control:control)
+            }
+        }
+        return path
+    }
+    func inkOutline(width: CGFloat, transform: (CGPoint) -> CGPoint = { $0 }) -> CGPath {
+        let lines=CGMutablePath(), outline=CGMutablePath()
+        for range in inkRanges where !range.isEmpty {
+            if isDot(range) {
+                let center=transform(points[range.lowerBound])
+                outline.addEllipse(in:CGRect(x:center.x-width/2,y:center.y-width/2,width:width,height:width))
+            } else {
+                lines.addPath(inkLine(range,transform:transform))
+            }
+        }
+        outline.addPath(lines.copy(strokingWithWidth:width,lineCap:legacyInk ? .butt : .round,lineJoin:legacyInk ? .bevel : .round,miterLimit:1))
+        return outline
+    }
+
+    enum EraserResult { case unchanged, edited(Markup), removed, tooComplex }
+
+    func subtractingInk(_ brush: CGPath) -> EraserResult {
+        guard kind == .ink, !inkLocked,
+              geometryBounds.insetBy(dx:-0.01,dy:-0.01).intersects(brush.boundingBoxOfPath) else { return .unchanged }
+        var kept: [[CGPoint]] = []
+        var changed=false
+        for range in inkRanges where !range.isEmpty {
+            if isDot(range) {
+                if brush.contains(points[range.lowerBound]) { changed=true } else { kept.append(Array(points[range])) }
+                continue
+            }
+            let line=inkLine(range,transform:{ $0 })
+            if line.lineIntersection(brush).isEmpty {
+                kept.append(Array(points[range]))
+                continue
+            }
+            changed=true
+            let remainder=line.lineSubtracting(brush)
+            // Quartz clips the centerline. Preserve untouched paths verbatim and sample
+            // just the cut path to sub-point precision, keeping each lift separate.
+            var fragment: [CGPoint] = []
+            func finishFragment() {
+                guard !fragment.isEmpty else { return }
+                kept.append(fragment)
+                fragment=[]
+            }
+            remainder.flattened(threshold:0.15).applyWithBlock { raw in
+                let element=raw.pointee
+                switch element.type {
+                case .moveToPoint: finishFragment(); fragment=[element.points[0]]
+                case .addLineToPoint:
+                    if fragment.last != element.points[0] { fragment.append(element.points[0]) }
+                default: break
+                }
+            }
+            finishFragment()
+        }
+        guard changed else { return .unchanged }
+        guard !kept.isEmpty else { return .removed }
+        guard kept.reduce(0,{ $0+$1.count }) <= 4096 else { return .tooComplex }
+        var result=self
+        result.points=[]; result.inkPathStarts=[]
+        for path in kept {
+            if kept.count > 1 { result.inkPathStarts.append(result.points.count) }
+            result.points.append(contentsOf:path)
+        }
+        result.rect=result.geometryBounds
+        return .edited(result)
+    }
     func hitTest(_ p:CGPoint,tolerance:CGFloat) -> Bool {
-        if [.line,.arrow,.polyline,.ink,.freehandHighlight].contains(kind) {
+        if kind == .ink {
+            return inkOutline(width: style.width + 2*tolerance).contains(p)
+        }
+        if kind.isTextMarkup && points.count >= 4 && points.count.isMultiple(of: 4) {
+            for start in stride(from: 0, to: points.count, by: 4) {
+                var quad = Array(points[start..<(start + 4)])
+                func turn(_ a: CGPoint, _ b: CGPoint, _ c: CGPoint) -> CGFloat {
+                    (b.x-a.x)*(c.y-b.y) - (b.y-a.y)*(c.x-b.x)
+                }
+                if turn(quad[0], quad[1], quad[2]) * turn(quad[1], quad[2], quad[3]) < 0 { quad.swapAt(2, 3) }
+                var positive = false, negative = false
+                for j in quad.indices {
+                    let a = quad[j], b = quad[(j + 1) % 4]
+                    let cross = (b.x - a.x) * (p.y - a.y) - (b.y - a.y) * (p.x - a.x)
+                    let margin = tolerance * hypot(b.x - a.x, b.y - a.y)
+                    positive = positive || cross > margin
+                    negative = negative || cross < -margin
+                }
+                if !(positive && negative) { return true }
+            }
+            return false
+        }
+        if [.line,.arrow,.polyline,.freehandHighlight].contains(kind) {
             let radius=tolerance+style.width/2
             return zip(points,points.dropFirst()).contains { a,b in
                 let dx=b.x-a.x,dy=b.y-a.y,length=dx*dx+dy*dy

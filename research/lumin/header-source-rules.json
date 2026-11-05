@@ -1,0 +1,278 @@
+{
+  "scope": "Desktop document header from downloaded shipped public JS/CSS and saved DOM; no screenshots. Static CSS rules do not prove every runtime/permission state.",
+  "artifacts": [
+    {
+      "output": "document-header.css.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/0qwcgrq08z83b.js",
+      "artifactSHA256": "964f5557e4d435d204299da641cde06e2e48f6da8cac12195e66ac09fa76251b",
+      "charStart": 177898,
+      "charEndExclusive": 178820,
+      "utf8Start": 191389,
+      "utf8EndExclusive": 192311,
+      "excerptSHA256": "62897890d8e60ae3541c13666334236fc541ebb0099362db66e06aedc7f1840d"
+    },
+    {
+      "output": "document-title.css.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/1vmims6r5cffr.js",
+      "artifactSHA256": "641d0db6ce76196a3ec71d4bd55c3901e8f241faa5016b568d077405d17d34bd",
+      "charStart": 611324,
+      "charEndExclusive": 615112,
+      "utf8Start": 611503,
+      "utf8EndExclusive": 615291,
+      "excerptSHA256": "ee0d8353286a6311412d210e0d6427ac7093ad6eb26384315ca42abe0a1f6613"
+    },
+    {
+      "output": "header-controls.css.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/3rle7bu4r_pw0.js",
+      "artifactSHA256": "07b254a9f36bbab268da9cd07307f2659f455e77ac5f2896ce212fdf8818336a",
+      "charStart": 100890,
+      "charEndExclusive": 103117,
+      "utf8Start": 100892,
+      "utf8EndExclusive": 103119,
+      "excerptSHA256": "39cc0d577313f493cb433fd3c985d8c87145f1e10ed3c67372ebdd2dc0018a13"
+    },
+    {
+      "output": "navigation-status.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/13oun9t944hks.css",
+      "artifactSHA256": "56524e09ec9c0aac83d6a0fd9b1de4923f727f43bcca557596c02cbccd9b87d5",
+      "charStart": 56854,
+      "charEndExclusive": 60786,
+      "utf8Start": 56854,
+      "utf8EndExclusive": 60786,
+      "excerptSHA256": "f3a206014cfaebe89e571fece0ae470ae6110df2b47112f2621ad98f23d799ff"
+    },
+    {
+      "output": "share-button.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/2j0ups6p9q_ef.css",
+      "artifactSHA256": "c8d74a48ee8ce5ad7322c9fc6c3a9a19b844f78d0da08db5cfbbcba05362a3c9",
+      "charStart": 53939,
+      "charEndExclusive": 55127,
+      "utf8Start": 53939,
+      "utf8EndExclusive": 55127,
+      "excerptSHA256": "595ac4b2fcfb5c6a00920bfb17f2230c7f2eec014da4738685052dff02461034"
+    },
+    {
+      "output": "header-button-rules.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 253195,
+      "charEndExclusive": 253532,
+      "utf8Start": 253195,
+      "utf8EndExclusive": 253532
+    },
+    {
+      "output": "header-button-rules.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 250856,
+      "charEndExclusive": 250913,
+      "utf8Start": 250856,
+      "utf8EndExclusive": 250913
+    },
+    {
+      "output": "header-button-rules.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 258296,
+      "charEndExclusive": 258407,
+      "utf8Start": 258296,
+      "utf8EndExclusive": 258407
+    },
+    {
+      "output": "header-button-rules.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 262663,
+      "charEndExclusive": 262826,
+      "utf8Start": 262663,
+      "utf8EndExclusive": 262826
+    },
+    {
+      "output": "header-button-rules.css",
+      "artifact": "research/lumin/toolbar-source/markup_files/0hmqw_9wcmxid.css",
+      "artifactSHA256": "75101a49d66e7b12d08491a6c142d6bb26e7ea1da0f65487d4b0980057279e35",
+      "charStart": 278658,
+      "charEndExclusive": 278799,
+      "utf8Start": 278658,
+      "utf8EndExclusive": 278799
+    },
+    {
+      "output": "header-icon-button.source.js",
+      "artifact": "research/lumin/toolbar-source/markup_files/2wlhxxp1u3z2q.js",
+      "artifactSHA256": "9524d773cfee5b5d5e8ff236caaa716c8b0b9b25a51d689805fcf692222c0139",
+      "charStart": 1909192,
+      "charEndExclusive": 1911693,
+      "utf8Start": 1911545,
+      "utf8EndExclusive": 1914046,
+      "excerptSHA256": "69f457be27d9876c79ea26292f00816b6cabd5ac1226567d93521778f1ef71e3"
+    }
+  ],
+  "header": {
+    "selector": "#titleBar / sc-6ae5ac19-0",
+    "height": 56,
+    "padding": [
+      4,
+      8
+    ],
+    "display": "flex",
+    "justifyContent": "space-between",
+    "flexShrink": 0,
+    "backgroundRole": "--kiwi-colors-surface-surface-container-low",
+    "revisionBackgroundRole": "theme.kiwi_colors_surface_surface",
+    "focusMode": "opacity0,padding0,height0,visibility:hidden when shouldHideLuminTitleBar returns true",
+    "mobileHeight": 56
+  },
+  "left": {
+    "selector": "sc-a4be4f89-9",
+    "widthPercent": 50,
+    "display": "flex",
+    "alignItems": "center",
+    "gap": 4
+  },
+  "navigation": {
+    "selector": "NavigationHeader-module-scss-module__o4M3_q__container",
+    "paddingLeft": 12,
+    "paddingRight": 12,
+    "expandedWidthToken": "--lumin-left-side-bar-width-expanded",
+    "expandedPaddingLeft": 0,
+    "innerGap": 4,
+    "innerJustifyContent": "space-between",
+    "button": {
+      "size": 40,
+      "iconSize": 24,
+      "icon": "kiwi-icon-hamburger-md",
+      "foregroundRole": "--kiwi-colors-core-secondary"
+    }
+  },
+  "documentTitle": {
+    "containerHeight": 32,
+    "containerMinWidth": 40,
+    "borderRadius": 8,
+    "border": "1px solid transparent",
+    "hoverBorderRole": "theme.le_main_outline_variant",
+    "inputHeight": 30,
+    "inputMinWidth": 40,
+    "inputMaxWidth": "100%",
+    "inputHorizontalPadding": 8,
+    "inputBackground": "transparent!important",
+    "inputTextOverflow": "ellipsis",
+    "inputTypographyRole": "typographies.le_title_small",
+    "inputCapturedSizerTypography": {
+      "family": "Inter, sans-serif",
+      "size": 14,
+      "weight": 520,
+      "letterSpacing": "-0.685714%"
+    },
+    "foregroundRole": "theme.le_main_on_surface",
+    "focusOutline": "2px solid theme.le_main_secondary_container",
+    "focusBorder": "1px solid theme.le_main_secondary",
+    "focusBackgroundRole": "theme.le_main_surface_container"
+  },
+  "fileStatus": {
+    "maxHeight": 24,
+    "padding": 4,
+    "gap": 4,
+    "flexShrink": 0,
+    "borderRadius": 8,
+    "fontFamily": "var(--font-inter-variable),sans-serif",
+    "fontSize": 12,
+    "fontWeight": 500,
+    "lineHeight": 16,
+    "foregroundRole": "--kiwi-colors-surface-on-surface-variant",
+    "hoverBackgroundRole": "--kiwi-colors-surface-surface-container-high",
+    "allowHoverStateAttribute": "data-allow-hover-state=true",
+    "hiddenAtMaxViewportWidth": 767,
+    "icon": "pdf-icon-sm_time",
+    "iconSize": 16,
+    "restoreOriginal": "button inherits color/font, transparent background, zero padding/border, underline"
+  },
+  "right": {
+    "selector": "sc-7f86f949-7",
+    "display": "flex",
+    "alignItems": "center",
+    "height": "100%",
+    "gap": 12,
+    "helpNotificationGroup": {
+      "selector": "sc-7f86f949-3",
+      "gap": 2,
+      "alignItems": "center",
+      "hiddenBy": "mediaQueryDown.sm"
+    },
+    "divider": {
+      "height": 16,
+      "marginRight": 4
+    },
+    "avatarCapturedSize": 36,
+    "avatarContents": "account-dependent image/initials omitted"
+  },
+  "fileMenuHelpNotification": {
+    "baseButtonClass": "sc-77bdab6e-0",
+    "glyphSize": 20,
+    "icons": {
+      "fileMenu": "pdf-icon-md_more_horizontal_menu",
+      "help": "pdf-icon-md_status_question",
+      "notification": "pdf-icon-viewer-notification"
+    },
+    "fileMenuBackgroundRole": "--kiwi-colors-surface-surface-container",
+    "foregroundRole": "--kiwi-colors-surface-on-surface",
+    "disabledForegroundRole": "--kiwi-colors-surface-on-surface-disabled",
+    "fileMenuHover": "color-mix(in_srgb,var(--kiwi-colors-surface-on-surface)_8%,var(--kiwi-colors-surface-surface-container))",
+    "defaultSize": 32,
+    "padding": 4,
+    "borderRadius": 8,
+    "sizeVariants": {
+      "SM": 20,
+      "MD": 32,
+      "LG": 40
+    },
+    "activeMarkerWidth": 2,
+    "activeMarkerHeight": "60%"
+  },
+  "share": {
+    "groupDisplay": "flex",
+    "groupPosition": "relative",
+    "height": 40,
+    "fontSize": 16,
+    "fontWeight": 500,
+    "lineHeight": 24,
+    "iconSize": 24,
+    "labelGap": 8,
+    "horizontalPadding": 16,
+    "backgroundRole": "--kiwi-colors-core-primary-container",
+    "foregroundRole": "--kiwi-colors-core-on-secondary-container (inherited tonal compound20)",
+    "mainBorderRadius": [
+      8,
+      0,
+      0,
+      8
+    ],
+    "caretBorderRadius": [
+      0,
+      8,
+      8,
+      0
+    ],
+    "caretMarginLeft": 1,
+    "caretPadding": 8,
+    "icons": {
+      "main": "pdf-icon-md_not_shared",
+      "caret": "pdf-icon-md_arrow_down"
+    }
+  },
+  "newerDarkTokens": {
+    "surfaceContainerLow": "#191c1d",
+    "surfaceOnSurface": "#e1e2e4",
+    "surfaceOnSurfaceVariant": "#c2c7ca",
+    "surfaceContainerHigh": "#282b2c",
+    "surfaceOutline": "#8c9194",
+    "coreSecondary": "#b2cad6",
+    "corePrimaryContainer": "#087191",
+    "coreOnSecondaryContainer": "#cde6f2"
+  },
+  "unknowns": [
+    "Default desktop control rectangles were subsequently captured in header-layout-fixture.json; content-dependent title widths/baselines and other viewport states still require measurement.",
+    "Share menu, file menu, notifications, profile, status/version/history, navigation expanded state and mobile variants are not reconstructed or opened by this static-only pass.",
+    "Source header combines newer Kiwi CSS-token components with legacy styled-component roles; do not substitute one palette for all components.",
+    "Actual account avatar and document name/status timestamps are intentionally absent."
+  ]
+}

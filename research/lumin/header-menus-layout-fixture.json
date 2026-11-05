@@ -1,0 +1,760 @@
+{
+  "scope": "Default desktop source menus, clean DOM/CSS geometry and public labels only. No screenshot checks.",
+  "variants": [
+    {
+      "kind": "file",
+      "viewport": [
+        1512,
+        834
+      ],
+      "sourceRect": [
+        1041.734375,
+        52,
+        304,
+        451
+      ],
+      "triggerRect": [
+        1177.734375,
+        12,
+        32,
+        32
+      ],
+      "position": "bottom",
+      "gap": 8,
+      "rows": [
+        {
+          "rect": [
+            8,
+            8,
+            288,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(225, 226, 228)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "height": "32px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "opacity": "1",
+            "padding": "4px 8px",
+            "width": "288px"
+          },
+          "title": "Add to starred",
+          "iconRect": [
+            16,
+            12,
+            24,
+            24
+          ],
+          "glyph": "pdf-icon-md_star_document",
+          "labelRect": [
+            48,
+            14,
+            240,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            40,
+            288,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(225, 226, 228)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "height": "32px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "opacity": "1",
+            "padding": "4px 8px",
+            "width": "288px"
+          },
+          "title": "Make a copy",
+          "iconRect": [
+            16,
+            44,
+            24,
+            24
+          ],
+          "glyph": "pdf-icon-md_copy",
+          "labelRect": [
+            48,
+            46,
+            240,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            72,
+            288,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(225, 226, 228)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "height": "32px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "opacity": "1",
+            "padding": "4px 8px",
+            "width": "288px"
+          },
+          "title": "Move",
+          "iconRect": [
+            16,
+            76,
+            24,
+            24
+          ],
+          "glyph": "pdf-icon-md_move-1",
+          "labelRect": [
+            48,
+            78,
+            240,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            104,
+            288,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(225, 226, 228)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "height": "32px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "opacity": "1",
+            "padding": "4px 8px",
+            "width": "288px"
+          },
+          "title": "Download",
+          "iconRect": [
+            16,
+            108,
+            24,
+            24
+          ],
+          "glyph": "pdf-icon-md_download",
+          "labelRect": [
+            48,
+            110,
+            240,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            136,
+            288,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(225, 226, 228)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "height": "32px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "opacity": "1",
+            "padding": "4px 8px",
+            "width": "288px"
+          },
+          "title": "Save as template",
+          "iconRect": [
+            16,
+            140,
+            24,
+            24
+          ],
+          "bitmap": "Header/template",
+          "labelRect": [
+            48,
+            142,
+            240,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            185,
+            288,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(225, 226, 228)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "height": "32px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "opacity": "1",
+            "padding": "4px 8px",
+            "width": "288px"
+          },
+          "title": "Light Mode",
+          "iconRect": [
+            16,
+            189,
+            24,
+            24
+          ],
+          "glyph": "pdf-icon-md_lightmode",
+          "labelRect": [
+            48,
+            191,
+            240,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            217,
+            288,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(225, 226, 228)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "height": "32px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "opacity": "1",
+            "padding": "4px 8px",
+            "width": "288px"
+          },
+          "title": "Full screen",
+          "iconRect": [
+            16,
+            223,
+            20,
+            20
+          ],
+          "glyph": "pdf-icon-md_full_screen",
+          "labelRect": [
+            44,
+            223,
+            244,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            249,
+            288,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(225, 226, 228)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "height": "32px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "opacity": "1",
+            "padding": "4px 8px",
+            "width": "288px"
+          },
+          "title": "Dark page",
+          "iconRect": [
+            16,
+            253,
+            24,
+            24
+          ],
+          "bitmap": "Header/dark-page",
+          "labelRect": [
+            48,
+            255,
+            196,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            281,
+            288,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(225, 226, 228)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "height": "32px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "opacity": "1",
+            "padding": "4px 8px",
+            "width": "288px"
+          },
+          "title": "Presenter mode",
+          "iconRect": [
+            16,
+            285,
+            24,
+            24
+          ],
+          "glyph": "kiwi-icon-monitor-play",
+          "labelRect": [
+            48,
+            287,
+            179.4453125,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            330,
+            288,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(225, 226, 228)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "height": "32px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "opacity": "1",
+            "padding": "4px 8px",
+            "width": "288px"
+          },
+          "title": "File information",
+          "iconRect": [
+            16,
+            334,
+            24,
+            24
+          ],
+          "glyph": "pdf-icon-md_info",
+          "labelRect": [
+            48,
+            336,
+            240,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            362,
+            288,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(225, 226, 228)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "height": "32px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "opacity": "1",
+            "padding": "4px 8px",
+            "width": "288px"
+          },
+          "title": "Version history",
+          "iconRect": [
+            16,
+            366,
+            24,
+            24
+          ],
+          "glyph": "kiwi-icon-ph-clock-counter-clockwise",
+          "labelRect": [
+            48,
+            368,
+            240,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            411,
+            288,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(225, 226, 228)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "height": "32px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "opacity": "1",
+            "padding": "4px 8px",
+            "width": "288px"
+          },
+          "title": "Open in desktop app",
+          "iconRect": [
+            16,
+            415,
+            24,
+            24
+          ],
+          "bitmap": "Header/desktop",
+          "labelRect": [
+            48,
+            417,
+            240,
+            20
+          ]
+        }
+      ],
+      "dividers": [
+        [
+          8,
+          176,
+          288,
+          1
+        ],
+        [
+          8,
+          321,
+          288,
+          1
+        ],
+        [
+          8,
+          402,
+          288,
+          1
+        ]
+      ]
+    },
+    {
+      "kind": "share",
+      "viewport": [
+        1512,
+        834
+      ],
+      "sourceRect": [
+        1176.234375,
+        56,
+        194.7578125,
+        80
+      ],
+      "triggerRect": [
+        1331,
+        8,
+        40,
+        40
+      ],
+      "position": "bottom-end",
+      "gap": 8,
+      "rows": [
+        {
+          "rect": [
+            8,
+            8,
+            178.7578125,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "padding": "4px 8px"
+          },
+          "title": "Copy link",
+          "iconRect": [
+            16,
+            12,
+            24,
+            24
+          ],
+          "glyph": "kiwi-icon-link-lg",
+          "labelRect": [
+            48,
+            14,
+            130.7578125,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            40,
+            178.7578125,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "display": "flex",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "gap": "8px",
+            "lineHeight": "20px",
+            "margin": "0px",
+            "padding": "4px 8px"
+          },
+          "title": "Send for signatures",
+          "iconRect": [
+            16,
+            44,
+            24,
+            24
+          ],
+          "glyph": "kiwi-icon-send-lg",
+          "labelRect": [
+            48,
+            46,
+            130.7578125,
+            20
+          ]
+        }
+      ],
+      "dividers": []
+    },
+    {
+      "kind": "help",
+      "viewport": [
+        1512,
+        834
+      ],
+      "sourceRect": [
+        1335,
+        52,
+        141.765625,
+        112
+      ],
+      "triggerRect": [
+        1390,
+        12,
+        32,
+        32
+      ],
+      "position": "bottom",
+      "gap": 8,
+      "rows": [
+        {
+          "rect": [
+            8,
+            8,
+            125.765625,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "padding": "4px 8px"
+          },
+          "title": "Help center",
+          "labelRect": [
+            16,
+            14,
+            109.765625,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            40,
+            125.765625,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "padding": "4px 8px"
+          },
+          "title": "Contact Support",
+          "labelRect": [
+            16,
+            46,
+            109.765625,
+            20
+          ]
+        },
+        {
+          "rect": [
+            8,
+            72,
+            125.765625,
+            32
+          ],
+          "styles": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "boxShadow": "none",
+            "color": "rgb(225, 226, 228)",
+            "fontFamily": "Inter, arial, sans-serif, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "padding": "4px 8px"
+          },
+          "title": "Give Feedback",
+          "labelRect": [
+            16,
+            78,
+            109.765625,
+            20
+          ]
+        }
+      ],
+      "dividers": []
+    }
+  ],
+  "keyboardFocus": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "4px",
+    "boxShadow": "none",
+    "color": "rgb(225, 226, 228)",
+    "fontFamily": "Inter, arial, sans-serif, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "lineHeight": "20px",
+    "outline": "rgb(34, 139, 230) solid 2px",
+    "outlineOffset": "2px"
+  },
+  "badge": {
+    "cls": "Badge_badge__zn795i0 Badge_badge_size_sm__zn795i2 Badge_badge_variant_yellow__zn795i6 Badge_badge_rounded_false__zn795ic m_347db0ec mantine-Badge-root",
+    "rect": [
+      190.390625,
+      420,
+      36.6875,
+      16
+    ],
+    "styles": {
+      "backgroundColor": "rgb(231, 154, 0)",
+      "borderRadius": "4px",
+      "boxShadow": "none",
+      "color": "rgb(90, 67, 0)",
+      "fontFamily": "Inter, arial, sans-serif, sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "lineHeight": "16px",
+      "outline": "oklab(0.555523 0.0000253916 0.0000110865 / 0.5) none 3px",
+      "outlineOffset": "0px"
+    },
+    "text": "NEW"
+  }
+}
