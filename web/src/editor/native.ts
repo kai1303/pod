@@ -1,6 +1,9 @@
+import { deleteEaseSamples, pageTurnSamples } from "./pageSpring";
 import { useEffect, useState } from "react";
 
 export type EditorState = {
+  readingResults?: {request: string; truncated: boolean; rows: {page: number; kind: string; snippet: string; note: string}[]};
+  reflowPage?: {revision: string; page: number; paragraphs: string[]};
   previewRevision: string;
   thumbnailRevision?: string;
   thumbnailVersions?: Record<number, string>;
@@ -27,6 +30,12 @@ export type EditorState = {
   selectedAnnotation: number | string | null;
   editContext: string;
   selectionLocked: boolean;
+  selectionAppearanceLocked: boolean;
+  canAutoSizeText: boolean;
+  selectionTextLocked: boolean;
+  selectionTextLockReason: string;
+  selectionHasReplies: boolean;
+  eraserMode: "stroke" | "precision";
   eraserWidth: number;
   selectedKind: string | null;
   annotationLink: string | null;
@@ -72,7 +81,12 @@ const initial: EditorState = {
   selectedAnnotation: null,
   editContext: "",
   selectionLocked: false,
-  eraserWidth: 16,
+  selectionAppearanceLocked: false,
+  canAutoSizeText: false,
+  selectionTextLocked: false,
+  selectionTextLockReason: "",
+  selectionHasReplies: false,
+  eraserMode: "stroke", eraserWidth: 16,
   selectedKind: null,
   annotationLink: null,
   style: { stroke: "#4575B4", fill: null, opacity: 1, width: 2, fontSize: 14 },
@@ -97,7 +111,7 @@ export function useNativeEditor() {
         ...(event as CustomEvent<Partial<EditorState>>).detail,
       }));
     window.addEventListener("pod:state", receive);
-    nativeCommand("ready");
+    nativeCommand("ready", {pageTurnSamples, deleteEaseSamples});
     return () => window.removeEventListener("pod:state", receive);
   }, []);
   return { state, native, command: nativeCommand };

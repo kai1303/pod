@@ -45,6 +45,10 @@ fn writeNew(path: [*:0]const u8, bytes: []const u8) !void {
 fn quoted(a: A, out: *std.ArrayList(u8), text: []const u8) !void {
     try out.append(a, '"');
     for (text) |c| {
+        if (c < 32) {
+            try out.print(a, "\\u00{x:0>2}", .{c});
+            continue;
+        }
         if (c == '"' or c == '\\') try out.append(a, '\\');
         try out.append(a, c);
     }
@@ -62,6 +66,8 @@ fn inspectJson(a: A, doc: *pod.Document) ![]u8 {
             if (j != 0) try out.append(a, ',');
             try out.print(a, "{{\"id\":{d},\"text\":", .{run.id});
             try quoted(a, &out, run.text);
+            try out.appendSlice(a, ",\"font\":");
+            try quoted(a, &out, run.font.name());
             try out.print(a, ",\"x\":{d},\"y\":{d},\"font_size\":{d},\"advance\":{d}}}", .{ run.x, run.y, run.font_size, run.advance });
         }
         try out.appendSlice(a, "]}");

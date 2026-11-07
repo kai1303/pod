@@ -19,7 +19,7 @@ final class MetalPageView: MTKView {
         isPaused = true
         enableSetNeedsDisplay = true
         autoResizeDrawable = true
-        colorspace = CGColorSpaceCreateDeviceRGB()
+        colorspace = CGColorSpace(name: CGColorSpace.sRGB)!
     }
 
     required init(coder: NSCoder) { fatalError("Unsupported initializer") }

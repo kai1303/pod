@@ -4,19 +4,10 @@ const std = @import("std");
 const s = @import("syntax.zig");
 const d = @import("document.zig");
 const ann = @import("annotations.zig");
-const A = std.mem.Allocator;
 const eq = std.mem.eql;
 
-pub fn stream(a: A, obj: *d.Object, limit: usize) ![]const u8 {
-    const raw = obj.changed orelse obj.stream orelse return error.UnsupportedAnnotationAppearance;
-    const filter = s.get(obj.value, "Filter") orelse {
-        if (raw.len > limit) return error.AnnotationLimit;
-        return raw;
-    };
-    if (filter != .name or !eq(u8, filter.name, "FlateDecode") or s.get(obj.value, "DecodeParms") != null) return error.UnsupportedAnnotationAppearance;
-    var input: std.Io.Reader = .fixed(raw);
-    var decompress = std.compress.flate.Decompress.init(&input, .zlib, &.{});
-    return decompress.reader.allocRemaining(a, .limited(limit));
+pub fn stream(doc: *d.Document, obj: *d.Object, limit: usize) ![]const u8 {
+    return @import("filters.zig").decode(doc, obj, doc.allocator(), limit);
 }
 
 fn sameNumber(parser: *s.Parser, expected: f64) !void {
@@ -54,7 +45,7 @@ pub fn pdfKit(doc: *d.Document, form: *d.Object, data: []const u8, mark: *ann.An
     if (colorspace != .array or colorspace.array.len != 2 or colorspace.array[0] != .name or !eq(u8, colorspace.array[0].name, "ICCBased") or colorspace.array[1] != .ref) return error.UnsupportedAnnotationAppearance;
     const profile = try doc.object(colorspace.array[1].ref);
     const channels = try s.uint(s.get(profile.value, "N") orelse return error.UnsupportedAnnotationAppearance);
-    const icc = try stream(a, profile, 256 * 1024);
+    const icc = try stream(doc, profile, 256 * 1024);
     if (icc.len < 56) return error.UnsupportedAnnotationAppearance;
     if (channels == 3) {
         if (!eq(u8, icc[16..20], "RGB ") or !eq(u8, icc[48..56], "IEC sRGB")) return error.UnsupportedAnnotationAppearance;

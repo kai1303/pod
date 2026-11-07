@@ -2,6 +2,9 @@ pub const annotations = @import("annotations.zig");
 pub const syntax = @import("syntax.zig");
 pub const Document = @import("document.zig").Document;
 test {
+    _ = @import("annotation_appearance.zig");
+    _ = @import("forms_test.zig");
+    _ = @import("images_test.zig");
     _ = @import("page_tools.zig");
     _ = annotations;
     _ = @import("render.zig");
@@ -93,9 +96,9 @@ test "malformed and unsupported content rejects explicitly" {
         .{ "BT /F1 12 Tf [12 /bad] TJ ET", error.InvalidOperands },
         .{ "Q", error.GraphicsStackUnderflow },
         .{ "q", error.UnclosedGraphicsState },
-        .{ "BT /F1 12 Tf <FF> Tj ET", error.UnsupportedEncoding },
+        .{ "BT /F1 12 Tf <00> Tj ET", error.UnsupportedEncoding },
         .{ "BT /F1 12 Tf 7 Tr (x) Tj ET", error.UnsupportedTextRendering },
-        .{ "/X1 Do", error.UnsupportedOperator },
+        .{ "/X1 Do", error.MissingXObject },
         .{ "BT /F1 12 Tf 0 Tz (x) Tj ET", error.UnsupportedTextState },
         .{ "BT /F1 12 Tf 1e9 Tc ET", error.InvalidNumber },
     };
@@ -144,7 +147,10 @@ test "invalid xref offsets, lengths, missing references and cyclic page trees" {
         defer doc.deinit();
         const pages = try doc.inspect();
         const stream = pages[0].contents[0];
-        pages[0].contents = try doc.allocator().dupe(u32, &.{ stream, stream });
+        const repeated = try doc.allocator().alloc(syntax.Value, 2);
+        @memset(repeated, .{ .ref = .{ .id = stream, .generation = 0 } });
+        try doc.set(try doc.object(.{ .id = 3, .generation = 0 }), "Contents", .{ .array = repeated });
+        doc.pages = null;
         try std.testing.expectError(error.UnsupportedSharedContent, doc.replace(1, 0, "hi"));
     }
 }

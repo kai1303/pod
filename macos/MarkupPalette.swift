@@ -41,6 +41,7 @@ final class MarkupStyleView:NSView {
     private let widthInput=NSTextField(string:"2")
     private let opacityInput=NSTextField(string:"100")
     private let fontInput=NSTextField(string:"14")
+    private let allowsAutoFontSize:Bool
     private var fontRow:NSStackView?
     private var heightConstraint:NSLayoutConstraint?
     override var isFlipped:Bool { true }
@@ -50,7 +51,8 @@ final class MarkupStyleView:NSView {
         if kind == .freeText { return 80+opacityRow.rowHeight }
         return 32+(kind.isTextMarkup ? 16:8)+opacityRow.rowHeight
     }
-    init(kind:MarkupKind,style:MarkupStyle) {
+    init(kind:MarkupKind,style:MarkupStyle,allowsAutoFontSize:Bool=true) {
+        self.allowsAutoFontSize=allowsAutoFontSize && kind == .freeText
         self.kind=kind; self.style=style; contentWidth=kind == .ink ? 272:268
         let nested=[MarkupKind.highlight,.freehandHighlight].contains(kind)
         opacitySlider=LuminSlider(value:100,min:0,max:100,opacity:true,sourcePalette:true,height:nested ? 32:32.796875)
@@ -114,7 +116,8 @@ final class MarkupStyleView:NSView {
         strokeRow?.isHidden=fillMode
         widthSlider.doubleValue=style.width; widthInput.stringValue=String(format:"%g",style.width)
         opacitySlider.doubleValue=style.opacity*100; opacityInput.stringValue=String(format:"%.0f",style.opacity*100)
-        fontInput.stringValue=String(format:"%.0f",style.fontSize)
+        fontInput.stringValue=style.fontSize == 0 && allowsAutoFontSize ? "Auto":String(format:"%.0f",style.fontSize)
+        fontInput.placeholderString=allowsAutoFontSize ? "Auto or pt":nil
         let current=fillMode ? style.fill:style.stroke
         for (button,color) in zip(swatches.dropFirst(),presetColors) { button.swatch=color }
         if let current,!swatches.contains(where:{$0.swatch==current}) {
@@ -134,7 +137,12 @@ final class MarkupStyleView:NSView {
     }
     @objc private func widthChanged(_ sender:NSControl) { let value=sender.doubleValue; guard value>=0.1,value<=20 else { refresh(); return }; style.width=value.rounded(); changed() }
     @objc private func opacityChanged(_ sender:NSControl) { let value=(sender as? NSTextField).flatMap{Double($0.stringValue)} ?? (sender is NSTextField ? .nan:sender.doubleValue); guard value.isFinite else { refresh(); return }; style.opacity=min(100,max(0,value)).rounded()/100; changed() }
-    @objc private func fontChanged() { style.fontSize=min(72,max(6,fontInput.doubleValue)); changed() }
+    @objc private func fontChanged() {
+        if allowsAutoFontSize && fontInput.stringValue.trimmingCharacters(in:.whitespacesAndNewlines).lowercased() == "auto" { style.fontSize=0 }
+        else if let size=Double(fontInput.stringValue),size.isFinite { style.fontSize=allowsAutoFontSize && size == 0 ? 0:min(72,max(6,size)) }
+        else { refresh();return }
+        changed()
+    }
 }
 
 private final class LuminPaletteSurface:PodSurfaceView {
@@ -311,16 +319,27 @@ private final class LuminPaletteTab:NSButton {
 final class LuminEraserPalette:NSViewController {
     private(set) var size:Double
     var onChange:((Double)->Void)?
+    var onMode: ((Markup.EraserMode) -> Void)?
+    private var mode: Markup.EraserMode
     let slider:LuminSlider
-    init(size:Double=16) { self.size=size; slider=LuminSlider(value:size,min:8,max:32,sourcePalette:true); super.init(nibName:nil,bundle:nil) }
+    init(size:Double=16, mode:Markup.EraserMode = .stroke) { self.size=size; self.mode=mode; slider=LuminSlider(value:size,min:8,max:32,sourcePalette:true); super.init(nibName:nil,bundle:nil) }
     required init?(coder:NSCoder) { fatalError("init(coder:) is not supported") }
     override func loadView() {
-        let root=LuminPaletteSurface(); root.surface=PodTheme.raised; root.contentSize=NSSize(width:312,height:64)
+        let root=LuminPaletteSurface(); root.surface=PodTheme.raised; root.contentSize=NSSize(width:312,height:100)
         let row=LuminPaletteValueRow(slider:slider,input:NSTextField(),unit:"pt",hideInput:true)
         root.addSubview(row); row.translatesAutoresizingMaskIntoConstraints=false
         NSLayoutConstraint.activate([row.leadingAnchor.constraint(equalTo:root.leadingAnchor,constant:16),row.topAnchor.constraint(equalTo:root.topAnchor,constant:16),row.widthAnchor.constraint(equalToConstant:272)])
         slider.numberOfTickMarks=4; slider.allowsTickMarkValuesOnly=true; slider.setAccessibilityLabel("Eraser size"); slider.target=self; slider.action=#selector(change)
-        view=root; preferredContentSize=NSSize(width:312,height:64)
+        let modes=NSSegmentedControl(labels:["Whole stroke","Precision"],trackingMode:.selectOne,target:self,action:#selector(changeMode(_:)))
+        modes.selectedSegment=mode == .stroke ? 0:1
+        modes.setAccessibilityLabel("Eraser mode")
+        modes.frame=NSRect(x:16,y:56,width:280,height:28)
+        root.addSubview(modes)
+        view=root; preferredContentSize=NSSize(width:312,height:100)
+    }
+    @objc private func changeMode(_ sender:NSSegmentedControl) {
+        mode = sender.selectedSegment == 0 ? .stroke : .precision
+        onMode?(mode)
     }
     @objc private func change() { size=min(32,max(8,(slider.doubleValue/8).rounded()*8)); slider.doubleValue=size; onChange?(size) }
 }

@@ -37,16 +37,19 @@ struct ReactEditorTest {
         _=js("document.querySelector('[aria-label=\"Draw\"]').click();true")
         wait("native tool command",{commands.contains("tool")})
         _=js("document.querySelector('[aria-label=\"File menu\"]').dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowDown',bubbles:true}));true")
-        wait("native canvas yields to web menus",{scroll.isHidden})
+        wait("native page remains visible while preparing menu backdrop", { !scroll.isHidden && host.needsPageBackdrop })
+        host.setState(["image":"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",
+                       "imageFrame":["x":0,"y":0,"width":8,"height":8]])
+        wait("native canvas yields to web menus",{scroll.isHidden && host.needsPageBackdrop})
         assert(js("!!document.querySelector('[role=menu]')") as? Bool == true)
         _=js("document.querySelector('[role=menuitem]').click();true")
-        wait("native canvas returns after menu dismissal",{!scroll.isHidden})
+        wait("native canvas returns after menu dismissal",{!scroll.isHidden && !host.needsPageBackdrop})
         _=js("""
             document.querySelector('[aria-label="Page view"]').dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowDown',bubbles:true})); true
             """)
         wait("page view choices", { js("!!document.querySelector('[role=menuitemradio]')") as? Bool == true })
         _=js("Array.from(document.querySelectorAll('[role=menuitemradio]')).find(item => item.textContent.trim()==='Two pages').click();true")
-        wait("two-page spread appears", { js("document.querySelectorAll('.reading-grid [data-page]').length===2") as? Bool == true })
+        wait("two-page spread draws its own previews", { !host.needsPageBackdrop && js("document.querySelectorAll('.reading-grid [data-page]').length===2") as? Bool == true })
         _=js("document.querySelector('[role=menu]').dispatchEvent(new KeyboardEvent('keydown',{key:'Escape',bubbles:true}));true")
         _=js("document.querySelector('[aria-label=Select]').click();true")
         wait("native canvas restored after page view change", { !scroll.isHidden && js("!document.querySelector('.reading-pages, [data-transitioning]')") as? Bool == true })

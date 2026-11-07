@@ -34,6 +34,7 @@ final class NavigationPreviews {
         init(_ bytes: Data) { self.bytes = bytes }
     }
     private var snapshot: Snapshot?
+    private weak var displayIndex: PDFPageIndex?
     private var count = 0
     private(set) var revision = ""
     private var thumbnailRevision = ""
@@ -41,7 +42,14 @@ final class NavigationPreviews {
     private var renderer: Engine?
 
     func update(_ document: LoadedPDF, changedPage: Int? = nil, publish: @escaping ([String: Any]) -> Void) {
-        guard snapshot?.bytes != document.bytes else { return }
+        // Turning a page reuses its index. Comparing two different file
+        // mappings byte by byte here could fault their contents into RAM.
+        if let source = document.source {
+            guard displayIndex !== source else { return }
+        } else if snapshot?.bytes == document.bytes {
+            return
+        }
+        displayIndex = document.source
         snapshot = Snapshot(document.bytes)
         revision = UUID().uuidString
         let localEdit = changedPage != nil && count == document.pages.count && !thumbnailRevision.isEmpty
@@ -72,6 +80,11 @@ final class NavigationPreviews {
             return
         }
         prepare?.cancel()
+        prepare = nil
+        if document.source?.hasOutlines == false {
+            publish(state)
+            return
+        }
         let preparation = BlockOperation { [weak self] in
             let outlines = Self.outlines(in: data, count: pageCount)
             DispatchQueue.main.async { if self?.thumbnailRevision == token { publish(["outlines": outlines]) } }

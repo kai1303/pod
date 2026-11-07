@@ -6,6 +6,7 @@ pub fn build(b: *std.Build) void {
     const exe = b.addExecutable(.{ .name = "pod", .root_module = b.createModule(.{ .root_source_file = b.path("src/main.zig"), .target = target, .optimize = optimize, .link_libc = true, .strip = optimize != .debug }) });
     exe.root_module.addImport("pod", mod);
     b.installArtifact(exe);
+    b.installFile("assets/font-metrics/NOTICE", "share/pod/FontMetricsNotices.txt");
     const bridge = b.addLibrary(.{ .name = "pod_native", .linkage = .static, .root_module = b.createModule(.{ .root_source_file = b.path("src/c_api.zig"), .target = target, .optimize = optimize, .link_libc = true, .strip = optimize != .debug }) });
     b.installArtifact(bridge);
     const tests = b.addTest(.{ .root_module = mod });

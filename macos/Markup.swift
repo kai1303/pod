@@ -11,7 +11,7 @@ enum MarkupKind: UInt32, CaseIterable {
     var isFreehand: Bool { self == .ink || self == .freehandHighlight }
     var isText: Bool { self == .freeText || self == .comment }
     var hint: String {
-        if isTextMarkup { return "Click a text line, or drag across lines, to mark them." }
+        if isTextMarkup { return "Click a word or drag across a passage to mark it." }
         if self == .polyline || self == .polygon { return "Click to add points. Double-click or press Return to finish. Escape cancels." }
         if self == .freeText { return "Click the page to place text. Edit it in the inspector." }
         if self == .comment { return "Click the page to leave a comment." }
@@ -42,6 +42,17 @@ struct MarkupStyle {
         opacity=c.opacity; width=c.width; fontSize=c.font_size
     }
 }
+struct CommentInfo {
+    var author = ""
+    var subject = ""
+    var initiallyOpen = false
+    var popupRect: CGRect? = nil
+    var richText = false
+    var replyTo: UInt32 = 0
+    var threadRoot: UInt32 = 0
+    var reviewState = ""
+    var stateModel = ""
+}
 struct Markup {
     var id: UInt32=0
     var kind: MarkupKind
@@ -53,9 +64,28 @@ struct Markup {
     var inkPathStarts: [Int] = []
     var link: String = ""
     var legacyInk = false
+    var importedComment = false
+    var importedShape = false
+    var importedFreeText = false
+    var freeTextEditable = false
+    var shapeEditable = false
+    var hasCaption = false
+    var comment = CommentInfo()
+    var canMove: Bool { !inkLocked && !importedComment }
+    var canChangeAppearance: Bool { canMove && (!importedFreeText || freeTextEditable) && (!importedShape || shapeEditable) }
     var importedInk = false
     var inkLocked = false
-    var hasEditableText: Bool { kind == .ink || kind.isText || (kind.isTextMarkup && points.count >= 4) }
+    var hasReplies = false
+    var canDelete: Bool { !inkLocked && !hasReplies }
+    var canEditContents: Bool { hasEditableText && contentsLockReason == nil }
+    var contentsLockReason: String? {
+        if inkLocked { return "This annotation is locked." }
+        if importedFreeText && !freeTextEditable { return "This text box’s original formatting is preserved. Text editing is not supported yet." }
+        if comment.richText { return "Rich-text note editing is not supported yet." }
+        if hasCaption && !shapeEditable { return "This caption's original appearance is preserved. Text editing is not supported yet." }
+        return nil
+    }
+    var hasEditableText: Bool { importedShape || kind == .ink || kind.isText || kind.isTextMarkup }
     func translated(x:CGFloat,y:CGFloat) -> Markup {
         var result=self; result.points=points.map{CGPoint(x:$0.x+x,y:$0.y+y)}; result.rect=rect.offsetBy(dx:x,dy:y); return result
     }
@@ -81,7 +111,7 @@ struct Markup {
     private func inkLine(_ range: Range<Int>, transform: (CGPoint) -> CGPoint) -> CGPath {
         let path = CGMutablePath()
         path.move(to: transform(points[range.lowerBound]))
-        if legacyInk || importedInk || range.count <= 2 {
+        if kind == .freehandHighlight || legacyInk || importedInk || range.count <= 2 {
             for i in range.dropFirst() { path.addLine(to:transform(points[i])) }
         } else {
             for i in (range.lowerBound+1)..<(range.upperBound-1) {
@@ -92,28 +122,39 @@ struct Markup {
         }
         return path
     }
-    func inkOutline(width: CGFloat, transform: (CGPoint) -> CGPoint = { $0 }) -> CGPath {
-        let lines=CGMutablePath(), outline=CGMutablePath()
-        for range in inkRanges where !range.isEmpty {
-            if isDot(range) {
-                let center=transform(points[range.lowerBound])
-                outline.addEllipse(in:CGRect(x:center.x-width/2,y:center.y-width/2,width:width,height:width))
-            } else {
-                lines.addPath(inkLine(range,transform:transform))
-            }
+    private func inkOutline(_ range: Range<Int>, width: CGFloat, transform: (CGPoint) -> CGPoint) -> CGPath {
+        if isDot(range) {
+            let center = transform(points[range.lowerBound])
+            return CGPath(ellipseIn: CGRect(x: center.x-width/2, y: center.y-width/2, width: width, height: width), transform: nil)
         }
-        outline.addPath(lines.copy(strokingWithWidth:width,lineCap:legacyInk ? .butt : .round,lineJoin:legacyInk ? .bevel : .round,miterLimit:1))
+        return inkLine(range, transform: transform).copy(strokingWithWidth: width,
+            lineCap: legacyInk || kind == .freehandHighlight ? .butt : .round, lineJoin: kind == .freehandHighlight ? .miter : legacyInk ? .bevel : .round, miterLimit: 1)
+    }
+    func inkOutline(width: CGFloat, transform: (CGPoint) -> CGPoint = { $0 }) -> CGPath {
+        let outline = CGMutablePath()
+        for range in inkRanges where !range.isEmpty { outline.addPath(inkOutline(range, width: width, transform: transform)) }
         return outline
     }
 
     enum EraserResult { case unchanged, edited(Markup), removed, tooComplex }
 
-    func subtractingInk(_ brush: CGPath) -> EraserResult {
-        guard kind == .ink, !inkLocked,
-              geometryBounds.insetBy(dx:-0.01,dy:-0.01).intersects(brush.boundingBoxOfPath) else { return .unchanged }
+    enum EraserMode: String { case stroke, precision }
+
+    func subtractingInk(_ brush: CGPath, mode: EraserMode = .precision, onStrokeHit: ((CGPath) -> Void)? = nil) -> EraserResult {
+        let padding = mode == .stroke ? style.width / 2 + 0.01 : 0.01
+        guard kind.isFreehand, !inkLocked,
+              geometryBounds.insetBy(dx:-padding,dy:-padding).intersects(brush.boundingBoxOfPath) else { return .unchanged }
         var kept: [[CGPoint]] = []
         var changed=false
         for range in inkRanges where !range.isEmpty {
+            if mode == .stroke {
+                let outline = inkOutline(range, width: style.width, transform: { $0 })
+                if outline.intersects(brush) {
+                    changed = true
+                    onStrokeHit?(outline)
+                } else { kept.append(Array(points[range])) }
+                continue
+            }
             if isDot(range) {
                 if brush.contains(points[range.lowerBound]) { changed=true } else { kept.append(Array(points[range])) }
                 continue
@@ -130,6 +171,7 @@ struct Markup {
             var fragment: [CGPoint] = []
             func finishFragment() {
                 guard !fragment.isEmpty else { return }
+                if kind == .freehandHighlight && !Self.hasDrawnExtent(fragment, threshold: 0) { fragment = []; return }
                 kept.append(fragment)
                 fragment=[]
             }
@@ -156,8 +198,23 @@ struct Markup {
         result.rect=result.geometryBounds
         return .edited(result)
     }
+    // Pod highlighters store one continuous PDF path per annotation.
+    // Keep the original ID on the first surviving piece of a precision cut.
+    var erasedFragments: [Markup] {
+        guard kind == .freehandHighlight, !inkPathStarts.isEmpty else { return [self] }
+        return inkRanges.enumerated().map { index, range in
+            var fragment = self
+            fragment.id = index == 0 ? id : 0
+            fragment.inkPathStarts = []
+            fragment.points = Array(points[range])
+            fragment.rect = fragment.geometryBounds
+            return fragment
+        }
+    }
+
     func hitTest(_ p:CGPoint,tolerance:CGFloat) -> Bool {
-        if kind == .ink {
+        if importedShape { return rect.insetBy(dx:-tolerance,dy:-tolerance).contains(p) }
+        if kind.isFreehand {
             return inkOutline(width: style.width + 2*tolerance).contains(p)
         }
         if kind.isTextMarkup && points.count >= 4 && points.count.isMultiple(of: 4) {
@@ -194,6 +251,7 @@ struct Markup {
         return points.dropFirst().contains { hypot($0.x-first.x,$0.y-first.y)>threshold }
     }
     var geometryBounds:CGRect {
+        if importedShape { return rect }
         guard let p=points.first else { return rect }
         return points.dropFirst().reduce(CGRect(x:p.x,y:p.y,width:0,height:0)) { r,p in
             let x=min(r.minX,p.x),y=min(r.minY,p.y)

@@ -75,7 +75,7 @@ private func close(_ a:CGFloat,_ b:CGFloat)->Bool { abs(a-b)<0.03 }
         let expected=palettes["highlight-menu"]!["size"] as! [Double]
         precondition(close(highlight.preferredContentSize.width,expected[0]) && close(highlight.preferredContentSize.height,expected[1]))
         let eraser=LuminEraserPalette(); _ = eraser.view; eraser.view.frame=NSRect(origin:.zero,size:eraser.preferredContentSize); eraser.view.layoutSubtreeIfNeeded()
-        precondition(eraser.preferredContentSize==NSSize(width:312,height:64) && eraser.slider.numberOfTickMarks==4)
+        precondition(eraser.preferredContentSize==NSSize(width:312,height:100) && eraser.slider.numberOfTickMarks==4)
         precondition(eraser.slider.minValue==8 && eraser.slider.maxValue==32 && eraser.slider.allowsTickMarkValuesOnly)
         compare(topRect(eraser.slider,in:eraser.view),NSRect(x:56,y:16,width:232,height:32),"Eraser slider parent")
         eraser.slider.doubleValue=24; _ = eraser.slider.sendAction(eraser.slider.action,to:eraser.slider.target); precondition(eraser.size==24)

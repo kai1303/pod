@@ -44,10 +44,15 @@ final class ReactEditor:NSView,WKScriptMessageHandler,WKNavigationDelegate {
     let webView:WKWebView
     let canvasScroll:NSScrollView
     var onCommand:((String,[String:Any])->Void)?
+    var onDeleteEase: (([Double]) -> Void)?
     var onViewportChange:(()->Void)?
+    private(set) var needsPageBackdrop = false
+    private var pageTurnSamples: [Double] = []
     private var ready=false
     private var latest:[String:Any]=[:]
     private var clipObserver:NSObjectProtocol?
+    private var wheelMonitor: Any?
+    private var readingWheel = false
     override var isFlipped:Bool { true }
     init(resources:URL,canvas:NSScrollView) {
         canvasScroll=canvas
@@ -68,9 +73,36 @@ final class ReactEditor:NSView,WKScriptMessageHandler,WKNavigationDelegate {
         canvas.contentView.postsBoundsChangedNotifications=true
         webView.load(URLRequest(url:URL(string:"pod-ui://editor/index.html")!))
     }
+    override func viewDidMoveToWindow() {
+        super.viewDidMoveToWindow()
+        if let wheelMonitor { NSEvent.removeMonitor(wheelMonitor); self.wheelMonitor = nil }
+        guard window != nil else { return }
+        wheelMonitor = NSEvent.addLocalMonitorForEvents(matching: .scrollWheel) { [weak self] event in
+            guard let self, self.readingWheel, event.window === self.window,
+                  !event.hasPreciseScrollingDeltas, event.scrollingDeltaX == 0, event.scrollingDeltaY != 0,
+                  event.modifierFlags.intersection([.command, .control, .option, .shift]).isEmpty,
+                  self.canvasScroll.frame.contains(self.convert(event.locationInWindow, from: nil)) else { return event }
+            // WebKit normalizes wheel ticks to pixels. Preserve their line units for the reader.
+            self.webView.callAsyncJavaScript("""
+                document.querySelector('.reading-pages[data-continuous="true"]')?.dispatchEvent(
+                  new WheelEvent('wheel', {deltaY: lines, deltaMode: 1, cancelable: true}));
+                """, arguments: ["lines": -event.scrollingDeltaY], in: nil, in: .page, completionHandler: nil)
+            return nil
+        }
+    }
     required init?(coder:NSCoder) { fatalError("init(coder:) is not supported") }
-    deinit { if let clipObserver { NotificationCenter.default.removeObserver(clipObserver) }; webView.configuration.userContentController.removeScriptMessageHandler(forName:"pod") }
+    deinit { if let wheelMonitor { NSEvent.removeMonitor(wheelMonitor) }; if let clipObserver { NotificationCenter.default.removeObserver(clipObserver) }; webView.configuration.userContentController.removeScriptMessageHandler(forName:"pod") }
     override func layout() { super.layout(); webView.frame=bounds }
+    func animatePageTurn(forward: Bool) {
+        guard !canvasScroll.isHidden, !pageTurnSamples.isEmpty,
+              !NSWorkspace.shared.accessibilityDisplayShouldReduceMotion, let page = canvasScroll.documentView else { return }
+        page.wantsLayer = true
+        let slide = CAKeyframeAnimation(keyPath: "transform.translation.x")
+        let offset = forward ? 10.0 : -10.0
+        slide.values = pageTurnSamples.map { (1 - $0) * offset }
+        slide.duration = 0.2
+        page.layer?.add(slide, forKey: "pageTurn")
+    }
     func setState(_ state:[String:Any]) {
         latest.merge(state,uniquingKeysWith:{$1})
         guard ready else { return }
@@ -79,17 +111,27 @@ final class ReactEditor:NSView,WKScriptMessageHandler,WKNavigationDelegate {
     func userContentController(_ controller:WKUserContentController,didReceive message:WKScriptMessage) {
         guard message.frameInfo.isMainFrame,let url=message.frameInfo.request.url,url.scheme=="pod-ui",url.host=="editor",let body=message.body as? [String:Any],let command=body["command"] as? String else { return }
         let data=body["data"] as? [String:Any] ?? [:]
-        if command=="ready" { ready=true; setState(latest); onViewportChange?(); return }
+        if command=="ready" {
+            if let samples = data["deleteEaseSamples"] as? [Double], (2...120).contains(samples.count),
+               samples.first == 0, samples.last == 1, samples.allSatisfy({ (0...1).contains($0) }) {
+                onDeleteEase?(samples)
+            }
+            if let samples = data["pageTurnSamples"] as? [Double], (2...120).contains(samples.count),
+               samples.allSatisfy({ (0...1).contains($0) }) { pageTurnSamples = samples }
+            ready=true; setState(latest); onViewportChange?(); return
+        }
         if command=="layout" {
             guard let x=data["x"] as? Double,let y=data["y"] as? Double,let width=data["width"] as? Double,let height=data["height"] as? Double,[x,y,width,height].allSatisfy({$0.isFinite}),width>=0,height>=0 else { return }
             let rect=NSRect(x:x,y:y,width:width,height:height).intersection(bounds)
+            readingWheel = data["readingWheel"] as? Bool ?? false
+            needsPageBackdrop = data["backdrop"] as? Bool ?? (data["overlay"] as? Bool ?? false)
             canvasScroll.frame=rect.isNull ? .zero:rect
             canvasScroll.isHidden=(data["overlay"] as? Bool ?? false) || rect.isNull || width<1 || height<1
             onViewportChange?(); return
         }
         onCommand?(command,data)
     }
-    func webView(_ webView:WKWebView,didStartProvisionalNavigation navigation:WKNavigation!) { ready=false; canvasScroll.isHidden=true }
+    func webView(_ webView:WKWebView,didStartProvisionalNavigation navigation:WKNavigation!) { ready=false; readingWheel=false; canvasScroll.isHidden=true }
     func webView(_ webView:WKWebView,decidePolicyFor navigationAction:WKNavigationAction,decisionHandler:@escaping (WKNavigationActionPolicy)->Void) {
         guard let url=navigationAction.request.url else { decisionHandler(.cancel); return }
         let allowed=url.scheme=="pod-ui" && url.host=="editor"

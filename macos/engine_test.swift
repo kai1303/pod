@@ -58,6 +58,15 @@ import PDFKit
         let retry = try engine.turnPage(readable, page: 0, width: 612)
         precondition(retry.pixels.data == first.pixels.data)
 
+        var missingStream = original
+        let ref = missingStream.range(of: Data("/Contents 7 0 R".utf8))!
+        missingStream.replaceSubrange(ref, with: Data("/Contents 0 0 R".utf8))
+        let intactPage = try engine.openPage(missingStream, page: 0, width: 612)
+        do {
+            _ = try engine.turnPage(intactPage, page: 1, width: 612)
+            preconditionFailure("Expected missing page contents to fail on navigation")
+        } catch is EngineError {}
+
         let mark = Markup(kind: .ink, points: [.init(x: 35, y: 60), .init(x: 65, y: 90)], rect: .zero, style: .initial(for: .ink))
         let edited = try engine.annotate(original, page: 1, marks: [mark])
         let revision = try engine.openPage(edited, page: 0, width: 612)
@@ -65,6 +74,22 @@ import PDFKit
         let reference = try engine.load(edited, page: 1, width: 612)
         precondition(revision.source !== first.source && annotated.pixels.data == reference.pixels.data)
         precondition(annotated.pages[1].annotations.first?.points == mark.points)
+    }
+
+    static func checkFileSnapshot(_ engine: Engine, _ original: Data) throws {
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        defer { try? FileManager.default.removeItem(at: url) }
+        var large = original
+        large.append(Data(repeating: 32, count: 256 * 1024))
+        try large.write(to: url)
+        let first = try engine.openPage(Engine.read(url), page: 0, width: 160)
+        let writer = try FileHandle(forWritingTo: url)
+        try writer.truncate(atOffset: 0)
+        try writer.close()
+        let second = try engine.turnPage(first, page: 1, width: 160)
+        precondition(second.bytes == large)
+        let expected = try engine.openPage(original, page: 1, width: 160)
+        precondition(second.pixels.data == expected.pixels.data)
     }
 
     static func main() throws {
@@ -80,6 +105,7 @@ import PDFKit
         let engine=try Engine()
         let original=try Engine.read(URL(fileURLWithPath:CommandLine.arguments[1]))
         try checkIndexedReading(engine, original)
+        try checkFileSnapshot(engine, original)
         try checkStandardInk(engine,original)
         try checkStrokeHistory(engine,original)
         let loaded=try engine.load(original,page:0,width:612)
@@ -257,6 +283,26 @@ import PDFKit
         }
         precondition(withoutDot.points == Array(mark.points.prefix(3)) && withoutDot.inkPathStarts.isEmpty)
 
+        let crossing = CGPath(ellipseIn: CGRect(x: mark.points[1].x-2, y: mark.points[1].y-2, width: 4, height: 4), transform: nil)
+        guard case .edited(let onlyDot) = mark.subtractingInk(crossing, mode: .stroke),
+              onlyDot.points == Array(mark.points.dropFirst(3)), onlyDot.id == mark.id else {
+            preconditionFailure("Touching one path must preserve its untouched sibling in the imported ink annotation")
+        }
+        for kind in [MarkupKind.rectangle, .comment] {
+            var nonInk = mark; nonInk.kind = kind
+            guard case .unchanged = nonInk.subtractingInk(crossing, mode: .stroke) else { preconditionFailure("Eraser removed a non-ink annotation") }
+        }
+        let marker = Markup(kind: .freehandHighlight, points: [CGPoint(x: 30, y: 120), CGPoint(x: 190, y: 120)],
+                            rect: .zero, style: .initial(for: .freehandHighlight))
+        let marked = try engine.annotate(bytes, page: 0, marks: [marker])
+        let savedMarker = try engine.load(marked, page: 0, width: 612).pages[0].annotations.first { $0.kind == .freehandHighlight }!
+        let cut = CGPath(rect: CGRect(x: 98, y: 100, width: 16, height: 40), transform: nil)
+        guard case .removed = savedMarker.subtractingInk(cut, mode: .stroke),
+              case .edited(let split) = savedMarker.subtractingInk(cut) else { preconditionFailure("Expected a cut across the highlighter") }
+        let cutPDF = try engine.annotate(marked, page: 0, marks: split.erasedFragments)
+        let pieces = try engine.load(cutPDF, page: 0, width: 612).pages[0].annotations.filter { $0.kind == .freehandHighlight }
+        precondition(pieces.count == 2 && pieces[0].id == savedMarker.id)
+        precondition(pieces.allSatisfy { !$0.hitTest(CGPoint(x: 106, y: 120), tolerance: 0) && $0.style.opacity == marker.style.opacity })
         let unchanged=try engine.annotate(bytes,page:0,marks:[mark])
         let noOp=try engine.load(unchanged,page:0,width:612)
         precondition(first.pixels.data == noOp.pixels.data)

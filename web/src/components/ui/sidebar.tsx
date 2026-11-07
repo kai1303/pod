@@ -153,15 +153,23 @@ function Sidebar({
   side = "left",
   variant = "sidebar",
   collapsible = "offcanvas",
+  visibility,
+  triggerId,
+  label = "Sidebar",
   className,
   children,
   ...props
 }: React.ComponentProps<"div"> & {
+  visibility?: { open: boolean; onOpenChange: (open: boolean) => void };
+  triggerId?: string;
+  label?: string;
   side?: "left" | "right";
   variant?: "sidebar" | "floating" | "inset";
   collapsible?: "offcanvas" | "icon" | "none";
 }) {
-  const { isMobile, state, openMobile, setOpenMobile } = useSidebar();
+  const { isMobile, open, openMobile, setOpenMobile } = useSidebar();
+  const visible = visibility?.open ?? (isMobile ? openMobile : open);
+  const state = visible ? "expanded" : "collapsed";
 
   if (collapsible === "none") {
     return (
@@ -180,11 +188,15 @@ function Sidebar({
 
   if (isMobile) {
     return (
-      <Sheet open={openMobile} onOpenChange={setOpenMobile} {...props}>
+      <Sheet open={visible} onOpenChange={visibility?.onOpenChange ?? setOpenMobile} {...props}>
         <SheetContent
           data-sidebar="sidebar"
           data-slot="sidebar"
           data-mobile="true"
+          onCloseAutoFocus={triggerId ? event => {
+            event.preventDefault();
+            document.getElementById(triggerId)?.focus();
+          } : undefined}
           className="w-(--sidebar-width) bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden"
           style={
             {
@@ -194,7 +206,7 @@ function Sidebar({
           side={side}
         >
           <SheetHeader className="sr-only">
-            <SheetTitle>Sidebar</SheetTitle>
+            <SheetTitle>{label}</SheetTitle>
             <SheetDescription>Displays the mobile sidebar.</SheetDescription>
           </SheetHeader>
           <div className="flex h-full w-full flex-col">{children}</div>

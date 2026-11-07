@@ -1,8 +1,16 @@
 const std = @import("std");
 const s = @import("syntax.zig");
 const A = std.mem.Allocator;
-pub const Object = struct { value: s.Value, body: []const u8, stream: ?[]const u8 = null, changed: ?[]const u8 = null, dirty: bool = false };
-const Xref = struct { offset: usize = 0, generation: u16 = 0, live: bool = false, seen: bool = false, busy: bool = false, object: ?*Object = null };
+pub const Object = struct {
+    value: s.Value,
+    body: []const u8,
+    stream: ?[]const u8 = null,
+    changed: ?[]const u8 = null,
+    dirty: bool = false,
+    members: ?@import("object_stream.zig").Index = null,
+    decoded: ?struct { source: []const u8, data: []const u8, revision: u64 } = null,
+};
+pub const Xref = struct { object_stream: u32 = 0, object_index: u32 = 0, offset: usize = 0, generation: u16 = 0, live: bool = false, seen: bool = false, busy: bool = false, object: ?*Object = null };
 pub const Page = struct {
     object_id: u32 = 0,
     number: usize,
@@ -11,6 +19,7 @@ pub const Page = struct {
     crop_box: ?s.Value = null,
     rotation: i32 = 0,
     contents: []u32,
+    content_uses: []u32 = &.{},
     runs: []@import("content.zig").Run = &.{},
     annotation_refs: std.ArrayList(s.Value) = .empty,
     pub fn visibleBox(self: Page) ![4]f64 {
@@ -43,8 +52,14 @@ pub const Document = struct {
     page_objects: ?std.AutoHashMapUnmanaged(u32, *Object) = null,
     trailer: s.Value = .null,
     pages: ?[]Page = null,
+    page_numbers: std.AutoHashMapUnmanaged(u32, usize) = .empty,
+    pdf_fonts: std.AutoHashMapUnmanaged(usize, *const @import("pdf_font.zig").Font) = .empty,
+    icc_profiles: std.AutoHashMapUnmanaged(u32, *const @import("icc.zig").Profile) = .empty,
+    destination_names: ?std.StringHashMapUnmanaged(s.Value) = null,
     unsupported_appearance: bool = false,
     resolving_depth: usize = 0,
+    decoded_bytes: usize = 0,
+    stream_revision: u64 = 0,
     context: struct { object_id: u32 = 0, page: usize = 0, operator: []const u8 = "" } = .{},
     pub fn allocator(self: *Document) A {
         return self.arena.allocator();
@@ -61,50 +76,7 @@ pub const Document = struct {
         const offset = std.fmt.parseInt(usize, try tail.token(), 10) catch return error.InvalidXref;
         tail.skip();
         if (tail.pos != tail.bytes.len or offset >= start) return error.InvalidXref;
-        var p = s.Parser{ .bytes = bytes, .pos = offset, .allocator = self.allocator() };
-        if (!p.keyword("xref")) {
-            _ = std.fmt.parseInt(u32, p.token() catch return error.InvalidXrefOffset, 10) catch return error.InvalidXrefOffset;
-            _ = std.fmt.parseInt(u16, p.token() catch return error.InvalidXrefOffset, 10) catch return error.InvalidXrefOffset;
-            if (!p.keyword("obj")) return error.InvalidXrefOffset;
-            const candidate = p.value() catch |err| return if (err == error.OutOfMemory) err else error.InvalidXrefOffset;
-            const kind = s.get(candidate, "Type") orelse return error.InvalidXrefOffset;
-            if (kind == .name and std.mem.eql(u8, kind.name, "XRef")) return error.UnsupportedXrefStream;
-            return error.InvalidXrefOffset;
-        }
-        var entries: std.ArrayList(Xref) = .empty;
-        while (!p.keyword("trailer")) {
-            const first = std.fmt.parseInt(usize, try p.token(), 10) catch return error.InvalidXref;
-            const count = std.fmt.parseInt(usize, try p.token(), 10) catch return error.InvalidXref;
-            const limit = std.math.add(usize, first, count) catch return error.ObjectLimit;
-            if (limit > 1000000 or count == 0) return error.ObjectLimit;
-            if (limit > entries.items.len) {
-                const old = entries.items.len;
-                try entries.resize(self.allocator(), limit);
-                @memset(entries.items[old..], .{});
-            }
-            for (first..limit) |i| {
-                if (entries.items[i].seen) return error.DuplicateXref;
-                const at = std.fmt.parseInt(usize, try p.token(), 10) catch return error.InvalidXref;
-                const gen = std.fmt.parseInt(u16, try p.token(), 10) catch return error.InvalidXref;
-                const flag = try p.token();
-                if (!std.mem.eql(u8, flag, "n") and !std.mem.eql(u8, flag, "f")) return error.InvalidXref;
-                const live = flag[0] == 'n';
-                if (live and (at >= offset or at == 0 or i == 0)) return error.InvalidXref;
-                entries.items[i] = .{ .offset = at, .generation = gen, .live = live, .seen = true };
-            }
-        }
-        self.entries = try entries.toOwnedSlice(self.allocator());
-        self.trailer = try p.value();
-        if (self.trailer != .dict) return error.InvalidTrailer;
-        if (s.get(self.trailer, "Prev") != null) return error.UnsupportedRevisions;
-        if (s.get(self.trailer, "XRefStm") != null) return error.UnsupportedXrefStream;
-        if (s.get(self.trailer, "Encrypt") != null) return error.UnsupportedEncryption;
-        const size = try s.uint(s.get(self.trailer, "Size") orelse return error.InvalidTrailer);
-        if (size == 0 or size != self.entries.len) return error.InvalidXref;
-        if (!self.entries[0].seen or self.entries[0].live or self.entries[0].generation != 65535) return error.InvalidXref;
-        p.skip();
-        if (p.pos != start) return error.InvalidTrailer;
-        if (s.get(self.trailer, "Root") == null) return error.InvalidTrailer;
+        try @import("xref.zig").load(&self, offset, start);
         return self;
     }
     pub fn deinit(self: *Document) void {
@@ -118,21 +90,44 @@ pub const Document = struct {
         if (ref.id == 0 or ref.id >= self.entries.len) return error.MissingReference;
         const x = &self.entries[ref.id];
         if (!x.live or x.generation != ref.generation) return error.MissingReference;
-        if (x.object) |o| return o;
-        if (self.page_objects) |cache| {
+        if (self.page_objects) |*cache| {
             if (cache.get(ref.id)) |o| return o;
-        }
+            if (x.object) |shared| {
+                // Decoded bytes belong to this page view, not to the longer-lived index.
+                const local = try self.allocator().create(Object);
+                local.* = shared.*;
+                local.decoded = null;
+                local.members = null;
+                try cache.put(self.allocator(), ref.id, local);
+                return local;
+            }
+        } else if (x.object) |o| return o;
         if (x.busy) return error.ReferenceCycle;
         x.busy = true;
         defer x.busy = false;
-        var p = s.Parser{ .bytes = self.bytes, .pos = x.offset, .allocator = self.allocator() };
-        if (s.ws(self.bytes[x.offset]) or self.bytes[x.offset] == '%') return error.InvalidXrefOffset;
+        const o = if (x.object_stream != 0)
+            try @import("object_stream.zig").read(self, ref, x.*)
+        else
+            (try self.readIndirect(x.offset, ref)).object;
+        if (self.page_objects) |*cache| try cache.put(self.allocator(), ref.id, o) else x.object = o;
+        return o;
+    }
+    pub const Indirect = struct { ref: s.Ref, object: *Object, end: usize };
+    pub fn readIndirect(self: *Document, offset: usize, expected: ?s.Ref) anyerror!Indirect {
+        if (offset >= self.bytes.len or s.ws(self.bytes[offset]) or self.bytes[offset] == '%') return error.InvalidXrefOffset;
+        var p = s.Parser{ .bytes = self.bytes, .pos = offset, .allocator = self.allocator() };
         const id = std.fmt.parseInt(u32, try p.token(), 10) catch return error.InvalidXrefOffset;
         const gen = std.fmt.parseInt(u16, try p.token(), 10) catch return error.InvalidXrefOffset;
-        if (id != ref.id or gen != ref.generation or !p.keyword("obj")) return error.InvalidXrefOffset;
+        if (id == 0 or id >= 1_000_000 or !p.keyword("obj")) return error.InvalidXrefOffset;
+        if (expected) |ref| if (id != ref.id or gen != ref.generation) return error.InvalidXrefOffset;
         p.skip();
         const body_start = p.pos;
         const val = try p.value();
+        if (expected == null) {
+            const typ = s.get(val, "Type") orelse return error.InvalidXrefOffset;
+            if (typ != .name or !std.mem.eql(u8, typ.name, "XRef")) return error.InvalidXrefOffset;
+            if (s.get(val, "Length")) |length| if (length == .ref) return error.InvalidXref;
+        }
         var stream: ?[]const u8 = null;
         if (p.keyword("stream")) {
             if (val != .dict) return error.InvalidStream;
@@ -153,8 +148,39 @@ pub const Document = struct {
         if (!p.keyword("endobj")) return error.InvalidObject;
         const o = try self.allocator().create(Object);
         o.* = .{ .value = val, .stream = stream, .body = self.bytes[body_start..body_end] };
-        if (self.page_objects) |*cache| try cache.put(self.allocator(), ref.id, o) else x.object = o;
-        return o;
+        return .{ .ref = .{ .id = id, .generation = gen }, .object = o, .end = p.pos };
+    }
+    pub fn streamData(self: *Document, obj: *Object) ![]const u8 {
+        const source = obj.changed orelse obj.stream orelse return error.InvalidStream;
+        if (obj.decoded) |cached| {
+            if (cached.revision == self.stream_revision and source.ptr == cached.source.ptr and source.len == cached.source.len) return cached.data;
+        }
+        const budget = 256 * 1024 * 1024 - self.decoded_bytes;
+        const limit = @min(64 * 1024 * 1024, budget);
+        const data = try @import("filters.zig").decode(self, obj, self.allocator(), limit);
+        if (s.get(obj.value, "Filter") != null) {
+            self.decoded_bytes += data.len;
+            obj.decoded = .{ .source = source, .data = data, .revision = self.stream_revision };
+        }
+        return data;
+    }
+    // Stage the dictionary before committing so an allocation failure leaves the stream valid.
+    pub fn replaceStream(self: *Document, obj: *Object, data: []const u8) !void {
+        if (obj.value != .dict) return error.ExpectedDictionary;
+        var entries: std.ArrayList(s.Entry) = .empty;
+        for (obj.value.dict) |entry| {
+            if (std.mem.eql(u8, entry.key, "Filter") or std.mem.eql(u8, entry.key, "DecodeParms") or
+                std.mem.eql(u8, entry.key, "DL")) continue;
+            try entries.append(self.allocator(), entry);
+        }
+        obj.value = .{ .dict = try entries.toOwnedSlice(self.allocator()) };
+        self.pdf_fonts.clearRetainingCapacity();
+        self.icc_profiles.clearRetainingCapacity();
+        self.pages = null;
+        obj.changed = data;
+        obj.decoded = null;
+        obj.members = null;
+        obj.dirty = true;
     }
     pub fn addObject(self: *Document, value: s.Value, stream: ?[]const u8) !u32 {
         if (self.entries.len >= 1000000) return error.ObjectLimit;
@@ -177,6 +203,12 @@ pub const Document = struct {
     }
     pub fn set(self: *Document, obj: *Object, key: []const u8, value: s.Value) !void {
         if (obj.value != .dict) return error.ExpectedDictionary;
+        self.stream_revision +%= 1;
+        self.destination_names = null;
+        self.pdf_fonts.clearRetainingCapacity();
+        self.icc_profiles.clearRetainingCapacity();
+        obj.decoded = null;
+        obj.members = null;
         for (obj.value.dict) |*entry| if (std.mem.eql(u8, entry.key, key)) {
             entry.value = value;
             obj.dirty = true;
@@ -233,40 +265,62 @@ pub const Document = struct {
                 if (n != .integer or @mod(n.integer, 90) != 0) return error.InvalidRotation;
                 degrees = @intCast(@mod(n.integer, 360));
             }
-            var ids: std.ArrayList(u32) = .empty;
-            if (s.get(v, "Contents")) |contents| {
-                if (contents == .ref and (try self.object(contents.ref)).stream != null) {
-                    try ids.append(self.allocator(), contents.ref.id);
-                } else {
-                    const arr = try self.resolve(contents);
-                    if (arr != .array) return error.InvalidContents;
-                    for (arr.array) |item| {
-                        if (item != .ref or (try self.object(item.ref)).stream == null) return error.InvalidContents;
-                        try ids.append(self.allocator(), item.ref.id);
-                    }
-                }
-            }
-            try result.append(self.allocator(), .{ .object_id = value.ref.id, .number = result.items.len + 1, .resources = try self.resolve(res orelse return error.MissingResources), .media_box = mb, .crop_box = cb, .rotation = degrees, .contents = try ids.toOwnedSlice(self.allocator()) });
+            try result.append(self.allocator(), .{ .object_id = value.ref.id, .number = result.items.len + 1, .resources = try self.resolve(res orelse return error.MissingResources), .media_box = mb, .crop_box = cb, .rotation = degrees, .contents = &.{} });
         } else return error.InvalidPageTree;
     }
     pub fn indexPages(self: *Document) anyerror![]Page {
         const root = try self.resolve(s.get(self.trailer, "Root").?);
-        for ([_][]const u8{ "AcroForm", "OCProperties", "OutputIntents" }) |key| {
+        for ([_][]const u8{ "OCProperties", "OutputIntents" }) |key| {
             if (s.get(root, key) != null) self.unsupported_appearance = true;
+        }
+        if (s.get(root, "AcroForm")) |raw| {
+            const form = try self.resolve(raw);
+            if (form != .dict) {
+                self.unsupported_appearance = true;
+            } else for (form.dict) |entry| {
+                const value = try self.resolve(entry.value);
+                // Resource-only forms supply FreeText fonts without introducing widgets.
+                if (std.mem.eql(u8, entry.key, "DR") and value == .dict) continue;
+                if (std.mem.eql(u8, entry.key, "Fields") and value == .array and value.array.len == 0) continue;
+                self.unsupported_appearance = true;
+            }
         }
         var path: std.ArrayList(u32) = .empty;
         var pages: std.ArrayList(Page) = .empty;
         const visited = try self.allocator().alloc(bool, self.entries.len);
         @memset(visited, false);
         try self.walk(s.get(root, "Pages") orelse return error.InvalidCatalog, null, null, null, null, &path, visited, &pages);
-        for (pages.items) |page| _ = try page.visibleBox();
+        self.page_numbers = .empty;
+        for (pages.items, 0..) |page, i| {
+            _ = try page.visibleBox();
+            try self.page_numbers.put(self.allocator(), page.object_id, i);
+        }
         return pages.toOwnedSlice(self.allocator());
+    }
+    // The page tree already holds each page dictionary. Leave its streams on
+    // disk until this particular page is opened (including indirect arrays).
+    pub fn resolveContents(self: *Document, page: *Page) !void {
+        const object_ = try self.object(.{ .id = page.object_id, .generation = self.entries[page.object_id].generation });
+        const contents = s.get(object_.value, "Contents") orelse return;
+        if (contents == .ref and (try self.object(contents.ref)).stream != null) {
+            page.contents = try self.allocator().dupe(u32, &.{contents.ref.id});
+            return;
+        }
+        const array = try self.resolve(contents);
+        if (array != .array) return error.InvalidContents;
+        const ids = try self.allocator().alloc(u32, array.array.len);
+        for (array.array, ids) |item, *id| {
+            if (item != .ref or (try self.object(item.ref)).stream == null) return error.InvalidContents;
+            id.* = item.ref.id;
+        }
+        page.contents = ids;
     }
     pub fn inspect(self: *Document) anyerror![]Page {
         if (self.pages) |pages| return pages;
         const pages = try self.indexPages();
         for (pages) |*page| {
             self.context.page = page.number;
+            try self.resolveContents(page);
             page.runs = try @import("content.zig").inspect(self, page);
         }
         self.pages = pages;
@@ -313,7 +367,7 @@ pub const Document = struct {
             const o = try self.object(.{ .id = @intCast(i), .generation = x.generation });
             offsets[i] = out.items.len;
             try out.print(a, "{d} {d} obj\n", .{ i, x.generation });
-            if (o.changed) |data| {
+            if (o.changed orelse (if (o.dirty) o.stream else null)) |data| {
                 try out.appendSlice(a, "<<");
                 for (o.value.dict) |entry| {
                     if (std.mem.eql(u8, entry.key, "Length")) continue;

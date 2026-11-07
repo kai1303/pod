@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Independent fixture producer and CLI contract checks (Python stdlib only)."""
 import argparse
+import base64
+import zlib
 import hashlib
 import json
 from pathlib import Path
@@ -29,6 +31,27 @@ def fixture(content=None, font=b"Courier", extra=b"", trailer=b"", indirect=True
         data += f"{offset:010d} 00000 n \n".encode()
     data += b"trailer\n<< /Size 7 /Root 1 0 R " + trailer + b" >>\nstartxref\n" + str(xref).encode() + b"\n%%EOF\n"
     return bytes(data)
+
+
+def lzw_literals(data, early_change):
+    """Pack literal codes with PDF LZW width transitions, including a table reset."""
+    encoded = []
+    width, next_code, previous = 9, 258, False
+    encoded.append(f"{256:09b}")
+    for char in data:
+        encoded.append(f"{char:0{width}b}")
+        if previous:
+            next_code += 1
+            if width < 12 and next_code + early_change == 1 << width:
+                width += 1
+        previous = True
+        if next_code == 4096:
+            encoded.append(f"{256:0{width}b}")
+            width, next_code, previous = 9, 258, False
+    encoded.append(f"{257:0{width}b}")
+    bits = "".join(encoded)
+    bits += "0" * (-len(bits) % 8)
+    return bytes(int(bits[i:i + 8], 2) for i in range(0, len(bits), 8))
 
 
 def run(binary, *args, success=True):
@@ -94,7 +117,7 @@ def validate(binary, out, pdfkit=None, mutations=128):
     assert protected.read_bytes() == b"do not overwrite"
     assert hashlib.sha256(source.read_bytes()).digest() == original
     for name, data in {
-        "font": fixture(font=b"Helvetica"),
+        "font": fixture(font=b"UnrecognizedFont"),
         "filter": fixture(extra=b"/Filter /FlateDecode"),
         "revision": fixture(trailer=b"/Prev 0"),
         "truncated": fixture()[:120],
@@ -106,16 +129,48 @@ def validate(binary, out, pdfkit=None, mutations=128):
         target = out / f"rejected-{name}.pdf"
         run(binary, "replace", path, target, 1, 0, "Hi", success=False)
         assert not target.exists(), name
+    content = b"BT /F1 12 Tf 1 0 0 1 72 720 Tm (Hello) Tj (World) Tj ET\n"
+    compressed = zlib.compress(content)
+    compressed_paths = []
+    # The comment drives LZW through 9/10/11/12-bit codes and dictionary resets.
+    lzw_content = content + b"%" + b"dictionary-width-check " * 300 + b"\n"
+    for name, encoded, metadata in [
+        ("flate", compressed, b"/Filter /FlateDecode"),
+        ("flate-array", compressed, b"/Filter [/FlateDecode] /DecodeParms [null]"),
+        ("flate-params", compressed, b"/Filter /FlateDecode /DecodeParms << /Predictor 1 >>"),
+        ("ascii85-flate", base64.a85encode(compressed) + b"~>", b"/Filter [/ASCII85Decode /FlateDecode] /DecodeParms [null null]"),
+        ("hex-flate", compressed.hex().encode() + b">", b"/Filter [/ASCIIHexDecode /FlateDecode]"),
+        ("run-length", bytes([len(content) - 1]) + content + b"\x80", b"/Filter /RunLengthDecode"),
+        ("lzw-early", lzw_literals(lzw_content, 1), b"/Filter /LZWDecode"),
+        ("lzw-late", lzw_literals(lzw_content, 0), b"/Filter /LZWDecode /DecodeParms << /EarlyChange 0 >>"),
+    ]:
+        compressed_source = out / f"{name}.pdf"
+        compressed_source.write_bytes(fixture(content=encoded, extra=metadata))
+        before_bytes = compressed_source.read_bytes()
+        decoded_runs = inspect(binary, compressed_source)["pages"][0]["runs"]
+        assert [r["text"] for r in decoded_runs] == ["Hello", "World"], decoded_runs
+        compressed_edit = out / f"{name}-edited.pdf"
+        run(binary, "replace", compressed_source, compressed_edit, 1, 0, "Hi")
+        edited_runs = inspect(binary, compressed_edit)["pages"][0]["runs"]
+        assert [r["text"] for r in edited_runs] == ["Hi", "World"], edited_runs
+        assert abs(decoded_runs[1]["x"] - edited_runs[1]["x"]) < 1e-6
+        assert b"/Filter" not in compressed_edit.read_bytes()
+        assert b"/DecodeParms" not in compressed_edit.read_bytes()
+        assert compressed_source.read_bytes() == before_bytes
+        compressed_paths.extend([compressed_source, compressed_edit])
     created = out / "created.pdf"
     run(binary, "create", created, "Native PDF engine")
     assert "Native PDF engine" in "".join(r["text"] for r in inspect(binary, created)["pages"][0]["runs"])
     run(binary, "create", created, "overwrite", success=False)
     if pdfkit:
         decoded = {}
-        for path in [source, edited, created, escaped, transformed, transformed_edit]:
+        for path in [source, edited, created, escaped, transformed, transformed_edit, *compressed_paths]:
             result = subprocess.run([str(pdfkit), str(path), str(path.with_suffix(".png"))], capture_output=True, check=True)
             decoded[path.stem] = json.loads(result.stdout)
             assert decoded[path.stem]["pages"] == 1
+        for path in compressed_paths:
+            expected = "Hi" if path.stem.endswith("-edited") else "Hello"
+            assert expected in decoded[path.stem]["text"] and "World" in decoded[path.stem]["text"]
         assert "Hi" in decoded["edited"]["text"] and "Hello" not in decoded["edited"]["text"]
         assert "Native PDF engine" in decoded["created"]["text"]
         assert "(\\)" in decoded["escaped"]["text"]
